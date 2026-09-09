@@ -1,0 +1,166 @@
+{
+  "schema_version": "2.0.0-current",
+  "project": "Raising The Bar Officiating",
+  "repository": "mrbballref/rtbofficiating.com-project",
+  "validation_branch": "chatgpt/validated-code-governance",
+  "canonical_domain": "https://rtbofficiating.com/",
+  "current_governance_root": "PROJECT_DOCUMENTATION/validation/current",
+  "historical_validation_packages_controlling": false,
+  "project_wide_state": "VALIDATION_BOOTSTRAP",
+  "project_wide_locked": false,
+  "teaching_freeze": true,
+  "teaching_freeze_rule": "No implementation code is teachable until every mandatory platform and enterprise implementation is LOCKED and project_wide_state is PROJECT_WIDE_LOCKED.",
+  "governance_rule": "PROJECT_DOCUMENTATION/validation/current/RTBO_ULTIMATE_VALIDATED_CODE_RULE.md",
+  "reference_baseline": "PROJECT_DOCUMENTATION/validation/current/RTBO_ULTIMATE_REFERENCE_BASELINE.md",
+  "teaching_protocol": "PROJECT_DOCUMENTATION/validation/current/RTBO_ULTIMATE_TEACHING_PROTOCOL.md",
+  "validation_matrix": "PROJECT_DOCUMENTATION/validation/current/RTBO_ULTIMATE_PROJECT_VALIDATION_MATRIX.md",
+  "permanent_exclusions": [
+    "The Save",
+    "Arkansas Baptist College Classic",
+    "Arkansas Sports Hall of Fame"
+  ],
+  "allowed_statuses": [
+    "NOT_STARTED",
+    "CONTRACT_REVIEW",
+    "DESIGN_VALIDATED",
+    "SOURCE_DRAFT",
+    "SOURCE_REVIEW",
+    "RUNTIME_VERIFIED",
+    "VALIDATED",
+    "LOCKED",
+    "REVALIDATION_REQUIRED",
+    "FAILED",
+    "SUPERSEDED"
+  ],
+  "evidence_levels": {
+    "E0": "requirements/source identity known",
+    "E1": "requirements and architecture reconciled",
+    "E2": "complete design and downstream dependency contract validated",
+    "E3": "static source review and syntax/type/lint checks passed",
+    "E4": "browser/runtime or server/runtime checks passed",
+    "E5": "accessibility/responsive/manual interaction checks passed",
+    "E6": "security/privacy/SEO/PWA/performance/integration checks passed as applicable",
+    "E7": "regression suite passed, content hash and source commit recorded",
+    "E8": "dependency-regression lock complete"
+  },
+  "platforms": [
+    {
+      "id": "01",
+      "name": "RTBO Core Website",
+      "root": "STANDALONE_PLATFORMS/01_RTBO_Core_Website",
+      "standalone_html_css_js": {"status": "CONTRACT_REVIEW", "evidence_level": "E1", "entries": []},
+      "integrated_html_css_js": {"status": "NOT_STARTED", "evidence_level": "E0", "entries": []},
+      "full_stack": {"status": "NOT_STARTED", "evidence_level": "E0", "entries": []}
+    },
+    {
+      "id": "02",
+      "name": "Got U Nex Ref",
+      "root": "STANDALONE_PLATFORMS/02_Got_U_Nex_Ref",
+      "standalone_html_css_js": {"status": "CONTRACT_REVIEW", "evidence_level": "E0", "entries": []},
+      "integrated_html_css_js": {"status": "NOT_STARTED", "evidence_level": "E0", "entries": []},
+      "full_stack": {"status": "NOT_STARTED", "evidence_level": "E0", "entries": []}
+    },
+    {
+      "id": "03",
+      "name": "RefZone University",
+      "root": "STANDALONE_PLATFORMS/03_RefZone_University",
+      "standalone_html_css_js": {"status": "CONTRACT_REVIEW", "evidence_level": "E0", "entries": []},
+      "integrated_html_css_js": {"status": "NOT_STARTED", "evidence_level": "E0", "entries": []},
+      "full_stack": {"status": "NOT_STARTED", "evidence_level": "E0", "entries": []}
+    },
+    {
+      "id": "04",
+      "name": "The Live Stream",
+      "root": "STANDALONE_PLATFORMS/04_The_Live_Stream",
+      "standalone_html_css_js": {"status": "CONTRACT_REVIEW", "evidence_level": "E0", "entries": []},
+      "integrated_html_css_js": {"status": "NOT_STARTED", "evidence_level": "E0", "entries": []},
+      "full_stack": {"status": "NOT_STARTED", "evidence_level": "E0", "entries": []}
+    },
+    {
+      "id": "05",
+      "name": "The Jammed Up Bar!",
+      "root": "STANDALONE_PLATFORMS/05_The_Jammed_Up_Bar",
+      "standalone_html_css_js": {"status": "CONTRACT_REVIEW", "evidence_level": "E0", "entries": []},
+      "integrated_html_css_js": {"status": "NOT_STARTED", "evidence_level": "E0", "entries": []},
+      "full_stack": {"status": "NOT_STARTED", "evidence_level": "E0", "entries": []}
+    },
+    {
+      "id": "06",
+      "name": "The Locker Room",
+      "root": "STANDALONE_PLATFORMS/06_The_Locker_Room",
+      "standalone_html_css_js": {"status": "CONTRACT_REVIEW", "evidence_level": "E0", "entries": []},
+      "integrated_html_css_js": {"status": "NOT_STARTED", "evidence_level": "E0", "entries": []},
+      "full_stack": {"status": "NOT_STARTED", "evidence_level": "E0", "entries": []}
+    },
+    {
+      "id": "07",
+      "name": "The Vault",
+      "root": "STANDALONE_PLATFORMS/07_The_Vault",
+      "standalone_html_css_js": {"status": "CONTRACT_REVIEW", "evidence_level": "E0", "entries": []},
+      "integrated_html_css_js": {"status": "NOT_STARTED", "evidence_level": "E0", "entries": []},
+      "full_stack": {"status": "NOT_STARTED", "evidence_level": "E0", "entries": []}
+    },
+    {
+      "id": "08",
+      "name": "The RefShop",
+      "root": "STANDALONE_PLATFORMS/08_The_RefShop",
+      "standalone_html_css_js": {"status": "CONTRACT_REVIEW", "evidence_level": "E0", "entries": []},
+      "integrated_html_css_js": {"status": "NOT_STARTED", "evidence_level": "E0", "entries": []},
+      "full_stack": {"status": "NOT_STARTED", "evidence_level": "E0", "entries": []}
+    },
+    {
+      "id": "09",
+      "name": "The Cutting Room",
+      "root": "STANDALONE_PLATFORMS/09_The_Cutting_Room",
+      "standalone_html_css_js": {"status": "CONTRACT_REVIEW", "evidence_level": "E0", "entries": []},
+      "integrated_html_css_js": {"status": "NOT_STARTED", "evidence_level": "E0", "entries": []},
+      "full_stack": {"status": "NOT_STARTED", "evidence_level": "E0", "entries": []}
+    },
+    {
+      "id": "10",
+      "name": "The Lab Hub",
+      "root": "STANDALONE_PLATFORMS/10_The_Lab_Hub",
+      "standalone_html_css_js": {"status": "CONTRACT_REVIEW", "evidence_level": "E0", "entries": []},
+      "integrated_html_css_js": {"status": "NOT_STARTED", "evidence_level": "E0", "entries": []},
+      "full_stack": {"status": "NOT_STARTED", "evidence_level": "E0", "entries": []}
+    },
+    {
+      "id": "11",
+      "name": "Master CMS + Super Admin",
+      "root": "STANDALONE_PLATFORMS/11_Master_CMS_Super_Admin",
+      "standalone_html_css_js": {"status": "CONTRACT_REVIEW", "evidence_level": "E0", "entries": []},
+      "integrated_html_css_js": {"status": "NOT_STARTED", "evidence_level": "E0", "entries": []},
+      "full_stack": {"status": "NOT_STARTED", "evidence_level": "E0", "entries": []}
+    }
+  ],
+  "enterprise_editions": {
+    "integrated_html_css_js": {"status": "NOT_STARTED", "evidence_level": "E0", "entries": []},
+    "integrated_full_stack": {"status": "NOT_STARTED", "evidence_level": "E0", "entries": []}
+  },
+  "registry_entry_schema": {
+    "entry_id": "string",
+    "platform_id": "string",
+    "edition": "standalone_html_css_js | integrated_html_css_js | full_stack | integrated_full_stack",
+    "feature_page_module": "string",
+    "repository_path": "string",
+    "source_commit_sha": "string",
+    "content_sha256": "string",
+    "dependencies": [],
+    "project_references": [],
+    "external_references": [],
+    "automated_test_evidence": [],
+    "manual_runtime_evidence": [],
+    "accessibility_evidence": [],
+    "responsive_evidence": [],
+    "security_privacy_evidence": [],
+    "seo_metadata_pwa_evidence": [],
+    "performance_evidence": [],
+    "integration_evidence": [],
+    "regression_evidence": [],
+    "validation_date": "YYYY-MM-DD",
+    "validator_notes": "string",
+    "evidence_level": "E0-E8",
+    "status": "allowed status",
+    "superseded_by": null
+  }
+}
