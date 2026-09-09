@@ -1,0 +1,54 @@
+# Operating system metadata
+.DS_Store
+**/.DS_Store
+__MACOSX/
+**/__MACOSX/
+Thumbs.db
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+*.crt
+*.cer
+secrets/
+**/secrets/
+
+# Dependencies
+node_modules/
+**/node_modules/
+
+# Logs / runtime artifacts
+*.log
+logs/
+**/logs/
+*.pid
+*.pid.lock
+
+# Test / coverage artifacts
+coverage/
+**/coverage/
+.nyc_output/
+playwright-report/
+test-results/
+
+# Generated build outputs
+.dist/
+dist/
+build/
+.cache/
+.tmp/
+tmp/
+
+# Editor-local metadata
+.vscode/*.local.json
+.idea/
+
+# Archives should not be treated as canonical source
+*.zip
+*.tar
+*.tar.gz
