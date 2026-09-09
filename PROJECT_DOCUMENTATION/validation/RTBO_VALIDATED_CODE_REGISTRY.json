@@ -1,11 +1,16 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "1.1.0",
   "project": "Raising The Bar Officiating",
   "repository": "mrbballref/rtbofficiating.com-project",
   "canonical_domain": "https://rtbofficiating.com/",
+  "project_wide_state": "VALIDATION_IN_PROGRESS",
+  "project_wide_locked": false,
+  "teaching_freeze": true,
+  "teaching_freeze_rule": "No implementation code may be taught or provided in chat until project_wide_locked is true.",
   "governance_rule": "PROJECT_DOCUMENTATION/validation/RTBO_MASTER_VALIDATED_CODE_RULE.md",
   "teaching_protocol": "PROJECT_DOCUMENTATION/validation/RTBO_TEACHING_PROTOCOL.md",
   "validation_matrix": "PROJECT_DOCUMENTATION/validation/RTBO_PROJECT_WIDE_VALIDATION_MATRIX.md",
+  "reference_baseline": "PROJECT_DOCUMENTATION/validation/RTBO_VALIDATION_REFERENCE_BASELINE.md",
   "allowed_statuses": [
     "NOT_STARTED",
     "DRAFT",
@@ -27,7 +32,7 @@
     "E7": "regression suite passed and content hash recorded",
     "E8": "locked"
   },
-  "teachability_rule": "Only entries with status VALIDATED or LOCKED and evidence_level E7 or E8 may be taught as approved production code.",
+  "teachability_rule": "Individual entries may reach VALIDATED or LOCKED during the audit, but nothing is teachable until project_wide_locked is true and teaching_freeze is false.",
   "standards_baseline": {
     "html_css_js": [
       "MDN/Mozilla current documentation",
