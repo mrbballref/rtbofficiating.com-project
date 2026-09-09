@@ -3,21 +3,36 @@
 **Status:** MANDATORY — NO EXCEPTIONS  
 **Depends on:** `RTBO_MASTER_VALIDATED_CODE_RULE.md`
 
-## 1. Teaching begins only after validation
+## 1. Teaching is globally frozen until the entire project is locked
 
-The user never receives implementation code as part of the design/validation process.
+The user does not receive implementation code while the project-wide validation program is still in progress.
 
-The sequence is:
+The teaching phase begins only when the canonical registry says:
 
 ```text
-Design complete implementation
-→ validate complete implementation
-→ record validated source + evidence in registry
-→ lock the applicable block
-→ teach the already-validated block
+project_wide_locked = true
+teaching_freeze = false
 ```
 
-## 2. Default teaching unit: logical validated block
+Until then, the assistant may design, implement, test and validate source in an isolated working environment and commit only validated production source to the canonical GitHub repository, but does not teach implementation code in chat.
+
+The full sequence is:
+
+```text
+Complete all project requirements/architecture
+→ implement all standalone HTML/CSS/JS platforms in isolated validation environment
+→ validate/register/lock them
+→ implement and validate the integrated HTML/CSS/JS enterprise
+→ freeze the full-stack architecture
+→ implement and validate every full-stack platform/module
+→ run complete cross-platform regression
+→ record all hashes/evidence
+→ PROJECT_WIDE_LOCKED
+→ lift teaching freeze
+→ teach already-validated code
+```
+
+## 2. Default teaching unit after the freeze: logical validated block
 
 Do not default to one line at a time.
 
@@ -49,7 +64,7 @@ A block must be small enough for a true beginner to understand, but large enough
 10. **Standards references**
 11. **Verification procedure**
 12. **Expected result**
-13. **Registry entry/status** identifying the already-validated source
+13. **Registry entry/status/hash** identifying the approved source
 
 ## 4. Additive instruction rule
 
@@ -67,7 +82,7 @@ Use **replace** only when correcting an actual existing error.
 
 ## 5. Correction rule
 
-When the user pastes/types code:
+When the user pastes/types code during the later teaching phase:
 
 - review the entire affected system, not only the last line;
 - compare it to the canonical validated source/hash;
@@ -91,7 +106,7 @@ Use a smaller sub-block only when:
 - a dependency must be verified before the rest can be typed;
 - the user explicitly asks for smaller steps.
 
-Even when split for teaching, the complete parent feature must already have passed validation before the first sub-block is shown.
+Even when split for teaching, the complete parent feature and the complete project must already be validated before the first sub-block is shown.
 
 ## 7. Never teach unresolved placeholders
 
@@ -110,7 +125,7 @@ Do not provide code containing guessed or unresolved:
 - provider keys;
 - dummy text where approved content is required.
 
-Resolve the contract first or keep the block out of the teachable registry.
+Resolve the contract before project lock.
 
 ## 8. Static/full-stack distinction while teaching
 
@@ -126,6 +141,7 @@ Use these terms precisely:
 - `REVALIDATION_REQUIRED` — prior result cannot be trusted under current dependencies/rules
 - `VALIDATED` — complete applicable gate passed at evidence level E7
 - `LOCKED` — validated and final regression/dependency gate passed at E8
+- `PROJECT_WIDE_LOCKED` — every required project implementation is locked and the teaching freeze may be lifted
 - `SUPERSEDED` — retained for history but not current
 
-Never call a file/feature/platform complete unless its registry status supports that statement.
+Never call a file/feature/platform/project complete unless its registry status supports that statement.
