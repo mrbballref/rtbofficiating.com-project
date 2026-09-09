@@ -4,6 +4,8 @@ on:
   push:
     branches:
       - chatgpt/01-rtbo-core-complete-build
+    paths:
+      - STANDALONE_PLATFORMS/01_RTBO_Core_Website/**
   workflow_dispatch:
 
 permissions:
@@ -12,7 +14,7 @@ permissions:
 jobs:
   validate-core-source-draft:
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    timeout-minutes: 25
 
     steps:
       - name: Check out exact source draft commit
@@ -40,7 +42,7 @@ jobs:
         if: always()
         uses: actions/upload-artifact@v7
         with:
-          name: rtbo-core-source-draft-validation-${{ github.sha }}
+          name: rtbo-core-source-validation-${{ github.sha }}
           path: .validation-evidence/core/
           if-no-files-found: warn
           include-hidden-files: true

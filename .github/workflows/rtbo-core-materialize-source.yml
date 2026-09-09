@@ -1,0 +1,39 @@
+name: Materialize RTBO Core Source
+
+on:
+  push:
+    branches:
+      - chatgpt/01-rtbo-core-complete-build
+    paths:
+      - PROJECT_DOCUMENTATION/validation/current/evidence/01_RTBO_Core_Website/tools/materialize_core_source.py
+      - .github/workflows/rtbo-core-materialize-source.yml
+
+permissions:
+  contents: write
+
+jobs:
+  materialize-core-source:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out build branch
+        uses: actions/checkout@v7
+        with:
+          ref: chatgpt/01-rtbo-core-complete-build
+          fetch-depth: 0
+
+      - name: Materialize individual Core source files
+        run: python PROJECT_DOCUMENTATION/validation/current/evidence/01_RTBO_Core_Website/tools/materialize_core_source.py
+
+      - name: Commit individual source files when changed
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "RTBO Validation Bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add STANDALONE_PLATFORMS/01_RTBO_Core_Website
+          if git diff --cached --quiet; then
+            echo "Core source already materialized."
+            exit 0
+          fi
+          git commit -m "Materialize Platform 01 Core source files"
+          git push origin HEAD:chatgpt/01-rtbo-core-complete-build
