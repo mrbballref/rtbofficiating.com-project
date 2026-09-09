@@ -11,6 +11,11 @@ This folder is the **only controlling validation package** for the current proje
 - `RTBO_ULTIMATE_REFERENCE_BASELINE.md` — mandatory project/external reference hierarchy
 - `RTBO_CURRENT_SOURCE_OF_TRUTH_MANIFEST.md` — current controlling requirements/routes/design/history conflict rules
 - `RTBO_CURRENT_SOURCE_INGESTION_STATUS.md` — factual current source availability and no-false-pass guard
+- `RTBO_LINE_BY_LINE_VALIDATION_PROOF_STANDARD.md` — mandatory 100% physical-line accounting, per-file proof ledgers, hash matching, and user-visible validation evidence
+
+## Mandatory proof principle
+
+A source file is not validated merely because it compiles, renders, or passes tests. Every physical source line must be accounted for in a current line-validation ledger tied to the exact source commit/blob/content hash. A file is ineligible for `VALIDATED` or `LOCKED` unless line accounting is exactly 100.00%, with zero unclassified, failed, or unresolved lines.
 
 ## Current state
 
