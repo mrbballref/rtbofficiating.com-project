@@ -5,9 +5,27 @@
 **Repository:** `mrbballref/rtbofficiating.com-project`  
 **Applies to:** Every standalone platform, the integrated HTML/CSS/JS enterprise, and the full-stack enterprise.
 
-## 1. Master rule
+## 1. Global project-wide code-delivery freeze
 
-No implementation code may be provided to the user until the complete finished implementation for the applicable feature has already been designed and validated against the full downstream contract.
+**No implementation code is to be taught or provided to the user until every required implementation for the entire RTBO project has been designed, implemented in an isolated validation environment, validated, registered, and locked.**
+
+This means the teaching/code-delivery freeze remains active until all of the following are complete:
+
+1. all 11 standalone platform HTML/CSS/JS implementations;
+2. the complete integrated HTML/CSS/JS enterprise;
+3. the full-stack architecture;
+4. every required full-stack platform/module implementation;
+5. all shared systems and cross-platform integrations;
+6. all applicable automated and manual validation gates;
+7. all registry entries and content hashes;
+8. complete project-wide regression validation;
+9. project-wide status `LOCKED`.
+
+The assistant may design, implement, test, audit, and validate code in an isolated working environment during this freeze. **Unvalidated implementation source is not committed as canonical production source and is not taught in chat.** Only source that has passed its applicable validation gate may be committed as validated production source to the canonical GitHub repository.
+
+The user may inspect the GitHub repository at any time, but the assistant must not represent any code as approved/teachable until the project-wide freeze has been lifted by the validation system.
+
+## 2. Master pre-delivery rule
 
 Validation happens **before teaching**, never while the user is typing.
 
@@ -16,14 +34,14 @@ The assistant must never:
 - improvise downstream code one line at a time;
 - discover required HTML, metadata, favicon/icon references, routes, assets, CSS, JavaScript, accessibility states, responsive behavior, backend logic, database logic, security controls, or tests only after earlier code has already been given to the user;
 - call code validated because syntax alone passes;
-- call a feature complete because only its visible UI works;
+- call a feature complete because only the visible UI works;
 - rely on chat history or memory as the canonical store of validated source;
 - teach or reuse code with `DRAFT`, `REVIEW_REQUIRED`, `REVALIDATION_REQUIRED`, `FAILED`, or `SUPERSEDED` status;
 - silently modify validated code without invalidating and revalidating every affected registry entry.
 
 If one defect or omission is found in a shared system, audit the **entire affected system** before issuing any correction.
 
-## 2. All prior RTBO rules remain mandatory
+## 3. All prior RTBO rules remain mandatory
 
 This rule adds to, and does not replace, any user-approved RTBO rule. This includes:
 
@@ -44,9 +62,9 @@ This rule adds to, and does not replace, any user-approved RTBO rule. This inclu
 - every cumulative checkpoint is a literal cumulative continuation;
 - `The Save` remains excluded unless the user explicitly reverses that rule;
 - `Arkansas Baptist College Classic` and `Arkansas Sports Hall of Fame` remain excluded unless the user explicitly reverses that rule;
-- exact user-approved platform assets, names, routes, behavior, and content remain controlling.
+- exact user-approved platform assets, names, routes, behavior, references, and content remain controlling.
 
-## 3. Mandatory reference hierarchy
+## 4. Mandatory reference hierarchy
 
 Every proposed implementation is checked in this order:
 
@@ -83,7 +101,7 @@ Use the current applicable guidance from:
 
 No full-stack stack, dependency, provider, route, schema, or service is invented merely to move forward. It must be frozen in architecture first.
 
-## 4. Mandatory project-wide validation sequence
+## 5. Mandatory validation sequence
 
 ```text
 Standards + Requirements
@@ -98,7 +116,7 @@ Filesystem
         ↓
 Complete Implementation Design
         ↓
-Source Code
+Source Code in isolated validation environment
         ↓
 Static Validation
         ↓
@@ -124,14 +142,18 @@ Registry Snapshot + SHA-256
         ↓
 VALIDATED
         ↓
-LOCKED
+Commit validated production source to canonical GitHub repository
         ↓
-Teaching
+Platform / enterprise lock
+        ↓
+Project-wide regression
+        ↓
+PROJECT_WIDE_LOCKED
+        ↓
+Teaching may begin
 ```
 
-Teaching is always the final step.
-
-## 5. HTML/CSS/JS validation gate
+## 6. HTML/CSS/JS validation gate
 
 Every applicable static feature must validate all relevant items below.
 
@@ -206,15 +228,14 @@ Every applicable static feature must validate all relevant items below.
 
 The static edition must not claim authoritative security for authentication, authorization, payments, entitlements, private messages/notifications, protected data, secure uploads, payroll, assignments, or Super Admin operations.
 
-## 6. Full-stack validation gate
+## 7. Full-stack validation gate
 
 Every full-stack feature must additionally pass all applicable areas below.
 
 ### Runtime/framework/dependencies
 
-- frozen technology stack;
-- supported versions;
-- official documentation;
+- frozen technology stack and versions;
+- current official documentation;
 - reproducible install/build/start/test commands;
 - lockfile consistency;
 - dependency vulnerability review;
@@ -329,7 +350,7 @@ As applicable:
 - backup/restore;
 - deployment and rollback strategy.
 
-## 7. Accessibility gate
+## 8. Accessibility gate
 
 Target: **WCAG 2.2 AA**.
 
@@ -357,7 +378,7 @@ Validate, where applicable:
 
 Automated accessibility testing supplements but never replaces manual testing.
 
-## 8. SEO / metadata / PWA gate
+## 9. SEO / metadata / PWA gate
 
 Validate all applicable public-page requirements:
 
@@ -377,7 +398,7 @@ Validate all applicable public-page requirements:
 - never cache sensitive/private data;
 - correct canonical production URLs.
 
-## 9. Performance gate
+## 10. Performance gate
 
 Validate all applicable:
 
@@ -397,7 +418,7 @@ Validate all applicable:
 
 Performance changes may never break accessibility, semantics, security, or approved visuals.
 
-## 10. Platform-wide audit scope
+## 11. Platform-wide audit scope
 
 Every platform receives its own senior requirements/architecture/source audit:
 
@@ -424,7 +445,7 @@ For each platform validate:
 - data/API/event implications;
 - accessibility, responsiveness, security, privacy, SEO, performance and regression behavior.
 
-## 11. Canonical validated-code storage
+## 12. Canonical validated-code storage
 
 Validated code must never live only in chat.
 
@@ -437,6 +458,7 @@ PROJECT_DOCUMENTATION/
     ├── RTBO_VALIDATED_CODE_REGISTRY.json
     ├── RTBO_PROJECT_WIDE_VALIDATION_MATRIX.md
     ├── RTBO_TEACHING_PROTOCOL.md
+    ├── RTBO_VALIDATION_REFERENCE_BASELINE.md
     ├── manifests/
     └── snapshots/
 ```
@@ -456,7 +478,7 @@ Every validated source entry must record:
 - standards references;
 - automated test evidence;
 - manual test evidence;
-- browser/accessibility/security evidence as applicable;
+- browser/accessibility/security/performance/integration evidence as applicable;
 - validation date;
 - status;
 - superseded-by relationship when applicable.
@@ -474,9 +496,9 @@ LOCKED
 SUPERSEDED
 ```
 
-Only `VALIDATED` or `LOCKED` code may be taught as approved code. `LOCKED` means the applicable regression gate has also passed and no unresolved dependency exists.
+During the global freeze, even individually `VALIDATED`/`LOCKED` entries are **not yet teachable**. Teaching begins only after the registry's project-wide state is `PROJECT_WIDE_LOCKED`.
 
-## 12. Change invalidation rule
+## 13. Change invalidation rule
 
 Any change to a validated file invalidates that file's current hash. The affected file and every dependent registry entry return to `REVALIDATION_REQUIRED` until regression validation passes.
 
@@ -488,13 +510,11 @@ Examples:
 - changing an API schema revalidates client, server, tests, database/service consumers and documentation;
 - changing authentication revalidates every protected feature.
 
-## 13. Teaching rule — validated component blocks
+## 14. Teaching rule — validated logical blocks
 
-Teaching no longer defaults to one line at a time.
+After `PROJECT_WIDE_LOCKED` is achieved, teaching no longer defaults to one line at a time.
 
-After a complete implementation has already passed validation, teach it in **logical validated blocks** sized around one coherent concept.
-
-Examples:
+Teach in **logical validated blocks** sized around one coherent concept, such as:
 
 - complete production `<head>` metadata block;
 - complete accessible navigation item + disclosure block;
@@ -512,10 +532,11 @@ Each teaching block must include:
 4. why it is required;
 5. what uses it;
 6. complete already-validated code block;
-7. beginner explanation of the important lines/concepts;
+7. beginner explanation of the important concepts/lines;
 8. dependencies;
 9. applicable standards/project references;
-10. exact verification step and expected result.
+10. exact verification step and expected result;
+11. registry entry/hash proving it is the approved block.
 
 Use smaller blocks only when a concept is unusually complex or the user explicitly requests smaller steps.
 
@@ -523,14 +544,20 @@ Never tell the user to replace code they have not changed. Use additive instruct
 
 **No corrections are required.**
 
-## 14. No retroactive trust
+## 15. No retroactive trust
 
 Because prior work revealed omissions such as incomplete metadata/favicon handling and an unsynchronized disclosure state, previously labeled code is not automatically carried forward as validated.
 
 Existing source must be re-audited against this rule and entered into the registry with fresh evidence.
 
-## 15. Completion rule
+## 16. Completion rule
 
-The project-wide validation program is complete only when every required platform/edition/feature has a registry entry and every production-required entry is `LOCKED`, with no unresolved cross-platform regression or security dependency.
+The global code-delivery freeze is lifted only when:
 
-Until then, code delivery proceeds only from individual `VALIDATED`/`LOCKED` registry entries; nothing else is represented as approved production code.
+```text
+PROJECT_WIDE_LOCKED = true
+```
+
+That value may be set only after every required platform/edition/feature is `LOCKED`, all cross-platform and full-stack regression gates pass, and there is no unresolved architecture, route, asset, accessibility, security, privacy, performance, dependency, or integration blocker.
+
+Only then does the teaching phase begin.
