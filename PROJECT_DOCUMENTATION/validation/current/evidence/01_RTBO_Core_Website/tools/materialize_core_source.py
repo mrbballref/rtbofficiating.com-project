@@ -17,40 +17,46 @@ EXPECTED_COUNTS = (28, 18, 5)
 TARGET_PREFIX = PurePosixPath("STANDALONE_PLATFORMS/01_RTBO_Core_Website")
 
 
-def inspect_archive(raw: bytes) -> tuple[tuple[int, int, int], str] | None:
-    """Validate a safe, fully readable tar.gz and return source counts + semantic digest."""
+def source_map(raw: bytes) -> dict[str, bytes] | None:
     try:
-        digest = hashlib.sha256()
+        files: dict[str, bytes] = {}
         with tarfile.open(fileobj=io.BytesIO(raw), mode="r:gz") as archive:
-            html_count = css_count = js_count = 0
-            found_target = False
-            for member in sorted(archive.getmembers(), key=lambda item: item.name):
+            for member in archive.getmembers():
                 path = PurePosixPath(member.name)
                 if path.is_absolute() or ".." in path.parts:
                     return None
-                digest.update(member.name.encode("utf-8"))
-                digest.update(b"\0")
-                digest.update(str(member.mode).encode("ascii"))
-                digest.update(b"\0")
                 if member.isfile():
                     extracted = archive.extractfile(member)
                     if extracted is None:
                         return None
-                    payload = extracted.read()
-                    digest.update(payload)
-                digest.update(b"\0")
-                if path == TARGET_PREFIX or TARGET_PREFIX in path.parents:
-                    found_target = True
-                    if member.isfile():
-                        suffix = path.suffix.lower()
-                        html_count += suffix == ".html"
-                        css_count += suffix == ".css"
-                        js_count += suffix == ".js"
-            if not found_target:
-                return None
-            return (html_count, css_count, js_count), digest.hexdigest()
+                    files[member.name] = extracted.read()
+        return files
     except Exception:
         return None
+
+
+def inspect_archive(raw: bytes) -> tuple[tuple[int, int, int], str] | None:
+    files = source_map(raw)
+    if files is None:
+        return None
+    html_count = css_count = js_count = 0
+    found_target = False
+    digest = hashlib.sha256()
+    for name in sorted(files):
+        path = PurePosixPath(name)
+        digest.update(name.encode("utf-8"))
+        digest.update(b"\0")
+        digest.update(files[name])
+        digest.update(b"\0")
+        if path == TARGET_PREFIX or TARGET_PREFIX in path.parents:
+            found_target = True
+            suffix = path.suffix.lower()
+            html_count += suffix == ".html"
+            css_count += suffix == ".css"
+            js_count += suffix == ".js"
+    if not found_target:
+        return None
+    return (html_count, css_count, js_count), digest.hexdigest()
 
 
 def structurally_valid(raw: bytes) -> bool:
@@ -64,6 +70,36 @@ def decode_candidate(candidate: str) -> bytes | None:
     except binascii.Error:
         return None
     return raw if structurally_valid(raw) else None
+
+
+def describe_ambiguity(candidates: list[tuple[int, str, bytes, str]]) -> str:
+    by_semantic: dict[str, tuple[int, str, bytes, str]] = {}
+    for item in candidates:
+        by_semantic.setdefault(item[3], item)
+    representatives = list(by_semantic.values())
+    lines = [f"semantic candidates={len(representatives)}"]
+    for index, (offset, removed, raw, semantic) in enumerate(representatives, start=1):
+        lines.append(
+            f"candidate {index}: offset={offset}, removed={removed!r}, "
+            f"archive_sha256={hashlib.sha256(raw).hexdigest()}, semantic_sha256={semantic}"
+        )
+    if len(representatives) == 2:
+        left = source_map(representatives[0][2]) or {}
+        right = source_map(representatives[1][2]) or {}
+        all_names = sorted(set(left) | set(right))
+        differing = [name for name in all_names if left.get(name) != right.get(name)]
+        lines.append(f"differing source members={differing}")
+        for name in differing[:10]:
+            a = left.get(name, b"")
+            b = right.get(name, b"")
+            limit = min(len(a), len(b))
+            pos = next((i for i in range(limit) if a[i] != b[i]), limit)
+            start = max(0, pos - 80)
+            end = min(max(len(a), len(b)), pos + 120)
+            lines.append(f"member={name}; first_diff={pos}")
+            lines.append(f"candidate1_excerpt={a[start:end]!r}")
+            lines.append(f"candidate2_excerpt={b[start:end]!r}")
+    return "\n".join(lines)
 
 
 def decode_exact_source() -> tuple[bytes, str]:
@@ -83,11 +119,6 @@ def decode_exact_source() -> tuple[bytes, str]:
             note += f"; archive SHA-256 re-baselined from {RECORDED_ARCHIVE_SHA256}"
         return raw, note
 
-    # Historical connector transfer was isolated to part 06. Test every
-    # one-character removal there, but deduplicate valid results by the exact
-    # decompressed source-tree digest rather than gzip-container bytes. This
-    # safely handles multiple equivalent base64 repairs that produce identical
-    # source files while still rejecting semantically different candidates.
     part_index = 5
     suspect = parts[part_index]
     valid_repairs: list[tuple[int, str, bytes, str]] = []
@@ -108,8 +139,7 @@ def decode_exact_source() -> tuple[bytes, str]:
 
     if len(unique_by_semantic_hash) != 1:
         raise RuntimeError(
-            "Unable to deterministically recover source chunks: "
-            f"expected exactly 1 semantic source tree, found {len(unique_by_semantic_hash)}"
+            "Unable to deterministically recover source chunks.\n" + describe_ambiguity(valid_repairs)
         )
 
     offset, removed_character, repaired_raw, semantic_hash = next(iter(unique_by_semantic_hash.values()))
