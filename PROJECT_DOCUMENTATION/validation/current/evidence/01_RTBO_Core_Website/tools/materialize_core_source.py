@@ -17,21 +17,28 @@ EXPECTED_COUNTS = (28, 18, 5)
 TARGET_PREFIX = PurePosixPath("STANDALONE_PLATFORMS/01_RTBO_Core_Website")
 
 
-def archive_counts(raw: bytes) -> tuple[int, int, int] | None:
-    """Return source counts only when raw is a safe, fully readable Core tar.gz."""
+def inspect_archive(raw: bytes) -> tuple[tuple[int, int, int], str] | None:
+    """Validate a safe, fully readable tar.gz and return source counts + semantic digest."""
     try:
+        digest = hashlib.sha256()
         with tarfile.open(fileobj=io.BytesIO(raw), mode="r:gz") as archive:
             html_count = css_count = js_count = 0
             found_target = False
-            for member in archive.getmembers():
+            for member in sorted(archive.getmembers(), key=lambda item: item.name):
                 path = PurePosixPath(member.name)
                 if path.is_absolute() or ".." in path.parts:
                     return None
+                digest.update(member.name.encode("utf-8"))
+                digest.update(b"\0")
+                digest.update(str(member.mode).encode("ascii"))
+                digest.update(b"\0")
                 if member.isfile():
                     extracted = archive.extractfile(member)
                     if extracted is None:
                         return None
-                    extracted.read()
+                    payload = extracted.read()
+                    digest.update(payload)
+                digest.update(b"\0")
                 if path == TARGET_PREFIX or TARGET_PREFIX in path.parents:
                     found_target = True
                     if member.isfile():
@@ -41,13 +48,14 @@ def archive_counts(raw: bytes) -> tuple[int, int, int] | None:
                         js_count += suffix == ".js"
             if not found_target:
                 return None
-            return html_count, css_count, js_count
-    except (tarfile.TarError, OSError, EOFError, gzip.BadGzipFile if False else Exception):
+            return (html_count, css_count, js_count), digest.hexdigest()
+    except Exception:
         return None
 
 
 def structurally_valid(raw: bytes) -> bool:
-    return archive_counts(raw) == EXPECTED_COUNTS
+    inspection = inspect_archive(raw)
+    return inspection is not None and inspection[0] == EXPECTED_COUNTS
 
 
 def decode_candidate(candidate: str) -> bytes | None:
@@ -69,14 +77,20 @@ def decode_exact_source() -> tuple[bytes, str]:
     raw = decode_candidate(encoded)
     if raw is not None:
         actual = hashlib.sha256(raw).hexdigest()
-        note = "no repair required"
+        semantic = inspect_archive(raw)[1]
+        note = f"no repair required; semantic_sha256={semantic}"
         if actual != RECORDED_ARCHIVE_SHA256:
-            note += f"; fully validated archive re-baselined from recorded SHA-256 {RECORDED_ARCHIVE_SHA256}"
+            note += f"; archive SHA-256 re-baselined from {RECORDED_ARCHIVE_SHA256}"
         return raw, note
 
+    # Historical connector transfer was isolated to part 06. Test every
+    # one-character removal there, but deduplicate valid results by the exact
+    # decompressed source-tree digest rather than gzip-container bytes. This
+    # safely handles multiple equivalent base64 repairs that produce identical
+    # source files while still rejecting semantically different candidates.
     part_index = 5
     suspect = parts[part_index]
-    valid_repairs: list[tuple[int, str, bytes]] = []
+    valid_repairs: list[tuple[int, str, bytes, str]] = []
 
     for offset in range(len(suspect)):
         repaired_part = suspect[:offset] + suspect[offset + 1 :]
@@ -84,32 +98,33 @@ def decode_exact_source() -> tuple[bytes, str]:
         candidate_parts[part_index] = repaired_part
         decoded = decode_candidate("".join(candidate_parts))
         if decoded is not None:
-            valid_repairs.append((offset, suspect[offset], decoded))
+            inspection = inspect_archive(decoded)
+            if inspection is not None:
+                valid_repairs.append((offset, suspect[offset], decoded, inspection[1]))
 
-    unique_by_hash: dict[str, tuple[int, str, bytes]] = {}
+    unique_by_semantic_hash: dict[str, tuple[int, str, bytes, str]] = {}
     for repair in valid_repairs:
-        digest = hashlib.sha256(repair[2]).hexdigest()
-        unique_by_hash.setdefault(digest, repair)
+        unique_by_semantic_hash.setdefault(repair[3], repair)
 
-    if len(unique_by_hash) != 1:
+    if len(unique_by_semantic_hash) != 1:
         raise RuntimeError(
             "Unable to deterministically recover source chunks: "
-            f"expected exactly 1 fully readable archive, found {len(unique_by_hash)}"
+            f"expected exactly 1 semantic source tree, found {len(unique_by_semantic_hash)}"
         )
 
-    offset, removed_character, repaired_raw = next(iter(unique_by_hash.values()))
+    offset, removed_character, repaired_raw, semantic_hash = next(iter(unique_by_semantic_hash.values()))
     return repaired_raw, (
         f"deterministic part-06 repair at offset {offset}; removed {removed_character!r}; "
-        f"recorded_sha256={RECORDED_ARCHIVE_SHA256}"
+        f"semantic_sha256={semantic_hash}; recorded_archive_sha256={RECORDED_ARCHIVE_SHA256}"
     )
 
 
 def materialize() -> None:
     raw, repair_note = decode_exact_source()
     actual_sha256 = hashlib.sha256(raw).hexdigest()
-    counts = archive_counts(raw)
-    if counts != EXPECTED_COUNTS:
-        raise RuntimeError(f"Recovered archive failed final count validation: {counts}")
+    inspection = inspect_archive(raw)
+    if inspection is None or inspection[0] != EXPECTED_COUNTS:
+        raise RuntimeError(f"Recovered archive failed final validation: {inspection}")
 
     if TARGET.exists():
         shutil.rmtree(TARGET)
