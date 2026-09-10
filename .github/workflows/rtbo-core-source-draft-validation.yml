@@ -6,6 +6,8 @@ on:
       - chatgpt/01-rtbo-core-complete-build
     paths:
       - STANDALONE_PLATFORMS/01_RTBO_Core_Website/**
+      - PROJECT_DOCUMENTATION/validation/current/evidence/01_RTBO_Core_Website/tests/test_core_runtime.py
+      - .github/workflows/rtbo-core-source-draft-validation.yml
   workflow_dispatch:
 
 permissions:
