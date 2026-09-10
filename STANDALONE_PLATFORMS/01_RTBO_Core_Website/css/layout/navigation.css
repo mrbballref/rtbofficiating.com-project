@@ -42,6 +42,7 @@
     .rtbo-mobile-nav-toggle__icon::before { position:absolute; inset-block-start:-6px; }
     .rtbo-mobile-nav-toggle__icon::after { position:absolute; inset-block-start:6px; }
     .rtbo-mobile-nav { display:block; border-block-start:1px solid var(--rtbo-border); padding-block:var(--rtbo-space-4) var(--rtbo-space-5); }
+    .rtbo-mobile-nav[hidden] { display:none; }
     .rtbo-mobile-nav__list, .rtbo-mobile-nav__submenu { list-style:none; }
     .rtbo-mobile-nav__item { display:grid; grid-template-columns:minmax(0,1fr) auto; align-items:center; border-block-end:1px solid var(--rtbo-border); }
     .rtbo-mobile-nav__link { min-block-size:var(--rtbo-control-target-size); display:flex; align-items:center; padding:.65rem .2rem; text-decoration:none; font-weight:750; }
