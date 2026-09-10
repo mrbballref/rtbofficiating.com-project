@@ -1,0 +1,13 @@
+@layer layout {
+  .rtbo-section { padding-block: clamp(4rem, 8vw, 8rem); background: var(--rtbo-black); }
+  .rtbo-section--soft { background: var(--rtbo-black-soft); }
+  .rtbo-section--surface { background: var(--rtbo-surface); }
+  .rtbo-section-transition { block-size: var(--rtbo-section-transition-size); background: linear-gradient(180deg, var(--rtbo-black) 0%, var(--rtbo-black-soft) 50%, var(--rtbo-black) 100%); }
+  .rtbo-section-heading { display: grid; gap: var(--rtbo-space-4); margin-block-end: var(--rtbo-space-7); }
+  .rtbo-grid { display: grid; gap: var(--rtbo-space-5); }
+  .rtbo-grid--2 { grid-template-columns: repeat(2, minmax(0,1fr)); }
+  .rtbo-grid--3 { grid-template-columns: repeat(3, minmax(0,1fr)); }
+  .rtbo-grid--4 { grid-template-columns: repeat(4, minmax(0,1fr)); }
+  .rtbo-section-actions { margin-block-start:var(--rtbo-space-6); }
+  @media (max-width: 900px) { .rtbo-grid--2, .rtbo-grid--3, .rtbo-grid--4 { grid-template-columns: 1fr; } }
+}

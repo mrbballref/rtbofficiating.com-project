@@ -1,0 +1,8 @@
+@layer base {
+  :focus-visible { outline: var(--rtbo-focus-width) solid var(--rtbo-white); outline-offset: 4px; box-shadow: 0 0 0 4px var(--rtbo-black); }
+  .skip-link { position: fixed; inset-block-start: var(--rtbo-space-2); inset-inline-start: var(--rtbo-space-2); z-index: 9999; transform: translateY(-200%); padding: var(--rtbo-space-3) var(--rtbo-space-4); background: var(--rtbo-white); color: var(--rtbo-black); font-weight: 800; }
+  .skip-link:focus { transform: translateY(0); }
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after { scroll-behavior: auto; animation-duration: 0.001ms; animation-iteration-count: 1; transition-duration: 0.001ms; }
+  }
+}

@@ -1,0 +1,9 @@
+@layer components {
+  .rtbo-dialog { max-inline-size:min(560px,calc(100vw - 2rem)); inline-size:100%; border:1px solid var(--rtbo-border); border-radius:var(--rtbo-radius-lg); padding:0; background:var(--rtbo-surface); color:var(--rtbo-text); }
+  .rtbo-dialog::backdrop { background:rgba(0,0,0,.78); }
+  .rtbo-dialog__surface { position:relative; display:grid; gap:var(--rtbo-space-4); padding:clamp(1.5rem,4vw,2.5rem); }
+  .rtbo-dialog__close { position:absolute; inset-block-start:.7rem; inset-inline-end:.7rem; inline-size:var(--rtbo-control-target-size); block-size:var(--rtbo-control-target-size); border:1px solid var(--rtbo-border); border-radius:50%; background:var(--rtbo-black); color:var(--rtbo-text); font-size:1.5rem; }
+  .rtbo-dialog__actions { display:flex; justify-content:flex-end; gap:var(--rtbo-space-3); }
+  .rtbo-toggle-row { display:flex; justify-content:space-between; align-items:center; gap:var(--rtbo-space-4); padding:var(--rtbo-space-4); border:1px solid var(--rtbo-border); border-radius:var(--rtbo-radius-md); }
+  .rtbo-toggle-row span { display:grid; gap:.25rem; }
+}

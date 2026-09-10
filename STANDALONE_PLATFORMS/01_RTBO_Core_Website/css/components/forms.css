@@ -1,0 +1,6 @@
+@layer components {
+  .rtbo-field { display:grid; gap:.45rem; }
+  .rtbo-field label { font-weight:800; }
+  .rtbo-field input, .rtbo-field textarea, .rtbo-field select { min-block-size:var(--rtbo-control-target-size); inline-size:100%; padding:.7rem .8rem; border:1px solid var(--rtbo-border); border-radius:var(--rtbo-radius-sm); background:var(--rtbo-black-soft); color:var(--rtbo-text); }
+  .rtbo-field textarea { min-block-size:8rem; resize:vertical; }
+}

@@ -1,0 +1,3 @@
+@layer layout {
+  .rtbo-container { inline-size: 100%; max-inline-size: var(--rtbo-content-max-width); margin-inline: auto; padding-inline: clamp(var(--rtbo-space-4), 2vw, var(--rtbo-space-8)); }
+}

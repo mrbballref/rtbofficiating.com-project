@@ -1,0 +1,11 @@
+@layer reset {
+  *, *::before, *::after { box-sizing: border-box; }
+  html { color-scheme: dark; }
+  body, h1, h2, h3, h4, p, ul, ol, figure, blockquote { margin: 0; }
+  ul, ol { padding: 0; }
+  img, picture, video, canvas, svg { display: block; max-inline-size: 100%; }
+  button, input, textarea, select { font: inherit; }
+  button, summary { cursor: pointer; }
+  a { color: inherit; }
+  [hidden] { display: none; }
+}

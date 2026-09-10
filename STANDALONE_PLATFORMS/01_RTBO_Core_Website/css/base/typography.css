@@ -1,0 +1,11 @@
+@layer base {
+  body { font-family: var(--rtbo-font-body); font-size: 1rem; line-height: 1.6; color: var(--rtbo-text); background: var(--rtbo-black); }
+  h1, h2, h3, h4 { font-family: var(--rtbo-font-heading); line-height: 1.02; text-wrap: balance; letter-spacing: 0.015em; }
+  h1 { font-size: clamp(2.8rem, 7vw, 6.25rem); }
+  h2 { font-size: clamp(2rem, 4.5vw, 4.5rem); }
+  h3 { font-size: clamp(1.4rem, 2.2vw, 2rem); }
+  p { max-inline-size: 72ch; }
+  small { color: var(--rtbo-muted); }
+  .rtbo-eyebrow { color: var(--rtbo-burnt-orange); font-size: 1.2rem; font-weight: 800; letter-spacing: 0.14em; text-transform: uppercase; }
+  .rtbo-lede { font-size: clamp(1.05rem, 1.6vw, 1.35rem); color: var(--rtbo-muted); }
+}

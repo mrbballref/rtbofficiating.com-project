@@ -1,0 +1,10 @@
+{
+  "name": "Raising The Bar Officiating",
+  "short_name": "RTBO",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#050505",
+  "theme_color": "#050505",
+  "description": "Raising The Bar Officiating training, education, events, services, and connected officiating platforms."
+}

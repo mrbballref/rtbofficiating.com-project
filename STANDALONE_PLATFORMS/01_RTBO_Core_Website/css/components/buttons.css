@@ -1,0 +1,9 @@
+@layer components {
+  .rtbo-button { min-block-size:var(--rtbo-control-target-size); display:inline-flex; align-items:center; justify-content:center; gap:.5rem; padding:.7rem 1rem; border-radius:var(--rtbo-radius-sm); border:1px solid transparent; text-decoration:none; font-weight:800; letter-spacing:.02em; }
+  .rtbo-button--primary { background:var(--rtbo-burnt-orange); color:var(--rtbo-white); border-color:var(--rtbo-burnt-orange); }
+  .rtbo-button--primary:hover { background:#a94c00; }
+  .rtbo-button--secondary { background:transparent; color:var(--rtbo-white); border-color:var(--rtbo-white); }
+  .rtbo-button--secondary:hover { background:var(--rtbo-burnt-orange); border-color:var(--rtbo-crimson); color:var(--rtbo-white); }
+  .rtbo-button--ghost { background:transparent; color:var(--rtbo-muted); border-color:var(--rtbo-border); }
+  .rtbo-button-row { display:flex; flex-wrap:wrap; gap:var(--rtbo-space-3); align-items:center; }
+}
