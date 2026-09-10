@@ -12,7 +12,7 @@ The entire RTBO ecosystem must be built and validated before canonical coding in
 
 | # | Platform | Build state | Runtime/UI validation | Line-ledger validation | Lock |
 |---|---|---|---|---|---|
-| 01 | RTBO Core Website | SOURCE_DRAFT / reconstruction | NOT COMPLETE | NOT COMPLETE | NO |
+| 01 | RTBO Core Website | SOURCE_DRAFT / reconstruction | RUNTIME PASS for `203be0d81262b5b728b6c45c5e6ecce6b7f1c4ed`; remaining UI/accessibility/performance/fidelity gates NOT COMPLETE | NOT COMPLETE | NO |
 | 02 | Got U Nex Ref | NOT_STARTED | NOT_STARTED | NOT_STARTED | NO |
 | 03 | RefZone University | NOT_STARTED | NOT_STARTED | NOT_STARTED | NO |
 | 04 | The Live Stream | NOT_STARTED | NOT_STARTED | NOT_STARTED | NO |
