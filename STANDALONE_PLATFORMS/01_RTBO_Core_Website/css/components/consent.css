@@ -1,5 +1,6 @@
 @layer components {
   .rtbo-consent { position:fixed; inset-inline:1rem; inset-block-end:1rem; z-index:900; max-inline-size:900px; margin-inline:auto; display:grid; grid-template-columns:minmax(0,1fr) auto; gap:var(--rtbo-space-3) var(--rtbo-space-5); align-items:center; padding:1rem 1.2rem; border:1px solid var(--rtbo-border); border-radius:var(--rtbo-radius-lg); background:rgba(17,17,17,.98); box-shadow:0 24px 70px rgba(0,0,0,.6); }
+  .rtbo-consent[hidden] { display:none; }
   .rtbo-consent__copy { display:grid; gap:.25rem; }
   .rtbo-consent__copy p { color:var(--rtbo-muted); }
   .rtbo-consent__actions { display:flex; flex-wrap:wrap; gap:.5rem; }
