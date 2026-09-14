@@ -45,9 +45,14 @@ passwordButtons.forEach((button) => {
   });
 });
 
+const isEmbedded = new URLSearchParams(window.location.search).get('embedded') === '1' && window.parent !== window;
+// The shared account dialog (script.js on every other page) already renders
+// its own close button around this iframe — showing both reads as two close
+// buttons for one action, so this page's own button only appears standalone.
+if (isEmbedded) closeButton.hidden = true;
+
 closeButton.addEventListener('click', () => {
-  const embedded = new URLSearchParams(window.location.search).get('embedded') === '1';
-  if (embedded && window.parent !== window) {
+  if (isEmbedded) {
     window.parent.postMessage({ type: 'rtbo-close-account' }, '*');
     return;
   }
@@ -178,3 +183,14 @@ if (signinForm) {
     window.location.href = destination;
   });
 }
+
+// Google/Microsoft/Apple and passkey sign-in aren't wired to a real
+// provider yet — give honest feedback instead of a silent no-op click.
+document.querySelectorAll('.social-grid button, .passkey').forEach((button) => {
+  button.addEventListener('click', () => {
+    const label = button.classList.contains('passkey')
+      ? 'Passkey'
+      : [...button.childNodes].filter((n) => n.nodeType === Node.TEXT_NODE).map((n) => n.textContent.trim()).join('');
+    showFormError(signinForm, `${label} sign-in isn't available yet — please use email and password.`);
+  });
+});
