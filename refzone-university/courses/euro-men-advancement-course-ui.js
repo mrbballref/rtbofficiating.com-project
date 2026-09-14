@@ -1,0 +1,4 @@
+(()=>{
+if(!window.EuroLeagueMenAdvancementCourse||!window.RefZoneCourseUICore)return;
+window.EuroLeagueMenAdvancementCourseUI=window.RefZoneCourseUICore.create({trackId:'euro-men',pathwayId:'advancement',course:window.EuroLeagueMenAdvancementCourse,icon:'assets/pathway-icons/refzone_university_euro_league_men_course.png',courseLabel:'EuroLeague Men Master’s-Level Advanced Officiating',shortLabel:'EUROLEAGUE MEN MASTER’S',routeBase:'#/course/euro-men/advancement',programHref:'#/program/euro-men/advancement',storePrefix:'euro-men-masters',resourceFiles:[['courses/EuroLeague-Men-Masters-Degree-Handbook.md','Advanced program handbook'],['courses/EuroLeague-Men-Masters-Coverage-Matrix.md','Coverage matrix'],['courses/EuroLeague-Men-Masters-Source-Report.md','Source report'],['courses/EuroLeague-Men-Masters-Review-Package.md','Review package']]});
+})();

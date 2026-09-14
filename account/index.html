@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script src="../assets/super-admin-access.js" data-super-admin-runtime></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RTBO Create Account Modal</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" type="image/png" href="../assets/rtbo-favicon.webp" />
+<link rel="stylesheet" href="../assets/super-admin-access.css" data-super-admin-access-style>
+</head>
+<body>
+  <main class="stage" aria-label="RTBO account access">
+    <section class="auth-modal" role="dialog" aria-modal="true" aria-labelledby="authTitle">
+      <button class="modal-close" type="button" aria-label="Close">×</button>
+
+      <aside class="brand-panel" aria-label="Raising The Bar Officiating platform information">
+        <header class="brand-top">
+          <img src="assets/rtbo-logo.webp" alt="Raising The Bar Officiating" class="logo" />
+          <h2>WE WILL SERVE, AND WILL BE OF SERVICE TO THE GAME.</h2>
+        </header>
+
+        <div class="brand-message brand-message-create is-active" data-brand="create">
+          <p class="eyebrow">CREATE YOUR ACCESS</p>
+          <h1>JOIN THE RTBO OFFICIATING PLATFORM.</h1>
+          <p class="intro">Create your account to access RTBO tools, training, messages, assignments, and services.</p>
+        </div>
+
+        <div class="brand-message brand-message-signin" data-brand="signin">
+          <p class="eyebrow">WELCOME BACK</p>
+          <h1>READY TO ELEVATE?</h1>
+          <p class="intro">Sign in to continue your officiating journey through the RTBO account portal.</p>
+        </div>
+
+        <div class="benefits" aria-label="Platform benefits">
+          <article class="benefit">
+            <span>S</span>
+            <div>
+              <h3>Secure Platform</h3>
+              <p>Protected account access for assignments, training, payments, and records.</p>
+            </div>
+          </article>
+          <article class="benefit">
+            <span>R</span>
+            <div>
+              <h3>Real-Time Access</h3>
+              <p>View schedule updates, messages, forms, and dashboard tools.</p>
+            </div>
+          </article>
+          <article class="benefit">
+            <span>B</span>
+            <div>
+              <h3>Built For Officials</h3>
+              <p>Everything needed to manage your officiating career in one place.</p>
+            </div>
+          </article>
+        </div>
+
+        <a class="support-link" href="#support">Need help? Contact Support</a>
+      </aside>
+
+      <section class="form-panel" aria-label="Account access form">
+        <div class="auth-view create-view is-active" data-view="create">
+          <nav class="steps" aria-label="Registration progress">
+            <span class="step is-active"><b>1</b><em>Create Account</em></span>
+            <span class="step"><b>2</b><em>Verify Email</em></span>
+            <span class="step"><b>3</b><em>Profile Setup</em></span>
+            <span class="step"><b>4</b><em>Complete</em></span>
+          </nav>
+
+          <p class="eyebrow">ACCOUNT ACCESS</p>
+          <h2 id="authTitle">Create Account</h2>
+          <p class="form-copy">Create your RTBO account first. Then your registration form will open on its own secure page.</p>
+
+          <div class="auth-tabs" role="tablist" aria-label="Account access mode">
+            <button class="is-selected" type="button" data-switch="create" aria-selected="true">Create Account</button>
+            <button type="button" data-switch="signin" aria-selected="false">Sign In</button>
+          </div>
+
+          <form class="create-form" autocomplete="on">
+            <div class="field full role-title">I am a:</div>
+
+            <div class="role-grid full" role="radiogroup" aria-label="I am a">
+              <label class="role-card is-selected">
+                <input type="radio" name="role" value="Official" checked />
+                <strong>Official</strong>
+                <small>Referees, umpires, officials, super admins, and site admins</small>
+              </label>
+              <label class="role-card">
+                <input type="radio" name="role" value="School / League" />
+                <strong>School / League</strong>
+                <small>Request officials and manage games</small>
+              </label>
+              <label class="role-card">
+                <input type="radio" name="role" value="Vendor" />
+                <strong>Vendor</strong>
+                <small>Provide services and request officials for schools and officials</small>
+              </label>
+              <label class="role-card">
+                <input type="radio" name="role" value="Evaluator" />
+                <strong>Evaluator</strong>
+                <small>Evaluate and develop game officials</small>
+              </label>
+            </div>
+
+            <label class="field">First Name<input type="text" name="firstName" autocomplete="given-name" /></label>
+            <label class="field">Last Name<input type="text" name="lastName" autocomplete="family-name" /></label>
+            <label class="field">Email Address<input type="email" name="email" placeholder="you@example.com" autocomplete="email" /></label>
+            <label class="field">Phone Number<input type="tel" name="phone" placeholder="(555) 123-4567" autocomplete="tel" /></label>
+            <label class="field">Password<span class="password-box"><input type="password" name="password" autocomplete="new-password" /><button type="button" class="eye" aria-label="Show password">◉</button></span></label>
+            <label class="field">Confirm Password<span class="password-box"><input type="password" name="confirmPassword" autocomplete="new-password" /><button type="button" class="eye" aria-label="Show confirm password">◉</button></span></label>
+
+            <ul class="rules"><li>At least 12 characters</li><li>One number</li></ul>
+            <ul class="rules"><li>One uppercase letter</li><li>One special character</li></ul>
+
+            <label class="terms full">
+              <input type="checkbox" name="terms" />
+              <span>I agree with the <a href="#terms">Terms of Service</a> and the <a href="#privacy">Privacy Policy</a></span>
+            </label>
+
+            <button class="cta" type="submit">Create Account</button>
+          </form>
+
+          <p class="auth-footer">Already have an account? <button type="button" data-switch="signin">Sign In</button></p>
+        </div>
+
+        <div class="auth-view signin-view" data-view="signin">
+          <p class="eyebrow">ACCOUNT ACCESS</p>
+          <h2>Sign In</h2>
+          <p class="form-copy">Sign in to continue to your dashboard or complete your RTBO school registration.</p>
+
+          <div class="auth-tabs signin-tabs" role="tablist" aria-label="Account access mode">
+            <button type="button" data-switch="create" aria-selected="false">Create Account</button>
+            <button class="is-selected" type="button" data-switch="signin" aria-selected="true">Sign In</button>
+          </div>
+
+          <form class="signin-form" autocomplete="on">
+            <label class="field full">Email Address<input type="email" name="signinEmail" placeholder="you@example.com" autocomplete="email" /></label>
+            <label class="field full">Password<span class="password-box"><input type="password" name="signinPassword" autocomplete="current-password" /><button type="button" class="eye" aria-label="Show password">◉</button></span></label>
+
+            <div class="signin-options">
+              <label><input type="checkbox" checked /> Remember Me</label>
+              <a href="#forgot">Forgot Password?</a>
+            </div>
+
+            <button class="signin-cta" type="submit">Sign In</button>
+
+            <div class="divider"><span>OR CONTINUE WITH</span></div>
+            <div class="social-grid">
+              <button type="button"><b>G</b>Google</button>
+              <button type="button"><b>M</b>Microsoft</button>
+              <button type="button"><b>A</b>Apple</button>
+            </div>
+
+            <button class="passkey" type="button"><b>P</b><span><strong>Sign in with Passkey</strong><small>Use your device passkey for a faster and more secure sign in.</small></span><i>&gt;</i></button>
+            <p class="recaptcha">This site is protected by reCAPTCHA and the Google <a href="#privacy">Privacy Policy</a> and <a href="#terms">Terms of Service</a> apply.</p>
+          </form>
+        </div>
+      </section>
+    </section>
+  </main>
+  <script type="module" src="script.js"></script>
+<script defer src="../cms/runtime.js" data-rtbo-cms-runtime data-cms-page="account/index.html"></script>
+</body>
+</html>

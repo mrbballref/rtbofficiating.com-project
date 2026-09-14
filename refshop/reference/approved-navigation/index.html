@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en">
+<head>
+<script src="../../../assets/super-admin-access.js" data-super-admin-runtime></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Responsive Raising The Bar Officiating navigation menu demo.">
+  <title>RTBO Navigation Menu</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="script.js"></script>
+<link rel="stylesheet" href="../../../assets/super-admin-access.css" data-super-admin-access-style>
+</head>
+<body>
+  <header class="site-header" data-header>
+    <nav class="navbar" aria-label="Primary navigation">
+      <button class="menu-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobile-menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <a class="mobile-home-link nav-link" href="#home" data-nav-link>Home</a>
+
+      <div class="desktop-nav desktop-nav--left" aria-label="Primary navigation left">
+        <a class="nav-link active" href="#home" data-nav-link style="--i:0">Home</a>
+
+        <div class="nav-item has-dropdown" style="--i:1">
+          <button class="nav-link dropdown-toggle" type="button" aria-expanded="false" aria-controls="about-menu">
+            About <span class="chevron" aria-hidden="true"></span>
+          </button>
+          <div class="dropdown-menu" id="about-menu" role="menu">
+            <a href="#guests" role="menuitem">Guests</a>
+            <a href="#trainers" role="menuitem">Trainers</a>
+            <a href="#reviews" role="menuitem">Reviews</a>
+          </div>
+        </div>
+
+        <div class="nav-item has-dropdown" style="--i:2">
+          <button class="nav-link dropdown-toggle" type="button" aria-expanded="false" aria-controls="schools-menu">
+            Schools <span class="chevron" aria-hidden="true"></span>
+          </button>
+          <div class="dropdown-menu" id="schools-menu" role="menu">
+            <a href="#uapb-men" role="menuitem">UAPB Men</a>
+            <a href="#uapb-women" role="menuitem">UAPB Women</a>
+            <a href="#uca-women" role="menuitem">UCA Women</a>
+            <a href="#ualr-women" role="menuitem">UALR Women</a>
+          </div>
+        </div>
+
+        <a class="nav-link" href="#refzone-university" data-nav-link style="--i:3">RefZone University</a>
+      </div>
+
+      <a class="brand" href="#home" aria-label="Raising The Bar Officiating — return home">
+        <img src="assets/rtbo-logo.png" alt="Raising The Bar Officiating logo">
+      </a>
+
+      <div class="desktop-nav desktop-nav--right" aria-label="Primary navigation right">
+        <div class="nav-item has-dropdown" style="--i:4">
+          <button class="nav-link dropdown-toggle" type="button" aria-expanded="false" aria-controls="events-menu">
+            Events <span class="chevron" aria-hidden="true"></span>
+          </button>
+          <div class="dropdown-menu dropdown-menu--wide" id="events-menu" role="menu">
+            <a href="#hop-step" role="menuitem">Hop Step Sporting Events</a>
+            <a href="#big-miller" role="menuitem">Big Miller Event</a>
+            <a href="#she-got-game" role="menuitem">She Got Game League LR</a>
+            <a href="#celebrity-game" role="menuitem">UAPB Celebrity Game</a>
+          </div>
+        </div>
+
+        <div class="nav-item has-dropdown" style="--i:5">
+          <button class="nav-link dropdown-toggle" type="button" aria-expanded="false" aria-controls="lab-menu">
+            The Lab <span class="chevron" aria-hidden="true"></span>
+          </button>
+          <div class="dropdown-menu dropdown-menu--wide" id="lab-menu" role="menu">
+            <a href="#live-stream" role="menuitem">The Live Stream</a>
+            <a href="#jammed-up-bar" role="menuitem">The Jammed Up Bar!</a>
+            <a href="#locker-room" role="menuitem">The Locker Room</a>
+            <a href="#vault" role="menuitem">The Vault</a>
+            <a href="#save" role="menuitem">The Save</a>
+            <a href="#cutting-room" role="menuitem">The Cutting Room</a>
+          </div>
+        </div>
+
+        <a class="nav-link" href="#services" data-nav-link style="--i:6">Services</a>
+        <a class="nav-link" href="#shop" data-nav-link style="--i:7">Shop</a>
+        <a class="cta cta--outline" href="#contact" style="--i:8">Let's Talk</a>
+        <a class="cta cta--solid" href="#registration" style="--i:9">Register</a>
+      </div>
+
+      <a class="mobile-talk cta cta--outline" href="#contact">Let's Talk</a>
+      <a class="mobile-register cta cta--solid" href="#registration">Register</a>
+    </nav>
+
+    <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+      <div class="mobile-menu__inner">
+        <a class="mobile-nav-link active" href="#home" data-mobile-item style="--i:0">Home</a>
+
+        <div class="mobile-item" data-mobile-item style="--i:1">
+          <button class="mobile-nav-link mobile-dropdown-toggle" type="button" aria-expanded="false">
+            About <span class="mobile-chevron" aria-hidden="true">›</span>
+          </button>
+          <div class="mobile-submenu">
+            <a href="#guests">Guests</a>
+            <a href="#trainers">Trainers</a>
+            <a href="#reviews">Reviews</a>
+          </div>
+        </div>
+
+        <div class="mobile-item" data-mobile-item style="--i:2">
+          <button class="mobile-nav-link mobile-dropdown-toggle" type="button" aria-expanded="false">
+            Schools <span class="mobile-chevron" aria-hidden="true">›</span>
+          </button>
+          <div class="mobile-submenu">
+            <a href="#uapb-men">UAPB Men</a>
+            <a href="#uapb-women">UAPB Women</a>
+            <a href="#uca-women">UCA Women</a>
+            <a href="#ualr-women">UALR Women</a>
+          </div>
+        </div>
+
+        <a class="mobile-nav-link" href="#refzone-university" data-mobile-item style="--i:3">RefZone University</a>
+
+        <div class="mobile-item" data-mobile-item style="--i:4">
+          <button class="mobile-nav-link mobile-dropdown-toggle" type="button" aria-expanded="false">
+            Events <span class="mobile-chevron" aria-hidden="true">›</span>
+          </button>
+          <div class="mobile-submenu">
+            <a href="#hop-step">Hop Step Sporting Events</a>
+            <a href="#big-miller">Big Miller Event</a>
+            <a href="#she-got-game">She Got Game League LR</a>
+            <a href="#celebrity-game">UAPB Celebrity Game</a>
+          </div>
+        </div>
+
+        <div class="mobile-item" data-mobile-item style="--i:5">
+          <button class="mobile-nav-link mobile-dropdown-toggle" type="button" aria-expanded="false">
+            The Lab <span class="mobile-chevron" aria-hidden="true">›</span>
+          </button>
+          <div class="mobile-submenu">
+            <a href="#live-stream">The Live Stream</a>
+            <a href="#jammed-up-bar">The Jammed Up Bar!</a>
+            <a href="#locker-room">The Locker Room</a>
+            <a href="#vault">The Vault</a>
+            <a href="#save">The Save</a>
+            <a href="#cutting-room">The Cutting Room</a>
+          </div>
+        </div>
+
+        <a class="mobile-nav-link" href="#services" data-mobile-item style="--i:6">Services</a>
+        <a class="mobile-nav-link" href="#shop" data-mobile-item style="--i:7">Shop</a>
+
+        <div class="mobile-actions" data-mobile-item style="--i:8">
+          <a class="cta cta--outline" href="#contact">Let's Talk</a>
+          <a class="cta cta--solid" href="#registration">Register</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="demo-hero" id="home">
+      <div class="demo-hero__content">
+        <p class="eyebrow">Raising The Bar Officiating</p>
+        <h1>Approved Responsive Navigation</h1>
+        <p>This demo page is included so every menu, dropdown, CTA, hover state, active state, and mobile animation can be tested.</p>
+      </div>
+    </section>
+
+    <section class="demo-section" id="services"><h2>Services</h2></section>
+    <section class="demo-section" id="shop"><h2>Shop</h2></section>
+    <section class="demo-section" id="contact"><h2>Contact Us Form</h2><p>Replace this section or update the CTA href with the final contact form URL.</p></section>
+    <section class="demo-section" id="registration"><h2>Training School Registration</h2><p>Replace this section or update the CTA href with the final registration form URL.</p></section>
+
+    <div class="anchor-targets" aria-hidden="true">
+      <span id="guests"></span><span id="trainers"></span><span id="reviews"></span>
+      <span id="uapb-men"></span><span id="uapb-women"></span><span id="uca-women"></span><span id="ualr-women"></span>
+      <span id="refzone-university"></span><span id="hop-step"></span><span id="big-miller"></span><span id="she-got-game"></span><span id="celebrity-game"></span>
+      <span id="live-stream"></span><span id="jammed-up-bar"></span><span id="locker-room"></span><span id="vault"></span><span id="save"></span><span id="cutting-room"></span>
+    </div>
+  </main>
+<script defer src="../../../cms/runtime.js" data-rtbo-cms-runtime data-cms-page="refshop/reference/approved-navigation/index.html"></script>
+</body>
+</html>

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 120" role="img" aria-label="NCAA Division I, II, and III organizations">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="45%" r="75%"><stop offset="0" stop-color="#132b40"/><stop offset=".58" stop-color="#07121c"/><stop offset="1" stop-color="#02070b"/></radialGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%"><feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#000" flood-opacity=".8"/></filter>
+  </defs>
+  <rect width="440" height="120" fill="url(#bg)"/>
+  <path d="M0 0 220 60 440 0M0 120 220 60 440 120" fill="none" stroke="#315878" stroke-width="2" opacity=".11"/>
+  <g font-family="Arial Black,Arial,sans-serif" text-anchor="middle" filter="url(#shadow)">
+    <g transform="translate(46 6)"><circle cx="49" cy="43" r="38" fill="#087dc9"/><text x="49" y="50" fill="#fff" font-size="20" font-style="italic">NCAA</text><text x="49" y="103" fill="#b7792b" font-family="Arial,sans-serif" font-size="10" font-weight="900">NCAA D1</text></g>
+    <g transform="translate(171 6)"><circle cx="49" cy="43" r="38" fill="#0b7fcd"/><text x="49" y="50" fill="#fff" font-size="20" font-style="italic">NCAA</text><text x="49" y="103" fill="#b7792b" font-family="Arial,sans-serif" font-size="10" font-weight="900">NCAA D2</text></g>
+    <g transform="translate(296 6)"><circle cx="49" cy="43" r="38" fill="#0d84d1"/><text x="49" y="50" fill="#fff" font-size="20" font-style="italic">NCAA</text><text x="49" y="103" fill="#b7792b" font-family="Arial,sans-serif" font-size="10" font-weight="900">NCAA D3</text></g>
+  </g>
+</svg>

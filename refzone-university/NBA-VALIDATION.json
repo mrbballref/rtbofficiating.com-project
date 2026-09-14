@@ -1,0 +1,48 @@
+{
+  "track": "NBA",
+  "generated": "2026-08-06",
+  "routes": [
+    "#/program/nba/foundations",
+    "#/program/nba/advancement",
+    "#/program/nba/elite",
+    "#/course/nba/foundations",
+    "#/course/nba/advancement",
+    "#/course/nba/elite"
+  ],
+  "programs": {
+    "bachelors": {
+      "courses": 24,
+      "lessons": 288,
+      "scripts": 288,
+      "scenes": 1728,
+      "units": 120,
+      "hours": 1800
+    },
+    "masters": {
+      "courses": 12,
+      "lessons": 180,
+      "scripts": 180,
+      "scenes": 1080,
+      "units": 36,
+      "hours": 540
+    },
+    "phd": {
+      "courses": 20,
+      "lessons": 300,
+      "scripts": 300,
+      "scenes": 1800,
+      "units": 60,
+      "hours": 900
+    }
+  },
+  "total": {
+    "courses": 56,
+    "lessons": 768,
+    "scripts": 768,
+    "scenes": 4608,
+    "syllabi": 56,
+    "videoScriptPackages": 56
+  },
+  "sourceControl": "2025-26 NBA Official Playing Rules current-effective; 2025-26 Points of Emphasis supplemental; 2026-27 NBA rules and operations pending official publication",
+  "credentialStatus": "Professional degree-level pathways; not accredited degrees, employment credentials, licences, assignments, advancement guarantees, or transferable credit"
+}

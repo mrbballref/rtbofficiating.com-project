@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<script type="module">
+  import { requireRole } from '../../assets/auth.js';
+  document.documentElement.style.visibility = 'hidden';
+  const session = await requireRole(['site_admin']);
+  if (session) document.documentElement.style.visibility = '';
+</script>
+<meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/><title>Super Admin Profile — Got U Nex Ref</title><link href="admin-dashboard.css" rel="stylesheet"/><link href="admin-profile.css" rel="stylesheet"/><link href="admin-global.css" rel="stylesheet"/><link href="admin-section-main.css" rel="stylesheet"/></head><body><a aria-label="Back to Admin Dashboard" class="admin-dashboard-cta-global" href="admin-dashboard.html">← ADMIN DASHBOARD</a><svg aria-hidden="true" class="sprite">
+<symbol id="a-home" viewbox="0 0 24 24"><path d="M3 11 12 3l9 8v10h-6v-6H9v6H3z"></path></symbol>
+<symbol id="a-calendar" viewbox="0 0 24 24"><rect height="16" rx="2" width="18" x="3" y="5"></rect><path d="M16 3v4M8 3v4M3 10h18"></path></symbol>
+<symbol id="a-game" viewbox="0 0 24 24"><circle cx="12" cy="12" r="9"></circle><path d="M7 8h10M7 16h10M8 7c3 3 3 7 0 10M16 7c-3 3-3 7 0 10"></path></symbol>
+<symbol id="a-users" viewbox="0 0 24 24"><circle cx="8" cy="7" r="3"></circle><circle cx="17" cy="9" r="2.5"></circle><path d="M2 20c0-4 2.5-6.5 6-6.5s6 2.5 6 6.5M14 14c3.5 0 6 2 6 5.5"></path></symbol>
+<symbol id="a-user" viewbox="0 0 24 24"><circle cx="12" cy="7" r="4"></circle><path d="M4 21c0-4.2 3.6-7 8-7s8 2.8 8 7"></path></symbol>
+<symbol id="a-school" viewbox="0 0 24 24"><path d="M3 10 12 4l9 6M5 10v9M9 10v9M15 10v9M19 10v9M3 20h18"></path></symbol>
+<symbol id="a-money" viewbox="0 0 24 24"><circle cx="12" cy="12" r="9"></circle><path d="M15 8.5c-.8-.8-2-1.2-3-1.2-1.6 0-3 .8-3 2.2 0 3 6 1.5 6 4.5 0 1.4-1.4 2.2-3 2.2-1.2 0-2.5-.4-3.4-1.3M12 5.5v13"></path></symbol>
+<symbol id="a-mail" viewbox="0 0 24 24"><rect height="14" rx="2" width="18" x="3" y="5"></rect><path d="m4 7 8 6 8-6"></path></symbol>
+<symbol id="a-bell" viewbox="0 0 24 24"><path d="M6 9a6 6 0 0 1 12 0v4l2 3H4l2-3z"></path><path d="M10 20h4"></path></symbol>
+<symbol id="a-report" viewbox="0 0 24 24"><path d="M5 3h14v18H5zM8 15l3-3 2 2 3-4M8 18h8"></path></symbol>
+<symbol id="a-gear" viewbox="0 0 24 24"><circle cx="12" cy="12" r="3"></circle><path d="m4.9 4.9 2.1 1.2 2.4-1L10 2h4l.6 3.1 2.4 1 2.1-1.2 2 3.5-2.2 1.7.2 2.6 2.4 1.5-2 3.5-2.7-1-.9.8-.6 3.1h-4l-.6-3.1-.9-.8-2.7 1-2-3.5 2.4-1.5.2-2.6-2.2-1.7z"></path></symbol>
+<symbol id="a-audit" viewbox="0 0 24 24"><path d="M6 3h12v18H6zM9 8h6M9 12h6M9 16h4"></path></symbol>
+<symbol id="a-edit" viewbox="0 0 24 24"><path d="m4 20 4.5-1L19 8.5 15.5 5 5 15.5z"></path><path d="m13.5 7 3.5 3.5"></path></symbol>
+<symbol id="a-camera" viewbox="0 0 24 24"><path d="M4 7h4l2-2h4l2 2h4v12H4z"></path><circle cx="12" cy="13" r="4"></circle></symbol>
+<symbol id="a-lock" viewbox="0 0 24 24"><rect height="11" rx="2" width="14" x="5" y="10"></rect><path d="M8 10V7a4 4 0 0 1 8 0v3"></path></symbol>
+<symbol id="a-check" viewbox="0 0 24 24"><path d="m5 12 4 4L19 6"></path></symbol>
+</svg><div class="admin-shell"><aside class="admin-sidebar"><div class="admin-brand"><a aria-label="Got U Nex Ref Home" class="brand-home-link" href="got-u-nex-ref-home/index.html"><img alt="Got U Nex Ref" src="assets/got-u-nex-ref-logo.png"/></a></div><div class="admin-label">ADMIN DASHBOARD</div><nav class="admin-nav">
+<a class="active" href="admin-profile.html"><svg><use href="#a-user"></use></svg><span>My Profile</span></a>
+<a href="admin-dashboard.html"><svg><use href="#a-home"></use></svg><span>Dashboard</span></a>
+<a href="admin-assignments.html"><svg><use href="#a-game"></use></svg><span>Assignments</span></a>
+<a href="admin-schools.html"><svg><use href="#a-school"></use></svg><span>Schools</span></a>
+<a href="admin-officials.html"><svg><use href="#a-users"></use></svg><span>Officials</span></a>
+<a href="admin-availability.html"><svg><use href="#a-calendar"></use></svg><span>Availability</span></a>
+<a href="admin-contracts.html"><svg><use href="#a-audit"></use></svg><span>Contract Generator</span></a>
+<a href="admin-invoices.html"><svg><use href="#a-audit"></use></svg><span>Invoice Generator</span></a>
+<a href="admin-payments.html"><svg><use href="#a-money"></use></svg><span>Payments</span></a><a href="admin-tax-center.html"><svg><use href="#a-audit"></use></svg><span>Tax Center</span></a>
+<a href="admin-reports.html"><svg><use href="#a-report"></use></svg><span>Reports</span></a>
+<a href="admin-resources.html"><svg><use href="#a-audit"></use></svg><span>Resources</span></a>
+<a href="admin-messages.html"><svg><use href="#a-mail"></use></svg><span>Messages</span><strong class="admin-count" hidden="" id="profileMessageBadge">0</strong></a>
+<a href="admin-notifications.html"><svg><use href="#a-bell"></use></svg><span>Notifications</span><strong class="admin-count" hidden="" id="profileNotificationBadge">0</strong></a>
+<a href="admin-settings.html"><svg><use href="#a-gear"></use></svg><span>Settings</span></a>
+<a href="admin-support.html"><svg><use href="#a-audit"></use></svg><span>Support</span></a>
+</nav><div class="admin-help"><strong>Super Admin Profile</strong><small>Your personal administrator profile and account information. Dashboard operations remain available from the sidebar.</small></div></aside><div class="admin-workspace"><header class="admin-topbar"><div><h1>Super Admin Profile</h1><p>Your personal administrator account and platform identity</p></div><div class="admin-profile admin-profile-static"><div class="admin-avatar" id="topAdminInitials">SA</div><div><strong id="topAdminName">Super Admin</strong><small>Super Administrator</small></div></div></header><div class="section-nav-shell"><nav aria-label="Section navigation" class="section-menu"><a class="active" href="admin-profile.html">Profile Overview</a><a href="#my-game-assignments">My Game Assignments</a><a class="" href="edit-profile.html">Edit Profile</a><a class="" href="admin-dashboard.html">Dashboard</a><a class="" href="admin-settings.html">Settings</a></nav></div>
+<main class="dashboard-main profile-main">
+<section class="profile-hero panel">
+<div class="profile-avatar-wrap"><img alt="Super Admin profile photo" id="profileAvatar" src="assets/profile-placeholder.svg"/><button class="profile-photo-btn" id="changePhotoBtn" type="button"><svg><use href="#a-camera"></use></svg><span>Change Photo</span></button><input accept="image/png,image/jpeg,image/webp" hidden="" id="profilePhotoInput" type="file"/></div>
+<div class="profile-identity"><span class="profile-eyebrow">SUPER ADMINISTRATOR</span><h2 id="profileDisplayName">Super Admin</h2><p id="profileRoleLine">Full platform administration</p><div class="profile-badges"><span class="access-badge"><svg><use href="#a-lock"></use></svg>Super Admin Access</span><span class="status-badge" id="profileStatusBadge">Active</span></div></div>
+<div class="profile-hero-actions"><button class="primary-action" id="editProfileBtn" type="button"><svg><use href="#a-edit"></use></svg><span>Edit Profile</span></button><a class="secondary-action" href="admin-dashboard.html">Open Dashboard</a></div>
+</section>
+<section class="profile-summary-grid">
+<article class="profile-summary-card"><span>Role</span><strong>Super Admin</strong><small>Highest platform access</small></article>
+<article class="profile-summary-card"><span>Account Status</span><strong id="summaryStatus">Active</strong><small id="summarySecurity">Account enabled</small></article>
+<article class="profile-summary-card"><span>Notifications</span><strong id="summaryNotifications">0</strong><small>Current admin notifications</small></article>
+<article class="profile-summary-card"><span>Messages</span><strong id="summaryMessages">0</strong><small>Current admin messages</small></article>
+</section><section class="panel admin-personal-assignments" id="my-game-assignments">
+<div class="admin-personal-assignments-head">
+<div>
+<span class="profile-eyebrow">PERSONAL OFFICIATING ASSIGNMENTS</span>
+<h3>My Game Assignments</h3>
+<p>Game assignments where the Super Admin is personally assigned as an official. Statuses reflect the saved official response for each game.</p>
+</div>
+<a class="secondary-action" href="admin-assignments.html">Open Assignments</a>
+</div>
+<div aria-label="My assignment status summary" class="admin-personal-assignment-stats">
+<div><span>Total Assigned</span><strong id="adminMyAssignmentsTotal">0</strong></div>
+<div><span>Pending</span><strong id="adminMyAssignmentsPending">0</strong></div>
+<div><span>Accepted</span><strong id="adminMyAssignmentsAccepted">0</strong></div>
+<div><span>Declined</span><strong id="adminMyAssignmentsDeclined">0</strong></div>
+</div>
+<div aria-label="Filter my game assignments" class="admin-personal-assignment-tabs" role="tablist">
+<button class="active" data-admin-assignment-filter="all" type="button">All <span id="adminMyAssignmentsAllBadge">0</span></button>
+<button data-admin-assignment-filter="pending" type="button">Pending <span id="adminMyAssignmentsPendingBadge">0</span></button>
+<button data-admin-assignment-filter="accepted" type="button">Accepted <span id="adminMyAssignmentsAcceptedBadge">0</span></button>
+<button data-admin-assignment-filter="declined" type="button">Declined <span id="adminMyAssignmentsDeclinedBadge">0</span></button>
+</div>
+<div class="admin-personal-assignment-table-wrap">
+<table class="admin-personal-assignment-table">
+<thead>
+<tr>
+<th>Date / Time</th>
+<th>Game</th>
+<th>Level</th>
+<th>Position</th>
+<th>Location</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody id="adminMyAssignmentsBody"></tbody>
+</table>
+<div class="admin-personal-assignment-empty" hidden="" id="adminMyAssignmentsEmpty">
+      No game assignments are currently assigned to this Super Admin account.
+    </div>
+</div>
+</section>
+<section class="profile-content-grid">
+<div class="profile-left-column">
+<article class="panel profile-section"><div class="panel-head"><h3>Personal Information</h3><button class="text-action" data-edit-profile="" type="button">Edit</button></div><dl class="profile-detail-grid"><div><dt>Full Name</dt><dd id="detailName">Not provided</dd></div><div><dt>Display Name</dt><dd id="detailDisplayName">Not provided</dd></div><div><dt>Email</dt><dd id="detailEmail">Not provided</dd></div><div><dt>Mobile Phone</dt><dd id="detailPhone">Not provided</dd></div><div><dt>Username</dt><dd id="detailUsername">Not provided</dd></div><div><dt>Location</dt><dd id="detailLocation">Not provided</dd></div></dl></article>
+<article class="panel profile-section"><div class="panel-head"><h3>Organization &amp; Position</h3><button class="text-action" data-edit-profile="" type="button">Edit</button></div><dl class="profile-detail-grid"><div><dt>Organization</dt><dd id="detailOrganization">Not provided</dd></div><div><dt>Position / Title</dt><dd id="detailTitle">Not provided</dd></div><div><dt>Department</dt><dd id="detailDepartment">Not provided</dd></div><div><dt>Time Zone</dt><dd id="detailTimezone">Not provided</dd></div></dl><div class="profile-bio"><span>Profile / Bio</span><p id="detailBio">No profile description has been added.</p></div></article>
+</div>
+<aside class="profile-right-column">
+<article class="panel profile-section"><div class="panel-head"><h3>Account &amp; Security</h3></div><div class="security-list"><div><span>Role</span><strong>Super Admin</strong></div><div><span>Account</span><strong id="securityAccount">Active</strong></div><div><span>Two-Factor Authentication</span><strong id="security2fa">Not configured</strong></div><div><span>Last Login</span><strong id="securityLastLogin">Not available</strong></div><div><span>Profile Updated</span><strong id="securityUpdated">Not available</strong></div></div><a class="profile-section-link" href="admin-dashboard.html#settings"><svg><use href="#a-gear"></use></svg>Open Admin Settings</a></article>
+<article class="panel profile-section"><div class="panel-head"><h3>Administrator Access</h3></div><div class="permission-list"><div><svg><use href="#a-check"></use></svg><span>User &amp; role management</span></div><div><svg><use href="#a-check"></use></svg><span>Master schedule &amp; game assignments</span></div><div><svg><use href="#a-check"></use></svg><span>Schools, officials &amp; availability</span></div><div><svg><use href="#a-check"></use></svg><span>Contracts, invoices &amp; payments</span></div><div><svg><use href="#a-check"></use></svg><span>Reports, messages &amp; notifications</span></div><div><svg><use href="#a-check"></use></svg><span>Platform settings &amp; support</span></div></div></article>
+<article class="panel profile-section"><div class="panel-head"><h3>Recent Account Activity</h3></div><div class="activity-list" id="recentAdminActivity"><div class="activity-empty">No administrator activity has been recorded yet.</div></div></article>
+</aside>
+</section>
+</main></div></div>
+<div class="profile-modal" hidden="" id="profileEditModal"><div class="profile-modal-backdrop" data-close-profile=""></div><div aria-labelledby="profileModalTitle" aria-modal="true" class="profile-modal-dialog" role="dialog"><div class="profile-modal-head"><div><h2 id="profileModalTitle">Edit Super Admin Profile</h2><p>Update the personal profile information associated with the Super Admin account.</p></div><button aria-label="Close" class="modal-close" data-close-profile="" type="button">×</button></div><form id="profileEditForm"><div class="profile-form-grid">
+<label><span>First Name</span><input autocomplete="given-name" id="profileFirstName" type="text"/></label><label><span>Last Name</span><input autocomplete="family-name" id="profileLastName" type="text"/></label><label><span>Display Name</span><input id="profileDisplayNameInput" type="text"/></label><label><span>Email</span><input autocomplete="email" id="profileEmail" type="email"/></label><label><span>Mobile Phone</span><input autocomplete="tel" id="profilePhone" type="tel"/></label><label><span>Username</span><input autocomplete="username" id="profileUsername" type="text"/></label><label><span>Organization</span><input id="profileOrganization" type="text"/></label><label><span>Position / Title</span><input id="profileTitle" type="text"/></label><label><span>Department</span><input id="profileDepartment" type="text"/></label><label><span>City</span><input id="profileCity" type="text"/></label><label><span>State</span><input id="profileState" maxlength="2" type="text"/></label><label><span>Time Zone</span><select id="profileTimezone"><option value="">Select time zone</option><option>America/New_York</option><option>America/Chicago</option><option>America/Denver</option><option>America/Phoenix</option><option>America/Los_Angeles</option><option>America/Anchorage</option><option>Pacific/Honolulu</option></select></label><label class="profile-form-wide"><span>Profile / Bio</span><textarea id="profileBio" maxlength="700" rows="5"></textarea></label></div><div class="profile-modal-actions"><button class="secondary-action" data-close-profile="" type="button">Cancel</button><button class="primary-action" type="submit">Save Profile</button></div></form></div></div>
+<div aria-live="polite" class="toast" id="toast" role="status"></div><script type="module" src="admin-data-sync.js?then=admin-profile.js,admin-navigation.js"></script></body></html>

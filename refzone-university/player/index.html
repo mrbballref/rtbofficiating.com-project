@@ -1,0 +1,264 @@
+<!doctype html>
+<html lang="en">
+<head>
+<script src="../../assets/super-admin-access.js" data-super-admin-runtime></script>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>RefZone University iPad Video Player</title>
+  <link rel="stylesheet" href="styles.css" />
+<link rel="stylesheet" href="../../assets/super-admin-access.css" data-super-admin-access-style>
+</head>
+<body>
+  <main class="app-shell">
+    <section class="topbar broadcast-header rtbo-broadcast-header">
+      <div class="brand-lockup rtbo-brand-lockup">
+        <div class="rz-player-mark" aria-label="RefZone University text mark">RZ</div>
+        <div class="rtbo-title-block">
+          <p class="eyebrow">RefZone University</p>
+          <h1>RefZone University</h1>
+          <p class="subtext">Rules. Mechanics. Judgment. Leadership.</p>
+        </div>
+      </div>
+      <div class="broadcast-status-card" aria-label="Player status and actions">
+        <div class="broadcast-live-state"><span class="live-dot"></span><strong id="headerLiveState">Offline</strong></div>
+        <span class="broadcast-time-label">Upload or select a video</span>
+        <div class="broadcast-social-row" aria-label="Player actions">
+          <button id="rotateBtn" class="primary-btn compact" title="Rotate iPad">↻ Rotate</button>
+          <button id="uploadOpenBtn" class="ghost-btn compact" title="Upload Video">Upload</button>
+          <button id="playlistToggleBtn" class="ghost-btn compact" title="Open Playlist">Library</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="stage-layout" id="stageLayout">
+      <div class="ipad-wrap landscape" id="ipadWrap">
+        <div class="ipad-body" id="ipadBody">
+          <div class="physical-button power-button" aria-hidden="true"></div>
+          <div class="touch-id-sensor" aria-hidden="true"><span class="fingerprint">⌁</span></div>
+          <div class="physical-button volume-up" aria-hidden="true"></div>
+          <div class="physical-button volume-down" aria-hidden="true"></div>
+          <div class="physical-button smart-connector" aria-hidden="true"></div>
+          <div class="speaker speaker-a" aria-hidden="true"></div>
+          <div class="speaker speaker-b" aria-hidden="true"></div>
+          <div class="speaker speaker-c" aria-hidden="true"></div>
+          <div class="speaker speaker-d" aria-hidden="true"></div>
+
+          <div class="ipad-glass" id="deviceFrame">
+            <div class="camera-cluster" aria-hidden="true">
+              <span class="camera-lens"></span>
+              <span class="camera-dot"></span>
+            </div>
+            <div class="screen" id="screen">
+              <div class="screen-status">
+                <span id="onlineBadge" class="status-badge offline"><i></i>Offline</span>
+                <span id="deviceModeLabel" class="device-badge">iPad Pro 13 • Landscape</span>
+              </div>
+
+              <div class="video-stage" id="videoStage">
+                <video id="videoEl" preload="metadata" playsinline></video>
+                <div id="offlineState" class="offline-state">
+                  <div class="screensaver-logo-shell" aria-label="RefZone University screensaver"><div class="rz-screensaver-mark">RZ</div></div>
+                  <div class="screensaver-copy">
+                    <h2>RefZone University</h2>
+                    <p>Upload or select a video to begin playback.</p>
+                    <button id="emptyUploadBtn" class="primary-btn small">Upload Video</button>
+                  </div>
+                </div>
+                <div id="titleOverlay" class="title-overlay hidden"></div>
+                <div id="airplayOverlay" class="airplay-overlay hidden" aria-live="polite"><span class="airplay-glyph">▵</span><strong id="airplayOverlayText">AirPlay</strong></div>
+                <div
+                  id="screenScrubber"
+                  class="screen-scrubber"
+                  role="slider"
+                  tabindex="0"
+                  aria-label="Video progress scrubber"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                  aria-valuenow="0"
+                  aria-valuetext="0:00 of 0:00"
+                >
+                  <div class="screen-scrubber-track">
+                    <div id="screenScrubberBuffered" class="screen-scrubber-buffered"></div>
+                    <div id="screenScrubberProgress" class="screen-scrubber-progress"><span id="screenScrubberThumb" class="screen-scrubber-thumb"></span></div>
+                  </div>
+                  <div id="screenScrubberTooltip" class="screen-scrubber-tooltip">0:00</div>
+                </div>
+                <div id="recordingIndicator" class="recording-indicator hidden"><span></span><strong>REC</strong><em id="recordingTimer">00:00</em></div>
+                <div class="tap-zone left" id="tapLeft" aria-hidden="true"></div>
+                <div class="tap-zone right" id="tapRight" aria-hidden="true"></div>
+              </div>
+
+              <div class="video-actions-row" id="actionRow">
+                <button class="action-pill" id="likeBtn" title="Like"><span>👍</span><b id="likeCount">0</b></button>
+                <button class="action-pill" id="dislikeBtn" title="Dislike"><span>👎</span><b id="dislikeCount">0</b></button>
+                <button class="action-pill" id="saveBtn" title="Save"><span>🔖</span><b>Save</b></button>
+                <button class="action-pill" id="downloadBtn" title="Download"><span>⬇</span><b>Download</b></button>
+                <button class="action-pill" id="shareBtn" title="Share"><span>↗</span><b>Share</b></button>
+              </div>
+
+              <div class="controls-shell" id="controlsShell">
+                <button class="control-btn" data-control="previous" title="Previous" aria-label="Previous">⏮</button>
+                <button class="control-btn" data-control="rewind" title="Rewind" aria-label="Rewind">⏪</button>
+                <button class="control-btn text" data-control="back10" title="Skip Back 10 Seconds" aria-label="Skip Back 10 Seconds">-10</button>
+                <button class="control-btn secondary-control frame-control" data-control="frameBack" title="Previous Frame" aria-label="Previous Frame">◀▮</button>
+                <button class="control-btn play" data-control="play" title="Play" aria-label="Play">▶</button>
+                <button class="control-btn pause" data-control="pause" title="Pause" aria-label="Pause">Ⅱ</button>
+                <button class="control-btn secondary-control frame-control" data-control="frameForward" title="Next Frame" aria-label="Next Frame">▮▶</button>
+                <button class="control-btn stop" data-control="stop" title="Stop" aria-label="Stop">■</button>
+                <button class="control-btn text" data-control="forward10" title="Skip Forward 10 Seconds" aria-label="Skip Forward 10 Seconds">+10</button>
+                <button class="control-btn" data-control="fastforward" title="Fast Forward" aria-label="Fast Forward">⏩</button>
+                <button class="control-btn" data-control="next" title="Next" aria-label="Next">⏭</button>
+
+                <div class="timeline-wrap" title="Timeline">
+                  <span id="currentTime">0:00</span>
+                  <input id="timeline" aria-label="Timeline" type="range" min="0" max="100" value="0" step="0.1" />
+                  <span id="duration">0:00</span>
+                </div>
+
+                <button class="control-btn secondary-control record" data-control="record" title="Record" aria-label="Record">●</button>
+                <button class="control-btn secondary-control" data-control="settings" title="Settings" aria-label="Settings">⚙</button>
+                <button class="control-btn secondary-control" data-control="brightness" title="Brightness" aria-label="Brightness">☀</button>
+                <button class="control-btn secondary-control airplay-control" data-control="airplay" title="AirPlay" aria-label="AirPlay Casting">▵</button>
+                <button class="control-btn secondary-control text" data-control="cc" title="Closed Caption" aria-label="Closed Caption">CC</button>
+                <button class="control-btn secondary-control" data-control="volume" title="Volume" aria-label="Volume">🔊</button>
+                <button class="control-btn" data-control="mute" title="Mute" aria-label="Mute">🔇</button>
+                <button class="control-btn secondary-control" data-control="mini" title="Mini Player" aria-label="Mini Player">▣</button>
+                <button class="control-btn secondary-control" data-control="theater" title="Theater" aria-label="Theater">▭</button>
+                <button class="control-btn" data-control="full" title="Full Screen" aria-label="Full Screen">⛶</button>
+                <button class="control-btn more-btn" data-control="more" title="More Controls" aria-label="More Controls">⋯</button>
+              </div>
+
+              <div id="settingsPanel" class="floating-panel hidden" role="dialog" aria-label="Settings">
+                <div class="panel-head"><strong>Settings</strong><button class="icon-close" data-close="settings">×</button></div>
+                <label>Playback Speed
+                  <select id="speedSelect"><option value="0.25">0.25x</option><option value="0.5">0.5x</option><option value="0.75">0.75x</option><option value="1" selected>1x</option><option value="1.25">1.25x</option><option value="1.5">1.5x</option><option value="1.75">1.75x</option><option value="2">2x</option></select>
+                </label>
+                <label>Quality
+                  <select id="qualitySelect"><option>Auto</option><option>720p</option><option>1080p</option><option>4K</option></select>
+                </label>
+                <label>Frame Step Rate
+                  <select id="frameRateSelect" aria-label="Frame step rate"><option value="24">24 fps</option><option value="25">25 fps</option><option value="30" selected>30 fps</option><option value="50">50 fps</option><option value="60">60 fps</option></select>
+                </label>
+                <label><input type="checkbox" id="loopToggle" /> Loop</label>
+                <label><input type="checkbox" id="shuffleToggle" /> Shuffle</label>
+                <label><input type="checkbox" id="autoplayToggle" checked /> Auto-play next</label>
+                <label>Screen Brightness
+                  <input id="brightnessSliderSettings" type="range" min="25" max="125" value="100" step="1" aria-label="Screen Brightness" />
+                  <span class="range-value"><strong id="brightnessValueSettings">100%</strong></span>
+                </label>
+                <div class="settings-divider"></div>
+                <p class="settings-section-title">iPad Frame</p>
+                <label class="toggle-row"><input type="checkbox" id="autoRotateToggle" /> Auto-rotate in fullscreen</label>
+                <p class="settings-note">When fullscreen is active, the iPad frame uses smooth CSS transitions to rotate between landscape and portrait orientation.</p>
+                <button class="ghost-btn full-width" id="pipBtn">Picture-in-Picture</button>
+                <div class="shortcut-list"><strong>Shortcuts:</strong> Space/K Play, J/L ±10, ,/. frame step, M Mute, F Full, T Theater, C Captions</div>
+              </div>
+
+              <div id="brightnessPanel" class="floating-panel brightness-panel hidden" role="dialog" aria-label="Brightness">
+                <div class="panel-head"><strong>Brightness</strong><button class="icon-close" data-close="brightness">×</button></div>
+                <label>Screen Brightness
+                  <input id="brightnessSlider" type="range" min="25" max="125" value="100" step="1" aria-label="Screen Brightness" />
+                </label>
+                <div class="brightness-readout"><span>Dim</span><strong id="brightnessValue">100%</strong><span>Bright</span></div>
+              </div>
+
+              <div id="airplayPanel" class="floating-panel airplay-panel hidden" role="dialog" aria-label="AirPlay Casting">
+                <div class="panel-head"><strong>AirPlay Casting</strong><button class="icon-close" data-close="airplay">×</button></div>
+                <div class="airplay-current" id="airplayCurrent">
+                  <span class="airplay-glyph">▵</span>
+                  <div><strong>Not Casting</strong><p>Select an external device to start a mock AirPlay stream.</p></div>
+                </div>
+                <div class="airplay-device-list" id="airplayDeviceList">
+                  <button type="button" class="airplay-device" data-airplay-device="Locker Room Apple TV"><span>📺</span><div><strong>Locker Room Apple TV</strong><small>Available • 1080p</small></div></button>
+                  <button type="button" class="airplay-device" data-airplay-device="Gymnasium Projector"><span>📽</span><div><strong>Gymnasium Projector</strong><small>Available • 4K</small></div></button>
+                  <button type="button" class="airplay-device" data-airplay-device="Training Room Display"><span>🖥</span><div><strong>Training Room Display</strong><small>Available • 1080p</small></div></button>
+                  <button type="button" class="airplay-device" data-airplay-device="Coach iPad"><span>📱</span><div><strong>Coach iPad</strong><small>Nearby • Mirroring</small></div></button>
+                </div>
+                <button type="button" id="airplayDisconnectBtn" class="ghost-btn full-width airplay-disconnect" disabled>Disconnect AirPlay</button>
+                <p class="settings-note">Mock AirPlay simulates casting inside this standalone player. Production can connect this control to native casting APIs or an app-level receiver workflow.</p>
+              </div>
+
+              <div id="volumePanel" class="floating-panel volume-panel hidden" role="dialog" aria-label="Volume">
+                <div class="panel-head"><strong>Volume</strong><button class="icon-close" data-close="volume">×</button></div>
+                <div class="volume-control-row">
+                  <button id="volumeMuteToggle" type="button" class="volume-mute-toggle" title="Mute or unmute">🔊</button>
+                  <input id="volumeSlider" type="range" min="0" max="1" step="0.01" value="1" aria-label="Volume" />
+                  <strong id="volumeValue">100%</strong>
+                </div>
+              </div>
+
+              <div id="morePanel" class="floating-panel more-panel hidden" role="dialog" aria-label="More Controls">
+                <div class="panel-head"><strong>More Controls</strong><button class="icon-close" data-close="more">×</button></div>
+                <div id="moreControlsGrid" class="more-grid"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <aside class="playlist-panel broadcast-side-panel" id="playlistPanel">
+        <div class="playlist-handle"></div>
+        <div class="side-tabs" role="tablist" aria-label="Video side panel sections">
+          <button class="side-tab active" type="button">Video Library</button>
+          <button class="side-tab" type="button">Info</button>
+          <button class="side-tab" type="button">Actions</button>
+        </div>
+        <div class="playlist-head side-panel-head">
+          <div><p class="eyebrow">Uploaded Videos</p><h2>Video Library</h2></div>
+          <button id="closePlaylistBtn" class="icon-close mobile-only">×</button>
+        </div>
+        <div class="playlist-tools">
+          <input id="searchInput" type="search" placeholder="Search uploaded videos" />
+          <select id="sortSelect"><option value="newest">Newest</option><option value="oldest">Oldest</option><option value="title">Title</option><option value="likes">Most liked</option></select>
+        </div>
+        <div class="playlist-cta-row"><button id="playAllBtn" class="primary-btn small">Play All</button><button id="shuffleBtn" class="ghost-btn small">Shuffle</button></div>
+        <div id="playlistList" class="playlist-list"></div>
+        <div class="dynamic-info-card" aria-label="Stream information">
+          <p class="eyebrow">Video Info</p>
+          <p id="sideInfoText">Upload or select a video to populate dynamic details.</p>
+          <div class="whistle-watermark" aria-hidden="true"></div>
+        </div>
+      </aside>
+    </section>
+
+    <section class="creator-card" id="creatorCard">
+      <div class="avatar" id="creatorAvatar">GN</div>
+      <div>
+        <p class="eyebrow">Creator Information</p>
+        <h3 id="creatorName">No creator loaded</h3>
+        <p id="creatorMeta">Upload a video to populate creator details.</p>
+        <p id="videoDescription" class="description"></p>
+      </div>
+    </section>
+
+  </main>
+
+  <dialog id="uploadDialog" class="upload-dialog">
+    <form id="uploadForm" method="dialog">
+      <div class="panel-head"><strong>Upload Video</strong><button type="button" class="icon-close" id="closeUploadBtn">×</button></div>
+      <label>Video File<input id="videoFileInput" type="file" accept="video/mp4,video/quicktime,video/webm,video/x-m4v" required /></label>
+      <label>Video Title<input id="videoTitleInput" type="text" placeholder="Enter video title" required /></label>
+      <label>Description<textarea id="videoDescInput" placeholder="Describe this video"></textarea></label>
+      <label>Creator Name<input id="creatorNameInput" type="text" placeholder="Creator name" required /></label>
+      <label>Creator Role / Organization<input id="creatorRoleInput" type="text" placeholder="Official, Trainer, Coach, RTBO, etc." /></label>
+      <label>Category<input id="categoryInput" type="text" placeholder="Training, Game Film, Evaluation, Podcast" /></label>
+      <label>Tags<input id="tagsInput" type="text" placeholder="comma, separated, tags" /></label>
+      <div class="upload-progress hidden" id="uploadProgress"><span></span></div>
+      <button type="submit" class="primary-btn full-width">Add to Player</button>
+    </form>
+  </dialog>
+
+  <dialog id="shareDialog" class="upload-dialog share-dialog">
+    <form method="dialog">
+      <div class="panel-head"><strong>Share Video</strong><button type="button" class="icon-close" id="closeShareBtn">×</button></div>
+      <p id="shareTitle">No video selected.</p>
+      <input id="shareLinkInput" readonly />
+      <button type="button" id="copyShareBtn" class="primary-btn full-width">Copy Link</button>
+      <p id="copyMessage" class="copy-message"></p>
+    </form>
+  </dialog>
+
+  <script src="script.js"></script>
+<script defer src="../../cms/runtime.js" data-rtbo-cms-runtime data-cms-page="refzone-university/player/index.html"></script>
+</body>
+</html>

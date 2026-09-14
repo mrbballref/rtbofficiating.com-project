@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Published Game Assignment — 3-Man Crew</title>
+  <link rel="stylesheet" href="assignment-3man.css">
+</head>
+<body>
+  <svg class="sprite" aria-hidden="true">
+    <symbol id="i-back" viewBox="0 0 24 24"><path d="m15 18-6-6 6-6"/></symbol>
+    <symbol id="i-calendar" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M16 3v4M8 3v4M3 10h18"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+    <symbol id="i-trophy" viewBox="0 0 24 24"><path d="M8 4h8v5a4 4 0 0 1-8 0z"/><path d="M8 6H4v2c0 3 2 5 5 5M16 6h4v2c0 3-2 5-5 5M12 13v4M8 21h8M9 17h6"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M20 10c0 5-8 11-8 11S4 15 4 10a8 8 0 1 1 16 0z"/><circle cx="12" cy="10" r="2.5"/></symbol>
+    <symbol id="i-money" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M15 8.5c-.8-.8-2-1.2-3-1.2-1.6 0-3 .8-3 2.2 0 3 6 1.5 6 4.5 0 1.4-1.4 2.2-3 2.2-1.2 0-2.5-.4-3.4-1.3M12 5.5v13"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24"><path d="M7 3 4 5c0 7 6 13 13 15l2-3-4-3-2 2c-3-1-5-3-6-6l2-2z"/></symbol>
+    <symbol id="i-parking" viewBox="0 0 24 24"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M9 17V7h4a3 3 0 0 1 0 6H9"/></symbol>
+    <symbol id="i-door" viewBox="0 0 24 24"><path d="M5 21h14M7 21V4l10-1v18M13 12h.01"/></symbol>
+    <symbol id="i-info" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 10v6M12 7h.01"/></symbol>
+    <symbol id="i-map" viewBox="0 0 24 24"><path d="M3 6l6-3 6 3 6-3v15l-6 3-6-3-6 3zM9 3v15M15 6v15"/></symbol>
+    <symbol id="i-download" viewBox="0 0 24 24"><path d="M12 3v12M7 10l5 5 5-5M4 21h16"/></symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 3 20 6v6c0 5-3.4 8-8 10-4.6-2-8-5-8-10V6z"/><path d="m9 12 2 2 4-4"/></symbol>
+    <symbol id="i-user" viewBox="0 0 24 24"><circle cx="12" cy="7" r="4"/><path d="M4 21c0-4.2 3.6-7 8-7s8 2.8 8 7"/></symbol>
+    <symbol id="i-assigned" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M16 3v4M8 3v4M3 10h18M9 15l2 2 4-4"/></symbol>
+    <symbol id="i-concession" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M8 9h8M9 9l1 7h4l1-7M11 6h2"/></symbol>
+    <symbol id="i-no" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="m6 6 12 12"/></symbol>
+    <symbol id="i-video" viewBox="0 0 24 24"><rect x="4" y="5" width="16" height="14" rx="2"/><path d="m10 9 5 3-5 3z"/></symbol>
+  </svg>
+
+  <main class="page">
+    <div class="top-row">
+      <button class="back" id="backBtn" type="button">
+        <svg><use href="#i-back"/></svg><span>Back to All Assignments</span>
+      </button>
+      <div class="top-actions">
+        <button class="outline" id="scheduleBtn" type="button">
+          <svg><use href="#i-calendar"/></svg><span>View Schedule</span>
+        </button>
+        <button class="primary" id="downloadTopBtn" type="button">
+          <svg><use href="#i-download"/></svg><span>Download Assignment</span>
+        </button>
+      </div>
+    </div>
+
+    <section class="intro">
+      <div>
+        <div class="title-line">
+          <h1>PUBLISHED GAME ASSIGNMENT</h1>
+          <span class="status" id="statusBadge">STATUS</span>
+        </div>
+        <p>This assignment has been published and is visible to assigned officials.</p>
+      </div>
+      <div class="summary-box">
+        <div class="summary-time">
+          <svg><use href="#i-clock"/></svg>
+          <div><span>GAME TIME</span><strong id="summaryTime">Not provided</strong><small id="summaryDate">Not provided</small></div>
+        </div>
+        <div>
+          <span><svg><use href="#i-trophy"/></svg>LEVEL</span>
+          <strong id="summaryLevel">Not provided</strong>
+        </div>
+      </div>
+    </section>
+
+    <section class="game-card">
+      <div class="matchup">
+        <div class="team">
+          <div class="team-logo" id="homeLogo"></div>
+          <div class="team-copy">
+            <span id="homeSchool">Home school not provided</span>
+            <strong id="homeName">HOME TEAM</strong>
+            <small id="homeRecord"></small>
+          </div>
+        </div>
+
+        <div class="vs">VS</div>
+
+        <div class="team away">
+          <div class="team-copy">
+            <span id="awaySchool">Visiting school not provided</span>
+            <strong id="awayName">VISITING TEAM</strong>
+            <small id="awayRecord"></small>
+          </div>
+          <div class="team-logo" id="awayLogo"></div>
+        </div>
+      </div>
+
+      <div class="facts">
+        <article><svg><use href="#i-calendar"/></svg><div><span>DATE</span><strong id="factDate">Not provided</strong></div></article>
+        <article><svg><use href="#i-clock"/></svg><div><span>TIME</span><strong id="factTime">Not provided</strong></div></article>
+        <article><svg><use href="#i-trophy"/></svg><div><span>LEVEL</span><strong id="factLevel">Not provided</strong></div></article>
+        <article><svg><use href="#i-pin"/></svg><div><span>LOCATION</span><strong id="factLocation">Not provided</strong></div></article>
+        <article><svg><use href="#i-money"/></svg><div><span>PAY</span><strong id="factPay">Not provided</strong><small id="factCrew">3 Officials</small></div></article>
+        <article><svg><use href="#i-assigned"/></svg><div><span>ASSIGNED</span><strong id="factAssigned">Not provided</strong></div></article>
+      </div>
+
+      <div class="venue">
+        <div class="venue-media">
+          <img id="venueImage" alt="" hidden>
+          <div class="venue-placeholder" id="venuePlaceholder">
+            <svg><use href="#i-pin"/></svg><span>Venue image not provided</span>
+          </div>
+        </div>
+
+        <div class="address">
+          <h2>GYM LOCATION</h2>
+          <strong id="venueName">Not provided</strong>
+          <p id="venueStreet"></p>
+          <p id="venueCity"></p>
+          <button id="mapBtn" type="button"><svg><use href="#i-map"/></svg><span>View on Map</span></button>
+        </div>
+
+        <div class="venue-info">
+          <div><svg><use href="#i-phone"/></svg><span id="venuePhone">Not provided</span></div>
+          <div><svg><use href="#i-parking"/></svg><span id="parking">Parking information not provided</span></div>
+          <div><svg><use href="#i-door"/></svg><span id="entrance">Entrance information not provided</span></div>
+          <div><svg><use href="#i-info"/></svg><span id="arrival">Arrival information not provided</span></div>
+        </div>
+      </div>
+
+      <section class="officials">
+        <h2>OFFICIALS (3-MAN CREW)</h2>
+        <div class="official-grid" id="officialGrid"></div>
+      </section>
+    </section>
+
+    <section class="contacts">
+      <div class="contact-grid">
+        <article><h2>HOME COACH</h2><div class="person" id="homeCoach"></div></article>
+        <article><h2>VISITING COACH</h2><div class="person" id="awayCoach"></div></article>
+        <article><h2>HOME ATHLETIC DIRECTOR</h2><div class="person" id="homeAD"></div></article>
+        <article><h2>VISITING ATHLETIC DIRECTOR</h2><div class="person" id="awayAD"></div></article>
+      </div>
+    </section>
+
+    <section class="lower-grid">
+      <article class="info-card">
+        <h2>ASSIGNMENT NOTES</h2>
+        <div id="notes" class="notes">No assignment notes were provided.</div>
+      </article>
+      <article class="info-card">
+        <h2>ADDITIONAL INFORMATION</h2>
+        <div id="additionalInfo" class="additional"></div>
+      </article>
+    </section>
+
+    <section class="download-strip">
+      <span class="shield"><svg><use href="#i-shield"/></svg></span>
+      <div>
+        <strong>Thank you for being a valued part of Got U Nex Ref.</strong>
+        <p>Your professionalism makes the game better.</p>
+      </div>
+    </section>
+
+    <section class="empty-state" id="emptyState" hidden>
+      <span><svg><use href="#i-calendar"/></svg></span>
+      <h2>3-man game assignment not found</h2>
+      <p>This page displays only an actual 3-man crew assignment supplied by the authenticated profile or assignment system.</p>
+      <button type="button" id="emptyBackBtn">Back to My Assignments</button>
+    </section>
+  </main>
+
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <script type="module" src="assignment-3man.js"></script>
+</body>
+</html>

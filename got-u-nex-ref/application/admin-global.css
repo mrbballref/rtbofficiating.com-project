@@ -1,0 +1,105 @@
+
+/* Global admin accessibility/navigation additions */
+html,body{font-size:16px;}
+.admin-dashboard-cta-global{position:fixed;right:24px;bottom:24px;z-index:9999;display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 18px;border:1px solid #ff5a45;border-radius:12px;background:linear-gradient(180deg,#ef2a1d,#b90f09);color:#fff!important;text-decoration:none!important;font-size:16px!important;font-weight:800;letter-spacing:.035em;box-shadow:0 12px 30px rgba(0,0,0,.38),0 0 0 1px rgba(255,255,255,.04) inset;}
+.admin-dashboard-cta-global:hover,.admin-dashboard-cta-global:focus-visible{filter:brightness(1.12);transform:translateY(-1px);outline:2px solid #f0b25a;outline-offset:2px;}
+.brand-home-link{display:inline-flex;align-items:center;justify-content:center;text-decoration:none;border-radius:12px;}
+.brand-home-link:focus-visible{outline:2px solid #f0b25a;outline-offset:4px;}
+@media(max-width:720px){.admin-dashboard-cta-global{right:14px;bottom:14px;min-height:44px;padding:0 14px;}}
+
+/* Top-right Admin Dashboard CTA placement */
+.admin-dashboard-cta-global{
+  position:static!important;
+  right:auto!important;
+  bottom:auto!important;
+  top:auto!important;
+  left:auto!important;
+  z-index:auto!important;
+  flex:0 0 auto;
+  min-height:44px;
+  white-space:nowrap;
+  margin:0;
+  box-shadow:0 8px 20px rgba(0,0,0,.28),0 0 0 1px rgba(255,255,255,.04) inset;
+}
+.admin-dashboard-cta-global:hover,.admin-dashboard-cta-global:focus-visible{transform:translateY(-1px)}
+
+/* Used on detailed admin pages that do not already have a top-right user area. */
+.admin-global-utility-row{
+  width:100%;
+  display:flex;
+  justify-content:flex-end;
+  align-items:center;
+  gap:12px;
+  margin:0 0 14px;
+  padding:0;
+}
+.admin-global-user-chip{
+  display:inline-flex;
+  align-items:center;
+  gap:10px;
+  min-height:48px;
+  padding:7px 12px;
+  border:1px solid #252b30;
+  border-radius:14px;
+  background:#0d1012;
+  color:#f4f6f7;
+  text-decoration:none!important;
+}
+.admin-global-user-chip img{
+  width:36px;
+  height:36px;
+  border-radius:50%;
+  object-fit:cover;
+  border:2px solid rgba(245,166,35,.75);
+}
+.admin-global-user-chip .admin-global-user-copy{display:flex;flex-direction:column;line-height:1.15}
+.admin-global-user-chip strong{font-size:16px!important;color:#fff}
+.admin-global-user-chip span{font-size:16px!important;color:#b8c0c6;margin-top:3px}
+
+/* Keep existing top-right tool groups aligned when the CTA is inserted beside the user icon. */
+.section-topbar-tools,.workspace-toolbar,.utility-bar,.admin-topbar .admin-profile-wrap,.admin-topbar .topbar-actions{
+  display:flex;
+  align-items:center;
+  gap:12px;
+}
+.section-topbar-tools .admin-dashboard-cta-global,
+.workspace-toolbar .admin-dashboard-cta-global,
+.utility-bar .admin-dashboard-cta-global,
+.admin-topbar .admin-dashboard-cta-global{
+  align-self:center;
+}
+
+@media(max-width:900px){
+  .admin-dashboard-cta-global{min-height:42px;padding:0 13px;font-size:16px!important}
+  .admin-global-utility-row{flex-wrap:wrap}
+}
+@media(max-width:620px){
+  .admin-global-utility-row{justify-content:stretch}
+  .admin-global-utility-row .admin-dashboard-cta-global{flex:1 1 auto}
+  .admin-global-user-chip{flex:0 0 auto}
+}
+
+
+/* Dashboard CTA + Super Admin must stay immediately beside each other. */
+.admin-dashboard-user-group{
+  display:inline-flex!important;
+  align-items:center!important;
+  justify-content:flex-end!important;
+  gap:12px!important;
+  flex:0 0 auto!important;
+  margin-left:auto!important;
+  width:auto!important;
+  max-width:100%!important;
+}
+.admin-dashboard-user-group .admin-dashboard-cta-global,
+.admin-dashboard-user-group .user-chip,
+.admin-dashboard-user-group .section-user-chip,
+.admin-dashboard-user-group .admin-profile,
+.admin-dashboard-user-group .admin-global-user-chip{
+  margin:0!important;
+  flex:0 0 auto!important;
+}
+.admin-global-utility-row .admin-dashboard-user-group{margin-left:auto!important;}
+@media(max-width:720px){
+  .admin-dashboard-user-group{gap:8px!important;flex-wrap:wrap!important;}
+}

@@ -1,0 +1,4 @@
+(()=>{
+if(!window.USAMenAdvancementCourse||!window.RefZoneCourseUICore)return;
+window.USAMenAdvancementCourseUI=window.RefZoneCourseUICore.create({trackId:'usa-men',pathwayId:'advancement',course:window.USAMenAdvancementCourse,icon:'assets/pathway-icons/rfzu_usambb.png',courseLabel:'USA Basketball Men Master’s-Level Advanced Officiating',shortLabel:'USA BASKETBALL MEN MASTER’S',routeBase:'#/course/usa-men/advancement',programHref:'#/program/usa-men/advancement',storePrefix:'usa-men-masters',resourceFiles:[['courses/USA-Basketball-Men-Masters-Degree-Handbook.md','Master’s-Level program handbook'],['courses/USA-Basketball-Men-Masters-Coverage-Matrix.md','Coverage matrix'],['courses/USA-Basketball-Men-Masters-Source-Report.md','Source report'],['courses/USA-Basketball-Men-Masters-Review-Package.md','Review package']]});
+})();

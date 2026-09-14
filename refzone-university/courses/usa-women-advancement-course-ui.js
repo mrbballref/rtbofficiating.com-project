@@ -1,0 +1,4 @@
+(()=>{
+if(!window.USAWomenAdvancementCourse||!window.RefZoneCourseUICore)return;
+window.USAWomenAdvancementCourseUI=window.RefZoneCourseUICore.create({trackId:'usa-women',pathwayId:'advancement',course:window.USAWomenAdvancementCourse,icon:'assets/pathway-icons/rfzu_usawbb.png',courseLabel:'USA Basketball Women Master’s-Level Advanced Officiating',shortLabel:'USA BASKETBALL WOMEN MASTER’S',routeBase:'#/course/usa-women/advancement',programHref:'#/program/usa-women/advancement',storePrefix:'usa-women-masters',resourceFiles:[['courses/USA-Basketball-Women-Masters-Degree-Handbook.md','Master’s-Level program handbook'],['courses/USA-Basketball-Women-Masters-Coverage-Matrix.md','Coverage matrix'],['courses/USA-Basketball-Women-Masters-Source-Report.md','Source report'],['courses/USA-Basketball-Women-Masters-Review-Package.md','Review package']]});
+})();

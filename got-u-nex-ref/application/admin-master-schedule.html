@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<script type="module">
+  import { requireRole } from '../../assets/auth.js';
+  document.documentElement.style.visibility = 'hidden';
+  const session = await requireRole(['site_admin']);
+  if (session) document.documentElement.style.visibility = '';
+</script>
+<meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/>
+<title>Master Schedule — Admin Dashboard</title><link href="master-schedule.css" rel="stylesheet"/><link href="admin-global.css" rel="stylesheet"/></head><body><a aria-label="Back to Admin Dashboard" class="admin-dashboard-cta-global" href="admin-dashboard.html">← ADMIN DASHBOARD</a>
+<svg aria-hidden="true" class="sprite">
+<symbol id="i-dashboard" viewbox="0 0 24 24"><path d="M4 4h6v6H4zM14 4h6v6h-6zM4 14h6v6H4zM14 14h6v6h-6z"></path></symbol>
+<symbol id="i-calendar" viewbox="0 0 24 24"><rect height="16" rx="2" width="18" x="3" y="5"></rect><path d="M8 3v4M16 3v4M3 10h18"></path></symbol>
+<symbol id="i-game" viewbox="0 0 24 24"><circle cx="12" cy="12" r="9"></circle><path d="M7 8h10M7 16h10M8 7c3 3 3 7 0 10M16 7c-3 3-3 7 0 10"></path></symbol>
+<symbol id="i-school" viewbox="0 0 24 24"><path d="M3 10 12 4l9 6M5 10v9M9 10v9M15 10v9M19 10v9M3 20h18"></path></symbol>
+<symbol id="i-user" viewbox="0 0 24 24"><circle cx="12" cy="7" r="4"></circle><path d="M4 21c0-4.2 3.6-7 8-7s8 2.8 8 7"></path></symbol>
+<symbol id="i-availability" viewbox="0 0 24 24"><circle cx="12" cy="12" r="9"></circle><path d="M8 12l2.5 2.5L16 9"></path></symbol>
+<symbol id="i-contract" viewbox="0 0 24 24"><path d="M6 3h10l4 4v14H6z"></path><path d="M14 3v5h5M9 12h6M9 16h6"></path></symbol>
+<symbol id="i-invoice" viewbox="0 0 24 24"><path d="M6 3h12v18l-2-1.5L14 21l-2-1.5L10 21l-2-1.5L6 21z"></path><path d="M9 8h6M9 12h6M9 16h4"></path></symbol>
+<symbol id="i-money" viewbox="0 0 24 24"><circle cx="12" cy="12" r="9"></circle><path d="M15 8.5c-.8-.8-2-1.2-3-1.2-1.6 0-3 .8-3 2.2 0 3 6 1.5 6 4.5 0 1.4-1.4 2.2-3 2.2-1.2 0-2.5-.4-3.4-1.3M12 5.5v13"></path></symbol>
+<symbol id="i-report" viewbox="0 0 24 24"><path d="M5 3h14v18H5zM8 15l3-3 2 2 3-4M8 18h8"></path></symbol>
+<symbol id="i-folder" viewbox="0 0 24 24"><path d="M3 6h6l2 2h10v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><path d="M3 9h18"></path></symbol>
+<symbol id="i-mail" viewbox="0 0 24 24"><rect height="14" rx="2" width="18" x="3" y="5"></rect><path d="m4 7 8 6 8-6"></path></symbol>
+<symbol id="i-bell" viewbox="0 0 24 24"><path d="M6 9a6 6 0 0 1 12 0v4l2 3H4l2-3z"></path><path d="M10 20h4"></path></symbol>
+<symbol id="i-gear" viewbox="0 0 24 24"><circle cx="12" cy="12" r="3"></circle><path d="m4.9 4.9 2.1 1.2 2.4-1L10 2h4l.6 3.1 2.4 1 2.1-1.2 2 3.5-2.2 1.7.2 2.6 2.4 1.5-2 3.5-2.7-1-.9.8-.6 3.1h-4l-.6-3.1-.9-.8-2.7 1-2-3.5 2.4-1.5.2-2.6-2.2-1.7z"></path></symbol>
+<symbol id="i-help" viewbox="0 0 24 24"><circle cx="12" cy="12" r="9"></circle><path d="M9.5 9a2.5 2.5 0 1 1 4.3 1.8c-.7.7-1.8 1.3-1.8 2.7"></path><circle cx="12" cy="17" r="1"></circle></symbol>
+<symbol id="i-upload" viewbox="0 0 24 24"><path d="M12 16V4M7 9l5-5 5 5"></path><path d="M4 15v3a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-3"></path></symbol>
+<symbol id="i-plus" viewbox="0 0 24 24"><path d="M12 5v14M5 12h14"></path></symbol>
+<symbol id="i-check" viewbox="0 0 24 24"><path d="m5 12 4 4L19 6"></path></symbol>
+<symbol id="i-clock" viewbox="0 0 24 24"><circle cx="12" cy="12" r="9"></circle><path d="M12 7v6l4 2"></path></symbol>
+<symbol id="i-shield" viewbox="0 0 24 24"><path d="M12 3 5 6v6c0 4.5 3 7.8 7 9 4-1.2 7-4.5 7-9V6z"></path></symbol>
+<symbol id="i-export" viewbox="0 0 24 24"><path d="M12 3v12M7 8l5-5 5 5"></path><path d="M4 14v5a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-5"></path></symbol>
+<symbol id="i-search" viewbox="0 0 24 24"><circle cx="10" cy="10" r="6"></circle><path d="m15 15 6 6"></path></symbol>
+<symbol id="i-chevron" viewbox="0 0 24 24"><path d="m9 6 6 6-6 6"></path></symbol>
+<symbol id="i-filter" viewbox="0 0 24 24"><path d="M3 5h18l-7 8v6l-4 2v-8z"></path></symbol>
+</svg>
+<div class="admin-shell">
+<aside class="sidebar">
+<div class="side-brand"><img alt="Raising The Bar Officiating" src="assets/rtbo-shield.png"/></div>
+<nav class="side-nav">
+<a class="side-link" href="admin-profile.html"><svg><use href="#i-user"></use></svg><span>My Profile</span></a>
+<a class="side-link" href="admin-dashboard.html"><svg><use href="#i-dashboard"></use></svg><span>Dashboard</span></a>
+<a class="side-link" href="admin-assignments.html"><svg><use href="#i-game"></use></svg><span>Assignments</span></a>
+<a class="side-link" href="admin-schools.html"><svg><use href="#i-school"></use></svg><span>Schools</span></a>
+<a class="side-link" href="admin-officials.html"><svg><use href="#i-user"></use></svg><span>Officials</span></a>
+<a class="side-link" href="admin-availability.html"><svg><use href="#i-availability"></use></svg><span>Availability</span></a>
+<a class="side-link" href="admin-contracts.html"><svg><use href="#i-contract"></use></svg><span>Contract Generator</span></a>
+<a class="side-link" href="admin-invoices.html"><svg><use href="#i-invoice"></use></svg><span>Invoice Generator</span></a>
+<a class="side-link" href="admin-payments.html"><svg><use href="#i-money"></use></svg><span>Payments</span></a><a class="side-link" href="admin-tax-center.html"><svg><use href="#i-invoice"></use></svg><span>Tax Center</span></a>
+<a class="side-link" href="admin-reports.html"><svg><use href="#i-report"></use></svg><span>Reports</span></a>
+<a class="side-link" href="admin-resources.html"><svg><use href="#i-folder"></use></svg><span>Resources</span></a>
+<a class="side-link" href="admin-messages.html"><svg><use href="#i-mail"></use></svg><span>Messages</span><span class="side-count" id="sidebarMessageCount">0</span></a>
+<a class="side-link" href="admin-notifications.html"><svg><use href="#i-bell"></use></svg><span>Notifications</span><span class="side-count" id="sidebarNotificationCount">0</span></a>
+<a class="side-link" href="admin-settings.html"><svg><use href="#i-gear"></use></svg><span>Settings</span></a>
+<a class="side-link" href="admin-support.html"><svg><use href="#i-help"></use></svg><span>Support</span></a>
+</nav>
+<div class="side-promo"><img alt="" src="assets/rtbo-shield.png"/><strong>RAISE THE STANDARD.</strong><small>Lead the game.</small></div>
+</aside>
+<main class="main">
+<div class="utility-bar">
+<button aria-label="Notifications" class="icon-btn" id="topBellBtn" type="button"><svg><use href="#i-bell"></use></svg><span class="count" id="topBellCount">0</span></button>
+<div class="user-chip"><img alt="" id="topUserAvatar" src="assets/profile-placeholder.svg"/><div class="user-copy"><strong id="topUserName">Administrator</strong><span id="topUserRole">Administrator</span></div><svg class="user-chevron"><use href="#i-chevron"></use></svg></div>
+</div>
+<section class="schedule-wrap">
+<div class="schedule-head">
+<div class="title-block"><h1>MASTER SCHEDULE</h1><p>Manage and publish your entire officiating schedule</p></div>
+<div class="head-right"><div class="head-actions"><button class="btn" id="importScheduleBtn" type="button"><svg><use href="#i-upload"></use></svg>IMPORT SCHEDULE</button><details class="add-game-menu"><summary class="btn red"><svg><use href="#i-plus"></use></svg>ADD GAME</summary><div class="add-game-list"><a href="admin-create-assignment.html?crew=2">Create 2-Man Assignment</a><a href="admin-create-assignment.html?crew=3">Create 3-Man Assignment</a><a href="quick-assign.html">Quick Assign / Auto Assign</a><a href="tba-games.html">Open TBA Games</a><a href="admin-game-assignments.html">Assignment Center</a></div></details></div></div>
+</div>
+<section class="filters-card">
+<div class="filters-grid">
+<div class="field"><label for="filterDateRange">Date Range</label><div class="control has-caret"><select id="filterDateRange"></select></div></div>
+<div class="field"><label for="filterSport">Sport</label><div class="control has-caret"><select id="filterSport"></select></div></div>
+<div class="field"><label for="filterLevel">Level</label><div class="control has-caret"><select id="filterLevel"></select></div></div>
+<div class="field"><label for="filterStatus">Status</label><div class="control has-caret"><select id="filterStatus"></select></div></div>
+<div class="field"><label for="filterSchool">School</label><div class="control has-caret"><select id="filterSchool"></select></div></div>
+<div class="field"><label for="filterConference">Conference Level</label><div class="control has-caret"><select id="filterConference"></select></div></div>
+<div class="field"><label for="filterGender">Gender</label><div class="control has-caret"><select id="filterGender"></select></div></div>
+<button class="link-btn" id="toggleAdvancedBtn" type="button"><svg><use href="#i-filter"></use></svg>ADVANCED FILTERS</button>
+<button class="link-btn clear" id="clearFiltersBtn" type="button">CLEAR ALL</button>
+<button class="btn gold" id="applyFiltersBtn" type="button">APPLY FILTERS</button>
+</div>
+<div class="search-row"><div class="control"><input id="scheduleSearch" placeholder="Search games, teams, schools, gyms..." type="search"/><svg class="search-icon"><use href="#i-search"></use></svg></div><div></div></div>
+<div class="advanced-panel" id="advancedPanel">
+<div class="field"><label for="filterCrewType">Crew Type</label><div class="control has-caret"><select id="filterCrewType"><option value="">All Crew Types</option><option value="2">2-Man Crew</option><option value="3">3-Man Crew</option></select></div></div>
+<div class="field"><label for="filterPublish">Publish Status</label><div class="control has-caret"><select id="filterPublish"><option value="">All Publish States</option><option value="published">Published</option><option value="pending">Pending</option><option value="unpublished">Unpublished</option><option value="draft">Draft / Unpublished</option></select></div></div>
+<div class="field"><label for="filterFromDate">Start Date</label><div class="control"><input id="filterFromDate" type="date"/></div></div>
+<div class="field"><label for="filterToDate">End Date</label><div class="control"><input id="filterToDate" type="date"/></div></div>
+</div>
+</section>
+<section class="stats-row">
+<div class="stat"><div class="ring"><svg><use href="#i-calendar"></use></svg></div><div class="copy"><small>Total Games</small><strong id="statTotalGames">0</strong><span>This period</span></div></div>
+<div class="stat"><div class="ring"><svg><use href="#i-game"></use></svg></div><div class="copy"><small>Assignments</small><strong id="statAssignments">0</strong><span>Crew assignments</span></div></div>
+<div class="stat"><div class="ring"><svg><use href="#i-check"></use></svg></div><div class="copy"><small>Published</small><strong id="statPublished">0</strong><span id="statPublishedPct">0% Published</span></div></div>
+<div class="stat"><div class="ring"><svg><use href="#i-clock"></use></svg></div><div class="copy"><small>Pending</small><strong id="statPending">0</strong><span class="warn">Awaiting action</span></div></div>
+<div class="stat"><div class="ring"><svg><use href="#i-contract"></use></svg></div><div class="copy"><small>Draft / Unpublished</small><strong id="statDraft">0</strong><span class="warn">Not published</span></div></div>
+<div class="stat"><div class="ring"><svg><use href="#i-shield"></use></svg></div><div class="copy"><small>Conflicts</small><strong id="statConflicts">0</strong><span class="bad">Needs resolution</span></div></div>
+</section>
+<div class="actions-row">
+<div class="control selectish has-caret"><select id="bulkActionSelect"><option value="">BULK ACTIONS</option><option value="publish">Publish Selected</option><option value="unpublish">Unpublish Selected</option><option value="delete">Delete Selected</option></select></div>
+<button class="btn gold" id="publishSelectedBtn" type="button"><svg><use href="#i-check"></use></svg>PUBLISH SCHEDULE</button>
+<button class="btn" id="exportBtn" type="button"><svg><use href="#i-export"></use></svg>EXPORT</button>
+</div>
+<section class="table-card">
+<div class="table-scroll">
+<table class="schedule-table"><thead><tr>
+<th><input id="selectAllRows" type="checkbox"/></th><th>DATE</th><th>START TIME</th><th>SPORT</th><th>LEVEL</th><th>GENDER</th><th>CONF LEVEL</th><th>HOME TEAM</th><th>AWAY TEAM</th><th>GYM LOCATION</th><th>CREW</th><th>CREW STATUS</th><th>PUBLISH STATUS</th><th>ACTIONS</th>
+</tr></thead><tbody id="scheduleRows"></tbody></table>
+<div class="table-empty" id="tableEmpty">No game assignments match the selected filters.</div>
+</div>
+<div class="table-footer"><div class="muted" id="tableSummary">Showing 0 games</div><div class="pagination"><button class="page-btn" id="prevPageBtn" type="button">‹</button><button class="page-btn active" id="pageIndicator" type="button">1</button><button class="page-btn" id="nextPageBtn" type="button">›</button></div><div class="per-page">Show <select id="perPageSelect"><option>10</option><option>25</option><option>50</option></select> per page</div></div>
+</section>
+</section>
+</main>
+</div>
+<input accept=".json,.csv,application/json,text/csv" class="hidden" id="importFileInput" type="file"/><div aria-live="polite" class="toast" id="toast" role="status"></div>
+<script type="module" src="admin-data-sync.js?then=admin-master-schedule.js,admin-navigation.js"></script></body></html>

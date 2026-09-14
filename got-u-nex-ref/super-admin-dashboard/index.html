@@ -1,0 +1,10 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Super Admin Dashboard | Got U Nex Ref</title>
+<script type="module">
+  import { requireRole } from '../../assets/auth.js';
+  document.documentElement.style.visibility = 'hidden';
+  const session = await requireRole([]);
+  if (session) location.replace("../application/admin-dashboard.html");
+</script></head>
+<body><a href="../application/admin-dashboard.html">Open the functional Super Admin Dashboard</a></body></html>

@@ -1,0 +1,4 @@
+(()=>{
+if(!window.USAWomenEliteCourse||!window.RefZoneCourseUICore)return;
+window.USAWomenEliteCourseUI=window.RefZoneCourseUICore.create({trackId:'usa-women',pathwayId:'elite',course:window.USAWomenEliteCourse,icon:'assets/pathway-icons/rfzu_usawbb.png',courseLabel:'USA Basketball Women PhD-Level Research, Leadership, and Elite Officiating',shortLabel:'USA BASKETBALL WOMEN PhD',routeBase:'#/course/usa-women/elite',programHref:'#/program/usa-women/elite',storePrefix:'usa-women-phd',resourceFiles:[['courses/USA-Basketball-Women-PhD-Degree-Handbook.md','PhD-Level program handbook'],['courses/USA-Basketball-Women-PhD-Coverage-Matrix.md','Coverage matrix'],['courses/USA-Basketball-Women-PhD-Source-Report.md','Source report'],['courses/USA-Basketball-Women-PhD-Review-Package.md','Review package']]});
+})();

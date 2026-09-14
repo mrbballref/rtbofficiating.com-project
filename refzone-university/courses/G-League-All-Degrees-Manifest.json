@@ -1,0 +1,48 @@
+{
+  "track": "NBA G League",
+  "generated": "2026-08-06",
+  "routes": [
+    "#/program/g-league/foundations",
+    "#/program/g-league/advancement",
+    "#/program/g-league/elite",
+    "#/course/g-league/foundations",
+    "#/course/g-league/advancement",
+    "#/course/g-league/elite"
+  ],
+  "programs": {
+    "bachelors": {
+      "courses": 24,
+      "lessons": 288,
+      "scripts": 288,
+      "scenes": 1728,
+      "units": 120,
+      "hours": 1800
+    },
+    "masters": {
+      "courses": 12,
+      "lessons": 180,
+      "scripts": 180,
+      "scenes": 1080,
+      "units": 36,
+      "hours": 540
+    },
+    "phd": {
+      "courses": 20,
+      "lessons": 300,
+      "scripts": 300,
+      "scenes": 1800,
+      "units": 60,
+      "hours": 900
+    }
+  },
+  "total": {
+    "courses": 56,
+    "lessons": 768,
+    "scripts": 768,
+    "scenes": 4608,
+    "syllabi": 56,
+    "videoScriptPackages": 56
+  },
+  "sourceControl": "2025-26 NBA rulebook and G League experimental rules are the current published playing references located; 2026-27 G League modifications pending official publication/retrieval",
+  "credentialStatus": "Professional degree-level pathways; not accredited degrees, employment credentials, assignments, NBA advancement, or transferable credit"
+}

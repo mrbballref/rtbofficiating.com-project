@@ -1,0 +1,38 @@
+<!doctype html><html lang="en"><head>
+<script src="../assets/super-admin-access.js" data-super-admin-runtime></script><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="The Cutting Room film review platform."><title>Platform Guide | The Cutting Room</title><link rel="stylesheet" href="assets/cutting-room.css"><script defer src="assets/db.js"></script><script type="module" src="assets/app.js"></script><link rel="stylesheet" href="../assets/super-admin-access.css" data-super-admin-access-style>
+</head><body data-page=""><header class="cr-header cr-rtbo-header" data-header>
+  <nav class="cr-rtbo-navbar" aria-label="The Cutting Room primary navigation">
+    <button class="cr-menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="crMobileNav" aria-label="Open navigation menu">
+      <span></span><span></span><span></span>
+    </button>
+
+    <div class="cr-rtbo-desktop-nav cr-rtbo-desktop-nav--left" aria-label="Primary navigation left">
+      <a class="cr-rtbo-nav-link" href="index.html">Home</a><a class="cr-rtbo-nav-link" href="dashboard.html">Dashboard</a><a class="cr-rtbo-nav-link" href="upload.html">Upload</a><a class="cr-rtbo-nav-link" href="library.html">Film Library</a>
+    </div>
+
+    <a class="cr-rtbo-brand" href="index.html" aria-label="The Cutting Room — return home">
+      <img src="assets/cutting-room-logo-transparent.png" alt="The Cutting Room Post Production logo">
+    </a>
+
+    <div class="cr-rtbo-desktop-nav cr-rtbo-desktop-nav--right" aria-label="Primary navigation right">
+      <a class="cr-rtbo-nav-link" href="review.html">Review Studio</a><a class="cr-rtbo-nav-link" href="evaluations.html">Evaluations</a><a class="cr-rtbo-nav-link" href="collaboration.html">Collaboration</a><a class="cr-rtbo-nav-link" href="downloads.html">Downloads</a>
+      <div class="cr-rtbo-utilities" aria-label="Platform utilities">
+        <button class="cr-rtbo-icon-btn" type="button" data-open-command title="Command palette" aria-label="Open command palette">⌘</button>
+        <a class="cr-rtbo-icon-btn" href="settings.html" title="Settings" aria-label="Settings">⚙</a>
+      </div>
+    </div>
+
+    <a class="cr-mobile-upload" href="upload.html">Upload</a>
+  </nav>
+
+  <nav class="cr-rtbo-mobile-menu" id="crMobileNav" aria-label="Mobile navigation">
+    <div class="cr-rtbo-mobile-menu__inner">
+      <a class="cr-rtbo-nav-link" href="index.html">Home</a><a class="cr-rtbo-nav-link" href="dashboard.html">Dashboard</a><a class="cr-rtbo-nav-link" href="upload.html">Upload</a><a class="cr-rtbo-nav-link" href="library.html">Film Library</a><a class="cr-rtbo-nav-link" href="review.html">Review Studio</a><a class="cr-rtbo-nav-link" href="evaluations.html">Evaluations</a><a class="cr-rtbo-nav-link" href="collaboration.html">Collaboration</a><a class="cr-rtbo-nav-link" href="downloads.html">Downloads</a>
+      <div class="cr-rtbo-mobile-actions">
+        <button class="cr-rtbo-mobile-command" type="button" data-open-command>Command Palette</button>
+        <a href="settings.html">Settings</a>
+      </div>
+    </div>
+  </nav>
+</header><main><section class="page-hero"><div class="cr-shell"><p class="eyebrow">PLATFORM GUIDE</p><h1>The Cutting Room</h1><p>Complete standalone HTML/CSS/JavaScript film review platform based on the supplied cinematic Cutting Room page.</p></div></section><section class="section"><div class="cr-shell grid cols-2"><article class="card card-pad"><h2>Start Here</h2><ol class="muted" style="line-height:1.9"><li>Open <b class="orange">index.html</b>.</li><li>Choose <b>Upload Film</b> and add an actual video file.</li><li>Open the film in <b>Review Studio</b>.</li><li>Add markers, comments, clip ranges, and evaluations.</li><li>Create portable review packets or download records.</li></ol></article><article class="card card-pad"><h2>What Is Functional</h2><ul class="muted" style="line-height:1.9"><li>Clip and full-game video upload</li><li>IndexedDB video storage</li><li>Film search/filter/download/delete</li><li>HTML5 video playback and frame stepping</li><li>Timecoded review markers</li><li>IN/OUT clip EDL ranges</li><li>Review comments</li><li>Film-based evaluations</li><li>Portable review packets</li><li>Browser Web Share fallback to download</li><li>Metadata backup/restore</li><li>Storage estimates and activity logs</li></ul></article><article class="card card-pad"><h2>Local-Only Limitations</h2><p class="muted">A pure HTML/CSS/JS package cannot provide server-side multi-user synchronization, cloud video transcoding, persistent organization accounts, email delivery, or server-rendered trimmed video exports without a backend. This build keeps those interactions local and uses portable JSON packets for collaboration.</p></article><article class="card card-pad"><h2>Recommended Use</h2><p class="muted">For the most consistent browser storage behavior, serve this folder from a local/static web server instead of opening it directly from the filesystem. The package itself requires no npm install or build process.</p><p><code>python3 -m http.server 8080</code></p></article></div></section></main><footer class="cr-footer"><div><strong>The Cutting Room</strong><span>Film review and development platform by Raising The Bar Officiating.</span></div><nav><a href="settings.html">Settings</a><a href="README.html">Platform Guide</a></nav></footer><dialog class="cr-dialog command-dialog" data-command-dialog><button class="dialog-x" data-close-dialog aria-label="Close">×</button><p class="eyebrow">QUICK COMMANDS</p><h2>Go Anywhere.</h2><div class="command-grid"><a href="upload.html">Upload Film</a><a href="library.html">Open Film Library</a><a href="review.html">Start Review</a><a href="evaluations.html">Create Evaluation</a><a href="collaboration.html">Review Packets</a><a href="downloads.html">Export Center</a></div></dialog><div class="toast" data-toast role="status" aria-live="polite"></div><script defer src="../cms/runtime.js" data-rtbo-cms-runtime data-cms-page="cutting-room/README.html"></script>
+</body></html>

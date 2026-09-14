@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+<head>
+<script src="../assets/super-admin-access.js" data-super-admin-runtime></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#050505">
+  <meta name="description" content="The RefShop — Raising The Bar Officiating enterprise commerce operating system.">
+  <title>The RefShop | Raising The Bar Officiating</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="payment-gateways.js"></script>
+  <script defer src="app.js"></script>
+<link rel="stylesheet" href="../assets/super-admin-access.css" data-super-admin-access-style>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+
+  <header class="site-header" data-header>
+    <nav class="navbar" aria-label="RefShop primary navigation">
+      <button class="menu-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobile-menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <a class="mobile-home-link nav-link" href="#/home" data-route-link>Home</a>
+
+      <div class="desktop-nav desktop-nav--left" aria-label="Primary navigation left">
+        <a class="nav-link active" href="#/home" data-route-link style="--i:0">Home</a>
+
+        <div class="nav-item has-dropdown" style="--i:1">
+          <button class="nav-link dropdown-toggle" type="button" aria-expanded="false" aria-controls="shop-menu">
+            Shop <span class="chevron" aria-hidden="true"></span>
+          </button>
+          <div class="dropdown-menu dropdown-menu--wide" id="shop-menu" role="menu">
+            <a href="#/shop" role="menuitem" data-route-link>All Products</a>
+            <a href="#/category/officiating" role="menuitem" data-route-link>Officiating</a>
+            <a href="#/category/apparel" role="menuitem" data-route-link>Apparel</a>
+            <a href="#/category/equipment" role="menuitem" data-route-link>Equipment</a>
+            <a href="#/category/training" role="menuitem" data-route-link>Training</a>
+            <a href="#/category/technology" role="menuitem" data-route-link>Technology</a>
+            <a href="#/digital-products" role="menuitem" data-route-link>Digital Products</a>
+          </div>
+        </div>
+
+        <a class="nav-link" href="#/new-releases" data-route-link style="--i:2">New Releases</a>
+        <a class="nav-link" href="#/best-sellers" data-route-link style="--i:3">Best Sellers</a>
+        <a class="nav-link" href="#/deals" data-route-link style="--i:4">Deals</a>
+      </div>
+
+      <a class="brand" href="#/home" aria-label="The RefShop — return home" data-route-link>
+        <img src="assets/refshop-logo.png" alt="The RefShop by Raising The Bar Officiating">
+      </a>
+
+      <div class="desktop-nav desktop-nav--right" aria-label="Primary navigation right">
+        <div class="nav-item has-dropdown" style="--i:5">
+          <button class="nav-link dropdown-toggle" type="button" aria-expanded="false" aria-controls="marketplace-menu">
+            Marketplace <span class="chevron" aria-hidden="true"></span>
+          </button>
+          <div class="dropdown-menu dropdown-menu--wide" id="marketplace-menu" role="menu">
+            <a href="#/marketplace" role="menuitem" data-route-link>Marketplace Home</a>
+            <a href="#/sell" role="menuitem" data-route-link>Sell on RefShop</a>
+            <a href="#/brand-stores" role="menuitem" data-route-link>Brand Stores</a>
+            <a href="#/creator-commerce" role="menuitem" data-route-link>Creator Commerce</a>
+            <a href="#/advertising" role="menuitem" data-route-link>RefShop Ads</a>
+          </div>
+        </div>
+
+        <a class="nav-link" href="#/business" data-route-link style="--i:6">Business</a>
+        <a class="nav-link" href="#/live-shopping" data-route-link style="--i:7">Live Shopping</a>
+        <a class="cta cta--outline" href="#/account" data-route-link style="--i:8">Account</a>
+        <a class="cta cta--solid cart-cta" href="#/cart" data-route-link style="--i:9">Cart <span data-cart-count>0</span></a>
+      </div>
+
+      <a class="mobile-talk cta cta--outline" href="#/account" data-route-link>Account</a>
+      <a class="mobile-register cta cta--solid" href="#/cart" data-route-link>Cart <span data-cart-count>0</span></a>
+    </nav>
+
+    <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+      <div class="mobile-menu__inner">
+        <a class="mobile-nav-link active" href="#/home" data-route-link data-mobile-item style="--i:0">Home</a>
+
+        <div class="mobile-item" data-mobile-item style="--i:1">
+          <button class="mobile-nav-link mobile-dropdown-toggle" type="button" aria-expanded="false">
+            Shop <span class="mobile-chevron" aria-hidden="true">›</span>
+          </button>
+          <div class="mobile-submenu">
+            <a href="#/shop" data-route-link>All Products</a>
+            <a href="#/category/officiating" data-route-link>Officiating</a>
+            <a href="#/category/apparel" data-route-link>Apparel</a>
+            <a href="#/category/equipment" data-route-link>Equipment</a>
+            <a href="#/category/training" data-route-link>Training</a>
+            <a href="#/category/technology" data-route-link>Technology</a>
+            <a href="#/digital-products" data-route-link>Digital Products</a>
+          </div>
+        </div>
+
+        <a class="mobile-nav-link" href="#/new-releases" data-route-link data-mobile-item style="--i:2">New Releases</a>
+        <a class="mobile-nav-link" href="#/best-sellers" data-route-link data-mobile-item style="--i:3">Best Sellers</a>
+        <a class="mobile-nav-link" href="#/deals" data-route-link data-mobile-item style="--i:4">Deals</a>
+
+        <div class="mobile-item" data-mobile-item style="--i:5">
+          <button class="mobile-nav-link mobile-dropdown-toggle" type="button" aria-expanded="false">
+            Marketplace <span class="mobile-chevron" aria-hidden="true">›</span>
+          </button>
+          <div class="mobile-submenu">
+            <a href="#/marketplace" data-route-link>Marketplace Home</a>
+            <a href="#/sell" data-route-link>Sell on RefShop</a>
+            <a href="#/brand-stores" data-route-link>Brand Stores</a>
+            <a href="#/creator-commerce" data-route-link>Creator Commerce</a>
+            <a href="#/advertising" data-route-link>RefShop Ads</a>
+          </div>
+        </div>
+
+        <a class="mobile-nav-link" href="#/business" data-route-link data-mobile-item style="--i:6">Business</a>
+        <a class="mobile-nav-link" href="#/live-shopping" data-route-link data-mobile-item style="--i:7">Live Shopping</a>
+
+        <div class="mobile-actions" data-mobile-item style="--i:8">
+          <a class="cta cta--outline" href="#/account" data-route-link>Account</a>
+          <a class="cta cta--solid" href="#/cart" data-route-link>Cart <span data-cart-count>0</span></a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="commerce-rail" aria-label="Store search and quick actions">
+    <button class="location-button" type="button" data-action="set-location" aria-label="Set delivery location">
+      <span aria-hidden="true">⌖</span>
+      <span><small>Deliver to</small><strong data-location-label>Set location</strong></span>
+    </button>
+    <form class="global-search" role="search" data-search-form>
+      <label class="sr-only" for="global-search-input">Search RefShop</label>
+      <select id="global-search-scope" aria-label="Search category">
+        <option value="all">All</option>
+        <option value="officiating">Officiating</option>
+        <option value="apparel">Apparel</option>
+        <option value="equipment">Equipment</option>
+        <option value="training">Training</option>
+        <option value="technology">Technology</option>
+        <option value="digital">Digital</option>
+      </select>
+      <input id="global-search-input" type="search" placeholder="Search products, brands, categories, digital content…" autocomplete="off">
+      <button type="submit" aria-label="Search">Search</button>
+    </form>
+    <div class="rail-actions">
+      <a href="#/orders" data-route-link><small>Returns</small><strong>& Orders</strong></a>
+      <a href="#/help" data-route-link><small>Customer</small><strong>Help</strong></a>
+    </div>
+  </div>
+
+  <main id="main-content" tabindex="-1">
+    <div id="app" aria-live="polite"></div>
+  </main>
+
+  <div id="toast-region" class="toast-region" aria-live="polite" aria-atomic="true"></div>
+
+  <footer class="site-footer">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="assets/refshop-logo.png" alt="The RefShop">
+        <p>Raising The Bar Officiating's enterprise commerce ecosystem for officials, schools, teams, organizations, creators, brands and marketplace partners.</p>
+      </div>
+      <div><h2>Shop</h2><a href="#/shop">All Products</a><a href="#/deals">Deals</a><a href="#/best-sellers">Best Sellers</a><a href="#/digital-products">Digital Products</a></div>
+      <div><h2>Marketplace</h2><a href="#/sell">Sell on RefShop</a><a href="#/marketplace">Marketplace</a><a href="#/advertising">RefShop Ads</a><a href="#/creator-commerce">Creator Commerce</a></div>
+      <div><h2>Business</h2><a href="#/business">RefShop Business</a><a href="#/supplier">Supplier Portal</a><a href="#/seller">Seller Central</a><a href="#/developer">Developer Portal</a></div>
+      <div><h2>Support</h2><a href="#/help">Help Center</a><a href="#/support">Contact Support</a><a href="#/returns-policy">Returns Policy</a><a href="#/privacy">Privacy</a></div>
+    </div>
+    <div class="footer-bottom"><span>© <span data-year></span> Raising The Bar Officiating Inc. — The RefShop</span><span>Commerce OS workspace build</span></div>
+  </footer>
+
+  <dialog id="location-dialog" class="modal">
+    <form method="dialog" class="modal-card" data-location-form>
+      <div class="modal-head"><h2>Delivery location</h2><button value="cancel" aria-label="Close">×</button></div>
+      <p>Enter a ZIP/postal code or city to personalize delivery context. This workspace stores the preference in this browser only.</p>
+      <label>Location<input name="location" autocomplete="postal-code" required placeholder="ZIP, postal code, or city"></label>
+      <div class="modal-actions"><button value="cancel" class="button ghost">Cancel</button><button value="default" class="button primary" data-location-save>Save location</button></div>
+    </form>
+  </dialog>
+<script defer src="../cms/runtime.js" data-rtbo-cms-runtime data-cms-page="refshop/index.html"></script>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<script src="../../assets/super-admin-access.js" data-super-admin-runtime></script>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Got U Nex Ref | Platform Workspace</title>
+<meta content="noindex,nofollow" name="robots"/>
+<link href="css/platform.css" rel="stylesheet"/><script defer="True" src="js/platform.js"></script><link rel="stylesheet" href="../../assets/super-admin-access.css" data-super-admin-access-style>
+</head>
+<body>
+
+<div aria-hidden="true" class="overlay" id="overlay"></div>
+<aside aria-label="Platform navigation" class="sidebar" id="sidebar">
+<a class="brand" aria-label="Public home page" href="../index.html"><img alt="Got U Nex Ref official approved logo" src="assets/got-u-nex-ref-logo.png"/><span class="brand-copy"><strong>Got U Nex Ref</strong><span>The Next Level<br/>of Assigning</span></span></a>
+<nav class="nav">
+<p class="nav-label">Operations</p>
+<div class="nav-group">
+<a class="nav-btn active" data-view="dashboard" href="#dashboard"><span class="nav-icon">⌂</span>Dashboard</a>
+<a class="nav-btn" data-view="assignments" href="#assignments"><span class="nav-icon">▦</span>Assignments</a>
+<a class="nav-btn" data-view="calendar" href="#calendar"><span class="nav-icon">▣</span>Master Calendar</a>
+<a class="nav-btn" data-view="availability" href="#availability"><span class="nav-icon">◷</span>Availability</a>
+<a class="nav-btn" data-view="messages" href="#messages"><span class="nav-icon">✉</span>Messages</a>
+<a class="nav-btn" data-view="notifications" href="#notifications"><span class="nav-icon">●</span>Notifications</a>
+<a class="nav-btn" data-view="evaluations" href="#evaluations"><span class="nav-icon">✓</span>Evaluations</a>
+<a class="nav-btn" data-view="education" href="#education"><span class="nav-icon">◈</span>Education</a>
+<a class="nav-btn" data-view="travel" href="#travel"><span class="nav-icon">⌖</span>Travel Services</a>
+<a class="nav-btn" data-view="payments" href="#payments"><span class="nav-icon">$</span>Payments &amp; Invoices</a>
+<a class="nav-btn" data-view="documents" href="#documents"><span class="nav-icon">▤</span>Tax &amp; Documents</a>
+<a class="nav-btn" data-view="reports" href="#reports"><span class="nav-icon">▧</span>Game Reports</a>
+</div>
+<p class="nav-label">Administration</p>
+<div class="nav-group">
+<a class="nav-btn" data-view="organizations" href="#organizations"><span class="nav-icon">▥</span>Organizations</a>
+<a class="nav-btn" data-view="users" data-requires-role-assignment="true" href="#users" hidden><span class="nav-icon">♙</span>Users &amp; Roles</a>
+<a class="nav-btn" data-view="audit" href="#audit"><span class="nav-icon">◎</span>Audit Logs</a>
+<a class="nav-btn" data-view="settings" href="#settings"><span class="nav-icon">⚙</span>Settings</a>
+<a class="nav-btn" data-view="support" href="#support"><span class="nav-icon">?</span>Support Center</a>
+</div>
+</nav>
+<div class="sidebar-foot">Secure multi-organization sports operations platform.<br/>A product of Raising The Bar Officiating Inc.</div>
+</aside>
+<div class="main">
+<header class="topbar">
+<button aria-label="Open navigation" class="menu" id="menu">☰</button>
+<div class="search"><label class="sr-only" for="global-search">Search platform</label><input id="global-search" placeholder="Search games, officials, schools, documents…"/></div>
+<div class="top-actions">
+<a aria-label="Notifications" class="icon-btn top-link" data-view="notifications" href="#notifications">♢<span class="dot"></span></a>
+<button aria-label="Current organization and role" class="org"><span class="org-badge">▥</span><span class="org-copy"><strong>No organization selected</strong><span id="roleLabel">Official</span></span></button>
+<a aria-label="My Profile" class="icon-btn" href="../user-profile/index.html" id="profileLink">◎</a></div>
+</header>
+<main class="content" id="content">
+<section class="module-view active" id="dashboard">
+<div class="intro"><div><div class="eyebrow">Role-aware operations</div><h1 id="dashboardTitle">Official Dashboard</h1><p id="dashboardDescription">Review assignments, availability, crew information, game-day details, development, payments, documents, and communication from one workspace.</p></div><div class="role-preview"><span class="role-preview-label">Frontend review role</span><select aria-label="Preview platform role" class="role-select" id="roleSelect"><option>Official</option><option>Assignor</option><option>School Administrator</option><option>Observer / Evaluator</option><option>Finance Administrator</option><option>Super Administrator</option></select><small>This selector previews role-specific frontend access only. Production permissions are enforced by the authenticated backend.</small></div></div>
+<div class="metrics">
+<article class="metric panel"><div class="metric-head"><span>Assignments requiring action</span><span class="metric-icon">✓</span></div><strong>00</strong><small>No records</small></article>
+<article class="metric panel"><div class="metric-head"><span>Upcoming events</span><span class="metric-icon">▣</span></div><strong>00</strong><small>No records</small></article>
+<article class="metric panel"><div class="metric-head"><span>Pending payment items</span><span class="metric-icon">$</span></div><strong>00</strong><small>No records</small></article>
+<article class="metric panel"><div class="metric-head"><span>Required documents</span><span class="metric-icon">!</span></div><strong>00</strong><small>No records</small></article>
+</div>
+<div class="dashboard-grid">
+<section class="panel" style="border-radius:10px;overflow:hidden"><div class="panel-title"><div><div class="eyebrow">Assignment desk</div><h2>Upcoming assignments</h2></div><span class="pill">No responses required</span></div><div class="table-wrap"><table><thead><tr><th>Date</th><th>Game</th><th>Position</th><th>Status</th></tr></thead><tbody><tr><td class="table-empty" colspan="4">No assignments to display.</td></tr></tbody></table></div></section>
+<aside class="panel side-panel" style="border-radius:10px"><div class="eyebrow">Operational focus</div><h2>Priority workflow</h2><div class="priority" id="priorityList"><div class="empty-inline">No priority actions.</div></div><div class="divider"></div><div class="eyebrow" style="color:#68717d">Latest messages</div><div class="empty-inline">No messages to display.</div></aside>
+</div>
+<div class="quick">
+<button class="quick-card panel nav-jump" data-view="assignments"><span class="qicon">▦</span><h3>Assignment Center</h3><p>Create, distribute, accept, decline, replace, and audit officiating assignments.</p></button>
+<button class="quick-card panel nav-jump" data-view="availability"><span class="qicon">◷</span><h3>Availability &amp; Conflicts</h3><p>Manage dates, time blocks, travel limits, preferences, and protected conflicts.</p></button>
+<button class="quick-card panel nav-jump" data-view="evaluations"><span class="qicon">✓</span><h3>Evaluation Center</h3><p>Assign observations, score performance, attach video, and track development.</p></button>
+</div>
+</section>
+<div id="modules"></div>
+</main>
+</div>
+<script defer src="../../cms/runtime.js" data-rtbo-cms-runtime data-cms-page="got-u-nex-ref/platform/index.html"></script>
+</body>
+</html>

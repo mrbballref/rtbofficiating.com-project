@@ -1,0 +1,48 @@
+{
+  "track": "WNBA",
+  "generated": "2026-08-06",
+  "routes": [
+    "#/program/wnba/foundations",
+    "#/program/wnba/advancement",
+    "#/program/wnba/elite",
+    "#/course/wnba/foundations",
+    "#/course/wnba/advancement",
+    "#/course/wnba/elite"
+  ],
+  "programs": {
+    "bachelors": {
+      "courses": 24,
+      "lessons": 288,
+      "scripts": 288,
+      "scenes": 1728,
+      "units": 120,
+      "hours": 1800
+    },
+    "masters": {
+      "courses": 12,
+      "lessons": 180,
+      "scripts": 180,
+      "scenes": 1080,
+      "units": 36,
+      "hours": 540
+    },
+    "phd": {
+      "courses": 20,
+      "lessons": 300,
+      "scripts": 300,
+      "scenes": 1800,
+      "units": 60,
+      "hours": 900
+    }
+  },
+  "total": {
+    "courses": 56,
+    "lessons": 768,
+    "scripts": 768,
+    "scenes": 4608,
+    "syllabi": 56,
+    "videoScriptPackages": 56
+  },
+  "sourceControl": "2026 WNBA Official Rule Book current-effective; 2026 Points of Education supplemental; 2027 centralized Replay Center future-effective",
+  "credentialStatus": "Professional degree-level pathways; not accredited degrees, employment credentials, licences, assignments, advancement guarantees, or transferable credit"
+}

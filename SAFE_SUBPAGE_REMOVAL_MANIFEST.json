@@ -1,0 +1,16 @@
+{
+  "change": "Removed The Safe subpage from Raising The Bar Officiating",
+  "removed_paths": [],
+  "files_updated_to_remove_safe_links": [
+    "shop/cart/index.html",
+    "shop/product/index.html"
+  ],
+  "remaining_safe_references": 0,
+  "remaining_lab_platforms": [
+    "The Live Stream",
+    "The Jammed Up Bar!",
+    "The Locker Room",
+    "The Vault",
+    "The Cutting Room"
+  ]
+}

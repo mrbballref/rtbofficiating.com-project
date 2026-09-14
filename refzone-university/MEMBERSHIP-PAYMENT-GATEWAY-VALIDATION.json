@@ -1,0 +1,26 @@
+{
+  "feature": "Membership registration and Stripe payment gateway",
+  "membershipPlans": 5,
+  "paidRecurringPlans": 4,
+  "billingIntervals": [
+    "monthly",
+    "annual"
+  ],
+  "registrationSteps": 4,
+  "tracks": 20,
+  "pathways": 3,
+  "gateway": "Stripe Embedded Checkout",
+  "cardDataStoredByRefZone": false,
+  "fakeRecordsIncluded": false,
+  "livePaymentGate": "PAYMENTS_LIVE_APPROVED",
+  "files": [
+    "membership-registration.css",
+    "membership-registration.js",
+    "membership-return.html",
+    "membership-return.js",
+    "server/server.js",
+    "server/memberships.js",
+    "server/scripts/create-stripe-catalog.js",
+    "PAYMENT-GATEWAY-SETUP.md"
+  ]
+}

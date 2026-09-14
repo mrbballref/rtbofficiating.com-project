@@ -1,0 +1,253 @@
+:root {
+  --gunr-orange: #f45a0a;
+  --gunr-orange-bright: #ff7418;
+  --gunr-black: #030405;
+  --gunr-panel: #0a0d10;
+  --gunr-line: rgba(255, 255, 255, .14);
+  --gunr-muted: #adb2b7;
+  --gunr-white: #f4f4f2;
+  --gunr-shell: 1520px;
+  --gunr-transition: 10px;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; background: var(--gunr-black); }
+body { margin: 0; color: var(--gunr-white); background: #030405; font-family: Arial, Helvetica, sans-serif; overflow-x: hidden; }
+a { color: inherit; text-decoration: none; }
+img { display: block; max-width: 100%; }
+button, input, textarea, select { font: inherit; }
+
+.gunr-skip-link { position: fixed; z-index: 9999; top: 12px; left: 12px; transform: translateY(-180%); padding: 12px 18px; background: #fff; color: #000; font-weight: 800; }
+.gunr-skip-link:focus { transform: none; }
+.gunr-shell { width: min(100% - 48px, var(--gunr-shell)); margin-inline: auto; }
+.gunr-transition { position: relative; }
+.gunr-transition::after { content: ""; position: absolute; z-index: 8; right: 0; bottom: calc(var(--gunr-transition) * -1); left: 0; height: var(--gunr-transition); background: linear-gradient(180deg, #050607 0%, #000 48%, #050607 100%); pointer-events: none; }
+
+.gunr-header { position: sticky; z-index: 1000; top: 0; min-height: 92px; border-bottom: 1px solid rgba(244, 90, 10, .34); background: rgba(4, 5, 6, .94); backdrop-filter: blur(18px); }
+.gunr-header__inner { display: grid; grid-template-columns: 108px minmax(0, 1fr) auto; align-items: center; width: min(100% - 40px, var(--gunr-shell)); min-height: 92px; margin: 0 auto; gap: 30px; }
+.gunr-brand { align-self: stretch; display: grid; place-items: center; width: 106px; padding: 7px; }
+.gunr-brand img { width: 88px; height: 88px; object-fit: contain; background: transparent; }
+.gunr-nav { display: flex; align-items: center; gap: clamp(22px, 2.5vw, 44px); }
+.gunr-nav a, .gunr-login { position: relative; color: #e7e7e5; font-family: "Arial Narrow", Arial, sans-serif; font-size: .9rem; font-weight: 800; text-transform: uppercase; }
+.gunr-nav a::after, .gunr-login::after { content: ""; position: absolute; right: 0; bottom: -10px; left: 0; height: 2px; transform: scaleX(0); background: var(--gunr-orange); transition: transform .25s ease; transform-origin: left; }
+.gunr-nav a:hover::after, .gunr-nav a:focus-visible::after, .gunr-login:hover::after, .gunr-login:focus-visible::after { transform: scaleX(1); }
+.gunr-header__actions { display: flex; align-items: center; gap: 26px; }
+.gunr-menu-toggle { display: none; width: 44px; height: 44px; border: 1px solid rgba(244, 90, 10, .55); background: transparent; }
+.gunr-menu-toggle span { display: block; width: 22px; height: 2px; margin: 5px auto; background: #fff; }
+
+.gunr-button { display: inline-flex; min-height: 54px; align-items: center; justify-content: center; gap: 12px; padding: 0 30px; border: 1px solid rgba(255, 255, 255, .55); color: #fff; font-family: "Arial Narrow", Arial, sans-serif; font-size: .84rem; font-weight: 900; letter-spacing: .03em; text-transform: uppercase; transition: transform .22s ease, border-color .22s ease, background .22s ease, box-shadow .22s ease; }
+.gunr-button:hover, .gunr-button:focus-visible { transform: translateY(-2px); border-color: var(--gunr-orange-bright); box-shadow: 0 12px 30px rgba(244, 90, 10, .2); }
+.gunr-button--solid { border-color: var(--gunr-orange-bright); background: linear-gradient(135deg, #ef4c00, #ff7317); }
+.gunr-button--solid:hover, .gunr-button--solid:focus-visible { background: linear-gradient(135deg, #ff6510, #ef4c00); }
+.gunr-button--outline { background: rgba(6, 7, 8, .5); }
+.gunr-actions { display: flex; flex-wrap: wrap; gap: 18px; }
+
+.gunr-eyebrow, .gunr-kicker { margin: 0 0 20px; color: var(--gunr-orange-bright); font-family: "Arial Narrow", Arial, sans-serif; font-size: .98rem; font-weight: 900; letter-spacing: .06em; text-transform: uppercase; }
+
+.gunr-hero { overflow: hidden; min-height: 740px; background:
+  linear-gradient(115deg, rgba(3,4,5,.99) 0 42%, rgba(27,10,3,.96) 70%, rgba(3,4,5,.99) 100%),
+  repeating-linear-gradient(135deg, rgba(255,255,255,.06) 0 1px, transparent 1px 58px); }
+.gunr-hero::before { content: ""; position: absolute; inset: 0; background: radial-gradient(circle at 74% 42%, rgba(244, 90, 10, .18), transparent 34%), linear-gradient(90deg, transparent 0 51%, rgba(255,255,255,.05) 51% 51.2%, transparent 51.2%); pointer-events: none; }
+.gunr-hero__grid { position: relative; z-index: 1; display: grid; grid-template-columns: minmax(0, .96fr) minmax(440px, 1.04fr); min-height: 740px; align-items: center; }
+.gunr-hero__copy { padding: 78px 42px 78px 12px; }
+.gunr-hero h1 { max-width: none; margin: 0 0 24px; font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif; font-size: clamp(3.5rem, 4.2vw, 4.7rem); font-weight: 900; letter-spacing: -.025em; line-height: .94; text-transform: uppercase; }
+.gunr-hero h1 span { display: block; white-space: nowrap; }
+.gunr-hero__lede { max-width: 56ch; margin: 0 0 34px; color: #c5c6c7; font-family: "Arial Narrow", Arial, sans-serif; font-size: clamp(1.05rem, 1.45vw, 1.42rem); line-height: 1.45; }
+.gunr-hero__visual { position: relative; display: grid; min-height: 740px; place-items: center; padding: 40px 0 78px 38px; }
+.gunr-hero__visual::before { content: none; }
+.gunr-hero__visual > img { position: relative; z-index: 2; width: min(100%, 650px); max-height: 620px; object-fit: contain; background: transparent; filter: drop-shadow(0 34px 50px rgba(0,0,0,.8)); }
+.gunr-hero__halo { position: absolute; z-index: 1; width: 520px; aspect-ratio: 1; border: 1px solid rgba(244,90,10,.42); border-radius: 50%; box-shadow: 0 0 90px rgba(244,90,10,.25), inset 0 0 90px rgba(244,90,10,.12); }
+.gunr-live-strip { position: absolute; z-index: 3; right: 5%; bottom: 24px; left: 12%; display: flex; align-items: center; justify-content: center; gap: 12px; min-height: 48px; padding: 10px 16px; border: 1px solid rgba(244,90,10,.72); background: rgba(2,3,4,.88); font-family: "Arial Narrow", Arial, sans-serif; font-size: .72rem; letter-spacing: .04em; text-transform: uppercase; }
+.gunr-live-strip strong { color: var(--gunr-orange-bright); }
+.gunr-live-strip span:not(.gunr-live-strip__pulse)::before { content: "•"; margin-right: 12px; color: #7c7c7c; }
+.gunr-live-strip__pulse { width: 10px; height: 10px; border-radius: 50%; background: var(--gunr-orange); box-shadow: 0 0 0 0 rgba(244,90,10,.68); animation: gunrPulse 1.8s infinite; }
+@keyframes gunrPulse { 70% { box-shadow: 0 0 0 11px rgba(244,90,10,0); } 100% { box-shadow: 0 0 0 0 rgba(244,90,10,0); } }
+
+.gunr-levels { padding: 20px 0 30px; background: radial-gradient(circle at 90% 10%, rgba(244,90,10,.13), transparent 25%), #06090b; border-top: 1px solid rgba(255,255,255,.09); border-bottom: 1px solid rgba(255,255,255,.09); }
+.gunr-levels__head h2 { margin: 0 0 16px; color: #d8dbde; font-family: "Arial Narrow", Arial, sans-serif; font-size: .82rem; font-weight: 900; letter-spacing: .05em; text-align: center; text-transform: uppercase; }
+.gunr-levels__carousel { display: grid; grid-template-columns: 40px minmax(0, 1fr) 40px; align-items: center; gap: 14px; }
+.gunr-carousel-arrow { width: 40px; height: 52px; border: 0; background: transparent; color: #fff; font-size: 2.2rem; cursor: pointer; }
+.gunr-carousel-arrow:hover, .gunr-carousel-arrow:focus-visible { color: var(--gunr-orange); }
+.gunr-levels__track { display: grid; grid-auto-columns: minmax(110px, 1fr); grid-auto-flow: column; align-items: center; gap: 28px; overflow: auto; padding: 8px 4px 10px; scrollbar-width: none; scroll-behavior: smooth; }
+.gunr-levels__track::-webkit-scrollbar { display: none; }
+.gunr-levels figure { min-width: 110px; margin: 0; text-align: center; }
+.gunr-levels figure img { width: 86px; height: 86px; margin: 0 auto; object-fit: contain; filter: drop-shadow(0 12px 18px rgba(0,0,0,.72)); }
+.gunr-levels figcaption { margin-top: 6px; color: #9da2a6; font-size: .62rem; font-weight: 800; text-transform: uppercase; }
+
+.gunr-platform { overflow: hidden; padding: 72px 0; background: radial-gradient(circle at 73% 45%, rgba(10, 95, 134, .14), transparent 30%), linear-gradient(180deg, #050708, #010203); }
+.gunr-platform__grid { display: grid; grid-template-columns: minmax(0, .82fr) minmax(560px, 1.18fr); align-items: center; gap: 62px; }
+.gunr-platform__copy h2, .gunr-section-heading h2, .gunr-pillars__title h2, .gunr-final h2 { margin: 0; font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif; font-size: clamp(3.4rem, 5.2vw, 6.4rem); font-style: italic; font-weight: 900; letter-spacing: -.02em; line-height: .94; text-transform: uppercase; }
+.gunr-platform__copy h2 span { color: var(--gunr-orange-bright); }
+.gunr-platform__copy > p:not(.gunr-kicker) { max-width: 52ch; margin: 26px 0 28px; color: #c4c6c8; font-family: "Arial Narrow", Arial, sans-serif; font-size: 1.04rem; line-height: 1.55; }
+.gunr-feature-list { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px 30px; margin: 0 0 32px; padding: 0; list-style: none; }
+.gunr-feature-list li { display: flex; align-items: center; gap: 10px; color: #ededeb; font-family: "Arial Narrow", Arial, sans-serif; font-weight: 800; }
+.gunr-feature-icon { display: grid; width: 25px; height: 25px; place-items: center; color: var(--gunr-orange); font-size: 1.2rem; }
+
+.gunr-device-stage { position: relative; min-height: 540px; }
+.gunr-device-orbit { position: absolute; border: 1px solid rgba(244,90,10,.2); border-radius: 50%; }
+.gunr-device-orbit--one { width: 520px; height: 520px; right: 2%; top: 0; }
+.gunr-device-orbit--two { width: 360px; height: 360px; right: 12%; top: 80px; border-color: rgba(255,255,255,.08); }
+.gunr-laptop { position: absolute; z-index: 2; right: 8%; top: 0; width: min(88%, 630px); transform: perspective(1300px) rotateY(-7deg) rotateX(2deg); transform-origin: center; }
+.gunr-laptop__screen { padding: 14px 14px 20px; border: 5px solid #3b3d3f; border-bottom-width: 12px; border-radius: 22px 22px 10px 10px; background: #090a0b; box-shadow: 0 30px 55px rgba(0,0,0,.72), 0 0 0 1px #777 inset; }
+.gunr-laptop__base { width: 112%; height: 26px; margin-left: -6%; border-radius: 0 0 70px 70px; background: linear-gradient(180deg, #5c5d5f, #161719 60%, #070809); box-shadow: 0 15px 32px rgba(0,0,0,.65); }
+.gunr-ui { display: grid; grid-template-columns: 126px minmax(0, 1fr); min-height: 335px; overflow: hidden; border-radius: 9px; background: #07090b; color: #fff; }
+.gunr-ui__sidebar { display: flex; flex-direction: column; gap: 9px; padding: 15px 11px; border-right: 1px solid rgba(244,90,10,.25); background: #050607; }
+.gunr-ui__sidebar img { width: 54px; height: 54px; margin-bottom: 8px; object-fit: contain; }
+.gunr-ui__sidebar span { padding: 7px 8px; border-radius: 5px; color: #737a80; font-size: .56rem; font-weight: 800; }
+.gunr-ui__sidebar span.is-active { color: #fff; background: rgba(244,90,10,.17); }
+.gunr-ui__workspace { padding: 16px; }
+.gunr-ui__topbar { display: flex; align-items: center; gap: 8px; margin-bottom: 16px; }
+.gunr-ui__topbar b { margin-right: auto; font-size: .78rem; }
+.gunr-ui__topbar i { width: 28px; height: 9px; border-radius: 20px; background: #171a1e; }
+.gunr-ui__calendar { display: grid; grid-template-columns: repeat(7, 1fr); gap: 5px; padding: 13px; border: 1px solid rgba(255,255,255,.06); background: #0c0f12; }
+.gunr-ui__calendar span { color: #727a81; font-size: .46rem; text-align: center; }
+.gunr-ui__calendar b { aspect-ratio: 1; border-radius: 3px; background: #14181c; }
+.gunr-ui__calendar b.is-highlight { background: var(--gunr-orange); box-shadow: 0 0 16px rgba(244,90,10,.55); }
+.gunr-ui__feed { display: grid; gap: 8px; margin-top: 14px; }
+.gunr-ui__feed > div { display: flex; align-items: center; gap: 9px; padding: 10px; border: 1px solid rgba(255,255,255,.06); background: #0b0e11; }
+.gunr-ui__feed > div > span { width: 24px; height: 24px; border-radius: 50%; background: linear-gradient(135deg, #fe7221, #6d1c00); }
+.gunr-ui__feed p { display: grid; margin: 0 auto 0 0; }
+.gunr-ui__feed b { font-size: .58rem; }
+.gunr-ui__feed small { color: #6f777e; font-size: .48rem; }
+.gunr-ui__feed em { padding: 5px 8px; border-radius: 15px; color: #fff; background: var(--gunr-orange); font-size: .46rem; font-style: normal; }
+.gunr-phone { position: absolute; z-index: 4; right: 0; bottom: 18px; width: 190px; padding: 10px; border: 5px solid #3e4043; border-radius: 31px; background: #070809; box-shadow: 0 28px 50px rgba(0,0,0,.82); transform: rotate(2deg); }
+.gunr-phone__speaker { width: 54px; height: 5px; margin: 0 auto 8px; border-radius: 999px; background: #1b1d1f; }
+.gunr-phone__screen { min-height: 350px; overflow: hidden; border-radius: 21px; background: linear-gradient(180deg, #0d1115, #050607); }
+.gunr-phone__top { display: flex; align-items: center; gap: 7px; padding: 12px 10px; border-bottom: 1px solid rgba(244,90,10,.3); }
+.gunr-phone__top img { width: 31px; height: 31px; object-fit: contain; }
+.gunr-phone__top span { font-size: .57rem; font-weight: 900; }
+.gunr-phone__card { display: grid; gap: 5px; margin: 12px 9px; padding: 12px; border: 1px solid rgba(244,90,10,.26); border-radius: 10px; background: #0f1317; }
+.gunr-phone__card small { color: var(--gunr-orange); font-size: .48rem; text-transform: uppercase; }
+.gunr-phone__card b { font-size: .65rem; }
+.gunr-phone__card span { color: #747b80; font-size: .52rem; }
+.gunr-phone nav { position: absolute; right: 18px; bottom: 14px; left: 18px; display: flex; justify-content: space-between; }
+.gunr-phone nav i { width: 18px; height: 18px; border-radius: 50%; background: #171b1f; }
+.gunr-concept-label { position: absolute; right: 0; bottom: -8px; margin: 0; color: #70767b; font-size: .67rem; text-align: right; text-transform: uppercase; }
+
+.gunr-roles { padding: 72px 0; background: linear-gradient(180deg, #030405, #06090b); }
+.gunr-section-heading { margin-bottom: 34px; text-align: center; }
+.gunr-section-heading .gunr-kicker { margin-bottom: 10px; color: #aeb3b7; font-size: .72rem; letter-spacing: .12em; }
+.gunr-section-heading h2 { font-size: clamp(3rem, 4.8vw, 5.5rem); }
+.gunr-role-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 22px; }
+.gunr-role-card { overflow: hidden; border: 1px solid rgba(255,255,255,.15); background: linear-gradient(180deg, #0b0d0f, #050607); box-shadow: 0 20px 45px rgba(0,0,0,.38); }
+.gunr-role-card figure { display: grid; min-height: 265px; margin: 0; place-items: center; overflow: hidden; border-bottom: 1px solid rgba(244,90,10,.3); background: radial-gradient(circle, #171b1e, #060708); }
+.gunr-role-card figure img { width: 100%; height: 265px; object-fit: contain; }
+.gunr-role-card__body { min-height: 205px; padding: 22px; }
+.gunr-role-card h3 { margin: 0 0 15px; font-family: "Arial Narrow", Arial, sans-serif; font-size: .92rem; text-transform: uppercase; }
+.gunr-role-card h3 span { margin-right: 8px; color: var(--gunr-orange); font-size: 1.35rem; }
+.gunr-role-card p { min-height: 62px; margin: 0 0 18px; color: #bec1c4; font-family: "Arial Narrow", Arial, sans-serif; font-size: .92rem; line-height: 1.5; }
+.gunr-role-card a { color: var(--gunr-orange-bright); font-size: .8rem; font-weight: 900; }
+
+.gunr-pillars { padding: 38px 0; border-top: 1px solid rgba(255,255,255,.1); border-bottom: 1px solid rgba(255,255,255,.1); background: #030405; }
+.gunr-pillars__inner { display: grid; grid-template-columns: .7fr 1.3fr; align-items: center; gap: 54px; }
+.gunr-pillars__title p { margin: 0 0 8px; color: #d7d8d9; font-family: "Arial Narrow", Arial, sans-serif; font-size: .9rem; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; }
+.gunr-pillars__title h2 { font-size: clamp(2.7rem, 4.3vw, 5rem); }
+.gunr-pillar-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px; }
+.gunr-pillar-grid article { display: grid; place-items: center; min-height: 128px; text-align: center; }
+.gunr-pillar-grid span { display: grid; width: 52px; height: 52px; margin-bottom: 12px; place-items: center; color: var(--gunr-orange); border: 1px solid rgba(244,90,10,.4); border-radius: 50%; font-size: 1.65rem; }
+.gunr-pillar-grid b { font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif; font-size: 2rem; text-transform: uppercase; }
+.gunr-pillar-grid small { margin-top: 6px; color: #b6b9bb; font-size: .66rem; font-weight: 900; text-transform: uppercase; }
+
+.gunr-final { position: relative; min-height: 480px; overflow: hidden; background: #050607; }
+.gunr-final__background { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; object-position: right center; background: #050607; }
+.gunr-final__shade { position: absolute; inset: 0; background: linear-gradient(90deg, rgba(3,4,5,.99) 0 43%, rgba(3,4,5,.76) 62%, rgba(3,4,5,.1) 100%); }
+.gunr-final__content { position: relative; z-index: 1; display: flex; min-height: 480px; align-items: center; }
+.gunr-final__content > div { max-width: 700px; padding: 64px 0; }
+.gunr-final h2 { max-width: 13ch; font-size: clamp(3.4rem, 5.5vw, 6.4rem); }
+.gunr-final p:not(.gunr-eyebrow) { max-width: 52ch; margin: 22px 0 28px; color: #d2d3d4; line-height: 1.55; }
+
+.gunr-footer { padding: 38px 0 18px; background: #020304; }
+.gunr-footer__grid { display: grid; grid-template-columns: minmax(260px, .72fr) minmax(0, 1.28fr); gap: 70px; }
+.gunr-footer__brand img { width: 118px; height: 126px; object-fit: contain; }
+.gunr-footer__brand p { max-width: 30ch; color: #c3c5c7; font-size: .82rem; line-height: 1.5; }
+.gunr-socials { display: flex; gap: 12px; margin-top: 18px; }
+.gunr-socials a { display: grid; width: 34px; height: 34px; place-items: center; border: 1px solid rgba(255,255,255,.12); border-radius: 50%; }
+.gunr-socials svg { width: 16px; fill: none; stroke: currentColor; stroke-width: 1.8; }
+.gunr-footer__nav { display: grid; grid-template-columns: repeat(4, 1fr); gap: 30px; }
+.gunr-footer__nav div { display: flex; flex-direction: column; gap: 9px; }
+.gunr-footer__nav h2 { margin: 0 0 8px; color: #fff; font-family: "Arial Narrow", Arial, sans-serif; font-size: .8rem; text-transform: uppercase; }
+.gunr-footer__nav a { color: #b5b8bb; font-size: .76rem; }
+.gunr-footer__nav a:hover, .gunr-footer__nav a:focus-visible { color: var(--gunr-orange); }
+.gunr-footer__legal { display: flex; justify-content: space-between; gap: 20px; margin-top: 34px; padding-top: 18px; border-top: 1px solid rgba(255,255,255,.09); color: #888d91; font-size: .7rem; }
+.gunr-footer__legal p { margin: 0; }
+.gunr-footer__legal div { display: flex; gap: 22px; }
+
+@media (max-width: 1180px) {
+  .gunr-header__inner { grid-template-columns: 90px minmax(0,1fr) auto; gap: 18px; }
+  .gunr-nav { gap: 18px; }
+  .gunr-nav a, .gunr-login { font-size: .78rem; }
+  .gunr-header__actions { gap: 14px; }
+  .gunr-header__actions .gunr-button { min-height: 46px; padding-inline: 20px; }
+  .gunr-hero__grid { grid-template-columns: .92fr 1.08fr; }
+  .gunr-platform__grid { grid-template-columns: .85fr 1.15fr; gap: 28px; }
+  .gunr-laptop { right: 5%; width: 92%; }
+  .gunr-phone { right: -8px; }
+  .gunr-role-grid { grid-template-columns: repeat(2, minmax(0,1fr)); }
+}
+
+@media (max-width: 920px) {
+  .gunr-header { min-height: 78px; }
+  .gunr-header__inner { grid-template-columns: 66px 1fr auto; min-height: 78px; }
+  .gunr-brand { width: 64px; }
+  .gunr-brand img { width: 60px; height: 60px; }
+  .gunr-menu-toggle { display: block; justify-self: end; }
+  .gunr-nav { position: fixed; inset: 78px 0 auto; display: grid; max-height: 0; overflow: hidden; padding: 0 24px; background: rgba(3,4,5,.98); transition: max-height .3s ease, padding .3s ease; }
+  .gunr-nav.is-open { max-height: 420px; padding: 24px; border-bottom: 1px solid rgba(244,90,10,.4); }
+  .gunr-nav a { padding: 12px 0; border-bottom: 1px solid rgba(255,255,255,.08); }
+  .gunr-header__actions { grid-column: 2; grid-row: 1; justify-self: end; margin-right: 58px; }
+  .gunr-login { display: none; }
+  .gunr-header__actions .gunr-button { min-height: 42px; padding-inline: 16px; font-size: .7rem; }
+  .gunr-hero { min-height: auto; }
+  .gunr-hero__grid { grid-template-columns: 1fr; }
+  .gunr-hero__copy { padding: 70px 12px 30px; }
+  .gunr-hero__visual { min-height: 570px; padding: 20px 20px 80px; }
+  .gunr-hero__visual > img { max-height: 480px; }
+  .gunr-live-strip { left: 5%; right: 5%; overflow-x: auto; justify-content: flex-start; white-space: nowrap; }
+  .gunr-platform__grid { grid-template-columns: 1fr; }
+  .gunr-device-stage { min-height: 520px; margin-top: 20px; }
+  .gunr-laptop { right: 4%; left: 0; width: 88%; }
+  .gunr-pillars__inner { grid-template-columns: 1fr; }
+  .gunr-pillar-grid { grid-template-columns: repeat(2, 1fr); }
+  .gunr-final__background { object-position: 70% center; opacity: .58; }
+  .gunr-final__shade { background: linear-gradient(90deg, rgba(3,4,5,.98), rgba(3,4,5,.78)); }
+  .gunr-footer__grid { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 680px) {
+  .gunr-shell { width: min(100% - 28px, var(--gunr-shell)); }
+  .gunr-header__inner { width: min(100% - 18px, var(--gunr-shell)); }
+  .gunr-header__actions .gunr-button { display: none; }
+  .gunr-header__actions { margin-right: 48px; }
+  .gunr-hero h1 { font-size: clamp(2.15rem, 9.4vw, 3.35rem); }
+  .gunr-hero__visual { min-height: 500px; }
+  .gunr-hero__visual > img { width: 94%; max-height: 420px; }
+  .gunr-hero__halo { width: 330px; }
+  .gunr-actions { display: grid; grid-template-columns: 1fr; }
+  .gunr-button { width: 100%; }
+  .gunr-levels__carousel { grid-template-columns: 28px minmax(0,1fr) 28px; gap: 6px; }
+  .gunr-levels__track { grid-auto-columns: 120px; }
+  .gunr-feature-list { grid-template-columns: 1fr; }
+  .gunr-device-stage { min-height: 430px; }
+  .gunr-laptop { width: 100%; right: auto; transform: none; }
+  .gunr-ui { grid-template-columns: 92px minmax(0,1fr); min-height: 270px; }
+  .gunr-ui__sidebar { gap: 5px; padding: 10px 7px; }
+  .gunr-ui__sidebar span { font-size: .45rem; }
+  .gunr-ui__workspace { padding: 10px; }
+  .gunr-phone { width: 138px; right: -4px; bottom: -10px; border-width: 4px; }
+  .gunr-phone__screen { min-height: 256px; }
+  .gunr-phone__card { margin: 8px 7px; padding: 8px; }
+  .gunr-concept-label { bottom: -52px; max-width: 230px; }
+  .gunr-role-grid { grid-template-columns: 1fr; }
+  .gunr-role-card figure, .gunr-role-card figure img { height: auto; min-height: 0; max-height: 380px; }
+  .gunr-pillar-grid { grid-template-columns: 1fr 1fr; }
+  .gunr-pillar-grid b { font-size: 1.55rem; }
+  .gunr-final { min-height: 540px; }
+  .gunr-final__content { min-height: 540px; }
+  .gunr-final__background { object-fit: cover; object-position: 60% center; }
+  .gunr-footer__nav { grid-template-columns: repeat(2, 1fr); }
+  .gunr-footer__legal { flex-direction: column; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
+}

@@ -1,0 +1,10 @@
+{
+  "name": "jammed-up-bar-membership-gateway",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Secure Stripe Checkout and subscriber API for The Jammed Up Bar!",
+  "main": "index.js",
+  "scripts": {"start":"node index.js","dev":"node --watch index.js"},
+  "engines": {"node": ">=18"},
+  "dependencies": {"dotenv":"^16.4.7","express":"^5.1.0","stripe":"^18.4.0"}
+}

@@ -1,0 +1,14 @@
+GOT U NEX REF — SUPER ADMIN DASHBOARD
+
+DEFAULT SUPER ADMIN LOGIN LANDING PAGE
+--------------------------------------
+Open index.html.
+
+index.html now routes the authenticated Super Admin to:
+  admin-profile.html
+
+The Super Admin Profile is the default page after login.
+Use the left sidebar to open Dashboard, Master Schedule, Assignments, Schools, Officials, Availability, Contract Generator, Invoice Generator, Payments, Reports, Resources, Messages, Notifications, Settings, and Support.
+
+The existing Admin Dashboard remains available at:
+  admin-dashboard.html

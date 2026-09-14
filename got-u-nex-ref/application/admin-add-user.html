@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<script type="module">
+  import { requireRole } from '../../assets/auth.js';
+  document.documentElement.style.visibility = 'hidden';
+  const session = await requireRole(['site_admin']);
+  if (session) document.documentElement.style.visibility = '';
+</script>
+
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<title>Add Users — Got U Nex Ref Admin</title>
+<link href="admin-add-user.css" rel="stylesheet"/>
+<link href="admin-global.css" rel="stylesheet"/></head>
+<body><a aria-label="Back to Admin Dashboard" class="admin-dashboard-cta-global" href="admin-dashboard.html">← ADMIN DASHBOARD</a>
+<svg aria-hidden="true" class="svg-sprite">
+<symbol id="i-home" viewbox="0 0 24 24"><path d="M3 11 12 3l9 8v10h-6v-6H9v6H3z"></path></symbol>
+<symbol id="i-calendar" viewbox="0 0 24 24"><rect height="16" rx="2" width="18" x="3" y="5"></rect><path d="M16 3v4M8 3v4M3 10h18"></path></symbol>
+<symbol id="i-school" viewbox="0 0 24 24"><path d="M3 10 12 4l9 6M5 10v9M9 10v9M15 10v9M19 10v9M3 20h18"></path></symbol>
+<symbol id="i-wallet" viewbox="0 0 24 24"><path d="M4 6h14a2 2 0 0 1 2 2v10H4z"></path><path d="M4 9V5h13M15 11h6v4h-6z"></path></symbol>
+<symbol id="i-resource" viewbox="0 0 24 24"><path d="M12 3 4 7v10l8 4 8-4V7z"></path><path d="m8 12 3 3 5-6"></path></symbol>
+<symbol id="i-cart" viewbox="0 0 24 24"><path d="M3 4h2l2 11h10l3-8H6M9 20h.01M17 20h.01"></path></symbol>
+<symbol id="i-headset" viewbox="0 0 24 24"><path d="M4 14v-2a8 8 0 0 1 16 0v2M4 14h4v6H5a1 1 0 0 1-1-1zM20 14h-4v6h3a1 1 0 0 0 1-1z"></path></symbol>
+<symbol id="i-chevron-down" viewbox="0 0 24 24"><path d="m7 9 5 5 5-5"></path></symbol>
+<symbol id="i-user" viewbox="0 0 24 24"><circle cx="12" cy="7" r="4"></circle><path d="M4 21c0-4.2 3.6-7 8-7s8 2.8 8 7"></path></symbol>
+<symbol id="i-user-plus" viewbox="0 0 24 24"><circle cx="9" cy="7" r="4"></circle><path d="M2 21c0-4 3-7 7-7 2 0 4 .7 5.2 1.9M18 11v8M14 15h8"></path></symbol>
+<symbol id="i-back" viewbox="0 0 24 24"><path d="m15 18-6-6 6-6"></path></symbol>
+<symbol id="i-role" viewbox="0 0 24 24"><circle cx="10" cy="7" r="3"></circle><path d="M4 18c0-3.5 2.5-6 6-6s6 2.5 6 6M18 4l3 2-1 4-4 1-2-3z"></path></symbol>
+<symbol id="i-people" viewbox="0 0 24 24"><circle cx="8" cy="7" r="3"></circle><circle cx="17" cy="9" r="2.5"></circle><path d="M2 20c0-4 2.5-6.5 6-6.5s6 2.5 6 6.5M14 14c3.5 0 6 2 6 5.5"></path></symbol>
+<symbol id="i-building" viewbox="0 0 24 24"><path d="M3 21h18M5 21V7l7-4 7 4v14M9 10h2M13 10h2M9 14h2M13 14h2M10 21v-4h4v4"></path></symbol>
+<symbol id="i-badge" viewbox="0 0 24 24"><rect height="18" rx="2" width="14" x="5" y="3"></rect><path d="M9 3v3h6V3M8 10h8M8 14h6"></path></symbol>
+<symbol id="i-coach" viewbox="0 0 24 24"><rect height="16" rx="2" width="16" x="4" y="4"></rect><path d="M7 8h10M8 12h8M10 16h4"></path></symbol>
+<symbol id="i-shield" viewbox="0 0 24 24"><path d="M12 3 20 6v6c0 5-3.4 8-8 10-4.6-2-8-5-8-10V6z"></path><path d="m9 12 2 2 4-4"></path></symbol>
+<symbol id="i-store" viewbox="0 0 24 24"><path d="M4 9h16l-1-5H5zM5 9v11h14V9M8 13h3v7M14 13h3"></path></symbol>
+<symbol id="i-crown" viewbox="0 0 24 24"><path d="m3 7 5 4 4-7 4 7 5-4-2 10H5zM6 20h12"></path></symbol>
+<symbol id="i-info-card" viewbox="0 0 24 24"><rect height="16" rx="2" width="18" x="3" y="4"></rect><circle cx="8" cy="10" r="2"></circle><path d="M5.5 16c.7-2.5 4.3-2.5 5 0M13 9h5M13 13h5"></path></symbol>
+<symbol id="i-pin" viewbox="0 0 24 24"><path d="M20 10c0 5-8 11-8 11S4 15 4 10a8 8 0 1 1 16 0z"></path><circle cx="12" cy="10" r="2.5"></circle></symbol>
+<symbol id="i-lock" viewbox="0 0 24 24"><rect height="11" rx="2" width="16" x="4" y="10"></rect><path d="M8 10V7a4 4 0 0 1 8 0v3"></path></symbol>
+<symbol id="i-note" viewbox="0 0 24 24"><path d="M5 3h14v18H5zM8 7h8M8 11h8M8 15h5"></path></symbol>
+<symbol id="i-mail" viewbox="0 0 24 24"><rect height="14" rx="2" width="18" x="3" y="5"></rect><path d="m4 7 8 6 8-6"></path></symbol>
+<symbol id="i-phone" viewbox="0 0 24 24"><path d="M7 3 4 5c0 7 6 13 13 15l2-3-4-3-2 2c-3-1-5-3-6-6l2-2z"></path></symbol>
+<symbol id="i-eye" viewbox="0 0 24 24"><path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7S2 12 2 12z"></path><circle cx="12" cy="12" r="3"></circle></symbol>
+<symbol id="i-upload" viewbox="0 0 24 24"><path d="M12 16V4M7 9l5-5 5 5M4 18v3h16v-3"></path></symbol>
+<symbol id="i-check" viewbox="0 0 24 24"><path d="m5 12 4 4L19 6"></path></symbol>
+<symbol id="i-send" viewbox="0 0 24 24"><path d="m3 11 18-8-8 18-2-8zM11 13l10-10"></path></symbol>
+<symbol id="i-save" viewbox="0 0 24 24"><path d="M4 4h14l2 2v14H4zM7 4v6h9V4M8 20v-6h8v6"></path></symbol>
+<symbol id="i-org" viewbox="0 0 24 24"><path d="M4 21V9h6v12M14 21V4h6v17M2 21h20"></path></symbol>
+<symbol id="i-bell-admin" viewbox="0 0 24 24"><path d="M6 9a6 6 0 0 1 12 0v4l2 3H4l2-3z"></path><path d="M10 20h4"></path></symbol>
+<symbol id="i-gear-admin" viewbox="0 0 24 24"><circle cx="12" cy="12" r="3"></circle><path d="m4.9 4.9 2.1 1.2 2.4-1L10 2h4l.6 3.1 2.4 1 2.1-1.2 2 3.5-2.2 1.7.2 2.6 2.4 1.5-2 3.5-2.7-1-.9.8-.6 3.1h-4l-.6-3.1-.9-.8-2.7 1-2-3.5 2.4-1.5.2-2.6-2.2-1.7z"></path></symbol>
+</svg>
+<div class="admin-add-shell">
+<aside class="admin-sidebar"><div class="admin-brand"><a aria-label="Got U Nex Ref Home" class="brand-home-link" href="got-u-nex-ref-home/index.html"><img alt="Brand" src="assets/got-u-nex-ref-logo.png"/></a></div><div class="admin-label">ADMIN DASHBOARD</div><nav class="admin-nav"><a href="admin-profile.html"><svg><use href="#a-users"></use></svg><span>My Profile</span></a><a href="admin-dashboard.html"><svg><use href="#a-home"></use></svg><span>Dashboard</span></a><a href="admin-assignments.html"><svg><use href="#a-game"></use></svg><span>Assignments</span></a><a href="admin-module.html?module=schools"><svg><use href="#a-school"></use></svg><span>Schools</span></a><a class="active" href="admin-officials.html"><svg><use href="#a-users"></use></svg><span>Officials</span></a><a href="admin-availability.html"><svg><use href="#a-calendar"></use></svg><span>Availability</span></a><a href="admin-contracts.html"><svg><use href="#a-audit"></use></svg><span>Contract Generator</span></a><a href="admin-invoices.html"><svg><use href="#a-audit"></use></svg><span>Invoice Generator</span></a><a href="admin-payments.html"><svg><use href="#a-money"></use></svg><span>Payments</span></a><a href="admin-tax-center.html"><svg><use href="#a-audit"></use></svg><span>Tax Center</span></a><a href="admin-reports.html"><svg><use href="#a-report"></use></svg><span>Reports</span></a><a href="admin-resources.html"><svg><use href="#a-audit"></use></svg><span>Resources</span></a><a href="admin-messages.html"><svg><use href="#a-mail"></use></svg><span>Messages</span><strong class="admin-count" hidden="">0</strong></a><a href="admin-notifications.html"><svg><use href="#a-bell"></use></svg><span>Notifications</span><strong class="admin-count" hidden="">0</strong></a><a href="admin-settings.html"><svg><use href="#a-gear"></use></svg><span>Settings</span></a><a href="admin-support.html"><svg><use href="#a-audit"></use></svg><span>Support</span></a></nav><div class="admin-help"><strong>Administrator Workspace</strong><small>Manage scheduling, assignments, communications, finance, settings, and support from one place.</small></div></aside>
+<div class="admin-add-workspace">
+<main class="admin-page">
+<div class="page-heading">
+<button class="back-users" id="backToUsers" type="button"><svg><use href="#i-back"></use></svg><span>Back to Users</span></button>
+<h1>Add Users</h1>
+<p>Create and invite new platform users.</p>
+</div>
+<form id="addUserForm" novalidate="">
+<div class="admin-layout">
+<section class="form-stack">
+<section class="form-section role-section">
+<div class="section-label"><b>1</b><svg><use href="#i-role"></use></svg><span>USER TYPE / ROLE</span></div>
+<div class="section-content role-content">
+<div aria-label="User role" class="role-buttons" id="roleButtons" role="radiogroup"></div>
+</div>
+</section>
+<section class="form-section">
+<div class="section-label"><b>2</b><svg><use href="#i-info-card"></use></svg><span>PERSONAL<br/>INFORMATION</span></div>
+<div class="section-content grid-3">
+<label>First Name <em>*</em><input id="firstName" name="firstName" placeholder="Enter first name" required=""/></label>
+<label>Last Name <em>*</em><input id="lastName" name="lastName" placeholder="Enter last name" required=""/></label>
+<label>Email <em>*</em><span class="icon-input"><svg><use href="#i-mail"></use></svg><input id="email" name="email" placeholder="Enter email address" required="" type="email"/></span></label>
+<label>Mobile Phone <em>*</em><span class="icon-input"><svg><use href="#i-phone"></use></svg><input id="mobilePhone" inputmode="tel" name="mobilePhone" placeholder="Enter mobile phone" required=""/></span></label>
+<label>Alternate Phone<input id="alternatePhone" inputmode="tel" name="alternatePhone" placeholder="Enter alternate phone"/></label>
+<label>Date of Birth <em>*</em><input id="dateOfBirth" name="dateOfBirth" required="" type="date"/></label>
+</div>
+</section>
+<section class="form-section">
+<div class="section-label"><b>3</b><svg><use href="#i-building"></use></svg><span>ORGANIZATION<br/>DETAILS</span></div>
+<div class="section-content grid-2">
+<label>Organization Name <em>*</em><select id="organization" name="organization" required=""><option value="">Select organization</option></select></label>
+<label>School / Team <em>*</em><select id="schoolTeam" name="schoolTeam" required=""><option value="">Select school or team</option></select></label>
+<label>Department<select id="department" name="department"><option value="">Select department</option></select></label>
+<label>Position Title <em>*</em><input id="positionTitle" name="positionTitle" placeholder="Enter position title" required=""/></label>
+</div>
+</section>
+<section class="form-section compact-section">
+<div class="section-label"><b>4</b><svg><use href="#i-pin"></use></svg><span>ADDRESS DETAILS</span></div>
+<div class="section-content address-grid">
+<label>Street <em>*</em><span class="icon-input"><svg><use href="#i-pin"></use></svg><input id="street" name="street" placeholder="Enter street address" required=""/></span></label>
+<label>City <em>*</em><input id="city" name="city" placeholder="Enter city" required=""/></label>
+<label>State <em>*</em><select id="stateSelect" name="state" required=""><option value="">Select state</option></select></label>
+<label>Zip Code <em>*</em><input autocomplete="postal-code" id="zipCode" inputmode="numeric" name="zipCode" placeholder="Enter zip code" required=""/></label>
+</div>
+</section>
+<section class="form-section permissions-section">
+<div class="section-label"><b>5</b><svg><use href="#i-shield"></use></svg><span>ACCESS &amp;<br/>PERMISSIONS</span></div>
+<div class="section-content permission-grid" id="permissionGrid"></div>
+</section>
+<section class="form-section security-section">
+<div class="section-label"><b>6</b><svg><use href="#i-lock"></use></svg><span>SECURITY &amp; LOGIN</span></div>
+<div class="section-content security-content">
+<div class="security-fields">
+<label>Username <em>*</em><span class="icon-input"><svg><use href="#i-user"></use></svg><input id="username" name="username" placeholder="Enter username" required=""/></span></label>
+<label>Temporary Password <em>*</em><span class="password-field"><span class="icon-input"><svg><use href="#i-lock"></use></svg><input id="temporaryPassword" name="temporaryPassword" placeholder="Generate or enter password" required="" type="password"/></span><button aria-label="Show password" id="togglePassword" type="button"><svg><use href="#i-eye"></use></svg></button></span></label>
+</div>
+<div class="security-switches">
+<label class="switch-row"><input checked="" id="sendInvite" type="checkbox"/><i></i><span>Send Invite Email</span></label>
+<label class="switch-row"><input checked="" id="requireReset" type="checkbox"/><i></i><span>Require Password Reset</span></label>
+<label class="switch-row"><input id="twoFactor" type="checkbox"/><i></i><span>Two-Factor Authentication</span></label>
+<label class="switch-row account-row"><input checked="" id="accountActive" type="checkbox"/><i></i><span>Account Status</span><b id="accountStatusLabel">Active</b></label>
+</div>
+</div>
+</section>
+<section class="form-section profile-photo-section">
+<div class="section-label"><b>7</b><svg><use href="#i-user"></use></svg><span>PROFILE PHOTO</span></div>
+<div class="section-content photo-content">
+<div class="photo-preview" id="photoPreview"><span id="photoInitials">—</span></div>
+<label class="upload-zone" id="uploadZone">
+<input accept="image/jpeg,image/png,image/gif,image/webp" hidden="" id="profilePhoto" type="file"/>
+<svg><use href="#i-upload"></use></svg>
+<span>Drag &amp; drop an image here<br/>or</span>
+<b>Choose File</b>
+<small>JPG, PNG, GIF or WEBP. Max size 5MB.</small>
+</label>
+</div>
+</section>
+<section class="form-section notes-section">
+<div class="section-label"><b>8</b><svg><use href="#i-note"></use></svg><span>NOTES / INTERNAL<br/>COMMENTS</span></div>
+<div class="section-content note-content">
+<textarea id="internalNotes" maxlength="500" placeholder="Add any notes or internal comments about this user..."></textarea>
+<span class="note-count"><b id="notesCount">0</b> / 500</span>
+</div>
+</section>
+</section>
+<aside class="summary-stack">
+<section class="summary-card user-preview-card">
+<h2><svg><use href="#i-user"></use></svg>USER PREVIEW</h2>
+<div class="preview-main">
+<div class="preview-avatar" id="previewAvatar"><span id="previewInitials">—</span></div>
+<div class="preview-copy">
+<div class="preview-title"><strong id="previewName">No name entered</strong><span id="previewRole">Role not selected</span><b id="previewStatus">Active</b></div>
+<p><svg><use href="#i-mail"></use></svg><span id="previewEmail">Email not provided</span></p>
+<p><svg><use href="#i-phone"></use></svg><span id="previewPhone">Phone not provided</span></p>
+<dl>
+<div><dt>Organization:</dt><dd id="previewOrganization">Not selected</dd></div>
+<div><dt>Position:</dt><dd id="previewPosition">Not provided</dd></div>
+<div><dt>Department:</dt><dd id="previewDepartment">Not selected</dd></div>
+<div><dt>Username:</dt><dd id="previewUsername">Not provided</dd></div>
+</dl>
+</div>
+</div>
+</section>
+<section class="summary-card permission-summary-card">
+<div class="card-heading"><h2><svg><use href="#i-shield"></use></svg>PERMISSIONS SUMMARY</h2><span id="permissionsEnabled">0 of 12 Enabled</span></div>
+<div class="permission-summary-list" id="permissionSummary"></div>
+</section>
+<section class="summary-card invitation-card">
+<h2><svg><use href="#i-send"></use></svg>INVITATION DELIVERY</h2>
+<dl>
+<div><dt>Send Invite Email</dt><dd id="inviteEmailSummary">Yes</dd></div>
+<div><dt>Delivery Method</dt><dd id="deliveryMethod">Email</dd></div>
+<div><dt>Invite Status</dt><dd><span id="inviteStatus">Not Scheduled</span></dd></div>
+</dl>
+<div class="invite-info"><i>i</i><p id="inviteMessage">An invitation email will be prepared when a valid email address and temporary password are provided.</p></div>
+</section>
+</aside>
+</div>
+<div class="bottom-actions">
+<button class="draft-btn" id="saveDraftBtn" type="button"><svg><use href="#i-save"></use></svg><span>Save Draft</span></button>
+<button class="create-user-btn" id="createUserBtn" type="button"><svg><use href="#i-user-plus"></use></svg><span>Create User</span></button>
+<button class="create-invite-btn" id="createInviteBtn" type="button"><svg><use href="#i-send"></use></svg><span>Create &amp; Send Invite</span></button>
+</div>
+</form>
+</main>
+</div>
+</div>
+<dialog class="result-dialog" id="resultDialog">
+<form method="dialog">
+<button aria-label="Close" class="dialog-close" value="close">×</button>
+<span>USER MANAGEMENT</span>
+<h2 id="resultTitle">User Created</h2>
+<p id="resultMessage"></p>
+<button value="close">Close</button>
+</form>
+</dialog>
+<div aria-live="polite" class="toast" id="toast" role="status"></div>
+<script type="module" src="admin-data-sync.js?then=admin-add-user.js,admin-navigation.js"></script></body>
+</html>

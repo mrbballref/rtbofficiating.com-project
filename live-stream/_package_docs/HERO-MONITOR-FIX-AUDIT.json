@@ -1,0 +1,46 @@
+{
+  "hero_monitor_fix": {
+    "pages_fixed": 26,
+    "pages": [
+      "clips/index.html",
+      "sponsors/index.html",
+      "originals/index.html",
+      "events/index.html",
+      "search/index.html",
+      "shows/index.html",
+      "careers/index.html",
+      "help/index.html",
+      "newsletter/index.html",
+      "schedule/index.html",
+      "production-services/index.html",
+      "live/index.html",
+      "officiating/index.html",
+      "contact/index.html",
+      "licensing/index.html",
+      "account/index.html",
+      "advertise/index.html",
+      "watch/index.html",
+      "replays/index.html",
+      "sports/index.html",
+      "highlights/index.html",
+      "press/index.html",
+      "distribution/index.html",
+      "partners/index.html",
+      "levels/index.html",
+      "production-services/request/index.html"
+    ],
+    "official_logo_used": "assets/live-stream/the-live-stream-logo.png",
+    "generic_crosshair_multiview_removed": true,
+    "old_mobile_off_canvas_rule_overridden": true,
+    "old_mobile_18_percent_opacity_overridden": true
+  },
+  "image_source_audit": {
+    "local_images_checked": 70,
+    "broken_local_image_sources": []
+  },
+  "additional_logo_path_fixes": [
+    "partners/index.html",
+    "checkout/success/index.html",
+    "checkout/cancel/index.html"
+  ]
+}

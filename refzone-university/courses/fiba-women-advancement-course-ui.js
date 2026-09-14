@@ -1,0 +1,4 @@
+(()=>{
+if(!window.FIBAWomenAdvancementCourse||!window.RefZoneCourseUICore)return;
+window.FIBAWomenAdvancementCourseUI=window.RefZoneCourseUICore.create({trackId:'fiba-women',pathwayId:'advancement',course:window.FIBAWomenAdvancementCourse,icon:'assets/pathway-icons/refzone_university_fiba_women_course.png',courseLabel:'FIBA Women Master’s-Level Advanced Officiating',shortLabel:'FIBA WOMEN MASTER’S',routeBase:'#/course/fiba-women/advancement',programHref:'#/program/fiba-women/advancement',storePrefix:'fiba-women-masters',resourceFiles:[['courses/FIBA-Women-Masters-Degree-Handbook.md','Master’s program handbook'],['courses/FIBA-Women-Masters-Coverage-Matrix.md','Coverage matrix'],['courses/FIBA-Women-Masters-Source-Report.md','Source report'],['courses/FIBA-Women-Masters-Review-Package.md','Review package']]});
+})();

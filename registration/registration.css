@@ -1,0 +1,495 @@
+
+:root{
+  --rtbo-reg-bg:#050606;
+  --rtbo-reg-panel:#0b0d0e;
+  --rtbo-reg-panel-2:#111314;
+  --rtbo-reg-line:#a84408;
+  --rtbo-reg-orange:#f36a05;
+  --rtbo-reg-orange-bright:#ff7b18;
+  --rtbo-reg-text:#f1f1ef;
+  --rtbo-reg-muted:#a7aaa8;
+  --rtbo-reg-border:#4a4d4c;
+}
+.rtbo-registration-page{
+  background:#020303;
+  color:var(--rtbo-reg-text);
+}
+.rtbo-registration-main{
+  padding:140px 18px 54px;
+  background:
+    radial-gradient(circle at 12% 8%,rgba(243,106,5,.10),transparent 24%),
+    radial-gradient(circle at 88% 10%,rgba(243,106,5,.07),transparent 22%),
+    repeating-linear-gradient(120deg,rgba(255,255,255,.018) 0 1px,transparent 1px 5px),
+    #050606;
+}
+.rtbo-registration-shell{
+  width:min(100%,1280px);
+  margin:0 auto;
+}
+.rtbo-registration-brand{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:28px;
+  margin-bottom:-8px;
+  text-align:left;
+}
+.rtbo-registration-brand img{
+  width:190px;
+  height:190px;
+  object-fit:contain;
+  filter:drop-shadow(0 18px 26px rgba(0,0,0,.55));
+}
+.rtbo-registration-brand__copy p{
+  margin:0;
+  color:#dedfdd;
+  font-family:Impact,Haettenschweiler,"Arial Narrow Bold",sans-serif;
+  font-size:64px;
+  line-height:.92;
+  letter-spacing:.06em;
+  text-transform:uppercase;
+  text-shadow:0 2px 0 #4b4b4b;
+}
+.rtbo-registration-brand__copy span{
+  display:block;
+  margin-top:12px;
+  color:var(--rtbo-reg-orange);
+  font-size:22px;
+  font-weight:900;
+  letter-spacing:.38em;
+  text-align:center;
+  text-transform:uppercase;
+}
+.rtbo-registration-form-title{
+  margin:0 0 16px;
+  padding:22px 24px 18px;
+  border-top:1px solid rgba(255,112,0,.72);
+  text-align:center;
+}
+.rtbo-registration-form-title h1{
+  margin:0;
+  color:#d9dad8;
+  font-family:Impact,Haettenschweiler,"Arial Narrow Bold",sans-serif;
+  font-size:46px;
+  letter-spacing:.045em;
+  text-transform:uppercase;
+  text-shadow:0 2px 0 #3c3c3c;
+}
+.rtbo-registration-school-card{
+  display:grid;
+  grid-template-columns:minmax(0,1.2fr) minmax(320px,.8fr);
+  gap:30px;
+  align-items:center;
+  margin-bottom:16px;
+  padding:18px 26px;
+  border:1px solid var(--rtbo-reg-line);
+  border-radius:16px;
+  background:
+    linear-gradient(145deg,rgba(255,255,255,.02),transparent 42%),
+    repeating-linear-gradient(120deg,rgba(255,255,255,.014) 0 1px,transparent 1px 5px),
+    #090b0c;
+  box-shadow:inset 0 0 0 1px rgba(255,255,255,.025);
+}
+.rtbo-school-location,
+.rtbo-school-date{
+  display:grid;
+  grid-template-columns:58px 1fr;
+  gap:16px;
+  align-items:center;
+}
+.rtbo-school-date{
+  padding-left:30px;
+  border-left:1px solid rgba(255,255,255,.13);
+}
+.rtbo-form-icon{
+  width:54px;
+  height:54px;
+  display:grid;
+  place-items:center;
+  border:1px solid var(--rtbo-reg-orange);
+  border-radius:50%;
+  color:#fff;
+  font-size:25px;
+}
+.rtbo-school-location h2,
+.rtbo-school-date label > span{
+  display:block;
+  margin:0 0 3px;
+  color:var(--rtbo-reg-orange-bright);
+  font-size:16px;
+  font-weight:900;
+  letter-spacing:.025em;
+  text-transform:uppercase;
+}
+.rtbo-school-location p{margin:2px 0;color:#c7c9c8;font-size:14px}
+.rtbo-school-location__program{font-weight:700}
+.rtbo-school-location__venue--empty{color:#8b908e!important;font-style:italic}
+.rtbo-school-date input{
+  width:100%;
+  height:42px;
+  padding:0 14px;
+  border:1px solid #555958;
+  border-radius:6px;
+  color:#eceeed;
+  background:#0b0d0e;
+  font:inherit;
+  color-scheme:dark;
+}
+.rtbo-school-registration-form{
+  display:grid;
+  gap:14px;
+}
+.rtbo-form-panel{
+  padding:18px 24px 20px;
+  border:1px solid var(--rtbo-reg-line);
+  border-radius:10px;
+  background:
+    linear-gradient(145deg,rgba(255,255,255,.016),transparent 46%),
+    #080a0a;
+}
+.rtbo-form-panel h2{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  margin:0 0 14px;
+  color:var(--rtbo-reg-orange-bright);
+  font-size:18px;
+  font-weight:900;
+  text-transform:uppercase;
+}
+.rtbo-form-panel h2 > span{font-size:22px}
+.rtbo-form-grid{
+  display:grid;
+  gap:12px;
+  margin-top:10px;
+}
+.rtbo-form-grid--2{grid-template-columns:repeat(2,minmax(0,1fr))}
+.rtbo-form-grid--address{grid-template-columns:minmax(0,1fr) 180px}
+.rtbo-form-grid--city{grid-template-columns:1fr 1fr .9fr}
+.rtbo-form-panel label,
+.rtbo-textarea-label,
+.rtbo-choice-group legend,
+.rtbo-signature-field__label{
+  color:#e2e4e2;
+  font-size:13px;
+  font-weight:600;
+}
+.rtbo-form-panel label b,
+.rtbo-choice-group legend b,
+.rtbo-signature-field__label b,
+.rtbo-school-date b{
+  color:var(--rtbo-reg-orange);
+}
+.rtbo-form-panel input:not([type="radio"]):not([type="checkbox"]),
+.rtbo-form-panel select,
+.rtbo-form-panel textarea{
+  width:100%;
+  margin-top:6px;
+  border:1px solid var(--rtbo-reg-border);
+  border-radius:5px;
+  outline:none;
+  color:#f0f1ef;
+  background:#0c0e0f;
+  font:inherit;
+  transition:border-color .2s ease,box-shadow .2s ease;
+}
+.rtbo-form-panel input:not([type="radio"]):not([type="checkbox"]),
+.rtbo-form-panel select{
+  height:42px;
+  padding:0 12px;
+}
+.rtbo-form-panel textarea{
+  min-height:145px;
+  resize:vertical;
+  padding:12px;
+  line-height:1.5;
+}
+.rtbo-form-panel input:focus,
+.rtbo-form-panel select:focus,
+.rtbo-form-panel textarea:focus{
+  border-color:var(--rtbo-reg-orange);
+  box-shadow:0 0 0 2px rgba(243,106,5,.12);
+}
+.rtbo-form-split{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:14px;
+}
+.rtbo-choice-group{
+  margin:0 0 15px;
+  padding:0;
+  border:0;
+}
+.rtbo-choice-group legend{margin-bottom:7px}
+.rtbo-choice-row{
+  display:grid;
+  gap:9px;
+}
+.rtbo-choice-row--3{grid-template-columns:repeat(3,1fr)}
+.rtbo-choice-row--5{grid-template-columns:repeat(5,1fr)}
+.rtbo-choice-row--levels{grid-template-columns:repeat(4,1fr)}
+.rtbo-choice-row label{
+  position:relative;
+  display:block;
+  cursor:pointer;
+}
+.rtbo-choice-row input{
+  position:absolute;
+  inset:0;
+  opacity:0;
+  pointer-events:none;
+}
+.rtbo-choice-row span{
+  display:flex;
+  min-height:37px;
+  align-items:center;
+  justify-content:center;
+  padding:6px 8px;
+  border:1px solid #4c5050;
+  border-radius:5px;
+  color:#d8d9d7;
+  background:#0b0d0e;
+  text-align:center;
+  font-size:12px;
+  transition:.2s ease;
+}
+.rtbo-choice-row input:checked + span{
+  border-color:var(--rtbo-reg-orange);
+  color:#fff;
+  background:rgba(243,106,5,.12);
+  box-shadow:inset 0 0 0 1px rgba(243,106,5,.15);
+}
+.rtbo-character-counter{
+  display:block;
+  margin-top:-21px;
+  padding-right:9px;
+  color:#7e8482;
+  text-align:right;
+  font-size:11px;
+  pointer-events:none;
+}
+.rtbo-textarea-label + label{
+  display:block;
+  margin-top:20px;
+}
+.rtbo-waiver-panel > p{
+  margin:0 0 14px;
+  color:#c8cbca;
+  font-size:13px;
+}
+.rtbo-waiver-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:34px;
+}
+.rtbo-waiver-grid > div + div{
+  padding-left:34px;
+  border-left:1px solid rgba(255,255,255,.12);
+}
+.rtbo-waiver-grid article{
+  display:grid;
+  grid-template-columns:25px 1fr;
+  gap:11px;
+  margin-bottom:14px;
+}
+.rtbo-waiver-grid article > span{
+  width:22px;
+  height:22px;
+  display:grid;
+  place-items:center;
+  border:1px solid var(--rtbo-reg-orange);
+  border-radius:50%;
+  color:var(--rtbo-reg-orange);
+  font-size:12px;
+}
+.rtbo-waiver-grid h3{
+  margin:0 0 3px;
+  color:#eea357;
+  font-size:12px;
+  font-weight:900;
+}
+.rtbo-waiver-grid p{
+  margin:0;
+  color:#aeb2b0;
+  font-size:12px;
+  line-height:1.45;
+}
+.rtbo-waiver-accept{
+  display:flex!important;
+  align-items:center;
+  gap:10px;
+  margin-top:8px;
+  font-size:14px!important;
+  cursor:pointer;
+}
+.rtbo-waiver-accept input{
+  width:21px;
+  height:21px;
+  accent-color:var(--rtbo-reg-orange);
+}
+.rtbo-signature-panel .rtbo-form-grid{align-items:start}
+.rtbo-signature-field canvas{
+  display:block;
+  width:100%;
+  height:78px;
+  margin-top:6px;
+  border:1px solid #555958;
+  border-radius:5px;
+  background:#0b0d0e;
+  touch-action:none;
+  cursor:crosshair;
+}
+.rtbo-signature-actions{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:10px;
+  margin-top:6px;
+}
+.rtbo-signature-actions span{
+  color:#858a88;
+  font-size:10px;
+}
+.rtbo-signature-actions button{
+  border:0;
+  color:var(--rtbo-reg-orange);
+  background:transparent;
+  font-size:11px;
+  font-weight:800;
+  cursor:pointer;
+}
+.rtbo-registration-submit{
+  text-align:center;
+  padding:2px 0 0;
+}
+.rtbo-registration-submit > button{
+  width:min(100%,480px);
+  min-height:56px;
+  display:grid;
+  grid-template-columns:42px 1fr 42px;
+  align-items:center;
+  margin:0 auto;
+  padding:0 12px;
+  border:1px solid var(--rtbo-reg-orange);
+  border-radius:9px;
+  color:#fff;
+  background:
+    radial-gradient(circle at 50% 50%,rgba(243,106,5,.19),transparent 70%),
+    #0a0b0c;
+  box-shadow:0 0 16px rgba(243,106,5,.45),inset 0 0 14px rgba(243,106,5,.08);
+  font-size:19px;
+  letter-spacing:.08em;
+  cursor:pointer;
+}
+.rtbo-registration-submit > button:hover{
+  background:linear-gradient(180deg,#ff7918,#d94c00);
+  color:#050302;
+}
+.rtbo-registration-submit > p{
+  margin:12px 0 0;
+  color:#8d9290;
+  font-size:11px;
+}
+.rtbo-registration-status{
+  min-height:22px;
+  margin-top:8px;
+  color:#63e899;
+  font-size:13px;
+  font-weight:700;
+}
+.rtbo-registration-status.is-error{color:#ff6b61}
+
+/* Registration hub */
+.rtbo-registration-main--hub{min-height:100vh}
+.rtbo-registration-hub__eyebrow{
+  margin:0 0 8px;
+  color:var(--rtbo-reg-orange);
+  font-weight:900;
+  letter-spacing:.18em;
+}
+.rtbo-registration-form-title > p:last-child{
+  color:#aeb2b0;
+}
+.rtbo-registration-hub-grid{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:16px;
+}
+.rtbo-registration-hub-card{
+  min-height:210px;
+  display:flex;
+  flex-direction:column;
+  justify-content:flex-end;
+  padding:28px;
+  border:1px solid var(--rtbo-reg-line);
+  border-radius:12px;
+  color:#fff;
+  background:
+    linear-gradient(180deg,transparent 10%,rgba(0,0,0,.80)),
+    radial-gradient(circle at 80% 10%,rgba(243,106,5,.17),transparent 34%),
+    #0a0c0d;
+  text-decoration:none;
+  transition:transform .2s ease,border-color .2s ease;
+}
+.rtbo-registration-hub-card:hover{
+  transform:translateY(-3px);
+  border-color:var(--rtbo-reg-orange-bright);
+}
+.rtbo-registration-hub-card > span{
+  color:var(--rtbo-reg-orange);
+  font-size:11px;
+  font-weight:900;
+  letter-spacing:.15em;
+}
+.rtbo-registration-hub-card h2{
+  margin:8px 0 4px;
+  font-size:22px;
+  line-height:1.15;
+}
+.rtbo-registration-hub-card p{
+  margin:0 0 16px;
+  color:#adb1af;
+}
+.rtbo-registration-hub-card strong{
+  color:var(--rtbo-reg-orange-bright);
+  font-size:12px;
+}
+
+@media(max-width:1000px){
+  .rtbo-registration-main{padding-top:120px}
+  .rtbo-registration-brand__copy p{font-size:46px}
+  .rtbo-registration-brand__copy span{font-size:16px}
+  .rtbo-registration-brand img{width:150px;height:150px}
+  .rtbo-registration-school-card,
+  .rtbo-form-split{grid-template-columns:1fr}
+  .rtbo-school-date{padding:18px 0 0;border-left:0;border-top:1px solid rgba(255,255,255,.13)}
+  .rtbo-choice-row--levels{grid-template-columns:repeat(3,1fr)}
+}
+@media(max-width:720px){
+  .rtbo-registration-main{padding:100px 10px 40px}
+  .rtbo-registration-brand{gap:12px}
+  .rtbo-registration-brand img{width:100px;height:100px}
+  .rtbo-registration-brand__copy p{font-size:30px}
+  .rtbo-registration-brand__copy span{font-size:11px;letter-spacing:.22em}
+  .rtbo-registration-form-title h1{font-size:32px}
+  .rtbo-registration-school-card{padding:16px}
+  .rtbo-form-panel{padding:16px}
+  .rtbo-form-grid--2,
+  .rtbo-form-grid--address,
+  .rtbo-form-grid--city,
+  .rtbo-waiver-grid,
+  .rtbo-registration-hub-grid{grid-template-columns:1fr}
+  .rtbo-waiver-grid > div + div{padding-left:0;border-left:0}
+  .rtbo-choice-row--3{grid-template-columns:1fr}
+  .rtbo-choice-row--5{grid-template-columns:repeat(2,1fr)}
+  .rtbo-choice-row--levels{grid-template-columns:repeat(2,1fr)}
+}
+@media(max-width:440px){
+  .rtbo-registration-brand{align-items:center}
+  .rtbo-registration-brand img{width:82px;height:82px}
+  .rtbo-registration-brand__copy p{font-size:24px}
+  .rtbo-registration-brand__copy span{font-size:9px}
+  .rtbo-form-icon{width:44px;height:44px}
+  .rtbo-school-location,.rtbo-school-date{grid-template-columns:44px 1fr}
+  .rtbo-choice-row--levels{grid-template-columns:1fr}
+}

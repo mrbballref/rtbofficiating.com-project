@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Raising The Bar Officiating Super Administrator gateway">
+  <title>Super Admin Dashboard | Raising The Bar Officiating</title>
+  <script type="module">
+    import { requireRole } from './assets/auth.js';
+    document.documentElement.style.visibility = 'hidden';
+    const session = await requireRole([]);
+    if (session) location.replace("got-u-nex-ref/application/admin-dashboard.html");
+  </script>
+  <style>
+    body{margin:0;min-height:100vh;display:grid;place-items:center;background:#030405;color:#fff;font-family:Arial,sans-serif}
+    main{max-width:680px;padding:32px;text-align:center;border:1px solid #f45a0a;background:#090b0d}
+    a{color:#ff7418;font-weight:800}
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Opening the functional Super Admin Dashboard…</h1>
+    <p>If you are not redirected automatically, <a href="got-u-nex-ref/application/admin-dashboard.html">open the dashboard here</a>.</p>
+  </main>
+</body>
+</html>

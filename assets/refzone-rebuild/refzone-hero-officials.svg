@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 520" role="img" aria-labelledby="title desc">
+<title id="title">Three basketball officials entering an arena</title>
+<desc id="desc">Original vector artwork showing three striped-shirt basketball officials from behind beneath arena lights, with the center official holding a basketball.</desc>
+<defs>
+  <linearGradient id="skin1" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#6d3c27"/><stop offset="1" stop-color="#26130e"/></linearGradient>
+  <linearGradient id="skin2" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#986044"/><stop offset="1" stop-color="#321a13"/></linearGradient>
+  <linearGradient id="blackCloth" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#24282b"/><stop offset=".48" stop-color="#090b0d"/><stop offset="1" stop-color="#17191b"/></linearGradient>
+  <linearGradient id="whiteCloth" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#f2f2ee"/><stop offset=".48" stop-color="#a7a7a2"/><stop offset="1" stop-color="#4c4d4f"/></linearGradient>
+  <radialGradient id="ball" cx="35%" cy="28%" r="76%"><stop stop-color="#d6772c"/><stop offset=".45" stop-color="#8c3d12"/><stop offset="1" stop-color="#2c1008"/></radialGradient>
+  <radialGradient id="halo"><stop stop-color="#ffd9a3" stop-opacity=".75"/><stop offset=".34" stop-color="#f8a14f" stop-opacity=".26"/><stop offset="1" stop-color="#f06a17" stop-opacity="0"/></radialGradient>
+  <filter id="shadow" x="-30%" y="-20%" width="170%" height="170%"><feDropShadow dx="0" dy="18" stdDeviation="20" flood-color="#000" flood-opacity=".92"/></filter>
+  <filter id="glow" x="-80%" y="-80%" width="260%" height="260%"><feGaussianBlur stdDeviation="18"/></filter>
+  <pattern id="jerseyStripe" width="34" height="34" patternUnits="userSpaceOnUse"><rect width="17" height="34" fill="url(#whiteCloth)"/><rect x="17" width="17" height="34" fill="#0b0d0f"/></pattern>
+  <clipPath id="centerTorso"><path d="M335 170 C360 145 420 143 450 170 L480 338 C450 362 344 364 309 336 Z"/></clipPath>
+  <clipPath id="leftTorso"><path d="M205 214 C228 190 273 192 296 215 L319 354 C291 373 215 372 190 351 Z"/></clipPath>
+  <clipPath id="rightTorso"><path d="M535 209 C560 187 608 190 634 215 L662 357 C633 375 553 373 526 351 Z"/></clipPath>
+</defs>
+<!-- backlight -->
+<ellipse cx="435" cy="86" rx="285" ry="205" fill="url(#halo)" opacity=".72" filter="url(#glow)"/>
+<!-- floor shadows -->
+<ellipse cx="410" cy="488" rx="300" ry="30" fill="#000" opacity=".72" filter="url(#glow)"/>
+<g>
+  <!-- left official -->
+  <g>
+    <path d="M226 187 C220 160 232 133 256 128 C285 122 303 145 299 177 C296 195 285 207 263 210 C243 209 231 201 226 187Z" fill="url(#skin2)"/>
+    <path d="M225 150 C232 126 266 115 288 132 C296 139 301 151 300 165 C286 150 255 146 225 150Z" fill="#111214"/>
+    <path d="M244 202 L280 202 L286 225 L236 225Z" fill="url(#skin2)"/>
+    <path d="M205 214 C228 190 273 192 296 215 L319 354 C291 373 215 372 190 351Z" fill="#0c0e10"/>
+    <g clip-path="url(#leftTorso)"><rect x="184" y="196" width="145" height="175" fill="url(#jerseyStripe)"/><path d="M190 210 L220 197 L239 374 L190 360Z" fill="#080a0c" opacity=".78"/><path d="M320 212 L293 197 L276 374 L326 360Z" fill="#080a0c" opacity=".78"/></g>
+    <path d="M205 217 C181 244 167 292 168 356 L198 360 L224 236Z" fill="url(#skin2)"/>
+    <path d="M296 218 C321 250 337 296 339 357 L309 359 L281 236Z" fill="url(#skin2)"/>
+    <path d="M192 348 L251 348 L247 515 L174 515Z" fill="url(#blackCloth)"/>
+    <path d="M252 348 L315 348 L337 515 L262 515Z" fill="url(#blackCloth)"/>
+    <path d="M236 220 h30 v28 h-30z" fill="#111" stroke="#c96a24" stroke-width="2"/><text x="251" y="240" text-anchor="middle" fill="#f5efe3" font-family="Arial Black" font-size="15">R</text>
+  </g>
+  <!-- right official -->
+  <g>
+    <path d="M559 184 C554 157 567 132 591 127 C619 121 638 145 634 175 C631 194 619 207 598 209 C577 208 564 201 559 184Z" fill="url(#skin1)"/>
+    <path d="M558 151 C568 123 604 116 624 134 C632 142 636 153 635 166 C621 151 590 145 558 151Z" fill="#090a0c"/>
+    <path d="M576 201 L613 201 L619 226 L569 226Z" fill="url(#skin1)"/>
+    <path d="M535 209 C560 187 608 190 634 215 L662 357 C633 375 553 373 526 351Z" fill="#0b0d0f"/>
+    <g clip-path="url(#rightTorso)"><rect x="520" y="194" width="155" height="182" fill="url(#jerseyStripe)"/><path d="M527 210 L556 194 L572 375 L520 359Z" fill="#080a0c" opacity=".8"/><path d="M669 214 L637 194 L621 375 L675 359Z" fill="#080a0c" opacity=".8"/></g>
+    <path d="M536 218 C510 246 497 297 500 363 L531 365 L554 236Z" fill="url(#skin1)"/>
+    <path d="M634 219 C660 250 677 297 682 363 L650 365 L618 236Z" fill="url(#skin1)"/>
+    <path d="M527 350 L592 350 L585 515 L508 515Z" fill="url(#blackCloth)"/>
+    <path d="M592 350 L657 350 L680 515 L602 515Z" fill="url(#blackCloth)"/>
+    <path d="M577 217 h31 v29 h-31z" fill="#111" stroke="#c96a24" stroke-width="2"/><text x="592.5" y="238" text-anchor="middle" fill="#f5efe3" font-family="Arial Black" font-size="15">R</text>
+  </g>
+  <!-- center official -->
+  <g>
+    <path d="M365 145 C358 111 376 79 407 74 C442 68 466 96 461 132 C458 156 443 171 416 174 C388 172 370 163 365 145Z" fill="url(#skin1)"/>
+    <path d="M364 107 C375 75 417 63 447 85 C458 94 465 108 463 124 C444 104 402 99 364 107Z" fill="#0a0b0d"/>
+    <path d="M388 165 L438 165 L446 194 L379 194Z" fill="url(#skin1)"/>
+    <path d="M335 170 C360 145 420 143 450 170 L480 338 C450 362 344 364 309 336Z" fill="#0b0d0f"/>
+    <g clip-path="url(#centerTorso)"><rect x="300" y="148" width="190" height="220" fill="url(#jerseyStripe)"/><path d="M305 171 L345 148 L366 368 L300 347Z" fill="#07090b" opacity=".82"/><path d="M486 171 L451 148 L428 368 L492 347Z" fill="#07090b" opacity=".82"/></g>
+    <path d="M336 176 C294 210 275 270 272 355 L311 360 L357 197Z" fill="url(#skin1)"/>
+    <path d="M450 177 C490 212 513 270 519 356 L479 360 L430 197Z" fill="url(#skin1)"/>
+    <path d="M307 335 L392 335 L382 520 L284 520Z" fill="url(#blackCloth)"/>
+    <path d="M392 335 L479 335 L514 520 L408 520Z" fill="url(#blackCloth)"/>
+    <path d="M381 180 h43 v36 h-43z" fill="#111" stroke="#d16f25" stroke-width="2.4"/><text x="402.5" y="205" text-anchor="middle" fill="#f8f0df" font-family="Arial Black" font-size="19">R</text>
+    <!-- ball and hand -->
+    <circle cx="291" cy="355" r="62" fill="url(#ball)" stroke="#180903" stroke-width="8"/>
+    <path d="M231 355 H351 M291 295 C270 323 263 348 264 372 C266 394 276 410 291 417 M291 295 C313 323 320 348 318 372 C316 394 306 410 291 417" fill="none" stroke="#240d05" stroke-width="7"/>
+    <path d="M280 298 C250 320 237 351 241 384" fill="none" stroke="#5a2410" stroke-width="3" opacity=".75"/>
+    <path d="M289 329 C273 321 260 326 253 341 C247 356 252 369 269 376" fill="none" stroke="#7f4933" stroke-width="12" stroke-linecap="round"/>
+  </g>
+</g>
+<!-- rim lights -->
+<path d="M165 515 C315 476 542 480 700 515" fill="none" stroke="#e66b1d" stroke-opacity=".18" stroke-width="3"/>
+</svg>

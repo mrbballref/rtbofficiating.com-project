@@ -1,0 +1,210 @@
+
+/* Super Admin Profile — uses the existing Admin Dashboard shell */
+.profile-main{font-size:16px!important}.admin-profile-static{cursor:default}.profile-hero{display:grid;grid-template-columns:180px minmax(0,1fr) auto;gap:28px;align-items:center;padding:28px;margin-bottom:18px;background:radial-gradient(circle at 16% 15%,rgba(183,25,18,.12),transparent 28%),linear-gradient(135deg,#121719,#0b0e10)}
+.profile-avatar-wrap{display:flex;flex-direction:column;align-items:center;gap:10px}.profile-avatar-wrap>img{width:150px;height:150px;border-radius:50%;object-fit:cover;border:3px solid #b91a14;background:#111;box-shadow:0 0 0 5px rgba(255,255,255,.035),0 0 26px rgba(215,33,23,.16)}.profile-photo-btn{border:1px solid #363c3f;border-radius:6px;background:#0a0d0f;color:#fff;min-height:40px;padding:0 12px;display:inline-flex;align-items:center;gap:8px;cursor:pointer;font-size:16px}.profile-photo-btn svg{width:19px;height:19px;fill:none;stroke:currentColor;stroke-width:1.5}
+.profile-eyebrow{display:block;color:#e2a64e;font-weight:800;font-size:16px;letter-spacing:.07em;margin-bottom:7px}.profile-identity h2{font-size:36px;margin:0 0 6px}.profile-identity p{margin:0;color:#bfc4c1;font-size:16px}.profile-badges{display:flex;gap:10px;flex-wrap:wrap;margin-top:16px}.access-badge,.profile-badges .status-badge{min-height:34px;padding:0 11px;border-radius:999px;display:inline-flex;align-items:center;gap:7px;font-size:16px;font-weight:700}.access-badge{border:1px solid #b37a22;color:#f0bb64;background:#281b08}.access-badge svg{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:1.5}.profile-badges .status-badge{border:1px solid #287a36;color:#68dc78;background:#08230c}.profile-badges .status-badge.inactive{border-color:#8e1b16;color:#ff6a61;background:#250908}.profile-hero-actions{display:flex;gap:12px;align-items:center;flex-wrap:wrap}.profile-hero-actions .primary-action,.profile-hero-actions .secondary-action{font-size:16px;text-decoration:none}.profile-hero-actions svg{width:19px;height:19px;fill:none;stroke:currentColor;stroke-width:1.6}
+.profile-summary-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin-bottom:18px}.profile-summary-card{border:1px solid #353b3e;border-radius:8px;background:linear-gradient(145deg,#111517,#0c0f10);padding:18px 20px;min-height:118px}.profile-summary-card span{display:block;color:#b9bebb;font-size:16px}.profile-summary-card strong{display:block;font-size:25px;margin:8px 0 4px}.profile-summary-card small{font-size:16px;color:#969c99;line-height:1.35}
+.profile-content-grid{display:grid;grid-template-columns:minmax(0,1.55fr) minmax(340px,.8fr);gap:18px}.profile-left-column,.profile-right-column{display:flex;flex-direction:column;gap:18px}.profile-section{padding:0}.profile-section .panel-head{padding:16px 18px;border-bottom:1px solid #2e3336}.profile-section .panel-head h3{font-size:20px}.text-action{border:0;background:transparent;color:#e3a64e;font-weight:700;cursor:pointer;font-size:16px}.profile-detail-grid{display:grid;grid-template-columns:1fr 1fr;gap:0;margin:0;padding:0}.profile-detail-grid>div{min-height:88px;padding:15px 18px;border-bottom:1px solid #252a2d}.profile-detail-grid>div:nth-child(odd){border-right:1px solid #252a2d}.profile-detail-grid dt{color:#9da3a0;font-size:16px;margin-bottom:7px}.profile-detail-grid dd{margin:0;font-size:16px;color:#f2f4f1;overflow-wrap:anywhere}.profile-bio{padding:17px 18px}.profile-bio span{display:block;color:#9da3a0;font-size:16px;margin-bottom:8px}.profile-bio p{margin:0;color:#e4e7e4;font-size:16px;line-height:1.55;white-space:pre-wrap}.security-list{padding:5px 18px}.security-list>div{display:flex;justify-content:space-between;gap:18px;padding:13px 0;border-bottom:1px solid #292e31}.security-list>div:last-child{border-bottom:0}.security-list span{color:#aeb4b0;font-size:16px}.security-list strong{text-align:right;font-size:16px}.profile-section-link{margin:8px 18px 18px;border:1px solid #3a4043;border-radius:6px;background:#0a0d0f;color:#fff;min-height:44px;padding:0 13px;text-decoration:none;display:flex;align-items:center;gap:9px;font-size:16px}.profile-section-link svg{width:19px;height:19px;fill:none;stroke:currentColor;stroke-width:1.5}.permission-list{padding:12px 18px 17px;display:flex;flex-direction:column;gap:0}.permission-list>div{display:grid;grid-template-columns:22px 1fr;gap:10px;align-items:center;padding:10px 0;border-bottom:1px solid #292e31;font-size:16px}.permission-list>div:last-child{border-bottom:0}.permission-list svg{width:20px;height:20px;fill:none;stroke:#58cf69;stroke-width:1.8}.activity-list{padding:8px 18px 17px}.activity-row{display:grid;grid-template-columns:12px 1fr;gap:12px;padding:11px 0;border-bottom:1px solid #292e31}.activity-row:last-child{border-bottom:0}.activity-dot{width:8px;height:8px;border-radius:50%;background:#e3a64e;margin-top:7px}.activity-row strong{display:block;font-size:16px}.activity-row span{display:block;color:#9fa5a2;font-size:16px;margin-top:3px}.activity-empty{padding:16px 0;color:#9fa5a2;font-size:16px;line-height:1.45}
+.profile-modal[hidden]{display:none}.profile-modal{position:fixed;inset:0;z-index:100}.profile-modal-backdrop{position:absolute;inset:0;background:rgba(0,0,0,.76);backdrop-filter:blur(3px)}.profile-modal-dialog{position:relative;z-index:1;width:min(900px,calc(100% - 32px));max-height:calc(100vh - 32px);overflow:auto;margin:16px auto;border:1px solid #3b4144;border-radius:10px;background:linear-gradient(145deg,#121719,#0b0e10);box-shadow:0 24px 65px rgba(0,0,0,.55)}.profile-modal-head{display:flex;justify-content:space-between;gap:20px;align-items:flex-start;padding:20px 22px;border-bottom:1px solid #303639}.profile-modal-head h2{margin:0;font-size:26px}.profile-modal-head p{margin:7px 0 0;color:#aeb4b0;font-size:16px}.modal-close{width:42px;height:42px;border:1px solid #3a4043;border-radius:6px;background:#090b0c;color:#fff;font-size:28px;cursor:pointer}.profile-edit-form,#profileEditForm{padding:20px 22px}.profile-form-grid{display:grid;grid-template-columns:1fr 1fr;gap:15px}.profile-form-grid label{display:flex;flex-direction:column;gap:7px}.profile-form-grid label>span{font-size:16px;color:#d8dcda;font-weight:600}.profile-form-grid input,.profile-form-grid select,.profile-form-grid textarea{width:100%;border:1px solid #373d40;border-radius:6px;background:#0a0d0f;color:#fff;padding:10px 12px;outline:none;font-size:16px}.profile-form-grid input,.profile-form-grid select{height:46px}.profile-form-grid textarea{resize:vertical;min-height:120px}.profile-form-wide{grid-column:1/-1}.profile-modal-actions{display:flex;justify-content:flex-end;gap:12px;margin-top:20px;padding-top:17px;border-top:1px solid #303639}.profile-modal-actions button{font-size:16px}
+.admin-nav a[href="admin-profile.html"] svg{stroke:#e1e4e1}.admin-nav a[href="admin-profile.html"].active{color:#fff}
+@media(max-width:1180px){.profile-hero{grid-template-columns:150px 1fr}.profile-hero-actions{grid-column:1/-1}.profile-summary-grid{grid-template-columns:repeat(2,1fr)}.profile-content-grid{grid-template-columns:1fr}.profile-right-column{display:grid;grid-template-columns:1fr 1fr}.profile-right-column .profile-section:last-child{grid-column:1/-1}}
+@media(max-width:760px){.profile-hero{grid-template-columns:1fr;text-align:center}.profile-avatar-wrap{justify-self:center}.profile-badges,.profile-hero-actions{justify-content:center}.profile-summary-grid{grid-template-columns:1fr}.profile-detail-grid{grid-template-columns:1fr}.profile-detail-grid>div:nth-child(odd){border-right:0}.profile-right-column{display:flex}.profile-form-grid{grid-template-columns:1fr}.profile-form-wide{grid-column:auto}}
+
+.assignments-dropdown.active>summary{background:linear-gradient(90deg,#64100c,#1a0a09);color:#ff4b45;border-color:#9b1c17}.admin-subnav a.current{color:#ff4b45;background:#151718}.admin-subnav a.current:before{background:#e51a16}
+
+
+/* Super Admin personal game assignments */
+.admin-personal-assignments{
+  margin-bottom:18px;
+  overflow:hidden;
+}
+.admin-personal-assignments-head{
+  display:flex;
+  align-items:flex-start;
+  justify-content:space-between;
+  gap:22px;
+  padding:20px 22px;
+  border-bottom:1px solid #2d3336;
+  background:linear-gradient(90deg,rgba(179,25,18,.08),transparent 44%);
+}
+.admin-personal-assignments-head h3{
+  margin:0;
+  font-size:24px;
+}
+.admin-personal-assignments-head p{
+  max-width:850px;
+  margin:7px 0 0;
+  color:#aeb4b0;
+  font-size:16px;
+  line-height:1.5;
+}
+.admin-personal-assignments-head .profile-eyebrow{
+  margin-bottom:5px;
+}
+.admin-personal-assignments-head .secondary-action{
+  flex:0 0 auto;
+  min-height:44px;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  text-decoration:none;
+  font-size:16px;
+}
+.admin-personal-assignment-stats{
+  display:grid;
+  grid-template-columns:repeat(4,minmax(0,1fr));
+  border-bottom:1px solid #2d3336;
+}
+.admin-personal-assignment-stats>div{
+  min-height:94px;
+  padding:16px 20px;
+  border-right:1px solid #2d3336;
+}
+.admin-personal-assignment-stats>div:last-child{border-right:0}
+.admin-personal-assignment-stats span{
+  display:block;
+  color:#9da4a1;
+  font-size:16px;
+}
+.admin-personal-assignment-stats strong{
+  display:block;
+  margin-top:6px;
+  font-size:29px;
+  color:#f2f4f1;
+}
+.admin-personal-assignment-tabs{
+  display:flex;
+  gap:4px;
+  padding:12px 16px 0;
+  overflow-x:auto;
+  border-bottom:1px solid #2d3336;
+}
+.admin-personal-assignment-tabs button{
+  min-height:44px;
+  padding:0 16px;
+  border:0;
+  border-bottom:2px solid transparent;
+  background:transparent;
+  color:#b8bebb;
+  font-size:16px;
+  font-weight:700;
+  cursor:pointer;
+  white-space:nowrap;
+}
+.admin-personal-assignment-tabs button:hover,
+.admin-personal-assignment-tabs button.active{
+  color:#fff;
+  border-bottom-color:#df241b;
+}
+.admin-personal-assignment-tabs button span{
+  display:inline-grid;
+  min-width:24px;
+  min-height:24px;
+  margin-left:6px;
+  padding:0 6px;
+  place-items:center;
+  border-radius:999px;
+  background:#242a2d;
+  font-size:13px;
+}
+.admin-personal-assignment-table-wrap{
+  overflow-x:auto;
+}
+.admin-personal-assignment-table{
+  width:100%;
+  min-width:980px;
+  border-collapse:collapse;
+}
+.admin-personal-assignment-table th,
+.admin-personal-assignment-table td{
+  padding:15px 16px;
+  border-bottom:1px solid #262c2f;
+  text-align:left;
+  vertical-align:middle;
+  font-size:16px;
+}
+.admin-personal-assignment-table th{
+  color:#9fa6a2;
+  font-size:16px;
+  font-weight:700;
+  background:#0b0e10;
+}
+.admin-personal-assignment-table tbody tr:last-child td{
+  border-bottom:0;
+}
+.admin-personal-assignment-game strong,
+.admin-personal-assignment-date strong{
+  display:block;
+  color:#f2f4f1;
+  font-size:16px;
+}
+.admin-personal-assignment-game span,
+.admin-personal-assignment-date span,
+.admin-personal-assignment-muted{
+  display:block;
+  margin-top:4px;
+  color:#9ea5a2;
+  font-size:16px;
+}
+.admin-personal-assignment-status{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  min-width:92px;
+  min-height:34px;
+  padding:0 12px;
+  border-radius:999px;
+  border:1px solid #4a5053;
+  background:#111517;
+  color:#dfe3e0;
+  font-size:16px;
+  font-weight:800;
+  text-transform:capitalize;
+}
+.admin-personal-assignment-status.pending{
+  border-color:#9b6715;
+  color:#f3b64d;
+  background:#271b08;
+}
+.admin-personal-assignment-status.accepted{
+  border-color:#2a7937;
+  color:#68dc78;
+  background:#08230c;
+}
+.admin-personal-assignment-status.declined{
+  border-color:#8e1b16;
+  color:#ff6a61;
+  background:#250908;
+}
+.admin-personal-assignment-empty{
+  padding:30px 20px;
+  color:#9fa5a2;
+  text-align:center;
+  font-size:16px;
+}
+@media(max-width:900px){
+  .admin-personal-assignments-head{
+    flex-direction:column;
+  }
+  .admin-personal-assignment-stats{
+    grid-template-columns:repeat(2,minmax(0,1fr));
+  }
+  .admin-personal-assignment-stats>div:nth-child(2){
+    border-right:0;
+  }
+  .admin-personal-assignment-stats>div:nth-child(-n+2){
+    border-bottom:1px solid #2d3336;
+  }
+}
+@media(max-width:560px){
+  .admin-personal-assignment-stats{
+    grid-template-columns:1fr;
+  }
+  .admin-personal-assignment-stats>div{
+    border-right:0;
+    border-bottom:1px solid #2d3336;
+  }
+  .admin-personal-assignment-stats>div:last-child{
+    border-bottom:0;
+  }
+}

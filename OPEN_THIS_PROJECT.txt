@@ -1,0 +1,14 @@
+RAISING THE BAR OFFICIATING + GOT U NEX REF
+HTML / CSS / JAVASCRIPT FRONTEND REVIEW BUILD
+
+1. Extract the ZIP.
+2. Open index.html in Chrome, Edge, Firefox, or Safari.
+3. Use the Got U Nex Ref card or any existing Got U Nex Ref link to enter the incorporated platform.
+
+Direct Got U Nex Ref pages:
+- got-u-nex-ref/index.html
+- got-u-nex-ref/user-profile/index.html
+- got-u-nex-ref/super-admin-profile/index.html
+- got-u-nex-ref/platform/index.html
+
+Both standard user and Super Admin profiles include RTBO Home CTAs that return to the local RTBO index.html in this project.

@@ -1,0 +1,19 @@
+{
+  "track": "EuroLeague Men",
+  "generated": "2026-08-06",
+  "uploadedReferences": [
+    {
+      "title": "2025-26 Euroleague Basketball Officiating Manual",
+      "pages": 94,
+      "sha256": "7d0ea9e9bc83ca7e3725c20a25ac3d8f58a7cc56ea073e92dde6fa5862ef6910",
+      "usage": "Reference authority only; not reproduced"
+    },
+    {
+      "title": "FIBA Official Basketball Rules 2024",
+      "pages": 105,
+      "sha256": "62294f5231710584fd72f53cb2f9825e8f3275ec9a336cb27c81072eb8eb4b46",
+      "usage": "Underlying reference authority only; not reproduced"
+    }
+  ],
+  "publicationGate": "Final 2026-27 EuroLeague bylaws, adapted rules, officiating manual, technical clarification, IRS, and assignment directives require validation before current-season publication."
+}

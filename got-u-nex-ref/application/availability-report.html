@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Availability Report — Got U Nex Ref Admin</title>
+  <link rel="stylesheet" href="availability-report.css">
+<link rel="stylesheet" href="admin-global.css"></head>
+<body><a class="admin-dashboard-cta-global" href="admin-dashboard.html" aria-label="Back to Admin Dashboard">← ADMIN DASHBOARD</a>
+  <svg class="sprite" aria-hidden="true">
+    <symbol id="i-calendar" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M16 3v4M8 3v4M3 10h18"/></symbol>
+    <symbol id="i-search" viewBox="0 0 24 24"><circle cx="10" cy="10" r="6"/><path d="m15 15 6 6"/></symbol>
+    <symbol id="i-filter" viewBox="0 0 24 24"><path d="M3 5h18l-7 8v6l-4 2v-8z"/></symbol>
+    <symbol id="i-download" viewBox="0 0 24 24"><path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><path d="M4 20h16"/></symbol>
+    <symbol id="i-print" viewBox="0 0 24 24"><path d="M7 8V4h10v4"/><rect x="5" y="13" width="14" height="7" rx="1"/><path d="M5 10h14a2 2 0 0 1 2 2v3H3v-3a2 2 0 0 1 2-2z"/></symbol>
+    <symbol id="i-user" viewBox="0 0 24 24"><circle cx="12" cy="7" r="4"/><path d="M4 21c0-4.2 3.6-7 8-7s8 2.8 8 7"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+    <symbol id="i-chevron" viewBox="0 0 24 24"><path d="m9 6 6 6-6 6"/></symbol>
+  </svg>
+
+  <main class="availability-page">
+    <section class="page-head">
+      <div>
+        <h1>AVAILABILITY REPORT</h1>
+        <p>View official availability for a selected date range.</p>
+      </div>
+      <div class="head-actions">
+        <button class="btn btn-outline" id="exportExcelBtn" type="button"><svg><use href="#i-download"></use></svg>Export (Excel)</button>
+        <button class="btn btn-red" id="printReportBtn" type="button"><svg><use href="#i-print"></use></svg>Print Report</button>
+      </div>
+    </section>
+
+    <section class="filter-card">
+      <div class="filters-grid">
+        <label class="field wide"><span>DATE RANGE</span><div class="control select-wrap"><svg><use href="#i-calendar"></use></svg><select id="filterDateRange"><option value="28">Next 28 Days</option><option value="7">Next 7 Days</option><option value="month">This Month</option><option value="90">Next 90 Days</option></select></div></label>
+        <label class="field"><span>LEVEL</span><div class="control select-wrap"><select id="filterLevel"><option>All Levels</option></select></div></label>
+        <label class="field"><span>GENDER</span><div class="control select-wrap"><select id="filterGender"><option>All Genders</option></select></div></label>
+        <label class="field"><span>OFFICIAL TYPE</span><div class="control select-wrap"><select id="filterType"><option>All Types</option></select></div></label>
+        <label class="field"><span>STATUS</span><div class="control select-wrap"><select id="filterStatus"><option>All Statuses</option><option>Available</option><option>Unavailable</option><option>Pending</option></select></div></label>
+        <label class="field search-field"><span>&nbsp;</span><div class="control search-control"><svg><use href="#i-search"></use></svg><input id="filterSearch" type="search" placeholder="Search officials..."></div></label>
+        <div class="field filter-trigger"><span>&nbsp;</span><button class="btn btn-outline small" id="filterBtn" type="button"><svg><use href="#i-filter"></use></svg>Filters</button></div>
+      </div>
+    </section>
+
+    <section class="stats-grid" id="statsGrid"></section>
+
+    <section class="table-card">
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th rowspan="2" class="left">OFFICIAL</th>
+              <th rowspan="2">TYPE</th>
+              <th rowspan="2">LEVEL</th>
+              <th rowspan="2">GENDER</th>
+              <th colspan="4">AVAILABILITY SUMMARY</th>
+              <th rowspan="2">STATUS</th>
+              <th rowspan="2">LAST UPDATED</th>
+            </tr>
+            <tr>
+              <th>AVAILABLE</th>
+              <th>UNAVAILABLE</th>
+              <th>PENDING</th>
+              <th>TOTAL</th>
+            </tr>
+          </thead>
+          <tbody id="reportRows"></tbody>
+        </table>
+      </div>
+      <div class="table-footer">
+        <div id="tableSummary">Showing 0 officials</div>
+        <div class="pagination">
+          <button class="page-btn" id="prevPageBtn" type="button">‹</button>
+          <button class="page-btn active" type="button">1</button>
+          <button class="page-btn" type="button">2</button>
+          <button class="page-btn" type="button">3</button>
+          <button class="page-btn" type="button">4</button>
+          <button class="page-btn" type="button">5</button>
+          <span class="page-dots">…</span>
+          <button class="page-btn" type="button">13</button>
+          <button class="page-btn" id="nextPageBtn" type="button">›</button>
+        </div>
+        <div class="per-page"><select id="perPageSelect"><option>10 per page</option><option>25 per page</option><option>50 per page</option></select></div>
+      </div>
+    </section>
+  </main>
+
+  <script src="admin-navigation.js"></script><script type="module" src="availability-report.js"></script>
+</body>
+</html>

@@ -1,0 +1,68 @@
+
+/* Embedded Live Now mode: preserve the approved iPad player itself,
+   while removing the standalone demo header/sidebar/creator areas. */
+html,body{
+  min-height:0!important;
+  background:transparent!important;
+}
+body{
+  overflow:hidden;
+}
+.app-shell{
+  width:100%!important;
+  max-width:none!important;
+  margin:0!important;
+  padding:0!important;
+  background:transparent!important;
+}
+.app-shell::before{
+  display:none!important;
+}
+.topbar,
+.broadcast-header,
+.broadcast-side-panel,
+.playlist-panel,
+.creator-card{
+  display:none!important;
+}
+.stage-layout{
+  display:block!important;
+  width:100%!important;
+  margin:0!important;
+  padding:0!important;
+  border:0!important;
+  border-radius:0!important;
+  background:transparent!important;
+  box-shadow:none!important;
+}
+.stage-layout::before{
+  display:none!important;
+}
+.ipad-wrap{
+  width:100%!important;
+  max-width:none!important;
+  margin:0 auto!important;
+}
+.ipad-glass{
+  height:760px!important;
+  min-height:760px!important;
+}
+.offline-state .screensaver-copy{
+  display:none!important;
+}
+.upload-dialog{
+  z-index:9999;
+}
+@media(max-width:834px){
+  body{overflow:auto}
+  .ipad-glass{
+    height:680px!important;
+    min-height:680px!important;
+  }
+}
+@media(max-width:540px){
+  .ipad-glass{
+    height:580px!important;
+    min-height:580px!important;
+  }
+}

@@ -1,0 +1,335 @@
+{
+  "html_pages": 29,
+  "missing_internal_html_links": [],
+  "navigation_fix": {
+    "center_brand_reserved_column": "176px desktop / 160px compact desktop",
+    "desktop_to_mobile_breakpoint": "1320px",
+    "issue_fixed": "right-side navigation can no longer flow underneath the centered THE LIVE STREAM brand"
+  },
+  "approved_live_stream_logo": "assets/live-stream/the-live-stream-logo.png",
+  "navigation_layout": "RTBO-style: left group / centered approved logo / right group",
+  "navigation_balance_fix": {
+    "desktop_left_primary_controls": 6,
+    "desktop_right_primary_controls": 6,
+    "center_logo_column": "132px",
+    "desktop_mobile_breakpoint": "1380px",
+    "layout": "equal outer columns with exact centered approved Live Stream logo"
+  },
+  "experience_section": {
+    "position": "directly below hero",
+    "images": [
+      "multi-camera-coverage.png",
+      "live-stats-scoreboard.png",
+      "live-commentary-analysis.png",
+      "instant-replay-highlights.png",
+      "stay-connected-anywhere.png"
+    ],
+    "desktop_alignment": "centered images with justify-content: space-between",
+    "heading_bottom_padding": "10px",
+    "chrome_borders": "1px top and bottom, inset 10px"
+  },
+  "mirrored_navigation_source": "approved_rtbo_navigation_menu.zip",
+  "navigation_match": {
+    "position": "fixed, top 18px",
+    "container_width": "min(calc(100% - 42px), 1540px)",
+    "desktop_grid": "1fr / 178px / 1fr",
+    "border": "3px chrome burnt-orange/crimson/warm-silver gradient",
+    "radius": "24px",
+    "center_logo": "172px exact approved Live Stream logo",
+    "left_alignment": "flex-end toward center logo",
+    "right_alignment": "flex-start away from center logo",
+    "mobile_breakpoint": "1180px"
+  },
+  "featured_live_event_section": {
+    "position": "directly below The Live Stream Experience",
+    "player_source": "approved ipad13-video-player(2).zip styling",
+    "player_alignment": "left",
+    "copy_alignment": "right",
+    "player_tab": "RTBO LIVE NETWORK",
+    "chrome_borders": "1px top/bottom, inset 10px"
+  },
+  "featured_live_event_typography": {
+    "heading": "55px",
+    "subheadings": "24px"
+  },
+  "featured_player_tab_typography": {
+    "RTBO LIVE NETWORK": "32px"
+  },
+  "featured_player_tab_radius": {
+    "bottom_right": "10px",
+    "bottom_left": "10px"
+  },
+  "membership_system": {
+    "plans": {
+      "free": {
+        "monthly": 0,
+        "annual": 0
+      },
+      "plus": {
+        "monthly": 9.99,
+        "annual": 99.99
+      },
+      "premium": {
+        "monthly": 19.99,
+        "annual": 199.99
+      },
+      "all_access": {
+        "monthly": 29.99,
+        "annual": 299.99
+      }
+    },
+    "gateway": "Stripe Checkout server integration",
+    "checkout_success": "/live-stream/checkout/success/",
+    "checkout_cancel": "/live-stream/checkout/cancel/",
+    "server": "/server/server.js"
+  },
+  "navigation_spacing": {
+    "production_services_margin_left": "15px",
+    "scope": "desktop >= 1181px"
+  },
+  "logo_overlap_fix": {
+    "cause": "absolute centered logo did not participate in CSS Grid auto-placement",
+    "left_navigation_grid_column": 1,
+    "center_logo_grid_column": 2,
+    "right_navigation_grid_column": 3,
+    "protected_spacing_each_side": "28px",
+    "production_services_additional_margin_left": "15px"
+  },
+  "navigation_logo_collision_final_fix": {
+    "logo_position_reference": "full navbar at left:50%",
+    "left_group": "grid column 1",
+    "center_protected_lane": "190px desktop",
+    "right_group": "grid column 3",
+    "inner_spacing": "15px each side",
+    "production_services_extra_margin": "removed because it caused right-side crowding"
+  },
+  "live_now_video_player": {
+    "source": "user-supplied approved ipad13-video-player(2).zip",
+    "implementation": "/live-stream/approved-ipad-player/index.html embedded in /live-stream/live/index.html",
+    "generic_media_stage_removed": true,
+    "approved_player_controls_preserved": true
+  },
+  "live_now_full_size_ipad_player": {
+    "full_content_width": true,
+    "desktop_iframe_height": "860px",
+    "approved_ipad_glass_height": "760px",
+    "broadcast_status_position": "below player",
+    "two_column_player_constraint_removed": true
+  },
+  "production_network_redesign": {
+    "internal_pages_upgraded": 31,
+    "home_preserved": true,
+    "approved_ipad_player_preserved": true,
+    "cinematic_mastheads": true,
+    "broadcast_network_strip": true,
+    "production_cards_panels_forms_tables": true,
+    "fake_operational_data_added": false
+  },
+  "approved_ipad_player_standardization": {
+    "approved_player_path": "/live-stream/approved-ipad-player/index.html",
+    "approved_player_embeds": [
+      {
+        "page": "live-stream/index.html",
+        "src": "approved-ipad-player/index.html"
+      },
+      {
+        "page": "live-stream/index.html",
+        "src": "approved-ipad-player/index.html"
+      },
+      {
+        "page": "live-stream/clips/index.html",
+        "src": "../approved-ipad-player/index.html"
+      },
+      {
+        "page": "live-stream/live/index.html",
+        "src": "../approved-ipad-player/index.html"
+      }
+    ],
+    "generic_media_stage_pages_remaining": [],
+    "hand_built_featured_ipad_players_remaining": [],
+    "raw_video_tag_pages": [
+      "live-stream/approved-ipad-player/index.html"
+    ],
+    "non_approved_iframes": []
+  },
+  "unique_page_redesign": {
+    "public_html_pages": 31,
+    "duplicate_main_structures_detected": [],
+    "major_routes_with_custom_layouts": [
+      "schedule",
+      "watch",
+      "events",
+      "replays",
+      "highlights",
+      "clips",
+      "shows",
+      "originals",
+      "officiating",
+      "sports",
+      "levels",
+      "production-services",
+      "advertise",
+      "sponsors",
+      "partners",
+      "distribution",
+      "licensing",
+      "newsletter",
+      "press",
+      "careers",
+      "help",
+      "contact",
+      "search",
+      "account",
+      "live",
+      "production-services/request",
+      "membership",
+      "subscribe",
+      "checkout/success",
+      "checkout/cancel"
+    ],
+    "approved_ipad_player_preserved": true,
+    "fake_operational_data_added": false
+  },
+  "homepage_hero_camera": {
+    "old_asset_reference_removed": true,
+    "new_asset": "/assets/live-stream/hero/rtbo-live-camera.png",
+    "source_dimensions": "1536x1024",
+    "uses_exact_uploaded_asset": true,
+    "mockup_created": false,
+    "size_match_previous_camera": {
+      "wrapper_width": "min(50vw, 858px)",
+      "image_max_height": "87%",
+      "right": "-1.2%",
+      "bottom": "-1.5%"
+    },
+    "reference_size_adjustment": {
+      "reason": "replacement PNG contains more empty black canvas around the camera",
+      "desktop_width": "min(76vw, 1300px)",
+      "desktop_height_container": "108%",
+      "right": "-4%",
+      "bottom": "-7%",
+      "uses_exact_uploaded_asset": true
+    },
+    "plus_70px_update": {
+      "width": "min(calc(76vw + 70px), 1370px)",
+      "height": "calc(108% + 70px)"
+    },
+    "exact_270px_size": {
+      "width": "270px",
+      "height": "270px"
+    },
+    "exact_1500px_size": {
+      "width": "1500px",
+      "height": "1500px"
+    },
+    "exact_1700px_size": {
+      "width": "1700px",
+      "height": "1700px"
+    },
+    "centered_right": {
+      "left": "75%",
+      "top": "50%",
+      "transform": "translate(-50%, -50%)",
+      "width": "1700px",
+      "height": "1700px"
+    },
+    "padding_top": "150px",
+    "camera_width": "1700px",
+    "camera_height": "1700px",
+    "margin_top": "150px",
+    "final_right_center": {
+      "left": "75%",
+      "top": "50%",
+      "transform": "translate(-50%, -50%)",
+      "width": "1700px",
+      "height": "1700px",
+      "padding_top": "0",
+      "margin_top": "0"
+    },
+    "bottom_position": {
+      "left": "75%",
+      "top": "auto",
+      "bottom": "0",
+      "transform": "translateX(-50%)",
+      "width": "1700px",
+      "height": "1700px",
+      "object_position": "center bottom"
+    },
+    "visual_fix": {
+      "position": "bottom-right",
+      "wrapper_width": "72%",
+      "image_width": "min(1700px, 72vw)",
+      "image_height": "auto",
+      "max_height": "92%",
+      "reason": "prevents top clipping and oversized spill across hero"
+    },
+    "exact_1400px_size": {
+      "width": "1400px",
+      "height": "1400px",
+      "position": "bottom-right"
+    },
+    "exact_1700px_size_v2": {
+      "width": "1700px",
+      "height": "1700px",
+      "position": "bottom-right"
+    },
+    "right_centered_1800px": {
+      "width": "1800px",
+      "height": "1800px",
+      "left": "75%",
+      "top": "50%",
+      "transform": "translate(-50%, -50%)",
+      "position": "centered on right side"
+    },
+    "bottom_1800px": {
+      "width": "1800px",
+      "height": "1800px",
+      "left": "75%",
+      "bottom": "0",
+      "transform": "translateX(-50%)",
+      "object_position": "center bottom"
+    },
+    "visible_bottom_fix": {
+      "width": "1800px",
+      "height": "1800px",
+      "left": "75%",
+      "bottom": "0",
+      "image_translate_y": "395px",
+      "reason": "compensates for transparent space beneath the visible camera in the supplied PNG"
+    },
+    "restored_after_overlay": {
+      "asset": "assets/live-stream/hero/rtbo-live-camera.png",
+      "width": "1800px",
+      "height": "1800px",
+      "horizontal_position": "centered on right half",
+      "bottom_aligned": true,
+      "z_index": 3,
+      "overlay_z_index": 1
+    }
+  },
+  "homepage_hero": {
+    "four_side_black_overlay": {
+      "left": true,
+      "right": true,
+      "top": true,
+      "bottom": true,
+      "implementation": "layered horizontal and vertical CSS gradients",
+      "content_above_overlay": true
+    }
+  },
+  "approved_ipad_player": {
+    "outside_presentation_border_removed": {
+      "external_border": false,
+      "external_padding": 0,
+      "external_background": "transparent",
+      "external_shadow": "none",
+      "external_caption": false,
+      "ipad_chassis_unchanged": true
+    },
+    "bottom_border_removed": {
+      "stage_layout_border_bottom": 0,
+      "stage_layout_before_border_bottom": 0,
+      "other_player_elements_unchanged": true
+    }
+  }
+}

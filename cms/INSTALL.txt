@@ -1,0 +1,7 @@
+RTBO MASTER CMS UPDATE
+
+Copy this package over the matching Raising_The_Bar_Officiating_Complete_Platform folder.
+Open cms/index.html.
+
+This update adds the Master CMS and the lightweight runtime hook to existing HTML pages.
+It does not replace project media or existing platform CSS/JS/application data.

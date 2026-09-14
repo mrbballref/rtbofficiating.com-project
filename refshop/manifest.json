@@ -1,0 +1,9 @@
+{
+  "name": "The RefShop",
+  "short_name": "RefShop",
+  "start_url": "./#/home",
+  "display": "standalone",
+  "background_color": "#050505",
+  "theme_color": "#050505",
+  "icons": [{"src":"assets/refshop-logo.png","sizes":"1000x1000","type":"image/png"}]
+}

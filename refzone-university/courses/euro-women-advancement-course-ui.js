@@ -1,0 +1,4 @@
+(()=>{
+if(!window.EuroLeagueWomenAdvancementCourse||!window.RefZoneCourseUICore)return;
+window.EuroLeagueWomenAdvancementCourseUI=window.RefZoneCourseUICore.create({trackId:'euro-women',pathwayId:'advancement',course:window.EuroLeagueWomenAdvancementCourse,icon:'assets/pathway-icons/refzone_university_euro_league_women_course.png',courseLabel:'EuroLeague Women Master’s-Level Advanced Officiating',shortLabel:'EUROLEAGUE MEN MASTER’S',routeBase:'#/course/euro-women/advancement',programHref:'#/program/euro-women/advancement',storePrefix:'euro-women-masters',resourceFiles:[['courses/EuroLeague-Men-Masters-Degree-Handbook.md','Advanced program handbook'],['courses/EuroLeague-Men-Masters-Coverage-Matrix.md','Coverage matrix'],['courses/EuroLeague-Men-Masters-Source-Report.md','Source report'],['courses/EuroLeague-Men-Masters-Review-Package.md','Review package']]});
+})();

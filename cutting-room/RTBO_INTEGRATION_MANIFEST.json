@@ -1,0 +1,11 @@
+{
+  "integration": "The Cutting Room into Raising The Bar Officiating",
+  "source": "The_Cutting_Room_Upload_Review_Improve_Section.zip",
+  "destination": "cutting-room/",
+  "cutting_room_files": 38,
+  "rtbo_pages_linking_to_cutting_room": 28,
+  "non_cutting_room_files_preserved_byte_for_byte": true,
+  "cutting_room_javascript_syntax": "PASS",
+  "cutting_room_local_links": "PASS",
+  "cross_project_routes_normalized": true
+}

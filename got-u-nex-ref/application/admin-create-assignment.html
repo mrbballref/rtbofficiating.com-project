@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<script type="module">
+  import { requireRole } from '../../assets/auth.js';
+  document.documentElement.style.visibility = 'hidden';
+  const session = await requireRole(['site_admin']);
+  if (session) document.documentElement.style.visibility = '';
+</script>
+<meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/>
+<title>Create Game Assignment — Got U Nex Ref Admin</title><link href="admin-assignment.css" rel="stylesheet"/><link href="admin-global.css" rel="stylesheet"/></head><body><a aria-label="Back to Admin Dashboard" class="admin-dashboard-cta-global" href="admin-dashboard.html">← ADMIN DASHBOARD</a>
+<svg aria-hidden="true" class="sprite">
+<symbol id="a-home" viewbox="0 0 24 24"><path d="M3 11 12 3l9 8v10h-6v-6H9v6H3z"></path></symbol>
+<symbol id="a-calendar" viewbox="0 0 24 24"><rect height="16" rx="2" width="18" x="3" y="5"></rect><path d="M16 3v4M8 3v4M3 10h18"></path></symbol>
+<symbol id="a-game" viewbox="0 0 24 24"><circle cx="12" cy="12" r="9"></circle><path d="M7 8h10M7 16h10M8 7c3 3 3 7 0 10M16 7c-3 3-3 7 0 10"></path></symbol>
+<symbol id="a-users" viewbox="0 0 24 24"><circle cx="8" cy="7" r="3"></circle><circle cx="17" cy="9" r="2.5"></circle><path d="M2 20c0-4 2.5-6.5 6-6.5s6 2.5 6 6.5M14 14c3.5 0 6 2 6 5.5"></path></symbol>
+<symbol id="a-school" viewbox="0 0 24 24"><path d="M3 10 12 4l9 6M5 10v9M9 10v9M15 10v9M19 10v9M3 20h18"></path></symbol>
+<symbol id="a-pin" viewbox="0 0 24 24"><path d="M20 10c0 5-8 11-8 11S4 15 4 10a8 8 0 1 1 16 0z"></path><circle cx="12" cy="10" r="2.5"></circle></symbol>
+<symbol id="a-money" viewbox="0 0 24 24"><circle cx="12" cy="12" r="9"></circle><path d="M15 8.5c-.8-.8-2-1.2-3-1.2-1.6 0-3 .8-3 2.2 0 3 6 1.5 6 4.5 0 1.4-1.4 2.2-3 2.2-1.2 0-2.5-.4-3.4-1.3M12 5.5v13"></path></symbol>
+<symbol id="a-mail" viewbox="0 0 24 24"><rect height="14" rx="2" width="18" x="3" y="5"></rect><path d="m4 7 8 6 8-6"></path></symbol>
+<symbol id="a-bell" viewbox="0 0 24 24"><path d="M6 9a6 6 0 0 1 12 0v4l2 3H4l2-3z"></path><path d="M10 20h4"></path></symbol>
+<symbol id="a-report" viewbox="0 0 24 24"><path d="M5 3h14v18H5zM8 15l3-3 2 2 3-4M8 18h8"></path></symbol>
+<symbol id="a-gear" viewbox="0 0 24 24"><circle cx="12" cy="12" r="3"></circle><path d="m4.9 4.9 2.1 1.2 2.4-1L10 2h4l.6 3.1 2.4 1 2.1-1.2 2 3.5-2.2 1.7.2 2.6 2.4 1.5-2 3.5-2.7-1-.9.8-.6 3.1h-4l-.6-3.1-.9-.8-2.7 1-2-3.5 2.4-1.5.2-2.6-2.2-1.7z"></path></symbol>
+<symbol id="a-audit" viewbox="0 0 24 24"><path d="M6 3h12v18H6zM9 8h6M9 12h6M9 16h4"></path></symbol>
+<symbol id="a-save" viewbox="0 0 24 24"><path d="M4 4h14l2 2v14H4zM7 4v6h9V4M8 20v-6h8v6"></path></symbol>
+<symbol id="a-check" viewbox="0 0 24 24"><path d="m5 12 4 4L19 6"></path></symbol>
+<symbol id="a-search" viewbox="0 0 24 24"><circle cx="10" cy="10" r="6"></circle><path d="m15 15 6 6"></path></symbol>
+<symbol id="a-filter" viewbox="0 0 24 24"><path d="M3 5h18l-7 8v6l-4 2v-8z"></path></symbol>
+<symbol id="a-person" viewbox="0 0 24 24"><circle cx="12" cy="7" r="4"></circle><path d="M4 21c0-4.2 3.6-7 8-7s8 2.8 8 7"></path></symbol>
+<symbol id="a-plus" viewbox="0 0 24 24"><path d="M12 5v14M5 12h14"></path></symbol>
+<symbol id="a-chevron" viewbox="0 0 24 24"><path d="m9 6 6 6-6 6"></path></symbol>
+<symbol id="a-back" viewbox="0 0 24 24"><path d="m15 18-6-6 6-6"></path></symbol>
+<symbol id="a-phone" viewbox="0 0 24 24"><path d="M7 3 4 5c0 7 6 13 13 15l2-3-4-3-2 2c-3-1-5-3-6-6l2-2z"></path></symbol>
+<symbol id="a-whistle" viewbox="0 0 24 24"><path d="M3 11h7l4-5h7v7h-7l-4-2H3z"></path><circle cx="6" cy="16" r="3"></circle></symbol>
+</svg>
+<div class="admin-shell">
+<aside class="admin-sidebar"><div class="admin-brand"><a aria-label="Got U Nex Ref Home" class="brand-home-link" href="got-u-nex-ref-home/index.html"><img alt="Brand" src="assets/got-u-nex-ref-logo.png"/></a></div><div class="admin-label">ADMIN DASHBOARD</div><nav class="admin-nav"><a href="admin-profile.html"><svg><use href="#a-users"></use></svg><span>My Profile</span></a><a href="admin-dashboard.html"><svg><use href="#a-home"></use></svg><span>Dashboard</span></a><a href="admin-assignments.html"><svg><use href="#a-game"></use></svg><span>Assignments</span></a><a href="admin-module.html?module=schools"><svg><use href="#a-school"></use></svg><span>Schools</span></a><a href="admin-officials.html"><svg><use href="#a-users"></use></svg><span>Officials</span></a><a href="admin-availability.html"><svg><use href="#a-calendar"></use></svg><span>Availability</span></a><a href="admin-contracts.html"><svg><use href="#a-audit"></use></svg><span>Contract Generator</span></a><a href="admin-invoices.html"><svg><use href="#a-audit"></use></svg><span>Invoice Generator</span></a><a href="admin-payments.html"><svg><use href="#a-money"></use></svg><span>Payments</span></a><a href="admin-tax-center.html"><svg><use href="#a-audit"></use></svg><span>Tax Center</span></a><a href="admin-reports.html"><svg><use href="#a-report"></use></svg><span>Reports</span></a><a href="admin-resources.html"><svg><use href="#a-audit"></use></svg><span>Resources</span></a><a href="admin-messages.html"><svg><use href="#a-mail"></use></svg><span>Messages</span><strong class="admin-count" hidden="">0</strong></a><a href="admin-notifications.html"><svg><use href="#a-bell"></use></svg><span>Notifications</span><strong class="admin-count" hidden="">0</strong></a><a href="admin-settings.html"><svg><use href="#a-gear"></use></svg><span>Settings</span></a><a href="admin-support.html"><svg><use href="#a-audit"></use></svg><span>Support</span></a></nav><div class="admin-help"><strong>Administrator Workspace</strong><small>Manage scheduling, assignments, communications, finance, settings, and support from one place.</small></div></aside><div class="admin-workspace">
+<main class="assignment-page">
+<div class="page-head">
+<div><a class="back-link" href="admin-master-schedule.html"><svg><use href="#a-back"></use></svg>Back to Master Schedule</a>
+<h1 id="pageTitle">CREATE GAME ASSIGNMENT</h1><p id="pageSubtitle">Fill in game details and assign the officiating crew.</p></div>
+<div class="head-actions"><button class="btn-outline" id="saveDraftBtn" type="button"><svg><use href="#a-save"></use></svg>Save as Draft</button><button class="btn-red" id="createAssignmentBtn" type="button"><svg><use href="#a-check"></use></svg>Create Assignment</button></div>
+</div>
+<div class="assignment-grid">
+<div class="left-stack">
+<section class="card">
+<div class="card-head"><span class="step">1</span>GAME DETAILS</div>
+<div class="game-details">
+<div class="fields-4">
+<div class="field"><label for="gameDate">Date</label><div class="control"><svg><use href="#a-calendar"></use></svg><input id="gameDate" required="" type="date"/></div></div>
+<div class="field"><label for="gameTime">Time</label><div class="control select-wrap"><svg><use href="#a-calendar"></use></svg><select id="gameTime" required=""></select></div></div>
+<div class="field"><label for="gameLevel">Level</label><div class="control select-wrap"><select id="gameLevel" required=""><option value="">Select level</option><option>High School</option><option>NJCAA</option><option>NAIA</option><option>NCAA DIII</option><option>NCAA DII</option><option>NCAA DI</option></select></div></div>
+<div class="field"><label for="gameGender">Gender</label><div class="control select-wrap"><select id="gameGender" required=""><option value="">Select gender</option><option>Men</option><option>Women</option><option>Boys</option><option>Girls</option></select></div></div>
+</div>
+<div class="fields-3">
+<div class="field"><label for="homeTeam">Home Team</label><div class="control team-control select-wrap"><span class="team-mark"><svg><use href="#a-school"></use></svg></span><select id="homeTeam" required=""><option value="">Select home school</option></select></div></div>
+<div class="field"><label for="visitingTeam">Visiting Team</label><div class="control team-control select-wrap"><span class="team-mark"><svg><use href="#a-school"></use></svg></span><select id="visitingTeam" required=""><option value="">Select visiting school</option></select></div></div>
+<div class="field"><label for="venue">Venue</label><div class="control select-wrap"><select id="venue" required=""><option value="">Select venue</option></select></div></div>
+</div>
+<div class="dynamic-row">
+<div class="dynamic-item"><svg><use href="#a-person"></use></svg><b>Head Coach:</b><span id="headCoach">Not available</span></div>
+<div class="dynamic-item"><svg><use href="#a-school"></use></svg><b>AD:</b><span id="athleticDirector">Not available</span></div>
+</div>
+<div class="venue-strip">
+<div><svg><use href="#a-pin"></use></svg><b>Gym Address</b><span id="venueAddress">Not available</span></div>
+<div><svg><use href="#a-phone"></use></svg><b>Gym Phone</b><span id="venuePhone">Not available</span></div>
+<div><svg><use href="#a-person"></use></svg><b>Assigning Official (You)</b><span id="assigningOfficial">Super Admin</span></div>
+</div>
+</div>
+</section>
+<section class="card crew-card">
+<div class="card-head"><span class="step">2</span><span id="crewHeader">ASSIGN CREW</span></div>
+<div class="crew-grid" id="crewGrid"></div>
+<div class="alternate-wrap crew-slot"><label><svg><use href="#a-users"></use></svg>Alternate (Optional)</label><button class="slot-box" data-slot-role="Alternate" id="alternateSlot" type="button"><svg><use href="#a-plus"></use></svg><span>Select Official</span></button></div>
+</section>
+<section class="card notes-pay">
+<div class="notes-box"><div class="notes-label"><svg><use href="#a-mail"></use></svg><span>Assignment Notes (Optional)</span></div><textarea id="assignmentNotes" placeholder="Add notes or special instructions for this assignment"></textarea></div>
+<div class="pay-box"><span>Est. Total Pay</span><strong id="estimatedPay">Not configured</strong><small><span id="assignedCount">0</span> officials assigned</small></div>
+</section>
+</div>
+<section class="card officials-card">
+<div class="card-head"><span class="step">3</span>OFFICIALS</div>
+<div class="officials-tabs"><button class="active" data-tab="available" type="button">Available (<span id="availableCount">0</span>)</button><button data-tab="unavailable" type="button">Unavailable (<span id="unavailableCount">0</span>)</button></div>
+<div class="officials-toolbar"><label class="search-control"><svg><use href="#a-search"></use></svg><input id="officialSearch" placeholder="Search officials..." type="search"/></label><button class="filter-btn" id="viewAvailabilityBtn" type="button"><svg><use href="#a-report"></use></svg>Availability Report</button><button class="filter-btn" id="filterBtn" type="button"><svg><use href="#a-filter"></use></svg>Filters</button></div>
+<div class="filter-panel" id="filterPanel"><label>Class / Level<select id="officialLevelFilter"><option value="">All levels</option></select></label><label>State<select id="officialStateFilter"><option value="">All states</option></select></label></div>
+<div class="official-list" id="officialList"></div>
+<div class="load-more" hidden="" id="unavailableFooter">Unavailable officials display their saved availability reason.</div>
+</section>
+</div>
+</main></div></div>
+<div class="availability-modal" hidden="" id="availabilityModal">
+<div class="availability-modal__backdrop" id="availabilityBackdrop"></div>
+<div aria-labelledby="availabilityModalTitle" aria-modal="true" class="availability-modal__dialog" role="dialog">
+<div class="availability-modal__head">
+<div>
+<h2 id="availabilityModalTitle">AVAILABILITY REPORT</h2>
+<p>View official availability for a selected date range.</p>
+</div>
+<div class="availability-modal__actions">
+<button class="mini-outline" id="availabilityOpenPageBtn" type="button">Open Full Page</button>
+<button class="mini-close" id="availabilityCloseBtn" type="button">×</button>
+</div>
+</div>
+<div class="availability-embed">
+<section class="embed-filters">
+<label><span>Date Range</span><select id="embedFilterDate"><option value="28">Next 28 Days</option><option value="7">Next 7 Days</option><option value="month">This Month</option><option value="90">Next 90 Days</option></select></label>
+<label><span>Level</span><select id="embedFilterLevel"><option>All Levels</option></select></label>
+<label><span>Gender</span><select id="embedFilterGender"><option>All Genders</option></select></label>
+<label><span>Official Type</span><select id="embedFilterType"><option>All Types</option></select></label>
+<label><span>Status</span><select id="embedFilterStatus"><option>All Statuses</option><option>Available</option><option>Unavailable</option><option>Pending</option></select></label>
+<label class="search"><span>Search</span><input id="embedFilterSearch" placeholder="Search officials..." type="search"/></label>
+</section>
+<section class="embed-stats" id="embedStats"></section>
+<div class="embed-table-wrap">
+<table class="embed-table">
+<thead>
+<tr><th>Official</th><th>Type</th><th>Level</th><th>Gender</th><th>Available</th><th>Unavailable</th><th>Pending</th><th>Total</th><th>Status</th><th>Last Updated</th></tr>
+</thead>
+<tbody id="embedAvailabilityRows"></tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+<div aria-live="polite" class="toast" id="toast" role="status"></div>
+<script type="module" src="admin-data-sync.js?then=admin-create-assignment.js,admin-navigation.js"></script></body></html>

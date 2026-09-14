@@ -1,0 +1,4 @@
+(()=>{
+if(!window.USAWomenFoundationsCourse||!window.RefZoneCourseUICore)return;
+window.USAWomenCourseUI=window.RefZoneCourseUICore.create({trackId:'usa-women',pathwayId:'foundations',course:window.USAWomenFoundationsCourse,icon:'assets/pathway-icons/rfzu_usawbb.png',courseLabel:'USA Basketball Women Bachelor’s-Level Professional Foundations',shortLabel:'USA BASKETBALL WOMEN BACHELOR’S',routeBase:'#/course/usa-women/foundations',programHref:'#/program/usa-women/foundations',storePrefix:'usa-women-bachelors',resourceFiles:[['courses/USA-Basketball-Women-Bachelors-Degree-Handbook.md','Bachelor’s-Level program handbook'],['courses/USA-Basketball-Women-Bachelors-Coverage-Matrix.md','Coverage matrix'],['courses/USA-Basketball-Women-Bachelors-Source-Report.md','Source report'],['courses/USA-Basketball-Women-Bachelors-Review-Package.md','Review package']]});
+})();

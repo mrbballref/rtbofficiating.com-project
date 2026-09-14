@@ -1,0 +1,38 @@
+<!doctype html><html lang="en"><head>
+<script src="../assets/super-admin-access.js" data-super-admin-runtime></script><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="The Cutting Room film review platform."><title>Upload | The Cutting Room</title><link rel="stylesheet" href="assets/cutting-room.css"><script defer src="assets/db.js"></script><script type="module" src="assets/app.js"></script><link rel="stylesheet" href="../assets/super-admin-access.css" data-super-admin-access-style>
+</head><body data-page="upload"><header class="cr-header cr-rtbo-header" data-header>
+  <nav class="cr-rtbo-navbar" aria-label="The Cutting Room primary navigation">
+    <button class="cr-menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="crMobileNav" aria-label="Open navigation menu">
+      <span></span><span></span><span></span>
+    </button>
+
+    <div class="cr-rtbo-desktop-nav cr-rtbo-desktop-nav--left" aria-label="Primary navigation left">
+      <a class="cr-rtbo-nav-link" href="index.html">Home</a><a class="cr-rtbo-nav-link" href="dashboard.html">Dashboard</a><a class="cr-rtbo-nav-link active" href="upload.html" aria-current="page">Upload</a><a class="cr-rtbo-nav-link" href="library.html">Film Library</a>
+    </div>
+
+    <a class="cr-rtbo-brand" href="index.html" aria-label="The Cutting Room — return home">
+      <img src="assets/cutting-room-logo-transparent.png" alt="The Cutting Room Post Production logo">
+    </a>
+
+    <div class="cr-rtbo-desktop-nav cr-rtbo-desktop-nav--right" aria-label="Primary navigation right">
+      <a class="cr-rtbo-nav-link" href="review.html">Review Studio</a><a class="cr-rtbo-nav-link" href="evaluations.html">Evaluations</a><a class="cr-rtbo-nav-link" href="collaboration.html">Collaboration</a><a class="cr-rtbo-nav-link" href="downloads.html">Downloads</a>
+      <div class="cr-rtbo-utilities" aria-label="Platform utilities">
+        <button class="cr-rtbo-icon-btn" type="button" data-open-command title="Command palette" aria-label="Open command palette">⌘</button>
+        <a class="cr-rtbo-icon-btn" href="settings.html" title="Settings" aria-label="Settings">⚙</a>
+      </div>
+    </div>
+
+    <a class="cr-mobile-upload" href="upload.html">Upload</a>
+  </nav>
+
+  <nav class="cr-rtbo-mobile-menu" id="crMobileNav" aria-label="Mobile navigation">
+    <div class="cr-rtbo-mobile-menu__inner">
+      <a class="cr-rtbo-nav-link" href="index.html">Home</a><a class="cr-rtbo-nav-link" href="dashboard.html">Dashboard</a><a class="cr-rtbo-nav-link active" href="upload.html" aria-current="page">Upload</a><a class="cr-rtbo-nav-link" href="library.html">Film Library</a><a class="cr-rtbo-nav-link" href="review.html">Review Studio</a><a class="cr-rtbo-nav-link" href="evaluations.html">Evaluations</a><a class="cr-rtbo-nav-link" href="collaboration.html">Collaboration</a><a class="cr-rtbo-nav-link" href="downloads.html">Downloads</a>
+      <div class="cr-rtbo-mobile-actions">
+        <button class="cr-rtbo-mobile-command" type="button" data-open-command>Command Palette</button>
+        <a href="settings.html">Settings</a>
+      </div>
+    </div>
+  </nav>
+</header><main><section class="page-hero"><div class="cr-shell page-hero__row"><div><p class="eyebrow">MEDIA INGEST</p><h1>Upload Film</h1><p>Add an actual clip or complete game video. Files are stored locally in IndexedDB on this device; no sample records are added.</p></div><a class="btn secondary" href="library.html">Film Library</a></div></section><section class="section"><div class="cr-shell grid cols-2"><div class="card card-pad"><form id="uploadForm"><div class="upload-drop" data-upload-drop role="button" tabindex="0"><strong>Drop Video Here</strong><span>or click to choose a local video file</span><input id="filmFile" type="file" accept="video/*" hidden><div class="file-preview" data-file-preview>No file selected</div></div><div class="form-grid" style="margin-top:18px"><div class="field full"><label>Film Title</label><input name="title" required placeholder="Game or clip title"></div><div class="field"><label>Media Type</label><select name="type"><option value="clip">Clip</option><option value="full-game">Full Game</option></select></div><div class="field"><label>Game / Event Date</label><input type="date" name="gameDate"></div><div class="field full"><label>Game / Event</label><input name="event" placeholder="Home vs Away / Event name"></div><div class="field"><label>Level</label><select name="level"><option value="">Select level</option><option>High School</option><option>NJCAA</option><option>NAIA</option><option>NCAA DIII</option><option>NCAA DII</option><option>NCAA DI</option><option>G-League</option><option>WNBA</option><option>NBA</option><option>Other</option></select></div><div class="field"><label>Gender</label><select name="gender"><option value="">Not specified</option><option>Men</option><option>Women</option><option>Mixed</option></select></div><div class="field full"><label>Crew</label><input name="crew" placeholder="Officials / evaluators involved"></div><div class="field full"><label>Tags</label><input name="tags" placeholder="mechanics, transition, block-charge"></div><div class="field full"><label>Notes</label><textarea name="notes" placeholder="Context for this film"></textarea></div></div><div class="page-actions" style="margin-top:16px"><button class="btn primary" type="submit">Save Film To Library</button><button class="btn secondary" type="reset">Reset</button></div></form></div><aside class="card card-pad"><p class="eyebrow">HOW STORAGE WORKS</p><h2 style="margin-top:0">Local-First Film Storage</h2><p class="muted">This HTML/CSS/JS build stores uploaded video blobs in your browser using IndexedDB. It does not upload to a remote server.</p><ul class="muted" style="line-height:1.8"><li>Video remains on this device/browser profile.</li><li>Deleting browser site data deletes locally stored film.</li><li>Use Downloads to export source files and metadata.</li><li>Large video capacity depends on browser/device storage.</li></ul><a class="btn secondary" href="settings.html">Check Storage</a></aside></div></section></main><footer class="cr-footer"><div><strong>The Cutting Room</strong><span>Film review and development platform by Raising The Bar Officiating.</span></div><nav><a href="settings.html">Settings</a><a href="README.html">Platform Guide</a></nav></footer><dialog class="cr-dialog command-dialog" data-command-dialog><button class="dialog-x" data-close-dialog aria-label="Close">×</button><p class="eyebrow">QUICK COMMANDS</p><h2>Go Anywhere.</h2><div class="command-grid"><a href="upload.html">Upload Film</a><a href="library.html">Open Film Library</a><a href="review.html">Start Review</a><a href="evaluations.html">Create Evaluation</a><a href="collaboration.html">Review Packets</a><a href="downloads.html">Export Center</a></div></dialog><div class="toast" data-toast role="status" aria-live="polite"></div><script defer src="../cms/runtime.js" data-rtbo-cms-runtime data-cms-page="cutting-room/upload.html"></script>
+</body></html>

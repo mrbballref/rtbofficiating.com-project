@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Notifications — Got U Nex Ref</title>
+  <link rel="stylesheet" href="notifications.css" />
+</head>
+<body>
+  <svg class="notification-sprite" aria-hidden="true">
+    <symbol id="n-bell" viewBox="0 0 24 24"><path d="M6 9a6 6 0 0 1 12 0v4l2 3H4l2-3z"/><path d="M10 20h4"/></symbol>
+    <symbol id="n-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m4 7 8 6 8-6"/></symbol>
+    <symbol id="n-gear" viewBox="0 0 24 24"><path d="M12 8a4 4 0 1 0 0 8 4 4 0 0 0 0-8z"/><path d="m4.9 4.9 2.1 1.2 2.4-1L10 2h4l.6 3.1 2.4 1 2.1-1.2 2 3.5-2.2 1.7.2 2.6 2.4 1.5-2 3.5-2.7-1-.9.8-.6 3.1h-4l-.6-3.1-.9-.8-2.7 1-2-3.5 2.4-1.5.2-2.6-2.2-1.7z"/></symbol>
+    <symbol id="n-filter" viewBox="0 0 24 24"><path d="M3 5h18l-7 8v6l-4 2v-8z"/></symbol>
+    <symbol id="n-calendar" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M16 3v4M8 3v4M3 10h18"/><path d="m9 15 2 2 4-4"/></symbol>
+    <symbol id="n-chat" viewBox="0 0 24 24"><path d="M4 5h16v11H9l-5 4z"/></symbol>
+    <symbol id="n-user-plus" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3"/><path d="M3 20c0-4 2.7-6.5 6-6.5s6 2.5 6 6.5M18 7v6M15 10h6"/></symbol>
+    <symbol id="n-warning" viewBox="0 0 24 24"><path d="m12 3 10 18H2z"/><path d="M12 9v5M12 18h.01"/></symbol>
+    <symbol id="n-report" viewBox="0 0 24 24"><rect x="5" y="3" width="14" height="18" rx="2"/><path d="M8 8h8M8 12h8M8 16h5"/></symbol>
+    <symbol id="n-system" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="m4.9 4.9 2.1 1.2 2.4-1L10 2h4l.6 3.1 2.4 1 2.1-1.2 2 3.5-2.2 1.7.2 2.6 2.4 1.5-2 3.5-2.7-1-.9.8-.6 3.1h-4l-.6-3.1-.9-.8-2.7 1-2-3.5 2.4-1.5.2-2.6-2.2-1.7z"/></symbol>
+    <symbol id="n-chevron" viewBox="0 0 24 24"><path d="m9 6 6 6-6 6"/></symbol>
+    <symbol id="n-chevron-down" viewBox="0 0 24 24"><path d="m7 9 5 5 5-5"/></symbol>
+    <symbol id="n-chevron-left" viewBox="0 0 24 24"><path d="m15 18-6-6 6-6"/></symbol>
+    <symbol id="n-refresh" viewBox="0 0 24 24"><path d="M20 11a8 8 0 1 0-2 5.3"/><path d="M20 5v6h-6"/></symbol>
+  </svg>
+
+  <main class="notifications-page">
+    <section class="notifications-main-column">
+      <header class="notifications-page-header">
+        <div>
+          <h1>NOTIFICATIONS</h1>
+          <p>View and manage system notifications and alerts.</p>
+        </div>
+        <div class="notifications-header-actions">
+          <button type="button" class="header-action" id="markAllReadBtn">
+            <svg><use href="#n-mail"/></svg><span>Mark all as read</span>
+          </button>
+          <span class="header-divider"></span>
+          <button type="button" class="header-action" id="jumpToSettingsBtn">
+            <svg><use href="#n-gear"/></svg><span>Notification Settings</span>
+          </button>
+        </div>
+      </header>
+
+      <nav class="notification-tabs" aria-label="Notification categories">
+        <button class="notification-tab active" type="button" data-notification-tab="all">
+          <span>All Notifications</span><b id="notificationCountAll">0</b>
+        </button>
+        <button class="notification-tab" type="button" data-notification-tab="unread">
+          <span>Unread</span><b id="notificationCountUnread">0</b>
+        </button>
+        <button class="notification-tab" type="button" data-notification-tab="assignments">
+          <span>Assignments</span><b id="notificationCountAssignments">0</b>
+        </button>
+        <button class="notification-tab" type="button" data-notification-tab="schedule">
+          <span>Schedule</span><b id="notificationCountSchedule">0</b>
+        </button>
+        <button class="notification-tab" type="button" data-notification-tab="system">
+          <span>System</span><b id="notificationCountSystem">0</b>
+        </button>
+      </nav>
+
+      <section class="notification-list-card">
+        <div id="notificationRows"></div>
+        <div class="notification-empty" id="notificationEmpty" hidden>
+          <span class="notification-empty-icon"><svg><use href="#n-bell"/></svg></span>
+          <h2>No notifications</h2>
+          <p>Notifications from the system, super admin, assignors, and other authorized administrators will appear here when received.</p>
+        </div>
+      </section>
+
+      <footer class="notification-list-footer">
+        <span id="notificationShowingText">Showing 0 to 0 of 0 notifications</span>
+        <div class="notification-footer-controls">
+          <label class="notification-page-size">
+            <select id="notificationPageSize" aria-label="Notifications per page">
+              <option value="10">10 per page</option>
+              <option value="25" selected>25 per page</option>
+              <option value="50">50 per page</option>
+            </select>
+            <svg><use href="#n-chevron-down"/></svg>
+          </label>
+          <div class="notification-pagination">
+            <button type="button" id="notificationPrevPage" aria-label="Previous page"><svg><use href="#n-chevron-left"/></svg></button>
+            <span id="notificationPageNumbers"></span>
+            <button type="button" id="notificationNextPage" aria-label="Next page"><svg class="flip"><use href="#n-chevron-left"/></svg></button>
+          </div>
+        </div>
+      </footer>
+    </section>
+
+    <aside class="notifications-right-column">
+      <section class="notification-side-card notification-filter-card">
+        <h2>FILTERS</h2>
+
+        <label class="notification-filter-field">
+          <span>Notification Type</span>
+          <span class="notification-select-wrap">
+            <select id="notificationTypeFilter">
+              <option value="">All Types</option>
+              <option value="assignments">Assignments</option>
+              <option value="schedule">Schedule</option>
+              <option value="messages">Messages</option>
+              <option value="officials">Officials</option>
+              <option value="reports">Reports</option>
+              <option value="system">System</option>
+            </select>
+            <svg><use href="#n-chevron-down"/></svg>
+          </span>
+        </label>
+
+        <label class="notification-filter-field">
+          <span>Priority</span>
+          <span class="notification-select-wrap">
+            <select id="notificationPriorityFilter">
+              <option value="">All Priorities</option>
+              <option value="high">High</option>
+              <option value="normal">Normal</option>
+              <option value="low">Low</option>
+            </select>
+            <svg><use href="#n-chevron-down"/></svg>
+          </span>
+        </label>
+
+        <label class="notification-filter-field">
+          <span>Date Range</span>
+          <span class="notification-select-wrap">
+            <select id="notificationDateFilter">
+              <option value="30" selected>Last 30 Days</option>
+              <option value="7">Last 7 Days</option>
+              <option value="1">Today</option>
+              <option value="all">All Time</option>
+            </select>
+            <svg><use href="#n-chevron-down"/></svg>
+          </span>
+        </label>
+
+        <button class="notification-apply-btn" type="button" id="applyNotificationFilters">
+          <svg><use href="#n-filter"/></svg><span>Apply Filters</span>
+        </button>
+        <button class="notification-clear-btn" type="button" id="clearNotificationFilters">
+          <svg><use href="#n-refresh"/></svg><span>Clear Filters</span>
+        </button>
+      </section>
+
+      <section class="notification-side-card notification-settings-card" id="notificationSettingsCard">
+        <h2>NOTIFICATION SETTINGS</h2>
+
+        <label class="notification-setting-row">
+          <span><strong>Email Notifications</strong><small>Receive notifications via email</small></span>
+          <input type="checkbox" data-setting="emailAssignmentAlerts" />
+          <i aria-hidden="true"></i>
+        </label>
+
+        <label class="notification-setting-row">
+          <span><strong>SMS Notifications</strong><small>Receive text message alerts</small></span>
+          <input type="checkbox" data-setting="smsAssignmentAlerts" />
+          <i aria-hidden="true"></i>
+        </label>
+
+        <label class="notification-setting-row">
+          <span><strong>Assignment Alerts</strong><small>New, updated, or cancelled assignments</small></span>
+          <input type="checkbox" data-setting="assignmentAlerts" />
+          <i aria-hidden="true"></i>
+        </label>
+
+        <label class="notification-setting-row">
+          <span><strong>Schedule Changes</strong><small>Game time, date, or location changes</small></span>
+          <input type="checkbox" data-setting="scheduleChanges" />
+          <i aria-hidden="true"></i>
+        </label>
+
+        <label class="notification-setting-row">
+          <span><strong>Messages</strong><small>New messages from officials and contacts</small></span>
+          <input type="checkbox" data-setting="messageNotifications" />
+          <i aria-hidden="true"></i>
+        </label>
+
+        <label class="notification-setting-row">
+          <span><strong>System Updates</strong><small>Important system announcements and updates</small></span>
+          <input type="checkbox" data-setting="systemUpdates" />
+          <i aria-hidden="true"></i>
+        </label>
+
+        <button class="notification-manage-btn" type="button" id="manageNotificationPreferences">
+          <svg><use href="#n-gear"/></svg><span>Manage Preferences</span>
+        </button>
+      </section>
+    </aside>
+  </main>
+
+  <dialog class="notification-dialog" id="notificationDialog">
+    <form method="dialog">
+      <button class="notification-dialog-close" value="close" aria-label="Close">×</button>
+      <span class="notification-dialog-type" id="dialogNotificationType">NOTIFICATION</span>
+      <h2 id="dialogNotificationTitle">Notification</h2>
+      <p class="notification-dialog-meta" id="dialogNotificationMeta"></p>
+      <p id="dialogNotificationBody"></p>
+      <div class="notification-dialog-actions">
+        <button value="close" class="notification-dialog-button">Close</button>
+        <button type="button" class="notification-dialog-button primary" id="dialogRelatedAction" hidden>Open Related Area</button>
+      </div>
+    </form>
+  </dialog>
+
+  <div class="notification-toast" id="notificationToast" role="status" aria-live="polite"></div>
+  <script type="module" src="notifications.js"></script>
+</body>
+</html>

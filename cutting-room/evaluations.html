@@ -1,0 +1,38 @@
+<!doctype html><html lang="en"><head>
+<script src="../assets/super-admin-access.js" data-super-admin-runtime></script><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="The Cutting Room film review platform."><title>Evaluations | The Cutting Room</title><link rel="stylesheet" href="assets/cutting-room.css"><script defer src="assets/db.js"></script><script type="module" src="assets/app.js"></script><link rel="stylesheet" href="../assets/super-admin-access.css" data-super-admin-access-style>
+</head><body data-page="evaluations"><header class="cr-header cr-rtbo-header" data-header>
+  <nav class="cr-rtbo-navbar" aria-label="The Cutting Room primary navigation">
+    <button class="cr-menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="crMobileNav" aria-label="Open navigation menu">
+      <span></span><span></span><span></span>
+    </button>
+
+    <div class="cr-rtbo-desktop-nav cr-rtbo-desktop-nav--left" aria-label="Primary navigation left">
+      <a class="cr-rtbo-nav-link" href="index.html">Home</a><a class="cr-rtbo-nav-link" href="dashboard.html">Dashboard</a><a class="cr-rtbo-nav-link" href="upload.html">Upload</a><a class="cr-rtbo-nav-link" href="library.html">Film Library</a>
+    </div>
+
+    <a class="cr-rtbo-brand" href="index.html" aria-label="The Cutting Room — return home">
+      <img src="assets/cutting-room-logo-transparent.png" alt="The Cutting Room Post Production logo">
+    </a>
+
+    <div class="cr-rtbo-desktop-nav cr-rtbo-desktop-nav--right" aria-label="Primary navigation right">
+      <a class="cr-rtbo-nav-link" href="review.html">Review Studio</a><a class="cr-rtbo-nav-link active" href="evaluations.html" aria-current="page">Evaluations</a><a class="cr-rtbo-nav-link" href="collaboration.html">Collaboration</a><a class="cr-rtbo-nav-link" href="downloads.html">Downloads</a>
+      <div class="cr-rtbo-utilities" aria-label="Platform utilities">
+        <button class="cr-rtbo-icon-btn" type="button" data-open-command title="Command palette" aria-label="Open command palette">⌘</button>
+        <a class="cr-rtbo-icon-btn" href="settings.html" title="Settings" aria-label="Settings">⚙</a>
+      </div>
+    </div>
+
+    <a class="cr-mobile-upload" href="upload.html">Upload</a>
+  </nav>
+
+  <nav class="cr-rtbo-mobile-menu" id="crMobileNav" aria-label="Mobile navigation">
+    <div class="cr-rtbo-mobile-menu__inner">
+      <a class="cr-rtbo-nav-link" href="index.html">Home</a><a class="cr-rtbo-nav-link" href="dashboard.html">Dashboard</a><a class="cr-rtbo-nav-link" href="upload.html">Upload</a><a class="cr-rtbo-nav-link" href="library.html">Film Library</a><a class="cr-rtbo-nav-link" href="review.html">Review Studio</a><a class="cr-rtbo-nav-link active" href="evaluations.html" aria-current="page">Evaluations</a><a class="cr-rtbo-nav-link" href="collaboration.html">Collaboration</a><a class="cr-rtbo-nav-link" href="downloads.html">Downloads</a>
+      <div class="cr-rtbo-mobile-actions">
+        <button class="cr-rtbo-mobile-command" type="button" data-open-command>Command Palette</button>
+        <a href="settings.html">Settings</a>
+      </div>
+    </div>
+  </nav>
+</header><main><section class="page-hero"><div class="cr-shell page-hero__row"><div><p class="eyebrow">OFFICIAL DEVELOPMENT</p><h1>Evaluations</h1><p>Create structured film-based evaluations. All ratings and comments are entered by the user; no example scores are seeded.</p></div><a class="btn secondary" href="review.html">Review Studio</a></div></section><section class="section"><div class="cr-shell grid cols-2"><div class="card eval-card"><form id="evaluationForm"><div class="form-grid"><div class="field full"><label>Film</label><select id="evalFilm" name="filmId" required></select></div><div class="field"><label>Evaluator</label><input name="evaluator" required></div><div class="field"><label>Evaluator Role</label><select name="role"><option>Evaluator</option><option>Assignor</option><option>Trainer</option><option>Super Admin</option></select></div></div><div style="margin-top:18px"><div class="score-row"><label>Mechanics</label><input data-score name="mechanics" type="range" min="1" max="5" step=".1" value="3"><output data-output="mechanics">3</output></div><div class="score-row"><label>Positioning</label><input data-score name="positioning" type="range" min="1" max="5" step=".1" value="3"><output data-output="positioning">3</output></div><div class="score-row"><label>Communication</label><input data-score name="communication" type="range" min="1" max="5" step=".1" value="3"><output data-output="communication">3</output></div><div class="score-row"><label>Professionalism</label><input data-score name="professionalism" type="range" min="1" max="5" step=".1" value="3"><output data-output="professionalism">3</output></div><div class="score-row"><label>Rules Knowledge</label><input data-score name="rules" type="range" min="1" max="5" step=".1" value="3"><output data-output="rules">3</output></div></div><div class="form-grid" style="margin-top:18px"><div class="field full"><label>Strengths</label><textarea name="strengths"></textarea></div><div class="field full"><label>Development Areas</label><textarea name="development"></textarea></div><div class="field full"><label>Evaluation Summary</label><textarea name="summary"></textarea></div><div class="field"><label>Status</label><select name="status"><option value="draft">Draft</option><option value="review">In Review</option><option value="approved">Approved</option></select></div></div><button class="btn primary" type="submit" style="margin-top:16px">Save Evaluation</button></form></div><aside class="card card-pad"><p class="eyebrow">WORKFLOW</p><h2 style="margin-top:0">Film → Review → Evaluation</h2><p class="muted">Use the Review Studio to document timecoded evidence, then save an evaluation against the same film record.</p><a class="btn secondary" href="review.html">Open Review Studio</a></aside></div></section><section class="section"><div class="cr-shell"><div class="section-head"><div><h2>Evaluation Records</h2><p>Saved in this browser.</p></div></div><div class="table-wrap"><table class="data-table"><thead><tr><th>Film</th><th>Evaluator</th><th>Average</th><th>Status</th><th>Created</th><th></th></tr></thead><tbody data-evaluations-body></tbody></table></div></div></section></main><footer class="cr-footer"><div><strong>The Cutting Room</strong><span>Film review and development platform by Raising The Bar Officiating.</span></div><nav><a href="settings.html">Settings</a><a href="README.html">Platform Guide</a></nav></footer><dialog class="cr-dialog command-dialog" data-command-dialog><button class="dialog-x" data-close-dialog aria-label="Close">×</button><p class="eyebrow">QUICK COMMANDS</p><h2>Go Anywhere.</h2><div class="command-grid"><a href="upload.html">Upload Film</a><a href="library.html">Open Film Library</a><a href="review.html">Start Review</a><a href="evaluations.html">Create Evaluation</a><a href="collaboration.html">Review Packets</a><a href="downloads.html">Export Center</a></div></dialog><div class="toast" data-toast role="status" aria-live="polite"></div><script defer src="../cms/runtime.js" data-rtbo-cms-runtime data-cms-page="cutting-room/evaluations.html"></script>
+</body></html>

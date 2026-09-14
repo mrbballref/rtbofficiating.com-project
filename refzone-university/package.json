@@ -1,0 +1,23 @@
+{
+  "name": "refzone-university-platform",
+  "version": "1.0.0",
+  "private": true,
+  "description": "RefZone University static learning platform with Stripe membership registration gateway",
+  "main": "server/server.js",
+  "scripts": {
+    "start": "node server/server.js",
+    "dev": "node --watch server/server.js",
+    "stripe:catalog": "node server/scripts/create-stripe-catalog.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "bcryptjs": "^3.0.2",
+    "dotenv": "^17.2.1",
+    "express": "^5.1.0",
+    "express-rate-limit": "^8.0.1",
+    "helmet": "^8.1.0",
+    "stripe": "^18.4.0"
+  }
+}

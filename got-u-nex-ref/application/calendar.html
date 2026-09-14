@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<title>My Availability Calendar — Got U Nex Ref</title>
+<link href="calendar.css" rel="stylesheet"/>
+</head>
+<body>
+<svg aria-hidden="true" class="sprite">
+<symbol id="i-grid" viewbox="0 0 24 24"><rect height="7" rx="1" width="7" x="3" y="3"></rect><rect height="7" rx="1" width="7" x="14" y="3"></rect><rect height="7" rx="1" width="7" x="3" y="14"></rect><rect height="7" rx="1" width="7" x="14" y="14"></rect></symbol>
+<symbol id="i-calendar" viewbox="0 0 24 24"><rect height="16" rx="2" width="18" x="3" y="5"></rect><path d="M16 3v4M8 3v4M3 10h18"></path></symbol>
+<symbol id="i-back" viewbox="0 0 24 24"><circle cx="12" cy="12" r="9"></circle><path d="M13.5 8 9.5 12l4 4"></path></symbol>
+<symbol id="i-mail" viewbox="0 0 24 24"><rect height="14" rx="2" width="18" x="3" y="5"></rect><path d="m4 7 8 6 8-6"></path></symbol>
+<symbol id="i-bell" viewbox="0 0 24 24"><path d="M6 9a6 6 0 0 1 12 0v4l2 3H4l2-3z"></path><path d="M10 20h4"></path></symbol>
+<symbol id="i-user" viewbox="0 0 24 24"><circle cx="12" cy="7" r="4"></circle><path d="M4 21c0-4.2 3.6-7 8-7s8 2.8 8 7"></path></symbol>
+<symbol id="i-file" viewbox="0 0 24 24"><path d="M6 2h8l4 4v16H6z"></path><path d="M14 2v5h5M9 12h6M9 16h6"></path></symbol>
+<symbol id="i-card" viewbox="0 0 24 24"><rect height="14" rx="2" width="18" x="3" y="5"></rect><circle cx="8" cy="11" r="2"></circle><path d="M5.5 16c.6-2 4.4-2 5 0M13 9h5M13 13h5"></path></symbol>
+<symbol id="i-star" viewbox="0 0 24 24"><path d="m12 3 2.8 5.7 6.2.9-4.5 4.4 1.1 6.2L12 17.3l-5.6 2.9 1.1-6.2L3 9.6l6.2-.9z"></path></symbol>
+<symbol id="i-help" viewbox="0 0 24 24"><circle cx="12" cy="12" r="9"></circle><path d="M9.5 9a2.7 2.7 0 1 1 4.5 2c-1.2.8-2 1.3-2 3M12 18h.01"></path></symbol>
+<symbol id="i-gear" viewbox="0 0 24 24"><circle cx="12" cy="12" r="3"></circle><path d="m4.9 4.9 2.1 1.2 2.4-1L10 2h4l.6 3.1 2.4 1 2.1-1.2 2 3.5-2.2 1.7.2 2.6 2.4 1.5-2 3.5-2.7-1-.9.8-.6 3.1h-4l-.6-3.1-.9-.8-2.7 1-2-3.5 2.4-1.5.2-2.6-2.2-1.7z"></path></symbol>
+<symbol id="i-sync" viewbox="0 0 24 24"><path d="M20 7v5h-5M4 17v-5h5"></path><path d="M7 7a7 7 0 0 1 11 2M17 17a7 7 0 0 1-11-2"></path></symbol>
+<symbol id="i-plus" viewbox="0 0 24 24"><path d="M12 5v14M5 12h14"></path></symbol>
+<symbol id="i-print" viewbox="0 0 24 24"><path d="M7 8V3h10v5M7 17H4V9h16v8h-3M7 14h10v7H7z"></path></symbol>
+<symbol id="i-chevron-left" viewbox="0 0 24 24"><path d="m15 18-6-6 6-6"></path></symbol>
+<symbol id="i-chevron-down" viewbox="0 0 24 24"><path d="m7 9 5 5 5-5"></path></symbol>
+<symbol id="i-close" viewbox="0 0 24 24"><path d="M5 5l14 14M19 5 5 19"></path></symbol>
+<symbol id="i-clock" viewbox="0 0 24 24"><circle cx="12" cy="12" r="9"></circle><path d="M12 7v5l3 2"></path></symbol>
+<symbol id="i-whistle" viewbox="0 0 24 24"><circle cx="9" cy="13" r="5"></circle><path d="M13 10h5l3 3-3 3h-5M5 9 3 6h6"></path></symbol>
+<symbol id="i-family" viewbox="0 0 24 24"><circle cx="9" cy="7" r="3"></circle><circle cx="17" cy="9" r="2.5"></circle><path d="M3 20c0-4 2.7-6.5 6-6.5s6 2.5 6 6.5M14 14c3.6 0 6 2.1 6 5.5"></path></symbol>
+<symbol id="i-work" viewbox="0 0 24 24"><rect height="13" rx="2" width="18" x="3" y="7"></rect><path d="M8 7V4h8v3M3 12h18"></path></symbol>
+<symbol id="i-school" viewbox="0 0 24 24"><path d="m3 9 9-5 9 5-9 5z"></path><path d="M6 12v5l6 3 6-3v-5"></path></symbol>
+<symbol id="i-medical" viewbox="0 0 24 24"><circle cx="12" cy="12" r="9"></circle><path d="M12 7v10M7 12h10"></path></symbol>
+<symbol id="i-travel" viewbox="0 0 24 24"><path d="m3 15 7-3 5-8 2 1-2 8 5 3-1 2-6-1-4 4-2-1 2-5-6 2z"></path></symbol>
+<symbol id="i-ban" viewbox="0 0 24 24"><circle cx="12" cy="12" r="9"></circle><path d="m6 18 12-12"></path></symbol>
+<symbol id="i-more" viewbox="0 0 24 24"><circle cx="5" cy="12" r="1.5"></circle><circle cx="12" cy="12" r="1.5"></circle><circle cx="19" cy="12" r="1.5"></circle></symbol>
+</svg>
+<div class="calendar-shell">
+<aside aria-label="Personal profile navigation" class="calendar-sidebar">
+<div class="brand-wrap">
+<a aria-label="Got U Nex Ref Home" class="brand-home-link" href="got-u-nex-ref-home/index.html"><img alt="Got U Nex Ref" class="brand-logo" src="assets/got-u-nex-ref-logo.png"/></a>
+</div>
+<nav class="side-nav">
+<a href="my-profile.html#dashboard"><svg><use href="#i-grid"></use></svg><span>Dashboard</span></a>
+<a href="my-profile.html#assignments"><svg><use href="#i-calendar"></use></svg><span>My Assignments</span></a>
+<a data-calendar-sidebar="calendar" href="calendar.html"><svg><use href="#i-calendar"></use></svg><span>Calendar</span></a>
+<a data-calendar-sidebar="availability" href="calendar.html#availability"><svg><use href="#i-back"></use></svg><span>Availability</span></a>
+<a href="my-profile.html#messages"><svg><use href="#i-mail"></use></svg><span>Messages</span><b class="nav-badge" hidden="" id="messageBadge">0</b></a>
+<a href="notifications.html"><svg><use href="#i-bell"></use></svg><span>Notifications</span><b class="nav-badge" hidden="" id="notificationBadge">0</b></a>
+<a href="my-profile.html#profile"><svg><use href="#i-user"></use></svg><span>My Profile</span></a>
+<a href="my-profile.html#documents"><svg><use href="#i-file"></use></svg><span>Documents</span></a>
+<a href="my-profile.html#id-card"><svg><use href="#i-card"></use></svg><span>ID Card</span></a>
+<a href="my-profile.html#evaluations"><svg><use href="#i-star"></use></svg><span>Evaluations</span></a>
+<a href="my-profile.html#support"><svg><use href="#i-help"></use></svg><span>Support</span></a>
+<a href="my-profile.html#settings"><svg><use href="#i-gear"></use></svg><span>Settings</span></a>
+</nav>
+</aside>
+<main class="availability-page">
+<header class="availability-header">
+<div>
+<h1>MY AVAILABILITY</h1>
+<p>Manage your availability and block dates/times.</p>
+</div>
+<div class="availability-header-actions">
+<button class="header-btn ghost" id="syncCalendarBtn" type="button"><svg><use href="#i-sync"></use></svg><span>Sync Calendar</span></button>
+<button class="header-btn block" id="blockDateBtn" type="button"><svg><use href="#i-plus"></use></svg><span>Block Date / Time</span></button>
+<button class="header-btn ghost" id="printCalendarBtn" type="button"><svg><use href="#i-print"></use></svg><span>Print Calendar</span></button>
+</div>
+</header>
+<div class="calendar-toolbar">
+<div class="calendar-period-controls">
+<button aria-label="Previous month" class="square-btn" id="calendarPrev" type="button"><svg><use href="#i-chevron-left"></use></svg></button>
+<button class="today-btn" id="calendarToday" type="button">Today</button>
+<button class="month-title-btn" id="monthTitleBtn" type="button">
+<span id="calendarPeriodTitle">Month Year</span><svg><use href="#i-chevron-down"></use></svg>
+</button>
+<input aria-label="Choose month" id="monthPicker" type="month"/>
+</div>
+<div aria-label="Calendar view" class="view-switch" role="tablist">
+<button class="active" data-calendar-view="month" type="button">Month</button>
+<button data-calendar-view="week" type="button">Week</button>
+<button data-calendar-view="list" type="button">List</button>
+</div>
+</div>
+<section aria-live="polite" class="calendar-board" id="calendarBoard"></section>
+<div aria-label="Availability status legend" class="calendar-legend">
+<span><i class="available"></i>Available</span>
+<span><i class="partial"></i>Partially Available</span>
+<span><i class="unavailable"></i>Unavailable</span>
+<span><i class="preferred"></i>Preferred</span>
+<span><i class="assigned"></i>Assigned</span>
+</div>
+</main>
+</div>
+<div class="quick-menu" hidden="" id="availabilityQuickMenu">
+<strong id="quickMenuDate">Date</strong>
+<button data-quick-action="available" type="button"><i class="available"></i>Mark Available</button>
+<button data-quick-action="preferred" type="button"><i class="preferred"></i>Mark Preferred</button>
+<button data-quick-action="block" type="button"><i class="partial"></i>Block Date / Time</button>
+<button data-quick-action="clear" type="button"><i class="clear"></i>Clear Availability</button>
+</div>
+<dialog class="block-dialog" id="blockDialog">
+<form id="blockAvailabilityForm">
+<button aria-label="Close" class="dialog-close" id="closeBlockDialog" type="button"><svg><use href="#i-close"></use></svg></button>
+<h2>BLOCK DATE / TIME</h2>
+<p>Select the date/time you want to block and the reason.</p>
+<div class="block-fields">
+<label class="field">
+<span>Date</span>
+<div class="field-control"><svg><use href="#i-calendar"></use></svg><input id="blockDate" required="" type="date"/></div>
+</label>
+<label class="field">
+<span>Start Time</span>
+<div class="field-control"><svg><use href="#i-clock"></use></svg><select id="blockStartTime"></select><svg class="chev"><use href="#i-chevron-down"></use></svg></div>
+</label>
+<label class="field">
+<span>End Time (Optional)</span>
+<div class="field-control"><svg><use href="#i-clock"></use></svg><select id="blockEndTime"></select><svg class="chev"><use href="#i-chevron-down"></use></svg></div>
+</label>
+</div>
+<label class="reason-label">Block Reason</label>
+<button aria-expanded="false" class="reason-trigger" id="reasonTrigger" type="button">
+<span id="reasonTriggerText">Select a reason...</span><svg><use href="#i-chevron-down"></use></svg>
+</button>
+<div class="reason-menu" hidden="" id="reasonMenu"></div>
+<label class="other-note" hidden="" id="otherNoteWrap">
+<span>Note</span>
+<textarea id="blockNote" placeholder="Add a note for the assignor or super admin." rows="3"></textarea>
+</label>
+<div class="dialog-actions">
+<button class="cancel" id="cancelBlockBtn" type="button">Cancel</button>
+<button class="save" id="saveBlockBtn" type="submit">Block Date / Time</button>
+</div>
+</form>
+</dialog>
+<div class="other-game-overlay" hidden="" id="otherGameOverlay">
+<section aria-labelledby="otherGameTitle" aria-modal="true" class="other-game-window" role="dialog">
+<form id="otherGameForm">
+<button aria-label="Close" class="dialog-close" id="closeOtherGameDialog" type="button"><svg><use href="#i-close"></use></svg></button>
+<span class="dialog-eyebrow">AVAILABILITY CONFLICT DETAILS</span>
+<h2 id="otherGameTitle">OFFICIATING ANOTHER GAME</h2>
+<p>Enter the game details below. These details will be visible to authorized assignors and the Super Admin when they review your availability.</p>
+<div class="other-game-fields">
+<label class="field">
+<span>Level of Game</span>
+<div class="field-control select-only">
+<select id="otherGameLevel" required="">
+<option value="">Select level...</option>
+<option value="High School">High School</option>
+<option value="NJCAA">NJCAA</option>
+<option value="NAIA">NAIA</option>
+<option value="NCAA DIII">NCAA DIII</option>
+<option value="NCAA DII">NCAA DII</option>
+<option value="NCAA DI">NCAA DI</option>
+</select>
+<svg class="chev"><use href="#i-chevron-down"></use></svg>
+</div>
+</label>
+<label class="field">
+<span>Game Time</span>
+<div class="field-control"><svg><use href="#i-clock"></use></svg><input id="otherGameTime" required="" type="time"/></div>
+</label>
+<label class="field span-2">
+<span>Location of Game</span>
+<div class="field-control"><input id="otherGameLocation" maxlength="180" placeholder="Venue, school, city, or complete location" required="" type="text"/></div>
+</label>
+<label class="field">
+<span>Home Team</span>
+<div class="field-control"><input id="otherGameHomeTeam" maxlength="120" placeholder="Home team" required="" type="text"/></div>
+</label>
+<label class="field">
+<span>Visiting Team</span>
+<div class="field-control"><input id="otherGameAwayTeam" maxlength="120" placeholder="Visiting team" required="" type="text"/></div>
+</label>
+<label class="field">
+<span>Conference</span>
+<div class="field-control"><input id="otherGameConference" maxlength="120" placeholder="Conference name" required="" type="text"/></div>
+</label>
+<label class="field">
+<span>Supervisor's Name</span>
+<div class="field-control"><input id="otherGameSupervisor" maxlength="120" placeholder="Supervisor's full name" required="" type="text"/></div>
+</label>
+</div>
+<div aria-label="Carried-forward block details" class="other-game-context">
+<div><span>Blocked Date</span><strong id="otherGameDateDisplay">Not selected</strong></div>
+<div><span>Blocked Time</span><strong id="otherGameBlockTimeDisplay">Not selected</strong></div>
+</div>
+<div class="other-game-summary">
+          The Blocked Date and Blocked Time are carried forward automatically from the first window. Complete every game-detail field before saving.
+        </div>
+<div class="dialog-actions">
+<button class="cancel" id="backToBlockDialog" type="button">Back</button>
+<button class="save" type="submit">Save Conflict Details</button>
+</div>
+</form>
+</section>
+</div>
+<div aria-live="polite" class="calendar-toast" id="calendarToast" role="status"></div>
+<script type="module" src="portal-data-sync.js?then=calendar.js"></script>
+</body>
+</html>

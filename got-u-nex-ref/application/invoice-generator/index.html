@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Raising The Bar Officiating Invoice Generator standalone prototype" />
+  <title>RTBO Invoice Generator</title>
+  <link rel="icon" href="assets/approved-rtbo-logo.png" />
+  <script>if (new URLSearchParams(location.search).get('embed') === '1') document.documentElement.dataset.embedded = 'true';</script>
+  <link rel="stylesheet" href="styles.css" />
+<link rel="stylesheet" href="../admin-global.css"></head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar">
+      <div class="brand-block">
+        <img src="assets/approved-rtbo-logo.png" alt="Raising The Bar Officiating" class="brand-logo" />
+      </div>
+      <nav class="side-nav" aria-label="Main navigation">
+        <button class="nav-item" data-view="dashboard"><span class="nav-icon">⌂</span><span>Dashboard</span></button>
+        <button class="nav-item active" data-view="invoices"><span class="nav-icon">▧</span><span>Invoices</span><span class="nav-caret">⌄</span></button>
+        <div class="sub-nav" id="invoiceSubnav">
+          <button data-view="invoices">All Invoices</button>
+          <button data-view="editor" class="active-dot">Create Invoice</button>
+          <button data-view="recurring">Recurring Invoices</button>
+          <button data-view="drafts">Drafts</button>
+          <button data-view="payments">Payments Received</button>
+          <button data-view="trash">Trash</button>
+        </div>
+        <button class="nav-item" data-view="clients"><span class="nav-icon">♙</span><span>Clients</span></button>
+        <button class="nav-item" data-view="services"><span class="nav-icon">⌘</span><span>Services</span></button>
+        <button class="nav-item" data-view="payments"><span class="nav-icon">▣</span><span>Payments</span></button>
+        <button class="nav-item" data-view="reports"><span class="nav-icon">▥</span><span>Reports</span></button>
+        <button class="nav-item" data-view="vault"><span class="nav-icon">▢</span><span>The Vault / Safe</span></button>
+        <button class="nav-item" data-view="activity"><span class="nav-icon">◷</span><span>Activity Log</span></button>
+      </nav>
+    </aside>
+
+    <main class="main-area">
+      <header class="topbar">
+        <div class="topbar-left">
+          <button class="icon-button" id="menuToggle" aria-label="Toggle navigation">☰</button>
+          <h1 id="pageTitle">Invoice Generator</h1>
+        </div>
+        <div class="topbar-right">
+          <button class="icon-button" id="themeToggle" aria-label="Toggle light and dark theme" title="Toggle theme">◐</button>
+          <div class="profile-chip" data-invoice-profile hidden>
+            <div class="avatar" data-invoice-profile-avatar></div>
+            <div class="profile-copy"><strong data-invoice-profile-name></strong><span data-invoice-profile-role></span></div>
+          </div>
+        </div>
+      </header>
+
+      <nav class="embedded-invoice-nav" aria-label="Invoice tools">
+        <button data-view="dashboard">Dashboard</button>
+        <button data-view="invoices">All Invoices</button>
+        <button data-view="editor">Create Invoice</button>
+        <button data-view="clients">Clients</button>
+        <button data-view="services">Services</button>
+        <button data-view="recurring">Recurring</button>
+        <button data-view="payments">Payments</button>
+        <button data-view="reports">Reports</button>
+        <button data-view="vault">Vault / Safe</button>
+        <button data-view="drafts">Drafts</button>
+        <button data-view="trash">Trash</button>
+        <button data-view="activity">Activity</button>
+      </nav>
+      <section id="viewContainer" class="view-container" aria-live="polite"></section>
+    </main>
+  </div>
+
+  <div class="toast-stack" id="toastStack" aria-live="polite"></div>
+
+  <dialog id="confirmDialog" class="modal-dialog">
+    <form method="dialog" class="modal-card">
+      <h2 id="confirmTitle">Confirm action</h2>
+      <p id="confirmMessage"></p>
+      <div class="modal-actions">
+        <button value="cancel" class="button secondary">Cancel</button>
+        <button value="confirm" class="button danger" id="confirmActionButton">Confirm</button>
+      </div>
+    </form>
+  </dialog>
+
+  <dialog id="printDialog" class="print-dialog">
+    <div class="print-dialog-card">
+      <div class="print-dialog-header">
+        <div>
+          <h2>Print Preview</h2>
+          <p>Review the exact invoice layout before printing or saving as PDF.</p>
+        </div>
+        <div class="print-dialog-actions">
+          <select id="paperSizeSelect" aria-label="Paper size">
+            <option value="letter">US Letter</option>
+            <option value="a4">A4</option>
+          </select>
+          <button class="button secondary" id="closePrintPreview">Close</button>
+          <button class="button primary" id="printFromPreview">Print</button>
+        </div>
+      </div>
+      <div class="print-preview-stage" id="printPreviewStage"></div>
+    </div>
+  </dialog>
+
+  <input type="file" id="attachmentInput" multiple hidden />
+  <script src="app.js"></script>
+</body>
+</html>

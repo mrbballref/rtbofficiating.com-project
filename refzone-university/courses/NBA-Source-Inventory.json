@@ -1,0 +1,98 @@
+[
+  {
+    "title": "2025-26 NBA Official Playing Rules",
+    "publisher": "National Basketball Association",
+    "type": "Current published official playing-rules authority",
+    "season": "2025-26",
+    "version": "2025-26 Official Rules",
+    "publicationDate": "2025-09-25",
+    "effectiveDate": "2025-26 NBA season",
+    "officialSource": true,
+    "sourceLocation": "Uploaded licensed reference: Official-2025-26-NBA-Playing-Rules.pdf and NBA Official digital rulebook",
+    "checksum": "3def8612e88622e3bd6cd0e53801a5fb3a4543ccaaade0670216094e0e962a0c",
+    "license": "Official copyrighted publication; reference authority only; no word-for-word reproduction",
+    "status": "Validated 76-page publication containing Rules 1-14, the rules index, court diagram, and Comments on the Rules."
+  },
+  {
+    "title": "NBA Official Digital Rulebook",
+    "publisher": "National Basketball Association",
+    "type": "Official current rules publication and navigation portal",
+    "season": "2025-26 current published edition",
+    "officialSource": true,
+    "sourceLocation": "official.nba.com/rulebook",
+    "status": "Official digital rules portal listing Rules 1-14 and Comments on the Rules. Item-level effective-date review required when updated."
+  },
+  {
+    "title": "2025-26 NBA Points of Emphasis and Updates",
+    "publisher": "National Basketball Association",
+    "type": "Official supplemental officiating video education",
+    "season": "2025-26 and 2026 Playoffs",
+    "publicationDate": "2025-09-26 through 2026-04-17",
+    "officialSource": true,
+    "sourceLocation": "NBA Official Points of Emphasis pages",
+    "status": "Supplemental instruction addressing closeout landing space, high-five contact, and straight-line pathway plays. The written rulebook controls if a summary or video conflicts."
+  },
+  {
+    "title": "NBA Official Inside the Rulebook and Replay Archive",
+    "publisher": "National Basketball Association",
+    "type": "Official supplemental rules, replay, challenge, and play-analysis resources",
+    "season": "Current archive",
+    "officialSource": true,
+    "sourceLocation": "NBA Official rules and replay archive",
+    "status": "Use only after verifying the item date, applicable rule, and current authority. Archived plays do not independently amend the rulebook."
+  },
+  {
+    "title": "2025-26 NBA Coach’s Challenge Reviews and Rule 14",
+    "publisher": "National Basketball Association",
+    "type": "Official challenge rule and current-season review archive",
+    "season": "2025-26",
+    "officialSource": true,
+    "sourceLocation": "NBA Official Rule 14 and challenge review archive",
+    "status": "Current Rule 14 provides one initial challenge and a second challenge after a successful first challenge, subject to timeout and reviewable-event requirements."
+  },
+  {
+    "title": "NBA Replay Center and Rule 13 Instant Replay",
+    "publisher": "National Basketball Association",
+    "type": "Official replay authority and operations context",
+    "season": "2025-26 current published rules",
+    "officialSource": true,
+    "sourceLocation": "NBA Official Rule 13 and Replay Center pages",
+    "status": "Rule 13 and current authorized operations control replay triggers, reviewable matters, evidence standards, communication, clock corrections, and resumption."
+  },
+  {
+    "title": "2025-26 NBA Officiating Last Two Minute Reports",
+    "publisher": "National Basketball Association",
+    "type": "Official retrospective performance-evaluation resource",
+    "season": "2025-26",
+    "officialSource": true,
+    "sourceLocation": "NBA Official Last Two Minute Reports archive",
+    "status": "Supplemental evaluation and film-study resource only; it does not replace the rulebook, mechanics, or assignment directives."
+  },
+  {
+    "title": "NBA Referee Operations, REPS, and authorized development materials",
+    "publisher": "NBA Referee Operations",
+    "type": "Authorized mechanics, evaluation, collaboration, training, and professional-development authority",
+    "season": "Assignment specific",
+    "officialSource": true,
+    "sourceLocation": "Official public and restricted distribution",
+    "status": "Public or restricted item-level version, access, licensing, and reviewer approval required. Course completion does not grant NBA assignment or employment."
+  },
+  {
+    "title": "Assignment-specific NBA operations manuals, officials communications, arena procedures, and supervisor directives",
+    "publisher": "NBA, NBA teams, arena management, Replay Center, and authorized supervisors",
+    "type": "Assignment-specific controlling authority",
+    "season": "Assignment specific",
+    "officialSource": true,
+    "sourceLocation": "Authorized league and assignment systems",
+    "status": "Controls arrival, mechanics, replay workflow, table operations, security, broadcast timing, emergency action, travel, incident reporting, and supervisor expectations."
+  },
+  {
+    "title": "2026-27 NBA playing rules and operations",
+    "publisher": "National Basketball Association",
+    "type": "Future-season authority pending official publication and validation",
+    "season": "2026-27",
+    "officialSource": true,
+    "sourceLocation": "NBA Official when published",
+    "status": "Not taught as current. Replace or update 2025-26 source records only after official publication, effective-date verification, and qualified review."
+  }
+]

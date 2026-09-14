@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script type="module">
+  import { requireRole } from '../../assets/auth.js';
+  document.documentElement.style.visibility = 'hidden';
+  const session = await requireRole([]);
+  if (session) document.documentElement.style.visibility = '';
+</script>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Got U Nex Ref | Super Administrator Profile</title>
+  <meta name="description" content="Got U Nex Ref Super Administrator profile workspace and administration access hub.">
+  <meta name="robots" content="noindex,nofollow">
+  <link rel="icon" type="image/png" href="assets/got-u-nex-ref-logo.png">
+  <link rel="stylesheet" href="css/super-admin-profile.css">
+  <script defer src="js/super-admin-profile.js"></script>
+
+</head>
+<body>
+<a class="sr-only" href="#main-content">Skip to content</a>
+<div class="app admin-app">
+  <aside class="side">
+    <a class="brand" href="../index.html" aria-label="Got U Nex Ref public home">
+      <img src="assets/got-u-nex-ref-logo.png" alt="Got U Nex Ref official logo">
+    </a>
+    <nav class="nav" aria-label="Super Administrator profile navigation">
+      <div class="label">Super Administration</div>
+      <a class="active" href="./index.html"><span class="ico">★</span><span>Admin Profile</span></a>
+      <a href="../application/admin-dashboard.html"><span class="ico">⌂</span><span>Super Admin Dashboard</span></a>
+      <a href="../application/admin-schools.html"><span class="ico">▥</span><span>Organizations</span></a>
+      <a href="../application/admin-users.html"><span class="ico">♙</span><span>Users &amp; Roles</span></a>
+      <a href="../application/admin-reports.html"><span class="ico">◎</span><span>Audit Logs</span></a>
+      <div class="label">Platform Operations</div>
+      <a href="../application/admin-assignments.html"><span class="ico">✓</span><span>Assignments</span></a>
+      <a href="../application/admin-master-schedule.html"><span class="ico">▦</span><span>Master Calendar</span></a>
+      <a href="../application/admin-messages.html"><span class="ico">✉</span><span>Messages</span></a>
+      <a href="../application/admin-notifications.html"><span class="ico">●</span><span>Notifications</span></a>
+      <a href="../application/admin-payments.html"><span class="ico">$</span><span>Payments &amp; Invoices</span></a>
+      <a href="../application/admin-tax-center.html"><span class="ico">▧</span><span>Tax &amp; Documents</span></a>
+      <a href="../application/admin-reports.html"><span class="ico">≡</span><span>Game Reports</span></a>
+      <div class="label">Account</div>
+      <a href="../application/admin-settings.html"><span class="ico">⚙</span><span>Settings</span></a>
+      <a href="../application/admin-support.html"><span class="ico">?</span><span>Support</span></a>
+    </nav>
+    <div class="sidefoot">Super Administrator access is controlled by authenticated platform permissions and audit logging.</div>
+  </aside>
+
+  <main class="main" id="main-content">
+    <header class="top admin-top">
+      <div class="admin-top-copy"><span class="admin-security-dot" aria-hidden="true"></span><span>Super Administrator Profile</span></div>
+      <div class="admin-top-actions">
+        <a class="topbtn top-link" href="../application/admin-notifications.html" aria-label="Notifications">●</a>
+        <a class="topbtn top-link" href="#profile-details" aria-label="Profile details">◎</a>
+      </div>
+    </header>
+
+    <div class="content">
+      <section class="hero admin-hero">
+        <div class="heroTop">
+          <div class="profile">
+            <div class="avatar admin-avatar">★</div>
+            <div>
+              <div class="eyebadges"><span class="badge admin-badge">Super Administrator</span><span class="badge">Account Profile</span></div>
+              <h1 id="heroProfileName">Super Administrator Profile</h1>
+              <div class="meta"><b>Super Administrator</b><span>•</span><span id="heroEmail">Email not added</span></div>
+            </div>
+          </div>
+          <div class="actions admin-primary-actions">
+            <a class="btn orange admin-dashboard-cta" href="../application/admin-dashboard.html">★ Go to Super Admin Dashboard</a>
+            <a class="btn" href="../application/admin-dashboard.html">Open Direct Dashboard File</a>
+            <a class="btn rtbo-home" href="../../index.html" aria-label="Return to the Raising The Bar Officiating website home page">↗ Raising The Bar Officiating Home</a>
+            <button class="btn" type="button" data-open="profileModal">✎ Edit Personal Information</button>
+            <a class="btn" href="../application/admin-settings.html">⚙ Settings</a>
+            <a class="btn" href="../../account/index.html?view=signin" data-sign-out>Sign Out</a>
+          </div>
+        </div>
+        <div class="metrics admin-metrics">
+          <div class="metric"><div class="metricIcon">▥</div><div><div class="num">00</div><small>Organizations</small></div></div>
+          <div class="metric"><div class="metricIcon">♙</div><div><div class="num">00</div><small>Verified Users</small></div></div>
+          <div class="metric"><div class="metricIcon">?</div><div><div class="num">00</div><small>Open Support Items</small></div></div>
+          <div class="metric"><div class="metricIcon">◎</div><div><div class="num">00</div><small>Audit Events Requiring Review</small></div></div>
+        </div>
+      </section>
+
+      <div class="grid admin-grid">
+        <div class="stack">
+          <section class="panel admin-command-panel">
+            <div class="panelhead">
+              <div><div class="kick">Administrative Command Center</div><h2>Platform-wide control and oversight</h2><div class="sub">Access the Super Administrator tools responsible for organizations, users, permissions, security, operations, and platform configuration.</div></div>
+              <a class="btn orange" href="../application/admin-dashboard.html">Open Dashboard</a>
+            </div>
+            <div class="hubgrid admin-hubgrid">
+              <article class="hubcard"><div class="hubico">▥</div><h3>Organizations</h3><p>No organizations to display.</p><a href="../application/admin-schools.html">Manage →</a></article>
+              <article class="hubcard"><div class="hubico">♙</div><h3>Users &amp; Roles</h3><p>No verified users to display.</p><a href="../application/admin-users.html">Manage →</a></article>
+              <article class="hubcard"><div class="hubico">◎</div><h3>Audit Logs</h3><p>No audit events to display.</p><a href="../application/admin-reports.html">Review →</a></article>
+              <article class="hubcard"><div class="hubico">⚙</div><h3>Platform Settings</h3><p>Configure approved platform settings.</p><a href="../application/admin-settings.html">Open →</a></article>
+              <article class="hubcard"><div class="hubico">✓</div><h3>Assignment Operations</h3><p>No assignment records to display.</p><a href="../application/admin-assignments.html">Open →</a></article>
+              <article class="hubcard"><div class="hubico">$</div><h3>Financial Operations</h3><p>No financial records to display.</p><a href="../application/admin-payments.html">Open →</a></article>
+              <article class="hubcard"><div class="hubico">▧</div><h3>Documents</h3><p>No documents requiring review.</p><a href="../application/admin-tax-center.html">Open →</a></article>
+              <article class="hubcard"><div class="hubico">?</div><h3>Support Center</h3><p>No support requests to display.</p><a href="../application/admin-support.html">Open →</a></article>
+            </div>
+          </section>
+
+          <section class="panel role-authority-panel">
+            <div class="panelhead">
+              <div><div class="kick">Role Assignment Authority</div><h2>Super Admin controlled</h2><div class="sub">Only the Super Administrator can assign user roles by default. Any delegation of that authority must be explicitly granted by the Super Administrator.</div></div>
+              <a class="btn" href="../application/admin-users.html">Users &amp; Roles</a>
+            </div>
+            <div class="authority-list">
+              <div><span class="authority-state allowed">Allowed</span><div><b>Super Administrator</b><small>Role assignment authority is available by default.</small></div></div>
+              <div><span class="authority-state conditional">Delegated</span><div><b>Explicitly authorized user</b><small>Access exists only after a Super Administrator grants the specific permission.</small></div></div>
+              <div><span class="authority-state denied">Denied</span><div><b>All other users</b><small>No role assignment access is inherited from another platform role.</small></div></div>
+            </div>
+          </section>
+
+          <div class="two">
+            <section class="panel"><div class="panelhead"><div><div class="kick">Notifications</div><h2>Administrative attention center</h2></div><a class="btn" href="../application/admin-notifications.html">Open Notifications</a></div><div class="list"><div class="empty">No notifications to display.</div></div></section>
+            <section class="panel"><div class="panelhead"><div><div class="kick">Messages</div><h2>Platform communication</h2></div><a class="btn" href="../application/admin-messages.html">Open Messages</a></div><div class="list"><div class="empty">No messages to display.</div></div></section>
+          </div>
+        </div>
+
+        <aside class="stack">
+          <section class="panel profileCard" id="profile-details">
+            <div style="display:flex;justify-content:space-between"><div><div class="kick">Profile Status</div><h2>Personal information</h2></div><div class="num" id="profileCompletion">0%</div></div>
+            <div class="progressline"><span id="profileProgress" style="width:0%"></span></div>
+            <div class="detail"><div class="mini">◎</div><div><label>Legal Name</label><b id="profileName">Not added</b></div></div>
+            <div class="detail"><div class="mini">✉</div><div><label>Email</label><b id="profileEmail">Not added</b></div></div>
+            <div class="detail"><div class="mini">☎</div><div><label>Phone</label><b id="profilePhone">Not added</b></div></div>
+            <div class="detail"><div class="mini">⌂</div><div><label>Home Address</label><b id="profileAddress">Not added</b></div></div>
+            <div class="detail"><div class="mini">☏</div><div><label>Emergency Contact</label><b id="profileEmergency">Not added</b></div></div>
+            <div class="detail"><div class="mini">★</div><div><label>Role</label><b>Super Administrator</b></div></div>
+            <p class="admin-policy-note">Personal and contact information can be updated here. Super Administrator authority is an authenticated security role and cannot be changed from this personal-information form.</p>
+            <button class="btn" data-open="profileModal" style="width:100%;margin-top:5px">✎ Update Personal Information</button>
+          </section>
+
+          <section class="panel profileCard"><div class="kick">Security &amp; Accountability</div><h2>Administrative controls</h2><div class="admin-link-list"><a href="../application/admin-reports.html"><span>◎</span><b>Audit Logs</b><small>Review authorized platform activity</small></a><a href="../application/admin-users.html"><span>♙</span><b>User Permissions</b><small>Manage role assignment authority</small></a><a href="../application/admin-settings.html"><span>⚙</span><b>Security Settings</b><small>Review approved configuration</small></a></div></section>
+
+          <section class="panel profileCard"><div class="kick">Raising The Bar Officiating</div><h2>Return to the main website</h2><p class="sub">Leave the Got U Nex Ref administration workspace and return to the Raising The Bar Officiating website.</p><a class="btn rtbo-home admin-full-cta" href="../../index.html">↗ Raising The Bar Officiating Home</a></section>
+        </aside>
+      </div>
+    </div>
+  </main>
+</div>
+
+<div class="modal" id="profileModal" aria-hidden="true">
+  <div class="dialog" role="dialog" aria-modal="true" aria-labelledby="profileModalTitle">
+    <div class="dialoghead"><div><div class="kick">Got U Nex Ref</div><h2 id="profileModalTitle">Update Personal Information</h2></div><button class="btn" type="button" data-close>×</button></div>
+    <form class="dialogbody" id="profileForm">
+      <div class="formsection"><h3>Personal Information</h3><label class="field">First name<input autocomplete="given-name" name="first" required></label><label class="field">Last name<input autocomplete="family-name" name="last" required></label><label class="field">Preferred name<input name="preferred" placeholder="Optional"></label><label class="field">Gender<select name="gender"><option value="">Prefer not to specify</option><option>Female</option><option>Male</option><option>Nonbinary</option><option>Self-described</option></select></label><label class="field">Date of birth<input name="dob" type="date"></label></div>
+      <div class="formsection"><h3>Contact Information</h3><label class="field">Primary email<input autocomplete="email" name="email" required type="email"></label><label class="field">Alternate email<input name="altEmail" placeholder="Optional" type="email"></label><div class="formnote">Changing the authenticated sign-in email requires the account-security confirmation workflow.</div><label class="field">Primary phone<input autocomplete="tel" name="phone" placeholder="Add phone number" type="tel"></label><label class="field">Alternate phone<input name="altPhone" placeholder="Optional" type="tel"></label></div>
+      <div class="formsection"><h3>Home Address</h3><label class="field full">Address line 1<input autocomplete="address-line1" name="address1"></label><label class="field full">Address line 2<input autocomplete="address-line2" name="address2" placeholder="Apartment, suite, unit, etc. (optional)"></label><label class="field">City<input autocomplete="address-level2" name="city"></label><label class="field">State / Province<input autocomplete="address-level1" name="state"></label><label class="field">ZIP / Postal code<input autocomplete="postal-code" name="zip"></label><label class="field">Country<input autocomplete="country-name" name="country"></label></div>
+      <div class="formsection"><h3>Emergency Contact</h3><label class="field">Contact name<input name="emergencyName"></label><label class="field">Relationship<input name="emergencyRelationship"></label><label class="field">Contact phone<input name="emergencyPhone" type="tel"></label></div>
+      <div class="dialogfoot"><button class="btn" type="button" data-close>Cancel</button><button class="btn orange" type="submit">Save Personal Information</button></div>
+    </form>
+  </div>
+</div>
+<script defer src="../../cms/runtime.js" data-rtbo-cms-runtime data-cms-page="got-u-nex-ref/super-admin-profile/index.html"></script>
+</body>
+</html>

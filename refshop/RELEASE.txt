@@ -1,0 +1,13 @@
+THE REFSHOP — COMPLETE COMMERCE PLATFORM
+Release package: consolidated current build
+Includes:
+- Approved RefShop logo asset
+- Balanced centered RefShop navigation
+- Approved iPad video player component
+- Storefront and commerce application files
+- Seller/Business/Supplier/Admin platform experiences
+- Payment gateway orchestration and setup documentation
+- Server-side Stripe/PayPal integration scaffolding
+- Master RefShop requirements and approved navigation reference
+
+Open README.md for setup and run instructions.

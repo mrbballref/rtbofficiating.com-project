@@ -1,0 +1,36 @@
+{
+  "track": "NCAA Division I Men",
+  "season": "2026-27",
+  "generated": "2026-08-06",
+  "programs": {
+    "foundations": {
+      "courses": 24,
+      "lessons": 288,
+      "videoScripts": 288,
+      "scenes": 1728,
+      "hours": 1800
+    },
+    "advancement": {
+      "courses": 12,
+      "lessons": 180,
+      "videoScripts": 180,
+      "scenes": 1080,
+      "hours": 540
+    },
+    "elite": {
+      "courses": 20,
+      "lessons": 300,
+      "videoScripts": 300,
+      "scenes": 1800,
+      "hours": 900
+    }
+  },
+  "files": {
+    "courses/ncaa-d1-men-advancement-course-ui.js": "7cf7ef91ee4fd0dd2712fe458f9393263639decc933b121099970e467e087a9a",
+    "courses/ncaa-d1-men-advancement.js": "5cb1a4bd60f21b214f4a98b6f540aa0da64c691a051481223f2532eaeb8efa21",
+    "courses/ncaa-d1-men-course-ui.js": "34ea55088123bd580134c53002b1d569b0aacd422fd79570e5158eb3377bc31e",
+    "courses/ncaa-d1-men-elite-course-ui.js": "44d17db5e6a0559eec0a56a2f88edb21fc705a0fcd9e4b9ed615fcb8a224f3a3",
+    "courses/ncaa-d1-men-elite.js": "aa247d9de727effa3cac02cae9a5356451cc0cd990d755a93b2e068da0946273",
+    "courses/ncaa-d1-men-foundations.js": "3e2c45cc3f21ebd886ee147ae4cc7ab53bec69cc702b7337c44e20f3adc58123"
+  }
+}

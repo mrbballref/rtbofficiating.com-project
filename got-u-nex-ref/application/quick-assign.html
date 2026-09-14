@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<title>Quick Assign / Auto Assign — Got U Nex Ref Admin</title>
+<link href="quick-assign.css" rel="stylesheet"/>
+<link href="admin-global.css" rel="stylesheet"/></head>
+<body><a aria-label="Back to Admin Dashboard" class="admin-dashboard-cta-global" href="admin-dashboard.html">← ADMIN DASHBOARD</a>
+<svg aria-hidden="true" class="sprite">
+<symbol id="i-home" viewbox="0 0 24 24"><path d="M3 11 12 3l9 8v10h-6v-6H9v6H3z"></path></symbol>
+<symbol id="i-calendar" viewbox="0 0 24 24"><rect height="16" rx="2" width="18" x="3" y="5"></rect><path d="M16 3v4M8 3v4M3 10h18"></path></symbol>
+<symbol id="i-game" viewbox="0 0 24 24"><circle cx="12" cy="12" r="9"></circle><path d="M7 8h10M7 16h10M8 7c3 3 3 7 0 10M16 7c-3 3-3 7 0 10"></path></symbol>
+<symbol id="i-users" viewbox="0 0 24 24"><circle cx="8" cy="7" r="3"></circle><circle cx="17" cy="9" r="2.5"></circle><path d="M2 20c0-4 2.5-6.5 6-6.5s6 2.5 6 6.5M14 14c3.5 0 6 2 6 5.5"></path></symbol>
+<symbol id="i-school" viewbox="0 0 24 24"><path d="M3 10 12 4l9 6M5 10v9M9 10v9M15 10v9M19 10v9M3 20h18"></path></symbol>
+<symbol id="i-availability" viewbox="0 0 24 24"><circle cx="12" cy="12" r="9"></circle><path d="M8 12l2.5 2.5L16 9"></path></symbol>
+<symbol id="i-contract" viewbox="0 0 24 24"><path d="M6 3h10l4 4v14H6z"></path><path d="M14 3v5h5M9 12h6M9 16h6"></path></symbol>
+<symbol id="i-invoice" viewbox="0 0 24 24"><path d="M6 3h12v18l-2-1.5L14 21l-2-1.5L10 21l-2-1.5L6 21z"></path><path d="M9 8h6M9 12h6M9 16h4"></path></symbol>
+<symbol id="i-money" viewbox="0 0 24 24"><circle cx="12" cy="12" r="9"></circle><path d="M15 8.5c-.8-.8-2-1.2-3-1.2-1.6 0-3 .8-3 2.2 0 3 6 1.5 6 4.5 0 1.4-1.4 2.2-3 2.2-1.2 0-2.5-.4-3.4-1.3M12 5.5v13"></path></symbol>
+<symbol id="i-report" viewbox="0 0 24 24"><path d="M5 3h14v18H5zM8 15l3-3 2 2 3-4M8 18h8"></path></symbol>
+<symbol id="i-folder" viewbox="0 0 24 24"><path d="M3 6h6l2 2h10v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><path d="M3 9h18"></path></symbol>
+<symbol id="i-mail" viewbox="0 0 24 24"><rect height="14" rx="2" width="18" x="3" y="5"></rect><path d="m4 7 8 6 8-6"></path></symbol>
+<symbol id="i-bell" viewbox="0 0 24 24"><path d="M6 9a6 6 0 0 1 12 0v4l2 3H4l2-3z"></path><path d="M10 20h4"></path></symbol>
+<symbol id="i-gear" viewbox="0 0 24 24"><circle cx="12" cy="12" r="3"></circle><path d="m4.9 4.9 2.1 1.2 2.4-1L10 2h4l.6 3.1 2.4 1 2.1-1.2 2 3.5-2.2 1.7.2 2.6 2.4 1.5-2 3.5-2.7-1-.9.8-.6 3.1h-4l-.6-3.1-.9-.8-2.7 1-2-3.5 2.4-1.5.2-2.6-2.2-1.7z"></path></symbol>
+<symbol id="i-help" viewbox="0 0 24 24"><circle cx="12" cy="12" r="9"></circle><path d="M9.5 9a2.5 2.5 0 1 1 4.3 1.8c-.7.7-1.8 1.3-1.8 2.7"></path><circle cx="12" cy="17" r="1"></circle></symbol>
+<symbol id="i-plus" viewbox="0 0 24 24"><path d="M12 5v14M5 12h14"></path></symbol>
+<symbol id="i-check" viewbox="0 0 24 24"><path d="m5 12 4 4L19 6"></path></symbol>
+<symbol id="i-clock" viewbox="0 0 24 24"><circle cx="12" cy="12" r="9"></circle><path d="M12 7v6l4 2"></path></symbol>
+<symbol id="i-whistle" viewbox="0 0 24 24"><path d="M3 11h7l4-5h7v7h-7l-4-2H3z"></path><circle cx="6" cy="16" r="3"></circle></symbol>
+<symbol id="i-export" viewbox="0 0 24 24"><path d="M12 3v12M7 8l5-5 5 5"></path><path d="M4 14v5a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-5"></path></symbol>
+<symbol id="i-search" viewbox="0 0 24 24"><circle cx="10" cy="10" r="6"></circle><path d="m15 15 6 6"></path></symbol>
+<symbol id="i-chevron" viewbox="0 0 24 24"><path d="m9 6 6 6-6 6"></path></symbol>
+<symbol id="i-filter" viewbox="0 0 24 24"><path d="M3 5h18l-7 8v6l-4 2v-8z"></path></symbol>
+<symbol id="i-bolt" viewbox="0 0 24 24"><path d="M13 2 4 14h6l-1 8 9-12h-6z"></path></symbol>
+<symbol id="i-sync" viewbox="0 0 24 24"><path d="M20 12a8 8 0 0 0-14-5"></path><path d="M4 4v5h5"></path><path d="M4 12a8 8 0 0 0 14 5"></path><path d="M20 20v-5h-5"></path></symbol>
+<symbol id="i-pin" viewbox="0 0 24 24"><path d="M20 10c0 5-8 11-8 11S4 15 4 10a8 8 0 1 1 16 0z"></path><circle cx="12" cy="10" r="2.5"></circle></symbol>
+<symbol id="i-star" viewbox="0 0 24 24"><path d="m12 3 2.8 5.8 6.4.9-4.6 4.5 1.1 6.5L12 17.6 6.3 20.7l1.1-6.5L2.8 9.7l6.4-.9z"></path></symbol>
+<symbol id="i-close" viewbox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"></path></symbol>
+<symbol id="i-location" viewbox="0 0 24 24"><path d="M12 3 8 11l4 2 4-2-4-8z"></path><path d="M5 14c2 3 4.6 5 7 7 2.4-2 5-4 7-7"></path></symbol>
+<symbol id="i-personadd" viewbox="0 0 24 24"><circle cx="9" cy="8" r="4"></circle><path d="M2 21c0-4.2 3.3-7 7-7 1.7 0 3.3.4 4.5 1.2M19 9v8M15 13h8"></path></symbol>
+</svg>
+<div class="admin-shell">
+<aside class="admin-sidebar">
+<div class="admin-brand"><a aria-label="Got U Nex Ref Home" class="brand-home-link" href="got-u-nex-ref-home/index.html"><img alt="Got U Nex Ref" src="assets/got-u-nex-ref-logo.png"/></a></div>
+<div class="admin-label">ADMIN DASHBOARD</div>
+<nav class="admin-nav">
+<a href="admin-profile.html"><svg><use href="#i-users"></use></svg><span>My Profile</span></a>
+<a href="admin-dashboard.html"><svg><use href="#i-home"></use></svg><span>Dashboard</span></a>
+<a href="admin-assignments.html"><svg><use href="#i-game"></use></svg><span>Assignments</span></a>
+<a href="admin-schools.html"><svg><use href="#i-school"></use></svg><span>Schools</span></a>
+<a href="admin-officials.html"><svg><use href="#i-users"></use></svg><span>Officials</span></a>
+<a href="admin-availability.html"><svg><use href="#i-availability"></use></svg><span>Availability</span></a>
+<a href="admin-contracts.html"><svg><use href="#i-contract"></use></svg><span>Contract Generator</span></a>
+<a href="admin-invoices.html"><svg><use href="#i-invoice"></use></svg><span>Invoice Generator</span></a>
+<a href="admin-payments.html"><svg><use href="#i-money"></use></svg><span>Payments</span></a>
+<a href="admin-tax-center.html"><svg><use href="#i-invoice"></use></svg><span>Tax Center</span></a>
+<a href="admin-reports.html"><svg><use href="#i-report"></use></svg><span>Reports</span></a>
+<a href="admin-resources.html"><svg><use href="#i-folder"></use></svg><span>Resources</span></a>
+<a href="admin-messages.html"><svg><use href="#i-mail"></use></svg><span>Messages</span><strong class="admin-count" id="sidebarMessageCount">0</strong></a>
+<a href="admin-notifications.html"><svg><use href="#i-bell"></use></svg><span>Notifications</span><strong class="admin-count" id="sidebarNotificationCount">0</strong></a>
+<a href="admin-settings.html"><svg><use href="#i-gear"></use></svg><span>Settings</span></a>
+<a href="admin-support.html"><svg><use href="#i-help"></use></svg><span>Support</span></a>
+</nav>
+<div class="admin-help"><strong>Administrator Workspace</strong><small>Manage scheduling, assignments, communications, finance, settings, and support from one place.</small></div>
+</aside>
+<main class="admin-workspace quick-assign-page">
+<div class="workspace-toolbar">
+<div class="spacer"></div>
+<button aria-label="Notifications" class="icon-btn" id="topBellBtn" type="button"><svg><use href="#i-bell"></use></svg><span class="count" id="topBellCount">0</span></button>
+<div class="user-chip"><img alt="" id="topUserAvatar" src="assets/profile-placeholder.svg"/><div class="user-copy"><strong id="topUserName">Administrator</strong><span id="topUserRole">Administrator</span></div><svg class="user-chevron"><use href="#i-chevron"></use></svg></div>
+</div>
+<section class="surface">
+<div class="page-head">
+<div>
+<h1><svg class="title-icon"><use href="#i-bolt"></use></svg> QUICK ASSIGN</h1>
+<p>Quickly assign available officials to games based on your criteria, crew history, and training preferences.</p>
+</div>
+<div class="head-actions">
+<a class="btn btn-outline" href="tba-games.html"><svg><use href="#i-game"></use></svg>View Unassigned Games</a>
+<button class="btn btn-red" id="autoAssignBtn" type="button"><svg><use href="#i-bolt"></use></svg>Auto Assign</button>
+</div>
+</div>
+<section class="stats-grid">
+<article class="stat-card red"><div class="icon-wrap"><svg><use href="#i-calendar"></use></svg></div><div><strong id="statGames">0</strong><span>Games Needing Crews</span><small>Within selected date range</small></div></article>
+<article class="stat-card green"><div class="icon-wrap"><svg><use href="#i-users"></use></svg></div><div><strong id="statOfficials">0</strong><span>Available Officials</span><small>Match your filters</small></div></article>
+<article class="stat-card blue"><div class="icon-wrap"><svg><use href="#i-check"></use></svg></div><div><strong id="statAssignments">0</strong><span>Assignments Made</span><small>This session</small></div></article>
+<article class="stat-card purple"><div class="icon-wrap"><svg><use href="#i-clock"></use></svg></div><div><strong id="statTimeSaved">0m 00s</strong><span>Time Saved</span><small>Compared to manual assigning</small></div></article>
+</section>
+<section class="filter-card">
+<div class="filters-grid quick-grid">
+<label><span>Date Range</span><input id="dateRangeInput" placeholder="Select or enter date range" type="text"/></label>
+<label><span>Sport</span><select id="sportFilter"><option value="">All Sports</option></select></label>
+<label><span>Level</span><select id="levelFilter"><option value="">All Levels</option></select></label>
+<label><span>Game Time</span><select id="timeFilter"><option value="">All Times</option><option value="day">Daytime</option><option value="evening">Evening</option></select></label>
+<label><span>Venue</span><select id="venueFilter"><option value="">All Venues</option></select></label>
+<label><span>Number of Officials Needed</span><select id="crewNeededFilter"><option value="">All</option><option value="2">2 Officials</option><option value="3">3 Officials</option></select></label>
+<label><span>Official Role</span><select id="roleFilter"><option value="">All Roles</option><option value="Referee">Referee</option><option value="Umpire">Umpire</option><option value="Field">Field Official</option><option value="Base">Base Official</option><option value="Alternate">Alternate</option></select></label>
+<label><span>Certification</span><select id="certFilter"><option value="">All Certifications</option></select></label>
+<label><span>Location Radius</span><select id="radiusFilter"><option value="25">25 miles</option><option value="50">50 miles</option><option value="75">75 miles</option><option value="100">100 miles</option></select></label>
+<button class="btn btn-outline slim location-btn" id="useLocationBtn" type="button"><svg><use href="#i-pin"></use></svg>Use My Location</button>
+<button class="btn btn-outline slim" id="toggleFiltersBtn" type="button"><svg><use href="#i-filter"></use></svg>More Filters</button>
+</div>
+<div class="advanced-filters" hidden="" id="advancedFilters">
+<label><span>Preferred Assignment Mode</span><select id="assignmentModeFilter"><option value="">Any Mode</option><option value="returning">Returning accepted crew</option><option value="training">Training assignment</option><option value="new">New assignment</option></select></label>
+<label><span>Preserve Accepted Officials</span><select id="preserveFilter"><option value="">Either</option><option value="yes">Yes</option><option value="no">No</option></select></label>
+<label><span>Search Game or Team</span><input id="searchInput" placeholder="Search by team, game ID, or venue..." type="search"/></label>
+</div>
+</section>
+<section class="table-card">
+<div class="table-head">
+<div class="tab-row" id="tabRow">
+<button class="tab active" data-tab="games" type="button">Games Needing Crews <span id="countGames">0</span></button>
+<button class="tab" data-tab="matches" type="button">Officials Matched <span id="countMatched">0</span></button>
+<button class="tab" data-tab="suggested" type="button">Suggested Assignments <span id="countSuggested">0</span></button>
+</div>
+<div class="head-tools">
+<button class="mini-link" id="clearAllBtn" type="button"><svg><use href="#i-sync"></use></svg>Clear All</button>
+<button class="mini-link" id="refreshBtn" type="button"><svg><use href="#i-sync"></use></svg>Refresh</button>
+</div>
+</div>
+<div class="table-scroll">
+<table class="qa-table">
+<thead id="tableHead"></thead>
+<tbody id="tableBody"></tbody>
+</table>
+<div class="table-empty" hidden="" id="emptyState">No games or assignments match the current filters.</div>
+</div>
+<div class="table-footer">
+<span id="tableSummary">Showing 0 games</span>
+<div class="pagination">
+<label>Show <select id="perPageSelect"><option>10</option><option>25</option><option>50</option></select> per page</label>
+<button class="page-btn" id="firstPageBtn" type="button">|‹</button>
+<button class="page-btn" id="prevPageBtn" type="button">‹</button>
+<button class="page-btn active" id="pageIndicator" type="button">1</button>
+<button class="page-btn" id="nextPageBtn" type="button">›</button>
+<button class="page-btn" id="lastPageBtn" type="button">›|</button>
+</div>
+</div>
+</section>
+</section>
+</main>
+</div>
+<div class="modal" hidden="" id="assignModal">
+<div class="modal-backdrop" data-close-modal=""></div>
+<div aria-labelledby="assignModalTitle" aria-modal="true" class="modal-dialog" role="dialog">
+<div class="modal-head">
+<div>
+<h2 id="assignModalTitle">Quick Assign Crew</h2>
+<p>Preserve prior accepted officials, add training assignments, or create a new crew without requiring users to reaccept unchanged games.</p>
+</div>
+<button class="close-btn" data-close-modal="" type="button"><svg><use href="#i-close"></use></svg></button>
+</div>
+<div class="modal-body">
+<section class="release-card">
+<h3 id="modalGameTitle">Game</h3>
+<div class="release-meta"><span id="modalGameMeta">—</span><span id="modalGameVenue">—</span></div>
+<div class="modal-banner" id="returningBanner">Returning accepted officials detected for this game. They can be auto-assigned back to the updated game without reacceptance.</div>
+</section>
+<div class="modal-grid">
+<label><span>Assignment Mode</span><select id="modalAssignmentMode"><option value="returning">Return Accepted Crew</option><option value="training">Training Assignment</option><option value="new">New Assignment</option></select></label>
+<label><span>Officials Required</span><select id="modalCrewNeeded"><option value="2">2 Officials</option><option value="3">3 Officials</option></select></label>
+<label><span>Preserve Accepted Officials</span><select id="modalPreserve"><option value="yes">Yes</option><option value="no">No</option></select></label>
+<label><span>Training Officials Allowed</span><select id="modalTrainingExtras"><option value="0">None</option><option value="1">1 Additional Official</option><option value="2">2 Additional Officials</option></select></label>
+</div>
+<div class="checkbox-row">
+<label><input checked="" id="notifyAssignedCheck" type="checkbox"/> Notify selected officials</label>
+<label><input checked="" id="autoAcceptCheck" type="checkbox"/> Auto-accept returning officials when only game details change</label>
+</div>
+<section class="selection-layout">
+<div class="selection-panel">
+<div class="section-head"><h3>Suggested Officials</h3><small>Best-fit crew based on distance, role, certification, and accepted crew history.</small></div>
+<div class="interest-list" id="suggestedOfficialsList"></div>
+</div>
+<div class="selection-panel">
+<div class="section-head"><h3>Selected Crew</h3><small>Primary officials plus optional training assignments.</small></div>
+<div class="selected-crew" id="selectedCrewList"></div>
+</div>
+</section>
+</div>
+<div class="modal-foot">
+<button class="btn btn-outline" id="openBuilderBtn" type="button">Open Assignment Builder</button>
+<button class="btn btn-red" id="saveAssignmentBtn" type="button">Apply Assignment</button>
+</div>
+</div>
+</div>
+<div aria-live="polite" class="toast" id="toast" role="status"></div>
+<script type="module" src="admin-data-sync.js?then=quick-assign.js,admin-navigation.js"></script></body>
+</html>

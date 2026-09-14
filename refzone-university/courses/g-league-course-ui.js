@@ -1,0 +1,4 @@
+(()=>{
+if(!window.GLeagueFoundationsCourse||!window.RefZoneCourseUICore)return;
+window.GLeagueCourseUI=window.RefZoneCourseUICore.create({trackId:'g-league',pathwayId:'foundations',course:window.GLeagueFoundationsCourse,icon:'assets/pathway-icons/refzone_university_g_league_course.png',courseLabel:'NBA G League Bachelor’s-Level Professional Foundations',shortLabel:'G LEAGUE BACHELOR’S',routeBase:'#/course/g-league/foundations',programHref:'#/program/g-league/foundations',storePrefix:'g-league-bachelors',resourceFiles:[['courses/G-League-Bachelors-Degree-Handbook.md','Professional program handbook'],['courses/G-League-Bachelors-Coverage-Matrix.md','Coverage matrix'],['courses/G-League-Bachelors-Source-Report.md','Source report'],['courses/G-League-Bachelors-Review-Package.md','Review package']]});
+})();

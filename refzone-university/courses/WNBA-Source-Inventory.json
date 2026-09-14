@@ -1,0 +1,83 @@
+[
+  {
+    "title": "2026 WNBA Official Rule Book",
+    "publisher": "WNBA Enterprises, LLC",
+    "type": "Current effective official playing-rules authority",
+    "season": "2026",
+    "version": "2026 Official Rules",
+    "publicationDate": "2026-03-25",
+    "effectiveDate": "2026 season",
+    "officialSource": true,
+    "sourceLocation": "Uploaded licensed reference: 2026-WNBA-Official-Rule-Book.pdf and official WNBA rules page",
+    "checksum": "7d260417a7c095fd538b7542651d582f568aa3fd0c52ea2faa0fb73d146fcc67",
+    "license": "Official copyrighted publication; reference authority only; no word-for-word reproduction",
+    "status": "Validated 91-page publication containing Rules 1-14 and Comments on the Rules."
+  },
+  {
+    "title": "Official Rules of the WNBA",
+    "publisher": "Women’s National Basketball Association",
+    "type": "Official publication and retrieval page",
+    "season": "2026",
+    "officialSource": true,
+    "sourceLocation": "WNBA.com rules page",
+    "status": "Official page links to the 2026 WNBA Official Rule Book and controls public retrieval."
+  },
+  {
+    "title": "2026 WNBA Points of Education — Parts 1 and 2, including June updates",
+    "publisher": "Women’s National Basketball Association",
+    "type": "Official supplemental officiating video education",
+    "season": "2026",
+    "publicationDate": "2026",
+    "officialSource": true,
+    "sourceLocation": "WNBA.com Rules & Officiating video collection",
+    "status": "Supplemental education only. The written 2026 WNBA Rule Book controls if a video summary or clip conflicts."
+  },
+  {
+    "title": "WNBA Officiating Information",
+    "publisher": "Women’s National Basketball Association",
+    "type": "Official officiating information and education portal",
+    "season": "Current archive",
+    "officialSource": true,
+    "sourceLocation": "WNBA.com officials information page",
+    "status": "Official education, officiating opportunities, and archive context; item-level date and authority review required."
+  },
+  {
+    "title": "WNBA Coach’s Challenge and Timeout Format Implementation",
+    "publisher": "Women’s National Basketball Association",
+    "type": "Official historical rules-change explanation incorporated into the current rule book",
+    "season": "Implemented 2024 and reflected in the 2026 rules",
+    "publicationDate": "2024-05-02",
+    "officialSource": true,
+    "sourceLocation": "WNBA official release",
+    "status": "Useful implementation history for the successful-first-challenge and Reset Timeout structure. The 2026 Rule Book remains controlling."
+  },
+  {
+    "title": "WNBA Centralized Replay Center Announcement",
+    "publisher": "Women’s National Basketball Association",
+    "type": "Future-effective replay-operations transition",
+    "season": "2027 future effective",
+    "publicationDate": "2026-07-25",
+    "effectiveDate": "Start of 2027 WNBA season",
+    "officialSource": true,
+    "sourceLocation": "WNBA official release",
+    "status": "Future-effective only. It must not be taught as the current 2026 replay workflow."
+  },
+  {
+    "title": "NBA Referee Operations and authorized WNBA development materials",
+    "publisher": "NBA/WNBA Referee Operations",
+    "type": "Authorized mechanics, professional standards, evaluation, replay, and development authority",
+    "season": "Assignment specific",
+    "officialSource": true,
+    "sourceLocation": "Official public and restricted distribution",
+    "status": "Public or restricted item-level version, access, licensing, and reviewer approval required. Course completion does not grant WNBA assignment or employment."
+  },
+  {
+    "title": "Assignment-specific WNBA operations manuals, officials communications, arena procedures, and supervisor directives",
+    "publisher": "WNBA, WNBA teams, arena management, replay support, and authorized supervisors",
+    "type": "Assignment-specific controlling authority",
+    "season": "Assignment specific",
+    "officialSource": true,
+    "sourceLocation": "Authorized league and assignment systems",
+    "status": "Controls arrival, mechanics, replay workflow, table operations, security, broadcast timing, emergency action, travel, incident reporting, and supervisor expectations."
+  }
+]

@@ -1,0 +1,24 @@
+REFZONE UNIVERSITY — COMPLETE NCAA Division III WOMEN'S BACHELOR'S-LEVEL PROGRAM
+
+Open platform.html and navigate to:
+  platform.html#/program/ncaa-d3-women/foundations
+
+Direct classroom route:
+  platform.html#/course/ncaa-d3-women/foundations
+
+Included:
+- 24 academic courses
+- 120 RefZone credit-equivalent units
+- 1,800 engagement hours
+- 288 interactive lessons
+- 288 complete lesson video-production scripts
+- 1728 scripted scenes
+- 24 downloadable syllabi
+- 24 downloadable video-script packages
+- Complete source report, coverage matrix, degree handbook, and review package
+
+Credential status:
+Professional degree-level pathway. It is not represented as an accredited academic degree or transferable college credit.
+
+Publication status:
+Complete instructional production draft. Qualified NCAA women’s rules, NCAA Division III procedures, mechanics, curriculum, copyright, accessibility, video, and program-administrator review remain required before public publication.

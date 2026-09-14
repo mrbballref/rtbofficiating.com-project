@@ -1,0 +1,134 @@
+{
+  "program": "EuroLeague Women",
+  "season": "2026-27 transition cycle",
+  "sources": [
+    {
+      "title": "Regulations Governing the EuroLeague Women 2026-2027",
+      "publisher": "FIBA Europe",
+      "type": "Current season-specific competition regulations",
+      "season": "2026-27",
+      "version": "Adopted by FIBA Europe in 2026",
+      "publicationDate": "2026",
+      "effectiveDate": "2026-27 competition season",
+      "officialSource": true,
+      "sourceLocation": "Official EuroLeague Women 2026-27 downloads: EuroLeague Women Regulations 2026-27",
+      "license": "Official copyrighted publication; used only as a reference authority and not reproduced",
+      "status": "Current EuroLeague Women authority for competition administration, participation, calendar, competition system, player eligibility, Final Six, finances, court layout, media, game-day obligations, commissioner use, and three-referee operation."
+    },
+    {
+      "title": "Regulations for European Club Competitions 2026-2027",
+      "publisher": "FIBA Europe",
+      "type": "Current general European club-competition regulations",
+      "season": "2026-27",
+      "version": "2026-27",
+      "officialSource": true,
+      "sourceLocation": "Official FIBA Europe / EuroLeague Women 2026-27 downloads",
+      "license": "Official copyrighted publication; used only as a reference authority and not reproduced",
+      "status": "Controls club registration, forms, facilities, eligibility administration, discipline, protests, game operations, advertising, security, media, and other general requirements except where the EuroLeague Women regulations specifically control."
+    },
+    {
+      "title": "FIBA Official Basketball Rules 2024 v1.0",
+      "publisher": "International Basketball Federation",
+      "type": "Current-effective international playing-rules foundation before October 1, 2026",
+      "season": "Current through September 30, 2026",
+      "version": "v1.0",
+      "publicationDate": "2024-10-01",
+      "effectiveDate": "2024-10-01",
+      "officialSource": true,
+      "sourceLocation": "Uploaded FIBA Rulebook reference and official FIBA Resource Hub",
+      "license": "Official copyrighted publication; used only as a reference authority and not reproduced",
+      "status": "Current rules authority through September 30, 2026. Course content labels these provisions current only until the 2026 edition becomes effective."
+    },
+    {
+      "title": "FIBA Official Basketball Rules Interpretations 2024 v1.0",
+      "publisher": "International Basketball Federation",
+      "type": "Current-effective official interpretations before replacement",
+      "season": "Current until replaced",
+      "version": "v1.0",
+      "effectiveDate": "2024-10-01",
+      "officialSource": true,
+      "sourceLocation": "Official FIBA Resource Hub",
+      "status": "Controls official interpretations used before the 2026 interpretation set becomes effective or is otherwise formally adopted."
+    },
+    {
+      "title": "FIBA Official Basketball Rules 2026 v1.1",
+      "publisher": "International Basketball Federation",
+      "type": "Published future-effective rules at the date of course production and expected 2026-27 playing-rules authority",
+      "season": "2026",
+      "version": "v1.1",
+      "publicationDate": "2026-07",
+      "effectiveDate": "2026-10-01",
+      "officialSource": true,
+      "sourceLocation": "Official FIBA Resource Hub",
+      "status": "Becomes effective worldwide October 1, 2026. Because the EuroLeague Women regular season begins after that date, the 2026 rules are expected to govern 2026-27 play unless an authorized FIBA Europe directive states otherwise. The platform must switch status on the effective date."
+    },
+    {
+      "title": "FIBA Official Basketball Rules 2026 Changes v1.1",
+      "publisher": "International Basketball Federation",
+      "type": "Official future-effective rules-change authority",
+      "season": "2026",
+      "version": "v1.1",
+      "effectiveDate": "2026-10-01",
+      "officialSource": true,
+      "sourceLocation": "Official FIBA Resource Hub",
+      "status": "Transition source for new terminology, technical-foul categories, disruptive and flagrant foul administration, signals, scoresheet markings, replay situations, and other 2026 changes. Do not apply before October 1, 2026."
+    },
+    {
+      "title": "FIBA Official Basketball Rules 2026 — Basketball Equipment v1.0",
+      "publisher": "International Basketball Federation",
+      "type": "Future-effective equipment authority",
+      "season": "2026",
+      "version": "v1.0",
+      "effectiveDate": "2026-10-01",
+      "officialSource": true,
+      "sourceLocation": "Official FIBA Resource Hub",
+      "status": "Controls Level 1 court, backboard, lighting, timing, shot-clock, ball, and equipment standards beginning October 1, 2026, subject to EuroLeague Women court-layout and event requirements."
+    },
+    {
+      "title": "FIBA Internal Regulations — Book 3, Players and Officials",
+      "publisher": "International Basketball Federation",
+      "type": "Official game-official licensing, duties, nominations, commissioner, and participant authority",
+      "season": "Current publication cycle",
+      "officialSource": true,
+      "sourceLocation": "Official FIBA statutes and regulations resources",
+      "status": "Controls FIBA referee and commissioner duties, licensing, conduct, nominations, uniforms, reporting, protests, and professional obligations."
+    },
+    {
+      "title": "FIBA Game Officials Licensing 2025-2027 Guidelines",
+      "publisher": "International Basketball Federation",
+      "type": "Official licensing and development framework",
+      "season": "2025-27",
+      "effectiveDate": "2025-09-01",
+      "officialSource": true,
+      "sourceLocation": "Official FIBA Game Officials Licensing resources",
+      "status": "Provides the current licensing-cycle framework. It does not guarantee a learner a licence, nomination, appointment, or professional assignment."
+    },
+    {
+      "title": "Authorized FIBA Three-Person Officiating, iRef, Fitness, and Referee Development Resources",
+      "publisher": "International Basketball Federation / FIBA Europe",
+      "type": "Official or authorized mechanics and development material",
+      "season": "Current authorized cycle",
+      "officialSource": true,
+      "sourceLocation": "FIBA Refereeing, iRef, FIBA Europe referee-development, technical-clinic, and assignment materials when authorized",
+      "status": "Used for mechanics, court coverage, rotations, fitness, communication, evaluation, and professional-development instruction. Restricted resources require authorized access and qualified review."
+    },
+    {
+      "title": "EuroLeague Women 2026-27 Event and Assignment Directives",
+      "publisher": "FIBA Europe and authorized competition officials",
+      "type": "Assignment-, venue-, and event-specific controlling authority",
+      "season": "2026-27 assignment specific",
+      "officialSource": true,
+      "sourceLocation": "Appointment communication, technical meeting, commissioner instructions, venue operations, broadcast rundown, security plan, IRS test, Final Six instructions, and postgame reporting channels",
+      "status": "Controls game-specific arrival, crew contact, uniforms, table meeting, replay check, court and advertising layout, presentation, media timing, security, reporting, travel, and any authorized modification."
+    },
+    {
+      "title": "FIBA Europe Women in Basketball and Women’s Basketball Summit Referee Development Resources",
+      "publisher": "FIBA Europe",
+      "type": "Official professional-development, inclusion, leadership, and mentoring context",
+      "season": "Current program cycle",
+      "officialSource": true,
+      "sourceLocation": "Official FIBA Europe Women in Basketball programs and Women’s Basketball Summit resources",
+      "status": "Supports leadership, mentoring, career development, inclusion, and institutional-development lessons. It is not a substitute for playing rules, competition regulations, mechanics, or assignment directives."
+    }
+  ]
+}

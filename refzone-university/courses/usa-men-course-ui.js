@@ -1,0 +1,4 @@
+(()=>{
+if(!window.USAMenFoundationsCourse||!window.RefZoneCourseUICore)return;
+window.USAMenCourseUI=window.RefZoneCourseUICore.create({trackId:'usa-men',pathwayId:'foundations',course:window.USAMenFoundationsCourse,icon:'assets/pathway-icons/rfzu_usambb.png',courseLabel:'USA Basketball Men Bachelor’s-Level Professional Foundations',shortLabel:'USA BASKETBALL MEN BACHELOR’S',routeBase:'#/course/usa-men/foundations',programHref:'#/program/usa-men/foundations',storePrefix:'usa-men-bachelors',resourceFiles:[['courses/USA-Basketball-Men-Bachelors-Degree-Handbook.md','Bachelor’s-Level program handbook'],['courses/USA-Basketball-Men-Bachelors-Coverage-Matrix.md','Coverage matrix'],['courses/USA-Basketball-Men-Bachelors-Source-Report.md','Source report'],['courses/USA-Basketball-Men-Bachelors-Review-Package.md','Review package']]});
+})();

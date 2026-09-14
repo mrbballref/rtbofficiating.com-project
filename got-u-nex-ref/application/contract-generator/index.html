@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+
+<html data-embedded="true" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Got U Nex Ref Contract Generator</title>
+<link href="styles.css" rel="stylesheet"/>
+<link href="../admin-global.css" rel="stylesheet"/></head>
+<body>
+<div class="contract-app" data-contract-app="">
+<header class="app-header">
+<div class="brand-lockup">
+<a aria-label="Got U Nex Ref Home" class="brand-home-link" href="../got-u-nex-ref-home/index.html"><img alt="Got U Nex Ref" src="assets/approved-got-u-nex-ref-logo.png"/></a>
+<div>
+<p>Got U Nex Ref Forms</p>
+<h1>Contract Generator</h1>
+</div>
+</div>
+<div class="header-actions">
+<div class="profile-chip" data-profile-chip="" hidden="">
+<span aria-hidden="true" data-profile-initials=""></span>
+<div><strong data-profile-name=""></strong><small data-profile-role=""></small></div>
+</div>
+<button class="button button--quiet" data-action="new-contract" type="button">New Contract</button>
+<button class="button button--primary" data-action="save-contract" type="button">Save Contract</button>
+</div>
+</header>
+<nav aria-label="Contract generator views" class="tool-nav">
+<button class="is-active" data-view="builder" type="button">Contract Builder</button>
+<button data-view="library" type="button">RTBO Contract Library <span data-library-count="">0</span></button>
+<button data-view="saved" type="button">Saved Contracts <span data-saved-count="">0</span></button>
+<button data-view="parties" type="button">Dashboard Parties <span data-party-count="">0</span></button>
+</nav>
+<aside class="legal-readiness-notice" role="note">
+<strong>Execution-ready contract system.</strong> These agreements contain substantive commercial, payment, insurance, indemnity, compliance, termination, dispute, and signature terms. Binding effect depends on the completed facts, signer authority, consideration, actual worker relationship, governing law, and any nonwaivable requirements. Independent-contractor status is determined by applicable law and the real working relationship, not the contract label alone.
+    </aside>
+<main>
+<section class="view is-active" data-view-panel="builder">
+<div class="workspace-heading">
+<div>
+<p class="eyebrow">Create, customize, review, and store</p>
+<h2 data-workspace-title="">New Contract</h2>
+<p>Contract records stay in this browser until a production database and signature provider are connected.</p>
+</div>
+<div class="document-actions">
+<button class="button button--quiet" data-action="print-contract" type="button">Print</button>
+<button class="button button--quiet" data-action="download-html" type="button">Download HTML</button>
+<button class="button button--quiet" data-action="download-json" type="button">Download JSON</button>
+</div>
+</div>
+<div class="builder-grid">
+<form class="contract-form" data-contract-form="" novalidate="">
+<input name="id" type="hidden"/>
+<input name="sourceTemplateFile" type="hidden"/>
+<section class="form-card">
+<div class="card-title"><span>1</span><div><h3>Agreement Setup</h3><p>Select an RTBO library agreement or create a custom document.</p></div></div>
+<div class="field-grid field-grid--four">
+<label><span>Agreement Category</span><select name="templateKey" required=""></select></label>
+<label><span>Agreement Title</span><input name="title" required="" type="text"/></label>
+<label><span>Status</span><select name="status"><option value="Draft">Draft</option><option value="Under Review">Under Review</option><option value="Awaiting Signature">Awaiting Signature</option><option value="Completed">Completed</option><option value="Canceled">Canceled</option></select></label>
+<label><span>Contract Number</span><input name="contractNumber" type="text"/></label>
+<label><span>Effective Date</span><input name="effectiveDate" type="date"/></label>
+<label><span>End Date</span><input name="endDate" type="date"/></label>
+<label><span>Governing State</span><input name="governingState" type="text"/></label>
+<label><span>Renewal Terms</span><input name="renewalTerms" type="text"/></label>
+<label class="field-span"><span>Agreement Preamble</span><textarea name="preamble" rows="5"></textarea></label>
+</div>
+<div class="template-source" data-template-source="" hidden="">
+<div><strong>RTBO source document</strong><span data-template-source-name=""></span></div>
+<div class="template-source__actions">
+<button class="button button--quiet" data-action="preview-current-template" type="button">Preview Source</button>
+<a class="button button--quiet" data-template-source-download="" download="">Download DOCX</a>
+</div>
+</div>
+</section>
+<section class="form-card">
+<div class="card-title"><span>2</span><div><h3>Parties</h3><p>Use saved dashboard records or enter the actual contract parties.</p></div></div>
+<div class="party-columns">
+<fieldset>
+<legend>Party One</legend>
+<label><span>Dashboard Record</span><select data-party-source="one" name="partyOneSource"></select></label>
+<label><span>Legal Name</span><input name="partyOneName" required="" type="text"/></label>
+<label><span>Contact Name</span><input name="partyOneContact" type="text"/></label>
+<label><span>Email</span><input name="partyOneEmail" type="email"/></label>
+<label><span>Phone</span><input name="partyOnePhone" type="tel"/></label>
+<label><span>Address</span><textarea name="partyOneAddress" rows="3"></textarea></label>
+</fieldset>
+<fieldset>
+<legend>Party Two</legend>
+<label><span>Dashboard Record</span><select data-party-source="two" name="partyTwoSource"></select></label>
+<label><span>Legal Name</span><input name="partyTwoName" required="" type="text"/></label>
+<label><span>Contact Name</span><input name="partyTwoContact" type="text"/></label>
+<label><span>Email</span><input name="partyTwoEmail" type="email"/></label>
+<label><span>Phone</span><input name="partyTwoPhone" type="tel"/></label>
+<label><span>Address</span><textarea name="partyTwoAddress" rows="3"></textarea></label>
+</fieldset>
+</div>
+</section>
+<section class="form-card">
+<div class="card-title"><span>3</span><div><h3>Services and Compensation</h3><p>Record the actual services, payment terms, and responsibilities.</p></div></div>
+<div class="field-grid">
+<label class="field-span"><span>Scope of Services</span><textarea name="scope" rows="6"></textarea></label>
+<label><span>Compensation</span><input name="compensation" type="text"/></label>
+<label><span>Payment Schedule</span><input name="paymentSchedule" type="text"/></label>
+<label><span>Expenses</span><textarea name="expenses" rows="3"></textarea></label>
+<label><span>Insurance or Compliance Requirements</span><textarea name="compliance" rows="3"></textarea></label>
+</div>
+</section>
+<section class="form-card">
+<div class="card-title card-title--actions"><span>4</span><div><h3>Contract Sections</h3><p>Edit the approved language imported from the RTBO library or add a new section.</p></div><button class="button button--quiet" data-action="add-clause" type="button">Add Section</button></div>
+<div class="clause-list" data-clause-list=""></div>
+</section>
+<section class="form-card">
+<div class="card-title"><span>5</span><div><h3>Review and Signature Record</h3><p>These local signature fields document acknowledgements; they are not a hosted e-signature service.</p></div></div>
+<div class="field-grid">
+<label><span>Party One Signer</span><input name="partyOneSigner" type="text"/></label>
+<label><span>Party One Title</span><input name="partyOneSignerTitle" type="text"/></label>
+<label><span>Party One Signed Date</span><input name="partyOneSignedDate" type="date"/></label>
+<label><span>Party One Signature Text</span><input name="partyOneSignature" type="text"/></label>
+<label><span>Party Two Signer</span><input name="partyTwoSigner" type="text"/></label>
+<label><span>Party Two Title</span><input name="partyTwoSignerTitle" type="text"/></label>
+<label><span>Party Two Signed Date</span><input name="partyTwoSignedDate" type="date"/></label>
+<label><span>Party Two Signature Text</span><input name="partyTwoSignature" type="text"/></label>
+<label class="field-span"><span>Internal Notes</span><textarea name="internalNotes" rows="3"></textarea></label>
+</div>
+</section>
+<div class="sticky-actions">
+<button class="button button--quiet" data-action="new-contract" type="button">Clear and Start New</button>
+<button class="button button--primary" type="submit">Save Contract</button>
+</div>
+</form>
+<aside aria-label="Live contract preview" class="preview-column">
+<div class="preview-toolbar"><strong>Contract Preview</strong><span data-preview-status="">Draft</span></div>
+<div aria-label="Scrollable contract document preview" class="preview-scroll-window" tabindex="0">
+<article class="contract-paper" data-contract-preview=""></article>
+</div>
+</aside>
+</div>
+</section>
+<section class="view" data-view-panel="library">
+<div class="workspace-heading">
+<div>
+<p class="eyebrow">Original RTBO documents supplied for this dashboard</p>
+<h2>RTBO Contract Library</h2>
+<p>Preview an agreement, download the unchanged Word document, or use its approved language as the starting point for a new contract.</p>
+</div>
+<div class="document-actions">
+<a class="button button--quiet" download="" href="library/docx/00_RTBO_Contract_Library_Guide.docx">Download Library Guide</a>
+<a class="button button--primary" download="" href="library/Contracts.zip">Download Complete Library</a>
+</div>
+</div>
+<div aria-label="Contract library summary" class="library-summary">
+<article><strong data-library-template-count="">0</strong><span>Agreement templates</span></article>
+<article><strong data-library-category-count="">0</strong><span>Document categories</span></article>
+<article><strong>DOCX</strong><span>Original editable format</span></article>
+</div>
+<div class="library-toolbar">
+<label><span>Search the library</span><input data-library-search="" type="search"/></label>
+<label><span>Category</span><select data-library-category=""><option value="">All categories</option></select></label>
+</div>
+<div class="library-list" data-library-list=""></div>
+</section>
+<section class="view" data-view-panel="saved">
+<div class="workspace-heading">
+<div><p class="eyebrow">Stored locally in this browser</p><h2>Saved Contracts</h2><p>Open, duplicate, download, or remove contracts created in this tool.</p></div>
+<button class="button button--primary" data-action="new-contract" type="button">Create Contract</button>
+</div>
+<div class="saved-toolbar"><label><span>Search contracts</span><input data-contract-search="" type="search"/></label><label><span>Status</span><select data-contract-status=""><option value="">All statuses</option><option value="Draft">Draft</option><option value="Under Review">Under Review</option><option value="Awaiting Signature">Awaiting Signature</option><option value="Completed">Completed</option><option value="Canceled">Canceled</option></select></label></div>
+<div class="contract-list" data-contract-list=""></div>
+</section>
+<section class="view" data-view-panel="parties">
+<div class="workspace-heading"><div><p class="eyebrow">Synced from the dashboard</p><h2>Available Parties</h2><p>Only profile, organization, school, official, and user records already saved in the dashboard appear here.</p></div></div>
+<div class="party-directory" data-party-directory=""></div>
+</section>
+</main>
+<div aria-live="polite" class="toast" data-toast="" hidden="" role="status"></div>
+<dialog data-confirm-dialog="">
+<form method="dialog">
+<h2>Delete Contract</h2>
+<p>This removes the saved contract from this browser.</p>
+<div><button class="button button--quiet" value="cancel">Cancel</button><button class="button button--danger" value="confirm">Delete</button></div>
+</form>
+</dialog>
+<dialog class="library-dialog" data-library-dialog="">
+<div class="library-dialog__header">
+<div><p class="eyebrow" data-library-preview-code=""></p><h2 data-library-preview-title=""></h2></div>
+<button aria-label="Close contract preview" class="icon-button" data-action="close-library-preview" type="button">×</button>
+</div>
+<div class="library-document-preview" data-library-document-preview=""></div>
+<div class="library-dialog__actions">
+<a class="button button--quiet" data-library-preview-download="" download="">Download Original DOCX</a>
+<button class="button button--primary" data-action="use-previewed-template" type="button">Use in Builder</button>
+</div>
+</dialog>
+</div>
+<script src="library-data.js"></script>
+<script src="specialty-contracts.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

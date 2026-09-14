@@ -1,0 +1,47 @@
+{
+  "track": "FIBA Basketball Women",
+  "generated": "2026-08-06",
+  "routes": [
+    "#/program/fiba-women/foundations",
+    "#/program/fiba-women/advancement",
+    "#/program/fiba-women/elite",
+    "#/course/fiba-women/foundations",
+    "#/course/fiba-women/advancement",
+    "#/course/fiba-women/elite"
+  ],
+  "programs": {
+    "bachelors": {
+      "courses": 24,
+      "lessons": 288,
+      "assessments": 288,
+      "scripts": 288,
+      "scenes": 1728,
+      "units": 120,
+      "hours": 1800
+    },
+    "masters": {
+      "courses": 12,
+      "lessons": 180,
+      "assessments": 180,
+      "scripts": 180,
+      "scenes": 1080,
+      "units": 36,
+      "hours": 540
+    },
+    "phd": {
+      "courses": 20,
+      "lessons": 300,
+      "assessments": 300,
+      "scripts": 300,
+      "scenes": 1800,
+      "units": 60,
+      "hours": 900
+    }
+  },
+  "credentialStatus": "Professional degree-level pathways; not accredited academic degrees, transferable credit, FIBA licences, nominations, assignments, or employment credentials",
+  "sourceControl": {
+    "currentEffective": "FIBA Official Basketball Rules 2024 and Official Basketball Rules Interpretations 2024",
+    "futureEffective": "FIBA Official Basketball Rules 2026 effective October 1, 2026",
+    "womenSpecific": "Women in Officiating, Referee Maternity Plan, women\u2019s competition regulations, and event-specific directives are separately controlled."
+  }
+}

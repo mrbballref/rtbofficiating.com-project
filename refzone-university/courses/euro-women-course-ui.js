@@ -1,0 +1,4 @@
+(()=>{
+if(!window.EuroLeagueWomenFoundationsCourse||!window.RefZoneCourseUICore)return;
+window.EuroLeagueWomenCourseUI=window.RefZoneCourseUICore.create({trackId:'euro-women',pathwayId:'foundations',course:window.EuroLeagueWomenFoundationsCourse,icon:'assets/pathway-icons/refzone_university_euro_league_women_course.png',courseLabel:'EuroLeague Women Bachelor’s-Level Professional Foundations',shortLabel:'EUROLEAGUE MEN BACHELOR’S',routeBase:'#/course/euro-women/foundations',programHref:'#/program/euro-women/foundations',storePrefix:'euro-women-bachelors',resourceFiles:[['courses/EuroLeague-Men-Bachelors-Degree-Handbook.md','Professional program handbook'],['courses/EuroLeague-Men-Bachelors-Coverage-Matrix.md','Coverage matrix'],['courses/EuroLeague-Men-Bachelors-Source-Report.md','Source report'],['courses/EuroLeague-Men-Bachelors-Review-Package.md','Review package']]});
+})();

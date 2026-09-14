@@ -1,0 +1,4 @@
+(()=>{
+if(!window.FIBAMenFoundationsCourse||!window.RefZoneCourseUICore)return;
+window.FIBAMenCourseUI=window.RefZoneCourseUICore.create({trackId:'fiba-men',pathwayId:'foundations',course:window.FIBAMenFoundationsCourse,icon:'assets/pathway-icons/refzone_university_fiba_men_course.png',courseLabel:'FIBA Men Bachelor’s-Level Professional Foundations',shortLabel:'FIBA MEN BACHELOR’S',routeBase:'#/course/fiba-men/foundations',programHref:'#/program/fiba-men/foundations',storePrefix:'fiba-men-bachelors',resourceFiles:[['courses/FIBA-Men-Bachelors-Degree-Handbook.md','Professional program handbook'],['courses/FIBA-Men-Bachelors-Coverage-Matrix.md','Coverage matrix'],['courses/FIBA-Men-Bachelors-Source-Report.md','Source report'],['courses/FIBA-Men-Bachelors-Review-Package.md','Review package']]});
+})();

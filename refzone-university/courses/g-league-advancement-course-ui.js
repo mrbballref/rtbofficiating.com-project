@@ -1,0 +1,4 @@
+(()=>{
+if(!window.GLeagueAdvancementCourse||!window.RefZoneCourseUICore)return;
+window.GLeagueAdvancementCourseUI=window.RefZoneCourseUICore.create({trackId:'g-league',pathwayId:'advancement',course:window.GLeagueAdvancementCourse,icon:'assets/pathway-icons/refzone_university_g_league_course.png',courseLabel:'NBA G League Master’s-Level Advanced Officiating',shortLabel:'G LEAGUE MASTER’S',routeBase:'#/course/g-league/advancement',programHref:'#/program/g-league/advancement',storePrefix:'g-league-masters',resourceFiles:[['courses/G-League-Masters-Degree-Handbook.md','Advanced program handbook'],['courses/G-League-Masters-Coverage-Matrix.md','Coverage matrix'],['courses/G-League-Masters-Source-Report.md','Source report'],['courses/G-League-Masters-Review-Package.md','Review package']]});
+})();

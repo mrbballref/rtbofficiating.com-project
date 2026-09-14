@@ -1,0 +1,4 @@
+(()=>{
+if(!window.EuroLeagueMenEliteCourse||!window.RefZoneCourseUICore)return;
+window.EuroLeagueMenEliteCourseUI=window.RefZoneCourseUICore.create({trackId:'euro-men',pathwayId:'elite',course:window.EuroLeagueMenEliteCourse,icon:'assets/pathway-icons/refzone_university_euro_league_men_course.png',courseLabel:'EuroLeague Men PhD-Level Research, Leadership, and Elite Officiating',shortLabel:'EUROLEAGUE MEN PhD',routeBase:'#/course/euro-men/elite',programHref:'#/program/euro-men/elite',storePrefix:'euro-men-phd',resourceFiles:[['courses/EuroLeague-Men-PhD-Degree-Handbook.md','Research, program handbook'],['courses/EuroLeague-Men-PhD-Coverage-Matrix.md','Coverage matrix'],['courses/EuroLeague-Men-PhD-Source-Report.md','Source report'],['courses/EuroLeague-Men-PhD-Review-Package.md','Review package']]});
+})();

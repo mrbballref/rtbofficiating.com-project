@@ -1,0 +1,4 @@
+(()=>{
+if(!window.NCAAD1MenAdvancementCourse||!window.RefZoneCourseUICore)return;
+window.NCAAD1MenAdvancementCourseUI=window.RefZoneCourseUICore.create({trackId:'ncaa-d1-men',course:window.NCAAD1MenAdvancementCourse,icon:'assets/pathway-icons/rfzu_ncaadimbb.png',courseLabel:'NCAA Division I Men Master’s-Level Advanced Officiating',shortLabel:'NCAA DIVISION I MEN MASTER’S',routeBase:'#/course/ncaa-d1-men/advancement',programHref:'#/program/ncaa-d1-men/advancement',storePrefix:'ncaa-d1-men-masters',resourceFiles:[['courses/NCAA-DI-Men-Masters-Degree-Handbook.md','Master’s program handbook'],['courses/NCAA-DI-Men-Masters-Coverage-Matrix.md','Master’s coverage matrix'],['courses/NCAA-DI-Men-Masters-Source-Report.md','Master’s source report'],['courses/NCAA-DI-Men-Masters-Review-Package.md','Master’s review package']]});
+})();

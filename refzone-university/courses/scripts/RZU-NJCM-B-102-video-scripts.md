@@ -1,0 +1,1990 @@
+# RZU-NJCM-B 102 Video Production Scripts
+
+**Course:** Source Authority, Rulebook Literacy, Casebook Analysis, and Annual Updates  
+**Program:** NJCAA Men’s Basketball Officiating Bachelor’s-Level Professional Foundations Program  
+**Rules season:** 2026-27  
+**Status:** Complete production draft pending qualified review  
+
+All narration, scenarios, dialogue, overlays, assessments, diagrams, and production instructions are original RefZone University material. Official publications are reference authorities and are not reproduced.
+
+---
+
+## The Controlling-Source Hierarchy for NJCAA Men’s Basketball
+
+**Estimated duration:** 10-12 minutes plus embedded pauses  
+**Rule references:** NCAA Men’s Rule 4 — Definitions; 2026-27 NJCAA Handbook and applicable sport procedures; 2025-26 NCAA Men’s Basketball Casebook — related approved rulings  
+**Audience:** NJCAA men’s basketball officials in the Bachelor’s-Level Professional Foundations pathway  
+**Prerequisites:** Successful completion of RZU-NJCM-B 101 and all applicable competency gates  
+**Visual style:** Cinematic, academic, original RefZone University presentation with regulation NCAA men’s geometry and no protected marks  
+**Narrator style:** Experienced collegiate officiating instructor; calm, precise, direct, and non-theatrical  
+
+**Learning objectives**
+
+- Explain the controlling-source hierarchy for njcaa men’s basketball in original RefZone University language and cite the controlling source.
+- Identify player, ball, control, location, timing, coverage, and visual evidence required before ruling.
+- Distinguish legal, illegal, borderline, and correct no-call or no-correction outcomes.
+- Apply the correct foul, violation, penalty, free throws, clock, shot clock, possession, replay, and resumption when applicable.
+- Use correct collegiate mechanics and communicate briefly, calmly, accurately, and neutrally.
+- Review the decision on film and record a measurable next-game application.
+
+**Production requirements**
+
+- Actors: Three basketball officials, Ten player performers as needed, Head coach, table crew, and game administrator as needed
+- Uniforms: Unbranded regulation-style officiating uniforms, Unbranded contrasting team uniforms
+- Court: Regulation NCAA men’s court or original accurate 3D simulation with four-foot restricted-area arc and shot clocks
+- Equipment: Game and shot clocks, Scorer’s table equipment, Whistles, Replay monitor for Rule 11 lessons, Basketballs
+- Graphics: Original RefZone title cards, Rule-reference cards, Primary and secondary coverage shading, Legal-status outlines, Player paths, Contact and violation markers, Clock and shot-clock overlays
+- Sound: Original narration, Natural court ambience, Whistle and horn cues, Accessible decision-pause cue
+
+### Scene 1 — 00:00-00:40
+
+**Learning purpose:** Frame the professional problem  
+**Location:** Unbranded junior-college arena before warmups  
+**Court configuration:** Regulation NCAA men’s court with four-foot restricted-area arc and visible shot clocks  
+**Players:** Teams enter during final shot  
+**Officials:** Three-person crew  
+**Official positions:** Crew enters together and separates for inspection  
+**Camera angle:** Wide baseline establishing shot  
+**Action:** The arena activates as the title The Controlling-Source Hierarchy for NJCAA Men’s Basketball appears on the RefZone iPad frame.
+
+**Narration:** College officiating requires more than remembering a rule. This lesson develops the controlling-source hierarchy for njcaa men’s basketball through source authority, legal status, primary coverage, complete administration, and professional communication.
+
+**On-screen text:** See the status. See the action. Administer the result.
+
+**Visual overlays:** RZU-NJCM-B 102; The Controlling-Source Hierarchy for NJCAA Men’s Basketball; NJCAA Men · Bachelor’s-Level
+
+### Scene 2 — 00:40-02:10
+
+**Learning purpose:** Establish source authority and lesson framework  
+**Location:** RefZone digital classroom  
+**Court configuration:** Interactive rules map and original court diagram  
+**Players:** None  
+**Officials:** Instructor avatar and diagrammed crew  
+**Official positions:** Lead, trail, and center coverage zones displayed when applicable  
+**Camera angle:** Straight-on iPad view with animated callouts  
+**Action:** The source ladder highlights NCAA Men’s Rule 4 — Definitions; 2026-27 NJCAA Handbook and applicable sport procedures; 2025-26 NCAA Men’s Basketball Casebook — related approved rulings. The instructor maps definitions, conditions, exceptions, penalties, and mechanics.
+
+**Narration:** The controlling references are NCAA Men’s Rule 4 — Definitions; 2026-27 NJCAA Handbook and applicable sport procedures; 2025-26 NCAA Men’s Basketball Casebook — related approved rulings. The publications are authority, not course copy. RefZone instruction restates the concept in original language and separates official requirements from instructional analysis.
+
+**On-screen text:** Authority first. Interpretation second. Application third.
+
+**Visual overlays:** Current effective source; Defined status; Conditions and exceptions; Penalty and resumption
+
+**Decision pause:** Which source controls this question? | What status must be established first?
+
+### Scene 3 — 02:10-05:10
+
+**Learning purpose:** Compare legal, illegal, borderline, and correct no-call outcomes  
+**Location:** Regulation practice court  
+**Court configuration:** Half-court live action with scoreboard and shot clock  
+**Players:** Two five-player teams in unbranded uniforms  
+**Officials:** Three-person crew  
+**Official positions:** Primary and secondary officials shown before action  
+**Camera angle:** Normal-speed broadcast angle followed by primary-official point of view  
+**Action:** During the controlling-source hierarchy for njcaa men’s basketball, the crew sees only the final result and has not established the controlling status or chronology.
+
+**Narration:** Reconstruct the complete sequence, apply the current NCAA men’s rule and verified NJCAA procedure, then administer the full result. The legal example preserves the player’s rights and game flow. The illegal example contains every required element. The borderline view is withheld when the evidence is incomplete, and the correct no-call is a positive decision.
+
+**On-screen text:** Legal · Illegal · Borderline · Correct no-call
+
+**Visual overlays:** Primary coverage shading; Player and defender paths; Legal-status freeze; Contact or violation marker
+
+**Decision pause:** What is the legal status? | Who owns the play? | What fact completes or defeats the ruling?
+
+### Scene 4 — 05:10-07:30
+
+**Learning purpose:** Apply the decision sequence from officiating angles  
+**Location:** Same court  
+**Court configuration:** Primary POV, secondary POV, overhead tactical view, and freeze frames  
+**Players:** Same participants  
+**Officials:** Same crew  
+**Official positions:** Open angle contrasted with straight-lined angle  
+**Camera angle:** Split-screen primary, secondary, and overhead views  
+**Action:** The play runs at normal speed, freezes at legal status, freezes at the decisive fact, then uses slow motion only to verify facts before returning to normal speed.
+
+**Narration:** Identify the matchup before action. Establish legal status. Observe the full sequence. Locate the decisive fact. Apply the classification, penalty, clock, shot clock, possession, and resumption. Do not decide from crowd reaction, a player falling, sound, reputation, score, or time remaining.
+
+**On-screen text:** Status → Action → Effect → Ruling → Administration
+
+**Visual overlays:** Legal position outline; Path arrows; Clock and shot clock; Rule reference; Open angle versus straight line
+
+**Decision pause:** What is the legal status? | Who initiated or controlled the action? | Which official owns the play? | What is the ruling, penalty, clock, shot clock, challenge, possession, and resumption?
+
+**Ruling reveal:** Reconstruct the complete sequence, apply the current NCAA men’s rule and verified NJCAA procedure, then administer the full result.
+
+### Scene 5 — 07:30-09:10
+
+**Learning purpose:** Demonstrate mechanics, reporting, and communication  
+**Location:** Court and scorer’s table  
+**Court configuration:** Dead-ball reporting and restart setup  
+**Players:** Players remain in correct resumption positions  
+**Officials:** Calling official, partners, referee/crew chief, and table crew  
+**Official positions:** Calling official reports; partners secure players, bench, table, and restart  
+**Camera angle:** Table-facing medium shot and coach-side angle  
+**Action:** The official stops the clock, uses the correct preliminary signal when required, reports, confirms administration, and communicates briefly.
+
+**Narration:** Mechanics complete the decision. Report with controlled movement, correct location, eye contact, accurate information, and no unnecessary theatrics. Communicate only what the moment requires.
+
+**Dialogue:** “We are confirming the player, ball, clock, shot-clock, and possession status before final administration.”
+
+**On-screen text:** Accurate. Brief. Calm. Neutral.
+
+**Visual overlays:** Stop clock; Player identification; Foul or violation signal; Free throws or direction; Resumption spot
+
+**Decision pause:** What must the table know? | What does the coach need to know? | Where and how does play resume?
+
+### Scene 6 — 09:10-10:30
+
+**Learning purpose:** Close with assessment and next-game application  
+**Location:** RefZone classroom and film room  
+**Court configuration:** Lesson summary, quiz, and film-review journal  
+**Players:** None  
+**Officials:** Learner reviewing the play  
+**Official positions:** Primary coverage diagram remains visible  
+**Camera angle:** iPad close-up with accessible controls  
+**Action:** The learner answers the embedded question, saves a note, and records a measurable next-game behavior.
+
+**Narration:** Review the controlling-source hierarchy for njcaa men’s basketball at normal speed. Explain the rule and administration aloud. Complete the case play, communication role-play, and film journal. The lesson is complete only when the learner can identify the status, make the decision, administer it, and defend the process.
+
+**Dialogue:** Learner: “My next-game cue is to identify legal status before the action reaches the decision point.”
+
+**On-screen text:** Study it. See it. Call it. Report it. Review it.
+
+**Visual overlays:** Knowledge check; Rule-number drill; Film journal; Next-game application
+
+**Decision pause:** Which evidence would change your ruling? | What will you do differently on the next assignment?
+
+**Ruling reveal:** Complete the assessment and assigned remediation before advancing.
+
+**Accessibility and delivery**
+
+- Captions: Create synchronized WebVTT captions from approved narration and dialogue.
+- Transcript: Create a searchable transcript with scene timestamps and source-reference labels.
+- Audio description: Describe court location, player and official movement, signals, diagrams, freeze frames, score, clock, shot clock, and visual overlays not conveyed in narration.
+- Thumbnail: RefZone University iPad frame showing an original unbranded NJCAA men’s scene for The Controlling-Source Hierarchy for NJCAA Men’s Basketball; high-contrast accessible title; no league, school, player, or broadcast marks.
+
+**Quality-control checklist**
+
+- Validate every rule, approved ruling, penalty, signal, clock, shot-clock, replay, and mechanics statement with qualified reviewers.
+- Use only original RefZone narration, scenarios, diagrams, assessments, and dialogue.
+- Maintain regulation court geometry, consistent uniforms, player numbers, direction, score, clock, shot clock, and possession.
+- Reject distorted anatomy, basketballs, court lines, signals, mechanics, or impossible movement.
+- Use no unlicensed game footage, logos, music, broadcasts, real-person likenesses, protected rulebook text, casebook language, or mechanics diagrams.
+- Provide captions, searchable transcript, audio description, keyboard controls, reduced-motion alternatives, and high-contrast graphics.
+
+---
+
+## Anatomy of the NCAA Men’s Basketball Rules Book
+
+**Estimated duration:** 10-12 minutes plus embedded pauses  
+**Rule references:** 2026-27 NJCAA Handbook and applicable sport procedures; 2025-26 NCAA Men’s Basketball Casebook — related approved rulings  
+**Audience:** NJCAA men’s basketball officials in the Bachelor’s-Level Professional Foundations pathway  
+**Prerequisites:** Successful completion of RZU-NJCM-B 101 and all applicable competency gates  
+**Visual style:** Cinematic, academic, original RefZone University presentation with regulation NCAA men’s geometry and no protected marks  
+**Narrator style:** Experienced collegiate officiating instructor; calm, precise, direct, and non-theatrical  
+
+**Learning objectives**
+
+- Explain anatomy of the ncaa men’s basketball rules book in original RefZone University language and cite the controlling source.
+- Identify player, ball, control, location, timing, coverage, and visual evidence required before ruling.
+- Distinguish legal, illegal, borderline, and correct no-call or no-correction outcomes.
+- Apply the correct foul, violation, penalty, free throws, clock, shot clock, possession, replay, and resumption when applicable.
+- Use correct collegiate mechanics and communicate briefly, calmly, accurately, and neutrally.
+- Review the decision on film and record a measurable next-game application.
+
+**Production requirements**
+
+- Actors: Three basketball officials, Ten player performers as needed, Head coach, table crew, and game administrator as needed
+- Uniforms: Unbranded regulation-style officiating uniforms, Unbranded contrasting team uniforms
+- Court: Regulation NCAA men’s court or original accurate 3D simulation with four-foot restricted-area arc and shot clocks
+- Equipment: Game and shot clocks, Scorer’s table equipment, Whistles, Replay monitor for Rule 11 lessons, Basketballs
+- Graphics: Original RefZone title cards, Rule-reference cards, Primary and secondary coverage shading, Legal-status outlines, Player paths, Contact and violation markers, Clock and shot-clock overlays
+- Sound: Original narration, Natural court ambience, Whistle and horn cues, Accessible decision-pause cue
+
+### Scene 1 — 00:00-00:40
+
+**Learning purpose:** Frame the professional problem  
+**Location:** Unbranded junior-college arena before warmups  
+**Court configuration:** Regulation NCAA men’s court with four-foot restricted-area arc and visible shot clocks  
+**Players:** Teams enter during final shot  
+**Officials:** Three-person crew  
+**Official positions:** Crew enters together and separates for inspection  
+**Camera angle:** Wide baseline establishing shot  
+**Action:** The arena activates as the title Anatomy of the NCAA Men’s Basketball Rules Book appears on the RefZone iPad frame.
+
+**Narration:** College officiating requires more than remembering a rule. This lesson develops anatomy of the ncaa men’s basketball rules book through source authority, legal status, primary coverage, complete administration, and professional communication.
+
+**On-screen text:** See the status. See the action. Administer the result.
+
+**Visual overlays:** RZU-NJCM-B 102; Anatomy of the NCAA Men’s Basketball Rules Book; NJCAA Men · Bachelor’s-Level
+
+### Scene 2 — 00:40-02:10
+
+**Learning purpose:** Establish source authority and lesson framework  
+**Location:** RefZone digital classroom  
+**Court configuration:** Interactive rules map and original court diagram  
+**Players:** None  
+**Officials:** Instructor avatar and diagrammed crew  
+**Official positions:** Lead, trail, and center coverage zones displayed when applicable  
+**Camera angle:** Straight-on iPad view with animated callouts  
+**Action:** The source ladder highlights 2026-27 NJCAA Handbook and applicable sport procedures; 2025-26 NCAA Men’s Basketball Casebook — related approved rulings. The instructor maps definitions, conditions, exceptions, penalties, and mechanics.
+
+**Narration:** The controlling references are 2026-27 NJCAA Handbook and applicable sport procedures; 2025-26 NCAA Men’s Basketball Casebook — related approved rulings. The publications are authority, not course copy. RefZone instruction restates the concept in original language and separates official requirements from instructional analysis.
+
+**On-screen text:** Authority first. Interpretation second. Application third.
+
+**Visual overlays:** Current effective source; Defined status; Conditions and exceptions; Penalty and resumption
+
+**Decision pause:** Which source controls this question? | What status must be established first?
+
+### Scene 3 — 02:10-05:10
+
+**Learning purpose:** Compare legal, illegal, borderline, and correct no-call outcomes  
+**Location:** Regulation practice court  
+**Court configuration:** Half-court live action with scoreboard and shot clock  
+**Players:** Two five-player teams in unbranded uniforms  
+**Officials:** Three-person crew  
+**Official positions:** Primary and secondary officials shown before action  
+**Camera angle:** Normal-speed broadcast angle followed by primary-official point of view  
+**Action:** During anatomy of the ncaa men’s basketball rules book, the crew sees only the final result and has not established the controlling status or chronology.
+
+**Narration:** Reconstruct the complete sequence, apply the current NCAA men’s rule and verified NJCAA procedure, then administer the full result. The legal example preserves the player’s rights and game flow. The illegal example contains every required element. The borderline view is withheld when the evidence is incomplete, and the correct no-call is a positive decision.
+
+**On-screen text:** Legal · Illegal · Borderline · Correct no-call
+
+**Visual overlays:** Primary coverage shading; Player and defender paths; Legal-status freeze; Contact or violation marker
+
+**Decision pause:** What is the legal status? | Who owns the play? | What fact completes or defeats the ruling?
+
+### Scene 4 — 05:10-07:30
+
+**Learning purpose:** Apply the decision sequence from officiating angles  
+**Location:** Same court  
+**Court configuration:** Primary POV, secondary POV, overhead tactical view, and freeze frames  
+**Players:** Same participants  
+**Officials:** Same crew  
+**Official positions:** Open angle contrasted with straight-lined angle  
+**Camera angle:** Split-screen primary, secondary, and overhead views  
+**Action:** The play runs at normal speed, freezes at legal status, freezes at the decisive fact, then uses slow motion only to verify facts before returning to normal speed.
+
+**Narration:** Identify the matchup before action. Establish legal status. Observe the full sequence. Locate the decisive fact. Apply the classification, penalty, clock, shot clock, possession, and resumption. Do not decide from crowd reaction, a player falling, sound, reputation, score, or time remaining.
+
+**On-screen text:** Status → Action → Effect → Ruling → Administration
+
+**Visual overlays:** Legal position outline; Path arrows; Clock and shot clock; Rule reference; Open angle versus straight line
+
+**Decision pause:** What is the legal status? | Who initiated or controlled the action? | Which official owns the play? | What is the ruling, penalty, clock, shot clock, challenge, possession, and resumption?
+
+**Ruling reveal:** Reconstruct the complete sequence, apply the current NCAA men’s rule and verified NJCAA procedure, then administer the full result.
+
+### Scene 5 — 07:30-09:10
+
+**Learning purpose:** Demonstrate mechanics, reporting, and communication  
+**Location:** Court and scorer’s table  
+**Court configuration:** Dead-ball reporting and restart setup  
+**Players:** Players remain in correct resumption positions  
+**Officials:** Calling official, partners, referee/crew chief, and table crew  
+**Official positions:** Calling official reports; partners secure players, bench, table, and restart  
+**Camera angle:** Table-facing medium shot and coach-side angle  
+**Action:** The official stops the clock, uses the correct preliminary signal when required, reports, confirms administration, and communicates briefly.
+
+**Narration:** Mechanics complete the decision. Report with controlled movement, correct location, eye contact, accurate information, and no unnecessary theatrics. Communicate only what the moment requires.
+
+**Dialogue:** “We are confirming the player, ball, clock, shot-clock, and possession status before final administration.”
+
+**On-screen text:** Accurate. Brief. Calm. Neutral.
+
+**Visual overlays:** Stop clock; Player identification; Foul or violation signal; Free throws or direction; Resumption spot
+
+**Decision pause:** What must the table know? | What does the coach need to know? | Where and how does play resume?
+
+### Scene 6 — 09:10-10:30
+
+**Learning purpose:** Close with assessment and next-game application  
+**Location:** RefZone classroom and film room  
+**Court configuration:** Lesson summary, quiz, and film-review journal  
+**Players:** None  
+**Officials:** Learner reviewing the play  
+**Official positions:** Primary coverage diagram remains visible  
+**Camera angle:** iPad close-up with accessible controls  
+**Action:** The learner answers the embedded question, saves a note, and records a measurable next-game behavior.
+
+**Narration:** Review anatomy of the ncaa men’s basketball rules book at normal speed. Explain the rule and administration aloud. Complete the case play, communication role-play, and film journal. The lesson is complete only when the learner can identify the status, make the decision, administer it, and defend the process.
+
+**Dialogue:** Learner: “My next-game cue is to identify legal status before the action reaches the decision point.”
+
+**On-screen text:** Study it. See it. Call it. Report it. Review it.
+
+**Visual overlays:** Knowledge check; Rule-number drill; Film journal; Next-game application
+
+**Decision pause:** Which evidence would change your ruling? | What will you do differently on the next assignment?
+
+**Ruling reveal:** Complete the assessment and assigned remediation before advancing.
+
+**Accessibility and delivery**
+
+- Captions: Create synchronized WebVTT captions from approved narration and dialogue.
+- Transcript: Create a searchable transcript with scene timestamps and source-reference labels.
+- Audio description: Describe court location, player and official movement, signals, diagrams, freeze frames, score, clock, shot clock, and visual overlays not conveyed in narration.
+- Thumbnail: RefZone University iPad frame showing an original unbranded NJCAA men’s scene for Anatomy of the NCAA Men’s Basketball Rules Book; high-contrast accessible title; no league, school, player, or broadcast marks.
+
+**Quality-control checklist**
+
+- Validate every rule, approved ruling, penalty, signal, clock, shot-clock, replay, and mechanics statement with qualified reviewers.
+- Use only original RefZone narration, scenarios, diagrams, assessments, and dialogue.
+- Maintain regulation court geometry, consistent uniforms, player numbers, direction, score, clock, shot clock, and possession.
+- Reject distorted anatomy, basketballs, court lines, signals, mechanics, or impossible movement.
+- Use no unlicensed game footage, logos, music, broadcasts, real-person likenesses, protected rulebook text, casebook language, or mechanics diagrams.
+- Provide captions, searchable transcript, audio description, keyboard controls, reduced-motion alternatives, and high-contrast graphics.
+
+---
+
+## Using the NCAA Men’s Basketball Casebook and Approved Rulings
+
+**Estimated duration:** 10-12 minutes plus embedded pauses  
+**Rule references:** 2026-27 NJCAA Handbook and applicable sport procedures; 2025-26 NCAA Men’s Basketball Casebook — related approved rulings  
+**Audience:** NJCAA men’s basketball officials in the Bachelor’s-Level Professional Foundations pathway  
+**Prerequisites:** Successful completion of RZU-NJCM-B 101 and all applicable competency gates  
+**Visual style:** Cinematic, academic, original RefZone University presentation with regulation NCAA men’s geometry and no protected marks  
+**Narrator style:** Experienced collegiate officiating instructor; calm, precise, direct, and non-theatrical  
+
+**Learning objectives**
+
+- Explain using the ncaa men’s basketball casebook and approved rulings in original RefZone University language and cite the controlling source.
+- Identify player, ball, control, location, timing, coverage, and visual evidence required before ruling.
+- Distinguish legal, illegal, borderline, and correct no-call or no-correction outcomes.
+- Apply the correct foul, violation, penalty, free throws, clock, shot clock, possession, replay, and resumption when applicable.
+- Use correct collegiate mechanics and communicate briefly, calmly, accurately, and neutrally.
+- Review the decision on film and record a measurable next-game application.
+
+**Production requirements**
+
+- Actors: Three basketball officials, Ten player performers as needed, Head coach, table crew, and game administrator as needed
+- Uniforms: Unbranded regulation-style officiating uniforms, Unbranded contrasting team uniforms
+- Court: Regulation NCAA men’s court or original accurate 3D simulation with four-foot restricted-area arc and shot clocks
+- Equipment: Game and shot clocks, Scorer’s table equipment, Whistles, Replay monitor for Rule 11 lessons, Basketballs
+- Graphics: Original RefZone title cards, Rule-reference cards, Primary and secondary coverage shading, Legal-status outlines, Player paths, Contact and violation markers, Clock and shot-clock overlays
+- Sound: Original narration, Natural court ambience, Whistle and horn cues, Accessible decision-pause cue
+
+### Scene 1 — 00:00-00:40
+
+**Learning purpose:** Frame the professional problem  
+**Location:** Unbranded junior-college arena before warmups  
+**Court configuration:** Regulation NCAA men’s court with four-foot restricted-area arc and visible shot clocks  
+**Players:** Teams enter during final shot  
+**Officials:** Three-person crew  
+**Official positions:** Crew enters together and separates for inspection  
+**Camera angle:** Wide baseline establishing shot  
+**Action:** The arena activates as the title Using the NCAA Men’s Basketball Casebook and Approved Rulings appears on the RefZone iPad frame.
+
+**Narration:** College officiating requires more than remembering a rule. This lesson develops using the ncaa men’s basketball casebook and approved rulings through source authority, legal status, primary coverage, complete administration, and professional communication.
+
+**On-screen text:** See the status. See the action. Administer the result.
+
+**Visual overlays:** RZU-NJCM-B 102; Using the NCAA Men’s Basketball Casebook and Approved Rulings; NJCAA Men · Bachelor’s-Level
+
+### Scene 2 — 00:40-02:10
+
+**Learning purpose:** Establish source authority and lesson framework  
+**Location:** RefZone digital classroom  
+**Court configuration:** Interactive rules map and original court diagram  
+**Players:** None  
+**Officials:** Instructor avatar and diagrammed crew  
+**Official positions:** Lead, trail, and center coverage zones displayed when applicable  
+**Camera angle:** Straight-on iPad view with animated callouts  
+**Action:** The source ladder highlights 2026-27 NJCAA Handbook and applicable sport procedures; 2025-26 NCAA Men’s Basketball Casebook — related approved rulings. The instructor maps definitions, conditions, exceptions, penalties, and mechanics.
+
+**Narration:** The controlling references are 2026-27 NJCAA Handbook and applicable sport procedures; 2025-26 NCAA Men’s Basketball Casebook — related approved rulings. The publications are authority, not course copy. RefZone instruction restates the concept in original language and separates official requirements from instructional analysis.
+
+**On-screen text:** Authority first. Interpretation second. Application third.
+
+**Visual overlays:** Current effective source; Defined status; Conditions and exceptions; Penalty and resumption
+
+**Decision pause:** Which source controls this question? | What status must be established first?
+
+### Scene 3 — 02:10-05:10
+
+**Learning purpose:** Compare legal, illegal, borderline, and correct no-call outcomes  
+**Location:** Regulation practice court  
+**Court configuration:** Half-court live action with scoreboard and shot clock  
+**Players:** Two five-player teams in unbranded uniforms  
+**Officials:** Three-person crew  
+**Official positions:** Primary and secondary officials shown before action  
+**Camera angle:** Normal-speed broadcast angle followed by primary-official point of view  
+**Action:** During using the ncaa men’s basketball casebook and approved rulings, the crew sees only the final result and has not established the controlling status or chronology.
+
+**Narration:** Reconstruct the complete sequence, apply the current NCAA men’s rule and verified NJCAA procedure, then administer the full result. The legal example preserves the player’s rights and game flow. The illegal example contains every required element. The borderline view is withheld when the evidence is incomplete, and the correct no-call is a positive decision.
+
+**On-screen text:** Legal · Illegal · Borderline · Correct no-call
+
+**Visual overlays:** Primary coverage shading; Player and defender paths; Legal-status freeze; Contact or violation marker
+
+**Decision pause:** What is the legal status? | Who owns the play? | What fact completes or defeats the ruling?
+
+### Scene 4 — 05:10-07:30
+
+**Learning purpose:** Apply the decision sequence from officiating angles  
+**Location:** Same court  
+**Court configuration:** Primary POV, secondary POV, overhead tactical view, and freeze frames  
+**Players:** Same participants  
+**Officials:** Same crew  
+**Official positions:** Open angle contrasted with straight-lined angle  
+**Camera angle:** Split-screen primary, secondary, and overhead views  
+**Action:** The play runs at normal speed, freezes at legal status, freezes at the decisive fact, then uses slow motion only to verify facts before returning to normal speed.
+
+**Narration:** Identify the matchup before action. Establish legal status. Observe the full sequence. Locate the decisive fact. Apply the classification, penalty, clock, shot clock, possession, and resumption. Do not decide from crowd reaction, a player falling, sound, reputation, score, or time remaining.
+
+**On-screen text:** Status → Action → Effect → Ruling → Administration
+
+**Visual overlays:** Legal position outline; Path arrows; Clock and shot clock; Rule reference; Open angle versus straight line
+
+**Decision pause:** What is the legal status? | Who initiated or controlled the action? | Which official owns the play? | What is the ruling, penalty, clock, shot clock, challenge, possession, and resumption?
+
+**Ruling reveal:** Reconstruct the complete sequence, apply the current NCAA men’s rule and verified NJCAA procedure, then administer the full result.
+
+### Scene 5 — 07:30-09:10
+
+**Learning purpose:** Demonstrate mechanics, reporting, and communication  
+**Location:** Court and scorer’s table  
+**Court configuration:** Dead-ball reporting and restart setup  
+**Players:** Players remain in correct resumption positions  
+**Officials:** Calling official, partners, referee/crew chief, and table crew  
+**Official positions:** Calling official reports; partners secure players, bench, table, and restart  
+**Camera angle:** Table-facing medium shot and coach-side angle  
+**Action:** The official stops the clock, uses the correct preliminary signal when required, reports, confirms administration, and communicates briefly.
+
+**Narration:** Mechanics complete the decision. Report with controlled movement, correct location, eye contact, accurate information, and no unnecessary theatrics. Communicate only what the moment requires.
+
+**Dialogue:** “We are confirming the player, ball, clock, shot-clock, and possession status before final administration.”
+
+**On-screen text:** Accurate. Brief. Calm. Neutral.
+
+**Visual overlays:** Stop clock; Player identification; Foul or violation signal; Free throws or direction; Resumption spot
+
+**Decision pause:** What must the table know? | What does the coach need to know? | Where and how does play resume?
+
+### Scene 6 — 09:10-10:30
+
+**Learning purpose:** Close with assessment and next-game application  
+**Location:** RefZone classroom and film room  
+**Court configuration:** Lesson summary, quiz, and film-review journal  
+**Players:** None  
+**Officials:** Learner reviewing the play  
+**Official positions:** Primary coverage diagram remains visible  
+**Camera angle:** iPad close-up with accessible controls  
+**Action:** The learner answers the embedded question, saves a note, and records a measurable next-game behavior.
+
+**Narration:** Review using the ncaa men’s basketball casebook and approved rulings at normal speed. Explain the rule and administration aloud. Complete the case play, communication role-play, and film journal. The lesson is complete only when the learner can identify the status, make the decision, administer it, and defend the process.
+
+**Dialogue:** Learner: “My next-game cue is to identify legal status before the action reaches the decision point.”
+
+**On-screen text:** Study it. See it. Call it. Report it. Review it.
+
+**Visual overlays:** Knowledge check; Rule-number drill; Film journal; Next-game application
+
+**Decision pause:** Which evidence would change your ruling? | What will you do differently on the next assignment?
+
+**Ruling reveal:** Complete the assessment and assigned remediation before advancing.
+
+**Accessibility and delivery**
+
+- Captions: Create synchronized WebVTT captions from approved narration and dialogue.
+- Transcript: Create a searchable transcript with scene timestamps and source-reference labels.
+- Audio description: Describe court location, player and official movement, signals, diagrams, freeze frames, score, clock, shot clock, and visual overlays not conveyed in narration.
+- Thumbnail: RefZone University iPad frame showing an original unbranded NJCAA men’s scene for Using the NCAA Men’s Basketball Casebook and Approved Rulings; high-contrast accessible title; no league, school, player, or broadcast marks.
+
+**Quality-control checklist**
+
+- Validate every rule, approved ruling, penalty, signal, clock, shot-clock, replay, and mechanics statement with qualified reviewers.
+- Use only original RefZone narration, scenarios, diagrams, assessments, and dialogue.
+- Maintain regulation court geometry, consistent uniforms, player numbers, direction, score, clock, shot clock, and possession.
+- Reject distorted anatomy, basketballs, court lines, signals, mechanics, or impossible movement.
+- Use no unlicensed game footage, logos, music, broadcasts, real-person likenesses, protected rulebook text, casebook language, or mechanics diagrams.
+- Provide captions, searchable transcript, audio description, keyboard controls, reduced-motion alternatives, and high-contrast graphics.
+
+---
+
+## Rules Book Corrections, Interpretations, and Post-Clinic Case Plays
+
+**Estimated duration:** 10-12 minutes plus embedded pauses  
+**Rule references:** 2026-27 NJCAA Handbook and applicable sport procedures; 2025-26 NCAA Men’s Basketball Casebook — related approved rulings  
+**Audience:** NJCAA men’s basketball officials in the Bachelor’s-Level Professional Foundations pathway  
+**Prerequisites:** Successful completion of RZU-NJCM-B 101 and all applicable competency gates  
+**Visual style:** Cinematic, academic, original RefZone University presentation with regulation NCAA men’s geometry and no protected marks  
+**Narrator style:** Experienced collegiate officiating instructor; calm, precise, direct, and non-theatrical  
+
+**Learning objectives**
+
+- Explain rules book corrections, interpretations, and post-clinic case plays in original RefZone University language and cite the controlling source.
+- Identify player, ball, control, location, timing, coverage, and visual evidence required before ruling.
+- Distinguish legal, illegal, borderline, and correct no-call or no-correction outcomes.
+- Apply the correct foul, violation, penalty, free throws, clock, shot clock, possession, replay, and resumption when applicable.
+- Use correct collegiate mechanics and communicate briefly, calmly, accurately, and neutrally.
+- Review the decision on film and record a measurable next-game application.
+
+**Production requirements**
+
+- Actors: Three basketball officials, Ten player performers as needed, Head coach, table crew, and game administrator as needed
+- Uniforms: Unbranded regulation-style officiating uniforms, Unbranded contrasting team uniforms
+- Court: Regulation NCAA men’s court or original accurate 3D simulation with four-foot restricted-area arc and shot clocks
+- Equipment: Game and shot clocks, Scorer’s table equipment, Whistles, Replay monitor for Rule 11 lessons, Basketballs
+- Graphics: Original RefZone title cards, Rule-reference cards, Primary and secondary coverage shading, Legal-status outlines, Player paths, Contact and violation markers, Clock and shot-clock overlays
+- Sound: Original narration, Natural court ambience, Whistle and horn cues, Accessible decision-pause cue
+
+### Scene 1 — 00:00-00:40
+
+**Learning purpose:** Frame the professional problem  
+**Location:** Unbranded junior-college arena before warmups  
+**Court configuration:** Regulation NCAA men’s court with four-foot restricted-area arc and visible shot clocks  
+**Players:** Teams enter during final shot  
+**Officials:** Three-person crew  
+**Official positions:** Crew enters together and separates for inspection  
+**Camera angle:** Wide baseline establishing shot  
+**Action:** The arena activates as the title Rules Book Corrections, Interpretations, and Post-Clinic Case Plays appears on the RefZone iPad frame.
+
+**Narration:** College officiating requires more than remembering a rule. This lesson develops rules book corrections, interpretations, and post-clinic case plays through source authority, legal status, primary coverage, complete administration, and professional communication.
+
+**On-screen text:** See the status. See the action. Administer the result.
+
+**Visual overlays:** RZU-NJCM-B 102; Rules Book Corrections, Interpretations, and Post-Clinic Case Plays; NJCAA Men · Bachelor’s-Level
+
+### Scene 2 — 00:40-02:10
+
+**Learning purpose:** Establish source authority and lesson framework  
+**Location:** RefZone digital classroom  
+**Court configuration:** Interactive rules map and original court diagram  
+**Players:** None  
+**Officials:** Instructor avatar and diagrammed crew  
+**Official positions:** Lead, trail, and center coverage zones displayed when applicable  
+**Camera angle:** Straight-on iPad view with animated callouts  
+**Action:** The source ladder highlights 2026-27 NJCAA Handbook and applicable sport procedures; 2025-26 NCAA Men’s Basketball Casebook — related approved rulings. The instructor maps definitions, conditions, exceptions, penalties, and mechanics.
+
+**Narration:** The controlling references are 2026-27 NJCAA Handbook and applicable sport procedures; 2025-26 NCAA Men’s Basketball Casebook — related approved rulings. The publications are authority, not course copy. RefZone instruction restates the concept in original language and separates official requirements from instructional analysis.
+
+**On-screen text:** Authority first. Interpretation second. Application third.
+
+**Visual overlays:** Current effective source; Defined status; Conditions and exceptions; Penalty and resumption
+
+**Decision pause:** Which source controls this question? | What status must be established first?
+
+### Scene 3 — 02:10-05:10
+
+**Learning purpose:** Compare legal, illegal, borderline, and correct no-call outcomes  
+**Location:** Regulation practice court  
+**Court configuration:** Half-court live action with scoreboard and shot clock  
+**Players:** Two five-player teams in unbranded uniforms  
+**Officials:** Three-person crew  
+**Official positions:** Primary and secondary officials shown before action  
+**Camera angle:** Normal-speed broadcast angle followed by primary-official point of view  
+**Action:** During rules book corrections, interpretations, and post-clinic case plays, the crew sees only the final result and has not established the controlling status or chronology.
+
+**Narration:** Reconstruct the complete sequence, apply the current NCAA men’s rule and verified NJCAA procedure, then administer the full result. The legal example preserves the player’s rights and game flow. The illegal example contains every required element. The borderline view is withheld when the evidence is incomplete, and the correct no-call is a positive decision.
+
+**On-screen text:** Legal · Illegal · Borderline · Correct no-call
+
+**Visual overlays:** Primary coverage shading; Player and defender paths; Legal-status freeze; Contact or violation marker
+
+**Decision pause:** What is the legal status? | Who owns the play? | What fact completes or defeats the ruling?
+
+### Scene 4 — 05:10-07:30
+
+**Learning purpose:** Apply the decision sequence from officiating angles  
+**Location:** Same court  
+**Court configuration:** Primary POV, secondary POV, overhead tactical view, and freeze frames  
+**Players:** Same participants  
+**Officials:** Same crew  
+**Official positions:** Open angle contrasted with straight-lined angle  
+**Camera angle:** Split-screen primary, secondary, and overhead views  
+**Action:** The play runs at normal speed, freezes at legal status, freezes at the decisive fact, then uses slow motion only to verify facts before returning to normal speed.
+
+**Narration:** Identify the matchup before action. Establish legal status. Observe the full sequence. Locate the decisive fact. Apply the classification, penalty, clock, shot clock, possession, and resumption. Do not decide from crowd reaction, a player falling, sound, reputation, score, or time remaining.
+
+**On-screen text:** Status → Action → Effect → Ruling → Administration
+
+**Visual overlays:** Legal position outline; Path arrows; Clock and shot clock; Rule reference; Open angle versus straight line
+
+**Decision pause:** What is the legal status? | Who initiated or controlled the action? | Which official owns the play? | What is the ruling, penalty, clock, shot clock, challenge, possession, and resumption?
+
+**Ruling reveal:** Reconstruct the complete sequence, apply the current NCAA men’s rule and verified NJCAA procedure, then administer the full result.
+
+### Scene 5 — 07:30-09:10
+
+**Learning purpose:** Demonstrate mechanics, reporting, and communication  
+**Location:** Court and scorer’s table  
+**Court configuration:** Dead-ball reporting and restart setup  
+**Players:** Players remain in correct resumption positions  
+**Officials:** Calling official, partners, referee/crew chief, and table crew  
+**Official positions:** Calling official reports; partners secure players, bench, table, and restart  
+**Camera angle:** Table-facing medium shot and coach-side angle  
+**Action:** The official stops the clock, uses the correct preliminary signal when required, reports, confirms administration, and communicates briefly.
+
+**Narration:** Mechanics complete the decision. Report with controlled movement, correct location, eye contact, accurate information, and no unnecessary theatrics. Communicate only what the moment requires.
+
+**Dialogue:** “We are confirming the player, ball, clock, shot-clock, and possession status before final administration.”
+
+**On-screen text:** Accurate. Brief. Calm. Neutral.
+
+**Visual overlays:** Stop clock; Player identification; Foul or violation signal; Free throws or direction; Resumption spot
+
+**Decision pause:** What must the table know? | What does the coach need to know? | Where and how does play resume?
+
+### Scene 6 — 09:10-10:30
+
+**Learning purpose:** Close with assessment and next-game application  
+**Location:** RefZone classroom and film room  
+**Court configuration:** Lesson summary, quiz, and film-review journal  
+**Players:** None  
+**Officials:** Learner reviewing the play  
+**Official positions:** Primary coverage diagram remains visible  
+**Camera angle:** iPad close-up with accessible controls  
+**Action:** The learner answers the embedded question, saves a note, and records a measurable next-game behavior.
+
+**Narration:** Review rules book corrections, interpretations, and post-clinic case plays at normal speed. Explain the rule and administration aloud. Complete the case play, communication role-play, and film journal. The lesson is complete only when the learner can identify the status, make the decision, administer it, and defend the process.
+
+**Dialogue:** Learner: “My next-game cue is to identify legal status before the action reaches the decision point.”
+
+**On-screen text:** Study it. See it. Call it. Report it. Review it.
+
+**Visual overlays:** Knowledge check; Rule-number drill; Film journal; Next-game application
+
+**Decision pause:** Which evidence would change your ruling? | What will you do differently on the next assignment?
+
+**Ruling reveal:** Complete the assessment and assigned remediation before advancing.
+
+**Accessibility and delivery**
+
+- Captions: Create synchronized WebVTT captions from approved narration and dialogue.
+- Transcript: Create a searchable transcript with scene timestamps and source-reference labels.
+- Audio description: Describe court location, player and official movement, signals, diagrams, freeze frames, score, clock, shot clock, and visual overlays not conveyed in narration.
+- Thumbnail: RefZone University iPad frame showing an original unbranded NJCAA men’s scene for Rules Book Corrections, Interpretations, and Post-Clinic Case Plays; high-contrast accessible title; no league, school, player, or broadcast marks.
+
+**Quality-control checklist**
+
+- Validate every rule, approved ruling, penalty, signal, clock, shot-clock, replay, and mechanics statement with qualified reviewers.
+- Use only original RefZone narration, scenarios, diagrams, assessments, and dialogue.
+- Maintain regulation court geometry, consistent uniforms, player numbers, direction, score, clock, shot clock, and possession.
+- Reject distorted anatomy, basketballs, court lines, signals, mechanics, or impossible movement.
+- Use no unlicensed game footage, logos, music, broadcasts, real-person likenesses, protected rulebook text, casebook language, or mechanics diagrams.
+- Provide captions, searchable transcript, audio description, keyboard controls, reduced-motion alternatives, and high-contrast graphics.
+
+---
+
+## 2025-26 and 2026-27 Rules Changes and Their Effective Application
+
+**Estimated duration:** 10-12 minutes plus embedded pauses  
+**Rule references:** 2026-27 NJCAA Handbook and applicable sport procedures; Current NCAA men’s rules changes, corrections, and interpretations; 2025-26 NCAA Men’s Basketball Casebook — related approved rulings  
+**Audience:** NJCAA men’s basketball officials in the Bachelor’s-Level Professional Foundations pathway  
+**Prerequisites:** Successful completion of RZU-NJCM-B 101 and all applicable competency gates  
+**Visual style:** Cinematic, academic, original RefZone University presentation with regulation NCAA men’s geometry and no protected marks  
+**Narrator style:** Experienced collegiate officiating instructor; calm, precise, direct, and non-theatrical  
+
+**Learning objectives**
+
+- Explain 2025-26 and 2026-27 rules changes and their effective application in original RefZone University language and cite the controlling source.
+- Identify player, ball, control, location, timing, coverage, and visual evidence required before ruling.
+- Distinguish legal, illegal, borderline, and correct no-call or no-correction outcomes.
+- Apply the correct foul, violation, penalty, free throws, clock, shot clock, possession, replay, and resumption when applicable.
+- Use correct collegiate mechanics and communicate briefly, calmly, accurately, and neutrally.
+- Review the decision on film and record a measurable next-game application.
+
+**Production requirements**
+
+- Actors: Three basketball officials, Ten player performers as needed, Head coach, table crew, and game administrator as needed
+- Uniforms: Unbranded regulation-style officiating uniforms, Unbranded contrasting team uniforms
+- Court: Regulation NCAA men’s court or original accurate 3D simulation with four-foot restricted-area arc and shot clocks
+- Equipment: Game and shot clocks, Scorer’s table equipment, Whistles, Replay monitor for Rule 11 lessons, Basketballs
+- Graphics: Original RefZone title cards, Rule-reference cards, Primary and secondary coverage shading, Legal-status outlines, Player paths, Contact and violation markers, Clock and shot-clock overlays
+- Sound: Original narration, Natural court ambience, Whistle and horn cues, Accessible decision-pause cue
+
+### Scene 1 — 00:00-00:40
+
+**Learning purpose:** Frame the professional problem  
+**Location:** Unbranded junior-college arena before warmups  
+**Court configuration:** Regulation NCAA men’s court with four-foot restricted-area arc and visible shot clocks  
+**Players:** Teams enter during final shot  
+**Officials:** Three-person crew  
+**Official positions:** Crew enters together and separates for inspection  
+**Camera angle:** Wide baseline establishing shot  
+**Action:** The arena activates as the title 2025-26 and 2026-27 Rules Changes and Their Effective Application appears on the RefZone iPad frame.
+
+**Narration:** College officiating requires more than remembering a rule. This lesson develops 2025-26 and 2026-27 rules changes and their effective application through source authority, legal status, primary coverage, complete administration, and professional communication.
+
+**On-screen text:** See the status. See the action. Administer the result.
+
+**Visual overlays:** RZU-NJCM-B 102; 2025-26 and 2026-27 Rules Changes and Their Effective Application; NJCAA Men · Bachelor’s-Level
+
+### Scene 2 — 00:40-02:10
+
+**Learning purpose:** Establish source authority and lesson framework  
+**Location:** RefZone digital classroom  
+**Court configuration:** Interactive rules map and original court diagram  
+**Players:** None  
+**Officials:** Instructor avatar and diagrammed crew  
+**Official positions:** Lead, trail, and center coverage zones displayed when applicable  
+**Camera angle:** Straight-on iPad view with animated callouts  
+**Action:** The source ladder highlights 2026-27 NJCAA Handbook and applicable sport procedures; Current NCAA men’s rules changes, corrections, and interpretations; 2025-26 NCAA Men’s Basketball Casebook — related approved rulings. The instructor maps definitions, conditions, exceptions, penalties, and mechanics.
+
+**Narration:** The controlling references are 2026-27 NJCAA Handbook and applicable sport procedures; Current NCAA men’s rules changes, corrections, and interpretations; 2025-26 NCAA Men’s Basketball Casebook — related approved rulings. The publications are authority, not course copy. RefZone instruction restates the concept in original language and separates official requirements from instructional analysis.
+
+**On-screen text:** Authority first. Interpretation second. Application third.
+
+**Visual overlays:** Current effective source; Defined status; Conditions and exceptions; Penalty and resumption
+
+**Decision pause:** Which source controls this question? | What status must be established first?
+
+### Scene 3 — 02:10-05:10
+
+**Learning purpose:** Compare legal, illegal, borderline, and correct no-call outcomes  
+**Location:** Regulation practice court  
+**Court configuration:** Half-court live action with scoreboard and shot clock  
+**Players:** Two five-player teams in unbranded uniforms  
+**Officials:** Three-person crew  
+**Official positions:** Primary and secondary officials shown before action  
+**Camera angle:** Normal-speed broadcast angle followed by primary-official point of view  
+**Action:** During 2025-26 and 2026-27 rules changes and their effective application, the crew sees only the final result and has not established the controlling status or chronology.
+
+**Narration:** Reconstruct the complete sequence, apply the current NCAA men’s rule and verified NJCAA procedure, then administer the full result. The legal example preserves the player’s rights and game flow. The illegal example contains every required element. The borderline view is withheld when the evidence is incomplete, and the correct no-call is a positive decision.
+
+**On-screen text:** Legal · Illegal · Borderline · Correct no-call
+
+**Visual overlays:** Primary coverage shading; Player and defender paths; Legal-status freeze; Contact or violation marker
+
+**Decision pause:** What is the legal status? | Who owns the play? | What fact completes or defeats the ruling?
+
+### Scene 4 — 05:10-07:30
+
+**Learning purpose:** Apply the decision sequence from officiating angles  
+**Location:** Same court  
+**Court configuration:** Primary POV, secondary POV, overhead tactical view, and freeze frames  
+**Players:** Same participants  
+**Officials:** Same crew  
+**Official positions:** Open angle contrasted with straight-lined angle  
+**Camera angle:** Split-screen primary, secondary, and overhead views  
+**Action:** The play runs at normal speed, freezes at legal status, freezes at the decisive fact, then uses slow motion only to verify facts before returning to normal speed.
+
+**Narration:** Identify the matchup before action. Establish legal status. Observe the full sequence. Locate the decisive fact. Apply the classification, penalty, clock, shot clock, possession, and resumption. Do not decide from crowd reaction, a player falling, sound, reputation, score, or time remaining.
+
+**On-screen text:** Status → Action → Effect → Ruling → Administration
+
+**Visual overlays:** Legal position outline; Path arrows; Clock and shot clock; Rule reference; Open angle versus straight line
+
+**Decision pause:** What is the legal status? | Who initiated or controlled the action? | Which official owns the play? | What is the ruling, penalty, clock, shot clock, challenge, possession, and resumption?
+
+**Ruling reveal:** Reconstruct the complete sequence, apply the current NCAA men’s rule and verified NJCAA procedure, then administer the full result.
+
+### Scene 5 — 07:30-09:10
+
+**Learning purpose:** Demonstrate mechanics, reporting, and communication  
+**Location:** Court and scorer’s table  
+**Court configuration:** Dead-ball reporting and restart setup  
+**Players:** Players remain in correct resumption positions  
+**Officials:** Calling official, partners, referee/crew chief, and table crew  
+**Official positions:** Calling official reports; partners secure players, bench, table, and restart  
+**Camera angle:** Table-facing medium shot and coach-side angle  
+**Action:** The official stops the clock, uses the correct preliminary signal when required, reports, confirms administration, and communicates briefly.
+
+**Narration:** Mechanics complete the decision. Report with controlled movement, correct location, eye contact, accurate information, and no unnecessary theatrics. Communicate only what the moment requires.
+
+**Dialogue:** “We are confirming the player, ball, clock, shot-clock, and possession status before final administration.”
+
+**On-screen text:** Accurate. Brief. Calm. Neutral.
+
+**Visual overlays:** Stop clock; Player identification; Foul or violation signal; Free throws or direction; Resumption spot
+
+**Decision pause:** What must the table know? | What does the coach need to know? | Where and how does play resume?
+
+### Scene 6 — 09:10-10:30
+
+**Learning purpose:** Close with assessment and next-game application  
+**Location:** RefZone classroom and film room  
+**Court configuration:** Lesson summary, quiz, and film-review journal  
+**Players:** None  
+**Officials:** Learner reviewing the play  
+**Official positions:** Primary coverage diagram remains visible  
+**Camera angle:** iPad close-up with accessible controls  
+**Action:** The learner answers the embedded question, saves a note, and records a measurable next-game behavior.
+
+**Narration:** Review 2025-26 and 2026-27 rules changes and their effective application at normal speed. Explain the rule and administration aloud. Complete the case play, communication role-play, and film journal. The lesson is complete only when the learner can identify the status, make the decision, administer it, and defend the process.
+
+**Dialogue:** Learner: “My next-game cue is to identify legal status before the action reaches the decision point.”
+
+**On-screen text:** Study it. See it. Call it. Report it. Review it.
+
+**Visual overlays:** Knowledge check; Rule-number drill; Film journal; Next-game application
+
+**Decision pause:** Which evidence would change your ruling? | What will you do differently on the next assignment?
+
+**Ruling reveal:** Complete the assessment and assigned remediation before advancing.
+
+**Accessibility and delivery**
+
+- Captions: Create synchronized WebVTT captions from approved narration and dialogue.
+- Transcript: Create a searchable transcript with scene timestamps and source-reference labels.
+- Audio description: Describe court location, player and official movement, signals, diagrams, freeze frames, score, clock, shot clock, and visual overlays not conveyed in narration.
+- Thumbnail: RefZone University iPad frame showing an original unbranded NJCAA men’s scene for 2025-26 and 2026-27 Rules Changes and Their Effective Application; high-contrast accessible title; no league, school, player, or broadcast marks.
+
+**Quality-control checklist**
+
+- Validate every rule, approved ruling, penalty, signal, clock, shot-clock, replay, and mechanics statement with qualified reviewers.
+- Use only original RefZone narration, scenarios, diagrams, assessments, and dialogue.
+- Maintain regulation court geometry, consistent uniforms, player numbers, direction, score, clock, shot clock, and possession.
+- Reject distorted anatomy, basketballs, court lines, signals, mechanics, or impossible movement.
+- Use no unlicensed game footage, logos, music, broadcasts, real-person likenesses, protected rulebook text, casebook language, or mechanics diagrams.
+- Provide captions, searchable transcript, audio description, keyboard controls, reduced-motion alternatives, and high-contrast graphics.
+
+---
+
+## 2026-27 Approved Rulings: Backcourt Count and Consecutive Media Timeouts
+
+**Estimated duration:** 10-12 minutes plus embedded pauses  
+**Rule references:** NCAA Men’s Rule 1 — Court and Equipment; NCAA Men’s Rule 5 — Scoring and Timing Regulations; NCAA Men’s Rule 9 — Violations and Penalties; 2026-27 NJCAA Handbook and applicable sport procedures; Current NCAA men’s rules changes, corrections, and interpretations  
+**Audience:** NJCAA men’s basketball officials in the Bachelor’s-Level Professional Foundations pathway  
+**Prerequisites:** Successful completion of RZU-NJCM-B 101 and all applicable competency gates  
+**Visual style:** Cinematic, academic, original RefZone University presentation with regulation NCAA men’s geometry and no protected marks  
+**Narrator style:** Experienced collegiate officiating instructor; calm, precise, direct, and non-theatrical  
+
+**Learning objectives**
+
+- Explain 2026-27 approved rulings: backcourt count and consecutive media timeouts in original RefZone University language and cite the controlling source.
+- Identify player, ball, control, location, timing, coverage, and visual evidence required before ruling.
+- Distinguish legal, illegal, borderline, and correct no-call or no-correction outcomes.
+- Apply the correct foul, violation, penalty, free throws, clock, shot clock, possession, replay, and resumption when applicable.
+- Use correct collegiate mechanics and communicate briefly, calmly, accurately, and neutrally.
+- Review the decision on film and record a measurable next-game application.
+
+**Production requirements**
+
+- Actors: Three basketball officials, Ten player performers as needed, Head coach, table crew, and game administrator as needed
+- Uniforms: Unbranded regulation-style officiating uniforms, Unbranded contrasting team uniforms
+- Court: Regulation NCAA men’s court or original accurate 3D simulation with four-foot restricted-area arc and shot clocks
+- Equipment: Game and shot clocks, Scorer’s table equipment, Whistles, Replay monitor for Rule 11 lessons, Basketballs
+- Graphics: Original RefZone title cards, Rule-reference cards, Primary and secondary coverage shading, Legal-status outlines, Player paths, Contact and violation markers, Clock and shot-clock overlays
+- Sound: Original narration, Natural court ambience, Whistle and horn cues, Accessible decision-pause cue
+
+### Scene 1 — 00:00-00:40
+
+**Learning purpose:** Frame the professional problem  
+**Location:** Unbranded junior-college arena before warmups  
+**Court configuration:** Regulation NCAA men’s court with four-foot restricted-area arc and visible shot clocks  
+**Players:** Teams enter during final shot  
+**Officials:** Three-person crew  
+**Official positions:** Crew enters together and separates for inspection  
+**Camera angle:** Wide baseline establishing shot  
+**Action:** The arena activates as the title 2026-27 Approved Rulings: Backcourt Count and Consecutive Media Timeouts appears on the RefZone iPad frame.
+
+**Narration:** College officiating requires more than remembering a rule. This lesson develops 2026-27 approved rulings: backcourt count and consecutive media timeouts through source authority, legal status, primary coverage, complete administration, and professional communication.
+
+**On-screen text:** See the status. See the action. Administer the result.
+
+**Visual overlays:** RZU-NJCM-B 102; 2026-27 Approved Rulings: Backcourt Count and Consecutive Media Timeouts; NJCAA Men · Bachelor’s-Level
+
+### Scene 2 — 00:40-02:10
+
+**Learning purpose:** Establish source authority and lesson framework  
+**Location:** RefZone digital classroom  
+**Court configuration:** Interactive rules map and original court diagram  
+**Players:** None  
+**Officials:** Instructor avatar and diagrammed crew  
+**Official positions:** Lead, trail, and center coverage zones displayed when applicable  
+**Camera angle:** Straight-on iPad view with animated callouts  
+**Action:** The source ladder highlights NCAA Men’s Rule 1 — Court and Equipment; NCAA Men’s Rule 5 — Scoring and Timing Regulations; NCAA Men’s Rule 9 — Violations and Penalties; 2026-27 NJCAA Handbook and applicable sport procedures; Current NCAA men’s rules changes, corrections, and interpretations. The instructor maps definitions, conditions, exceptions, penalties, and mechanics.
+
+**Narration:** The controlling references are NCAA Men’s Rule 1 — Court and Equipment; NCAA Men’s Rule 5 — Scoring and Timing Regulations; NCAA Men’s Rule 9 — Violations and Penalties; 2026-27 NJCAA Handbook and applicable sport procedures; Current NCAA men’s rules changes, corrections, and interpretations. The publications are authority, not course copy. RefZone instruction restates the concept in original language and separates official requirements from instructional analysis.
+
+**On-screen text:** Authority first. Interpretation second. Application third.
+
+**Visual overlays:** Current effective source; Defined status; Conditions and exceptions; Penalty and resumption
+
+**Decision pause:** Which source controls this question? | What status must be established first?
+
+### Scene 3 — 02:10-05:10
+
+**Learning purpose:** Compare legal, illegal, borderline, and correct no-call outcomes  
+**Location:** Regulation practice court  
+**Court configuration:** Half-court live action with scoreboard and shot clock  
+**Players:** Two five-player teams in unbranded uniforms  
+**Officials:** Three-person crew  
+**Official positions:** Primary and secondary officials shown before action  
+**Camera angle:** Normal-speed broadcast angle followed by primary-official point of view  
+**Action:** A timeout sequence would create two consecutive media timeouts without the game clock running between them.
+
+**Narration:** The current approved ruling requires the game clock to run before the second media timeout is granted. The legal example preserves the player’s rights and game flow. The illegal example contains every required element. The borderline view is withheld when the evidence is incomplete, and the correct no-call is a positive decision.
+
+**On-screen text:** Legal · Illegal · Borderline · Correct no-call
+
+**Visual overlays:** Primary coverage shading; Player and defender paths; Legal-status freeze; Contact or violation marker
+
+**Decision pause:** What is the legal status? | Who owns the play? | What fact completes or defeats the ruling?
+
+### Scene 4 — 05:10-07:30
+
+**Learning purpose:** Apply the decision sequence from officiating angles  
+**Location:** Same court  
+**Court configuration:** Primary POV, secondary POV, overhead tactical view, and freeze frames  
+**Players:** Same participants  
+**Officials:** Same crew  
+**Official positions:** Open angle contrasted with straight-lined angle  
+**Camera angle:** Split-screen primary, secondary, and overhead views  
+**Action:** The play runs at normal speed, freezes at legal status, freezes at the decisive fact, then uses slow motion only to verify facts before returning to normal speed.
+
+**Narration:** Identify the matchup before action. Establish legal status. Observe the full sequence. Locate the decisive fact. Apply the classification, penalty, clock, shot clock, possession, and resumption. Do not decide from crowd reaction, a player falling, sound, reputation, score, or time remaining.
+
+**On-screen text:** Status → Action → Effect → Ruling → Administration
+
+**Visual overlays:** Legal position outline; Path arrows; Clock and shot clock; Rule reference; Open angle versus straight line
+
+**Decision pause:** What is the legal status? | Who initiated or controlled the action? | Which official owns the play? | What is the ruling, penalty, clock, shot clock, challenge, possession, and resumption?
+
+**Ruling reveal:** The current approved ruling requires the game clock to run before the second media timeout is granted.
+
+### Scene 5 — 07:30-09:10
+
+**Learning purpose:** Demonstrate mechanics, reporting, and communication  
+**Location:** Court and scorer’s table  
+**Court configuration:** Dead-ball reporting and restart setup  
+**Players:** Players remain in correct resumption positions  
+**Officials:** Calling official, partners, referee/crew chief, and table crew  
+**Official positions:** Calling official reports; partners secure players, bench, table, and restart  
+**Camera angle:** Table-facing medium shot and coach-side angle  
+**Action:** The official stops the clock, uses the correct preliminary signal when required, reports, confirms administration, and communicates briefly.
+
+**Narration:** Mechanics complete the decision. Report with controlled movement, correct location, eye contact, accurate information, and no unnecessary theatrics. Communicate only what the moment requires.
+
+**Dialogue:** “The next media timeout cannot begin until the game clock has legally run.”
+
+**On-screen text:** Accurate. Brief. Calm. Neutral.
+
+**Visual overlays:** Stop clock; Player identification; Foul or violation signal; Free throws or direction; Resumption spot
+
+**Decision pause:** What must the table know? | What does the coach need to know? | Where and how does play resume?
+
+### Scene 6 — 09:10-10:30
+
+**Learning purpose:** Close with assessment and next-game application  
+**Location:** RefZone classroom and film room  
+**Court configuration:** Lesson summary, quiz, and film-review journal  
+**Players:** None  
+**Officials:** Learner reviewing the play  
+**Official positions:** Primary coverage diagram remains visible  
+**Camera angle:** iPad close-up with accessible controls  
+**Action:** The learner answers the embedded question, saves a note, and records a measurable next-game behavior.
+
+**Narration:** Review 2026-27 approved rulings: backcourt count and consecutive media timeouts at normal speed. Explain the rule and administration aloud. Complete the case play, communication role-play, and film journal. The lesson is complete only when the learner can identify the status, make the decision, administer it, and defend the process.
+
+**Dialogue:** Learner: “My next-game cue is to identify legal status before the action reaches the decision point.”
+
+**On-screen text:** Study it. See it. Call it. Report it. Review it.
+
+**Visual overlays:** Knowledge check; Rule-number drill; Film journal; Next-game application
+
+**Decision pause:** Which evidence would change your ruling? | What will you do differently on the next assignment?
+
+**Ruling reveal:** Complete the assessment and assigned remediation before advancing.
+
+**Accessibility and delivery**
+
+- Captions: Create synchronized WebVTT captions from approved narration and dialogue.
+- Transcript: Create a searchable transcript with scene timestamps and source-reference labels.
+- Audio description: Describe court location, player and official movement, signals, diagrams, freeze frames, score, clock, shot clock, and visual overlays not conveyed in narration.
+- Thumbnail: RefZone University iPad frame showing an original unbranded NJCAA men’s scene for 2026-27 Approved Rulings: Backcourt Count and Consecutive Media Timeouts; high-contrast accessible title; no league, school, player, or broadcast marks.
+
+**Quality-control checklist**
+
+- Validate every rule, approved ruling, penalty, signal, clock, shot-clock, replay, and mechanics statement with qualified reviewers.
+- Use only original RefZone narration, scenarios, diagrams, assessments, and dialogue.
+- Maintain regulation court geometry, consistent uniforms, player numbers, direction, score, clock, shot clock, and possession.
+- Reject distorted anatomy, basketballs, court lines, signals, mechanics, or impossible movement.
+- Use no unlicensed game footage, logos, music, broadcasts, real-person likenesses, protected rulebook text, casebook language, or mechanics diagrams.
+- Provide captions, searchable transcript, audio description, keyboard controls, reduced-motion alternatives, and high-contrast graphics.
+
+---
+
+## 2026-27 Points of Emphasis: Post Play, Three Seconds, Freedom of Movement, and Traveling
+
+**Estimated duration:** 10-12 minutes plus embedded pauses  
+**Rule references:** NCAA Men’s Rule 9 — Violations and Penalties; 2026-27 NJCAA Handbook and applicable sport procedures; Current NCAA men’s rules changes, corrections, and interpretations; 2025-26 NCAA Men’s Basketball Casebook — related approved rulings  
+**Audience:** NJCAA men’s basketball officials in the Bachelor’s-Level Professional Foundations pathway  
+**Prerequisites:** Successful completion of RZU-NJCM-B 101 and all applicable competency gates  
+**Visual style:** Cinematic, academic, original RefZone University presentation with regulation NCAA men’s geometry and no protected marks  
+**Narrator style:** Experienced collegiate officiating instructor; calm, precise, direct, and non-theatrical  
+
+**Learning objectives**
+
+- Explain 2026-27 points of emphasis: post play, three seconds, freedom of movement, and traveling in original RefZone University language and cite the controlling source.
+- Identify player, ball, control, location, timing, coverage, and visual evidence required before ruling.
+- Distinguish legal, illegal, borderline, and correct no-call or no-correction outcomes.
+- Apply the correct foul, violation, penalty, free throws, clock, shot clock, possession, replay, and resumption when applicable.
+- Use correct collegiate mechanics and communicate briefly, calmly, accurately, and neutrally.
+- Review the decision on film and record a measurable next-game application.
+
+**Production requirements**
+
+- Actors: Three basketball officials, Ten player performers as needed, Head coach, table crew, and game administrator as needed
+- Uniforms: Unbranded regulation-style officiating uniforms, Unbranded contrasting team uniforms
+- Court: Regulation NCAA men’s court or original accurate 3D simulation with four-foot restricted-area arc and shot clocks
+- Equipment: Game and shot clocks, Scorer’s table equipment, Whistles, Replay monitor for Rule 11 lessons, Basketballs
+- Graphics: Original RefZone title cards, Rule-reference cards, Primary and secondary coverage shading, Legal-status outlines, Player paths, Contact and violation markers, Clock and shot-clock overlays
+- Sound: Original narration, Natural court ambience, Whistle and horn cues, Accessible decision-pause cue
+
+### Scene 1 — 00:00-00:40
+
+**Learning purpose:** Frame the professional problem  
+**Location:** Unbranded junior-college arena before warmups  
+**Court configuration:** Regulation NCAA men’s court with four-foot restricted-area arc and visible shot clocks  
+**Players:** Teams enter during final shot  
+**Officials:** Three-person crew  
+**Official positions:** Crew enters together and separates for inspection  
+**Camera angle:** Wide baseline establishing shot  
+**Action:** The arena activates as the title 2026-27 Points of Emphasis: Post Play, Three Seconds, Freedom of Movement, and Traveling appears on the RefZone iPad frame.
+
+**Narration:** College officiating requires more than remembering a rule. This lesson develops 2026-27 points of emphasis: post play, three seconds, freedom of movement, and traveling through source authority, legal status, primary coverage, complete administration, and professional communication.
+
+**On-screen text:** See the status. See the action. Administer the result.
+
+**Visual overlays:** RZU-NJCM-B 102; 2026-27 Points of Emphasis: Post Play, Three Seconds, Freedom of Movement, and Traveling; NJCAA Men · Bachelor’s-Level
+
+### Scene 2 — 00:40-02:10
+
+**Learning purpose:** Establish source authority and lesson framework  
+**Location:** RefZone digital classroom  
+**Court configuration:** Interactive rules map and original court diagram  
+**Players:** None  
+**Officials:** Instructor avatar and diagrammed crew  
+**Official positions:** Lead, trail, and center coverage zones displayed when applicable  
+**Camera angle:** Straight-on iPad view with animated callouts  
+**Action:** The source ladder highlights NCAA Men’s Rule 9 — Violations and Penalties; 2026-27 NJCAA Handbook and applicable sport procedures; Current NCAA men’s rules changes, corrections, and interpretations; 2025-26 NCAA Men’s Basketball Casebook — related approved rulings. The instructor maps definitions, conditions, exceptions, penalties, and mechanics.
+
+**Narration:** The controlling references are NCAA Men’s Rule 9 — Violations and Penalties; 2026-27 NJCAA Handbook and applicable sport procedures; Current NCAA men’s rules changes, corrections, and interpretations; 2025-26 NCAA Men’s Basketball Casebook — related approved rulings. The publications are authority, not course copy. RefZone instruction restates the concept in original language and separates official requirements from instructional analysis.
+
+**On-screen text:** Authority first. Interpretation second. Application third.
+
+**Visual overlays:** Current effective source; Defined status; Conditions and exceptions; Penalty and resumption
+
+**Decision pause:** Which source controls this question? | What status must be established first?
+
+### Scene 3 — 02:10-05:10
+
+**Learning purpose:** Compare legal, illegal, borderline, and correct no-call outcomes  
+**Location:** Regulation practice court  
+**Court configuration:** Half-court live action with scoreboard and shot clock  
+**Players:** Two five-player teams in unbranded uniforms  
+**Officials:** Three-person crew  
+**Official positions:** Primary and secondary officials shown before action  
+**Camera angle:** Normal-speed broadcast angle followed by primary-official point of view  
+**Action:** A ball handler completes the footwork described in 2026-27 points of emphasis: post play, three seconds, freedom of movement, and traveling, but the official noticed only the final step.
+
+**Narration:** Do not infer a violation from the ending appearance. Establish the pivot foot and sequence every floor contact before ruling. The legal example preserves the player’s rights and game flow. The illegal example contains every required element. The borderline view is withheld when the evidence is incomplete, and the correct no-call is a positive decision.
+
+**On-screen text:** Legal · Illegal · Borderline · Correct no-call
+
+**Visual overlays:** Primary coverage shading; Player and defender paths; Legal-status freeze; Contact or violation marker
+
+**Decision pause:** What is the legal status? | Who owns the play? | What fact completes or defeats the ruling?
+
+### Scene 4 — 05:10-07:30
+
+**Learning purpose:** Apply the decision sequence from officiating angles  
+**Location:** Same court  
+**Court configuration:** Primary POV, secondary POV, overhead tactical view, and freeze frames  
+**Players:** Same participants  
+**Officials:** Same crew  
+**Official positions:** Open angle contrasted with straight-lined angle  
+**Camera angle:** Split-screen primary, secondary, and overhead views  
+**Action:** The play runs at normal speed, freezes at legal status, freezes at the decisive fact, then uses slow motion only to verify facts before returning to normal speed.
+
+**Narration:** Identify the matchup before action. Establish legal status. Observe the full sequence. Locate the decisive fact. Apply the classification, penalty, clock, shot clock, possession, and resumption. Do not decide from crowd reaction, a player falling, sound, reputation, score, or time remaining.
+
+**On-screen text:** Status → Action → Effect → Ruling → Administration
+
+**Visual overlays:** Legal position outline; Path arrows; Clock and shot clock; Rule reference; Open angle versus straight line
+
+**Decision pause:** What is the legal status? | Who initiated or controlled the action? | Which official owns the play? | What is the ruling, penalty, clock, shot clock, challenge, possession, and resumption?
+
+**Ruling reveal:** Do not infer a violation from the ending appearance. Establish the pivot foot and sequence every floor contact before ruling.
+
+### Scene 5 — 07:30-09:10
+
+**Learning purpose:** Demonstrate mechanics, reporting, and communication  
+**Location:** Court and scorer’s table  
+**Court configuration:** Dead-ball reporting and restart setup  
+**Players:** Players remain in correct resumption positions  
+**Officials:** Calling official, partners, referee/crew chief, and table crew  
+**Official positions:** Calling official reports; partners secure players, bench, table, and restart  
+**Camera angle:** Table-facing medium shot and coach-side angle  
+**Action:** The official stops the clock, uses the correct preliminary signal when required, reports, confirms administration, and communicates briefly.
+
+**Narration:** Mechanics complete the decision. Report with controlled movement, correct location, eye contact, accurate information, and no unnecessary theatrics. Communicate only what the moment requires.
+
+**Dialogue:** “I did not have the starting footwork needed to establish a violation, so I stayed with the play.”
+
+**On-screen text:** Accurate. Brief. Calm. Neutral.
+
+**Visual overlays:** Stop clock; Player identification; Foul or violation signal; Free throws or direction; Resumption spot
+
+**Decision pause:** What must the table know? | What does the coach need to know? | Where and how does play resume?
+
+### Scene 6 — 09:10-10:30
+
+**Learning purpose:** Close with assessment and next-game application  
+**Location:** RefZone classroom and film room  
+**Court configuration:** Lesson summary, quiz, and film-review journal  
+**Players:** None  
+**Officials:** Learner reviewing the play  
+**Official positions:** Primary coverage diagram remains visible  
+**Camera angle:** iPad close-up with accessible controls  
+**Action:** The learner answers the embedded question, saves a note, and records a measurable next-game behavior.
+
+**Narration:** Review 2026-27 points of emphasis: post play, three seconds, freedom of movement, and traveling at normal speed. Explain the rule and administration aloud. Complete the case play, communication role-play, and film journal. The lesson is complete only when the learner can identify the status, make the decision, administer it, and defend the process.
+
+**Dialogue:** Learner: “My next-game cue is to identify legal status before the action reaches the decision point.”
+
+**On-screen text:** Study it. See it. Call it. Report it. Review it.
+
+**Visual overlays:** Knowledge check; Rule-number drill; Film journal; Next-game application
+
+**Decision pause:** Which evidence would change your ruling? | What will you do differently on the next assignment?
+
+**Ruling reveal:** Complete the assessment and assigned remediation before advancing.
+
+**Accessibility and delivery**
+
+- Captions: Create synchronized WebVTT captions from approved narration and dialogue.
+- Transcript: Create a searchable transcript with scene timestamps and source-reference labels.
+- Audio description: Describe court location, player and official movement, signals, diagrams, freeze frames, score, clock, shot clock, and visual overlays not conveyed in narration.
+- Thumbnail: RefZone University iPad frame showing an original unbranded NJCAA men’s scene for 2026-27 Points of Emphasis: Post Play, Three Seconds, Freedom of Movement, and Traveling; high-contrast accessible title; no league, school, player, or broadcast marks.
+
+**Quality-control checklist**
+
+- Validate every rule, approved ruling, penalty, signal, clock, shot-clock, replay, and mechanics statement with qualified reviewers.
+- Use only original RefZone narration, scenarios, diagrams, assessments, and dialogue.
+- Maintain regulation court geometry, consistent uniforms, player numbers, direction, score, clock, shot clock, and possession.
+- Reject distorted anatomy, basketballs, court lines, signals, mechanics, or impossible movement.
+- Use no unlicensed game footage, logos, music, broadcasts, real-person likenesses, protected rulebook text, casebook language, or mechanics diagrams.
+- Provide captions, searchable transcript, audio description, keyboard controls, reduced-motion alternatives, and high-contrast graphics.
+
+---
+
+## Comparing NCAA Men, NCAA Women, and NFHS Without Importing the Wrong Rule
+
+**Estimated duration:** 10-12 minutes plus embedded pauses  
+**Rule references:** NCAA Men’s Rule 1 — Court and Equipment; 2026-27 NJCAA Handbook and applicable sport procedures; 2025-26 NCAA Men’s Basketball Casebook — related approved rulings  
+**Audience:** NJCAA men’s basketball officials in the Bachelor’s-Level Professional Foundations pathway  
+**Prerequisites:** Successful completion of RZU-NJCM-B 101 and all applicable competency gates  
+**Visual style:** Cinematic, academic, original RefZone University presentation with regulation NCAA men’s geometry and no protected marks  
+**Narrator style:** Experienced collegiate officiating instructor; calm, precise, direct, and non-theatrical  
+
+**Learning objectives**
+
+- Explain comparing ncaa men, ncaa women, and nfhs without importing the wrong rule in original RefZone University language and cite the controlling source.
+- Identify player, ball, control, location, timing, coverage, and visual evidence required before ruling.
+- Distinguish legal, illegal, borderline, and correct no-call or no-correction outcomes.
+- Apply the correct foul, violation, penalty, free throws, clock, shot clock, possession, replay, and resumption when applicable.
+- Use correct collegiate mechanics and communicate briefly, calmly, accurately, and neutrally.
+- Review the decision on film and record a measurable next-game application.
+
+**Production requirements**
+
+- Actors: Three basketball officials, Ten player performers as needed, Head coach, table crew, and game administrator as needed
+- Uniforms: Unbranded regulation-style officiating uniforms, Unbranded contrasting team uniforms
+- Court: Regulation NCAA men’s court or original accurate 3D simulation with four-foot restricted-area arc and shot clocks
+- Equipment: Game and shot clocks, Scorer’s table equipment, Whistles, Replay monitor for Rule 11 lessons, Basketballs
+- Graphics: Original RefZone title cards, Rule-reference cards, Primary and secondary coverage shading, Legal-status outlines, Player paths, Contact and violation markers, Clock and shot-clock overlays
+- Sound: Original narration, Natural court ambience, Whistle and horn cues, Accessible decision-pause cue
+
+### Scene 1 — 00:00-00:40
+
+**Learning purpose:** Frame the professional problem  
+**Location:** Unbranded junior-college arena before warmups  
+**Court configuration:** Regulation NCAA men’s court with four-foot restricted-area arc and visible shot clocks  
+**Players:** Teams enter during final shot  
+**Officials:** Three-person crew  
+**Official positions:** Crew enters together and separates for inspection  
+**Camera angle:** Wide baseline establishing shot  
+**Action:** The arena activates as the title Comparing NCAA Men, NCAA Women, and NFHS Without Importing the Wrong Rule appears on the RefZone iPad frame.
+
+**Narration:** College officiating requires more than remembering a rule. This lesson develops comparing ncaa men, ncaa women, and nfhs without importing the wrong rule through source authority, legal status, primary coverage, complete administration, and professional communication.
+
+**On-screen text:** See the status. See the action. Administer the result.
+
+**Visual overlays:** RZU-NJCM-B 102; Comparing NCAA Men, NCAA Women, and NFHS Without Importing the Wrong Rule; NJCAA Men · Bachelor’s-Level
+
+### Scene 2 — 00:40-02:10
+
+**Learning purpose:** Establish source authority and lesson framework  
+**Location:** RefZone digital classroom  
+**Court configuration:** Interactive rules map and original court diagram  
+**Players:** None  
+**Officials:** Instructor avatar and diagrammed crew  
+**Official positions:** Lead, trail, and center coverage zones displayed when applicable  
+**Camera angle:** Straight-on iPad view with animated callouts  
+**Action:** The source ladder highlights NCAA Men’s Rule 1 — Court and Equipment; 2026-27 NJCAA Handbook and applicable sport procedures; 2025-26 NCAA Men’s Basketball Casebook — related approved rulings. The instructor maps definitions, conditions, exceptions, penalties, and mechanics.
+
+**Narration:** The controlling references are NCAA Men’s Rule 1 — Court and Equipment; 2026-27 NJCAA Handbook and applicable sport procedures; 2025-26 NCAA Men’s Basketball Casebook — related approved rulings. The publications are authority, not course copy. RefZone instruction restates the concept in original language and separates official requirements from instructional analysis.
+
+**On-screen text:** Authority first. Interpretation second. Application third.
+
+**Visual overlays:** Current effective source; Defined status; Conditions and exceptions; Penalty and resumption
+
+**Decision pause:** Which source controls this question? | What status must be established first?
+
+### Scene 3 — 02:10-05:10
+
+**Learning purpose:** Compare legal, illegal, borderline, and correct no-call outcomes  
+**Location:** Regulation practice court  
+**Court configuration:** Half-court live action with scoreboard and shot clock  
+**Players:** Two five-player teams in unbranded uniforms  
+**Officials:** Three-person crew  
+**Official positions:** Primary and secondary officials shown before action  
+**Camera angle:** Normal-speed broadcast angle followed by primary-official point of view  
+**Action:** During comparing ncaa men, ncaa women, and nfhs without importing the wrong rule, the crew sees only the final result and has not established the controlling status or chronology.
+
+**Narration:** Reconstruct the complete sequence, apply the current NCAA men’s rule and verified NJCAA procedure, then administer the full result. The legal example preserves the player’s rights and game flow. The illegal example contains every required element. The borderline view is withheld when the evidence is incomplete, and the correct no-call is a positive decision.
+
+**On-screen text:** Legal · Illegal · Borderline · Correct no-call
+
+**Visual overlays:** Primary coverage shading; Player and defender paths; Legal-status freeze; Contact or violation marker
+
+**Decision pause:** What is the legal status? | Who owns the play? | What fact completes or defeats the ruling?
+
+### Scene 4 — 05:10-07:30
+
+**Learning purpose:** Apply the decision sequence from officiating angles  
+**Location:** Same court  
+**Court configuration:** Primary POV, secondary POV, overhead tactical view, and freeze frames  
+**Players:** Same participants  
+**Officials:** Same crew  
+**Official positions:** Open angle contrasted with straight-lined angle  
+**Camera angle:** Split-screen primary, secondary, and overhead views  
+**Action:** The play runs at normal speed, freezes at legal status, freezes at the decisive fact, then uses slow motion only to verify facts before returning to normal speed.
+
+**Narration:** Identify the matchup before action. Establish legal status. Observe the full sequence. Locate the decisive fact. Apply the classification, penalty, clock, shot clock, possession, and resumption. Do not decide from crowd reaction, a player falling, sound, reputation, score, or time remaining.
+
+**On-screen text:** Status → Action → Effect → Ruling → Administration
+
+**Visual overlays:** Legal position outline; Path arrows; Clock and shot clock; Rule reference; Open angle versus straight line
+
+**Decision pause:** What is the legal status? | Who initiated or controlled the action? | Which official owns the play? | What is the ruling, penalty, clock, shot clock, challenge, possession, and resumption?
+
+**Ruling reveal:** Reconstruct the complete sequence, apply the current NCAA men’s rule and verified NJCAA procedure, then administer the full result.
+
+### Scene 5 — 07:30-09:10
+
+**Learning purpose:** Demonstrate mechanics, reporting, and communication  
+**Location:** Court and scorer’s table  
+**Court configuration:** Dead-ball reporting and restart setup  
+**Players:** Players remain in correct resumption positions  
+**Officials:** Calling official, partners, referee/crew chief, and table crew  
+**Official positions:** Calling official reports; partners secure players, bench, table, and restart  
+**Camera angle:** Table-facing medium shot and coach-side angle  
+**Action:** The official stops the clock, uses the correct preliminary signal when required, reports, confirms administration, and communicates briefly.
+
+**Narration:** Mechanics complete the decision. Report with controlled movement, correct location, eye contact, accurate information, and no unnecessary theatrics. Communicate only what the moment requires.
+
+**Dialogue:** “We are confirming the player, ball, clock, shot-clock, and possession status before final administration.”
+
+**On-screen text:** Accurate. Brief. Calm. Neutral.
+
+**Visual overlays:** Stop clock; Player identification; Foul or violation signal; Free throws or direction; Resumption spot
+
+**Decision pause:** What must the table know? | What does the coach need to know? | Where and how does play resume?
+
+### Scene 6 — 09:10-10:30
+
+**Learning purpose:** Close with assessment and next-game application  
+**Location:** RefZone classroom and film room  
+**Court configuration:** Lesson summary, quiz, and film-review journal  
+**Players:** None  
+**Officials:** Learner reviewing the play  
+**Official positions:** Primary coverage diagram remains visible  
+**Camera angle:** iPad close-up with accessible controls  
+**Action:** The learner answers the embedded question, saves a note, and records a measurable next-game behavior.
+
+**Narration:** Review comparing ncaa men, ncaa women, and nfhs without importing the wrong rule at normal speed. Explain the rule and administration aloud. Complete the case play, communication role-play, and film journal. The lesson is complete only when the learner can identify the status, make the decision, administer it, and defend the process.
+
+**Dialogue:** Learner: “My next-game cue is to identify legal status before the action reaches the decision point.”
+
+**On-screen text:** Study it. See it. Call it. Report it. Review it.
+
+**Visual overlays:** Knowledge check; Rule-number drill; Film journal; Next-game application
+
+**Decision pause:** Which evidence would change your ruling? | What will you do differently on the next assignment?
+
+**Ruling reveal:** Complete the assessment and assigned remediation before advancing.
+
+**Accessibility and delivery**
+
+- Captions: Create synchronized WebVTT captions from approved narration and dialogue.
+- Transcript: Create a searchable transcript with scene timestamps and source-reference labels.
+- Audio description: Describe court location, player and official movement, signals, diagrams, freeze frames, score, clock, shot clock, and visual overlays not conveyed in narration.
+- Thumbnail: RefZone University iPad frame showing an original unbranded NJCAA men’s scene for Comparing NCAA Men, NCAA Women, and NFHS Without Importing the Wrong Rule; high-contrast accessible title; no league, school, player, or broadcast marks.
+
+**Quality-control checklist**
+
+- Validate every rule, approved ruling, penalty, signal, clock, shot-clock, replay, and mechanics statement with qualified reviewers.
+- Use only original RefZone narration, scenarios, diagrams, assessments, and dialogue.
+- Maintain regulation court geometry, consistent uniforms, player numbers, direction, score, clock, shot clock, and possession.
+- Reject distorted anatomy, basketballs, court lines, signals, mechanics, or impossible movement.
+- Use no unlicensed game footage, logos, music, broadcasts, real-person likenesses, protected rulebook text, casebook language, or mechanics diagrams.
+- Provide captions, searchable transcript, audio description, keyboard controls, reduced-motion alternatives, and high-contrast graphics.
+
+---
+
+## Using Mechanics Manuals, Conference Training, and Assignor Directives
+
+**Estimated duration:** 10-12 minutes plus embedded pauses  
+**Rule references:** 2026-27 NJCAA Handbook and applicable sport procedures; 2025-26 NCAA Men’s Basketball Casebook — related approved rulings  
+**Audience:** NJCAA men’s basketball officials in the Bachelor’s-Level Professional Foundations pathway  
+**Prerequisites:** Successful completion of RZU-NJCM-B 101 and all applicable competency gates  
+**Visual style:** Cinematic, academic, original RefZone University presentation with regulation NCAA men’s geometry and no protected marks  
+**Narrator style:** Experienced collegiate officiating instructor; calm, precise, direct, and non-theatrical  
+
+**Learning objectives**
+
+- Explain using mechanics manuals, conference training, and assignor directives in original RefZone University language and cite the controlling source.
+- Identify player, ball, control, location, timing, coverage, and visual evidence required before ruling.
+- Distinguish legal, illegal, borderline, and correct no-call or no-correction outcomes.
+- Apply the correct foul, violation, penalty, free throws, clock, shot clock, possession, replay, and resumption when applicable.
+- Use correct collegiate mechanics and communicate briefly, calmly, accurately, and neutrally.
+- Review the decision on film and record a measurable next-game application.
+
+**Production requirements**
+
+- Actors: Three basketball officials, Ten player performers as needed, Head coach, table crew, and game administrator as needed
+- Uniforms: Unbranded regulation-style officiating uniforms, Unbranded contrasting team uniforms
+- Court: Regulation NCAA men’s court or original accurate 3D simulation with four-foot restricted-area arc and shot clocks
+- Equipment: Game and shot clocks, Scorer’s table equipment, Whistles, Replay monitor for Rule 11 lessons, Basketballs
+- Graphics: Original RefZone title cards, Rule-reference cards, Primary and secondary coverage shading, Legal-status outlines, Player paths, Contact and violation markers, Clock and shot-clock overlays
+- Sound: Original narration, Natural court ambience, Whistle and horn cues, Accessible decision-pause cue
+
+### Scene 1 — 00:00-00:40
+
+**Learning purpose:** Frame the professional problem  
+**Location:** Unbranded junior-college arena before warmups  
+**Court configuration:** Regulation NCAA men’s court with four-foot restricted-area arc and visible shot clocks  
+**Players:** Teams enter during final shot  
+**Officials:** Three-person crew  
+**Official positions:** Crew enters together and separates for inspection  
+**Camera angle:** Wide baseline establishing shot  
+**Action:** The arena activates as the title Using Mechanics Manuals, Conference Training, and Assignor Directives appears on the RefZone iPad frame.
+
+**Narration:** College officiating requires more than remembering a rule. This lesson develops using mechanics manuals, conference training, and assignor directives through source authority, legal status, primary coverage, complete administration, and professional communication.
+
+**On-screen text:** See the status. See the action. Administer the result.
+
+**Visual overlays:** RZU-NJCM-B 102; Using Mechanics Manuals, Conference Training, and Assignor Directives; NJCAA Men · Bachelor’s-Level
+
+### Scene 2 — 00:40-02:10
+
+**Learning purpose:** Establish source authority and lesson framework  
+**Location:** RefZone digital classroom  
+**Court configuration:** Interactive rules map and original court diagram  
+**Players:** None  
+**Officials:** Instructor avatar and diagrammed crew  
+**Official positions:** Lead, trail, and center coverage zones displayed when applicable  
+**Camera angle:** Straight-on iPad view with animated callouts  
+**Action:** The source ladder highlights 2026-27 NJCAA Handbook and applicable sport procedures; 2025-26 NCAA Men’s Basketball Casebook — related approved rulings. The instructor maps definitions, conditions, exceptions, penalties, and mechanics.
+
+**Narration:** The controlling references are 2026-27 NJCAA Handbook and applicable sport procedures; 2025-26 NCAA Men’s Basketball Casebook — related approved rulings. The publications are authority, not course copy. RefZone instruction restates the concept in original language and separates official requirements from instructional analysis.
+
+**On-screen text:** Authority first. Interpretation second. Application third.
+
+**Visual overlays:** Current effective source; Defined status; Conditions and exceptions; Penalty and resumption
+
+**Decision pause:** Which source controls this question? | What status must be established first?
+
+### Scene 3 — 02:10-05:10
+
+**Learning purpose:** Compare legal, illegal, borderline, and correct no-call outcomes  
+**Location:** Regulation practice court  
+**Court configuration:** Half-court live action with scoreboard and shot clock  
+**Players:** Two five-player teams in unbranded uniforms  
+**Officials:** Three-person crew  
+**Official positions:** Primary and secondary officials shown before action  
+**Camera angle:** Normal-speed broadcast angle followed by primary-official point of view  
+**Action:** During using mechanics manuals, conference training, and assignor directives, the crew sees only the final result and has not established the controlling status or chronology.
+
+**Narration:** Reconstruct the complete sequence, apply the current NCAA men’s rule and verified NJCAA procedure, then administer the full result. The legal example preserves the player’s rights and game flow. The illegal example contains every required element. The borderline view is withheld when the evidence is incomplete, and the correct no-call is a positive decision.
+
+**On-screen text:** Legal · Illegal · Borderline · Correct no-call
+
+**Visual overlays:** Primary coverage shading; Player and defender paths; Legal-status freeze; Contact or violation marker
+
+**Decision pause:** What is the legal status? | Who owns the play? | What fact completes or defeats the ruling?
+
+### Scene 4 — 05:10-07:30
+
+**Learning purpose:** Apply the decision sequence from officiating angles  
+**Location:** Same court  
+**Court configuration:** Primary POV, secondary POV, overhead tactical view, and freeze frames  
+**Players:** Same participants  
+**Officials:** Same crew  
+**Official positions:** Open angle contrasted with straight-lined angle  
+**Camera angle:** Split-screen primary, secondary, and overhead views  
+**Action:** The play runs at normal speed, freezes at legal status, freezes at the decisive fact, then uses slow motion only to verify facts before returning to normal speed.
+
+**Narration:** Identify the matchup before action. Establish legal status. Observe the full sequence. Locate the decisive fact. Apply the classification, penalty, clock, shot clock, possession, and resumption. Do not decide from crowd reaction, a player falling, sound, reputation, score, or time remaining.
+
+**On-screen text:** Status → Action → Effect → Ruling → Administration
+
+**Visual overlays:** Legal position outline; Path arrows; Clock and shot clock; Rule reference; Open angle versus straight line
+
+**Decision pause:** What is the legal status? | Who initiated or controlled the action? | Which official owns the play? | What is the ruling, penalty, clock, shot clock, challenge, possession, and resumption?
+
+**Ruling reveal:** Reconstruct the complete sequence, apply the current NCAA men’s rule and verified NJCAA procedure, then administer the full result.
+
+### Scene 5 — 07:30-09:10
+
+**Learning purpose:** Demonstrate mechanics, reporting, and communication  
+**Location:** Court and scorer’s table  
+**Court configuration:** Dead-ball reporting and restart setup  
+**Players:** Players remain in correct resumption positions  
+**Officials:** Calling official, partners, referee/crew chief, and table crew  
+**Official positions:** Calling official reports; partners secure players, bench, table, and restart  
+**Camera angle:** Table-facing medium shot and coach-side angle  
+**Action:** The official stops the clock, uses the correct preliminary signal when required, reports, confirms administration, and communicates briefly.
+
+**Narration:** Mechanics complete the decision. Report with controlled movement, correct location, eye contact, accurate information, and no unnecessary theatrics. Communicate only what the moment requires.
+
+**Dialogue:** “We are confirming the player, ball, clock, shot-clock, and possession status before final administration.”
+
+**On-screen text:** Accurate. Brief. Calm. Neutral.
+
+**Visual overlays:** Stop clock; Player identification; Foul or violation signal; Free throws or direction; Resumption spot
+
+**Decision pause:** What must the table know? | What does the coach need to know? | Where and how does play resume?
+
+### Scene 6 — 09:10-10:30
+
+**Learning purpose:** Close with assessment and next-game application  
+**Location:** RefZone classroom and film room  
+**Court configuration:** Lesson summary, quiz, and film-review journal  
+**Players:** None  
+**Officials:** Learner reviewing the play  
+**Official positions:** Primary coverage diagram remains visible  
+**Camera angle:** iPad close-up with accessible controls  
+**Action:** The learner answers the embedded question, saves a note, and records a measurable next-game behavior.
+
+**Narration:** Review using mechanics manuals, conference training, and assignor directives at normal speed. Explain the rule and administration aloud. Complete the case play, communication role-play, and film journal. The lesson is complete only when the learner can identify the status, make the decision, administer it, and defend the process.
+
+**Dialogue:** Learner: “My next-game cue is to identify legal status before the action reaches the decision point.”
+
+**On-screen text:** Study it. See it. Call it. Report it. Review it.
+
+**Visual overlays:** Knowledge check; Rule-number drill; Film journal; Next-game application
+
+**Decision pause:** Which evidence would change your ruling? | What will you do differently on the next assignment?
+
+**Ruling reveal:** Complete the assessment and assigned remediation before advancing.
+
+**Accessibility and delivery**
+
+- Captions: Create synchronized WebVTT captions from approved narration and dialogue.
+- Transcript: Create a searchable transcript with scene timestamps and source-reference labels.
+- Audio description: Describe court location, player and official movement, signals, diagrams, freeze frames, score, clock, shot clock, and visual overlays not conveyed in narration.
+- Thumbnail: RefZone University iPad frame showing an original unbranded NJCAA men’s scene for Using Mechanics Manuals, Conference Training, and Assignor Directives; high-contrast accessible title; no league, school, player, or broadcast marks.
+
+**Quality-control checklist**
+
+- Validate every rule, approved ruling, penalty, signal, clock, shot-clock, replay, and mechanics statement with qualified reviewers.
+- Use only original RefZone narration, scenarios, diagrams, assessments, and dialogue.
+- Maintain regulation court geometry, consistent uniforms, player numbers, direction, score, clock, shot clock, and possession.
+- Reject distorted anatomy, basketballs, court lines, signals, mechanics, or impossible movement.
+- Use no unlicensed game footage, logos, music, broadcasts, real-person likenesses, protected rulebook text, casebook language, or mechanics diagrams.
+- Provide captions, searchable transcript, audio description, keyboard controls, reduced-motion alternatives, and high-contrast graphics.
+
+---
+
+## Using the NJCAA Handbook, Sports Procedures Chart, and Championship Manuals
+
+**Estimated duration:** 10-12 minutes plus embedded pauses  
+**Rule references:** 2026-27 NJCAA Handbook and applicable sport procedures; 2025-26 NCAA Men’s Basketball Casebook — related approved rulings  
+**Audience:** NJCAA men’s basketball officials in the Bachelor’s-Level Professional Foundations pathway  
+**Prerequisites:** Successful completion of RZU-NJCM-B 101 and all applicable competency gates  
+**Visual style:** Cinematic, academic, original RefZone University presentation with regulation NCAA men’s geometry and no protected marks  
+**Narrator style:** Experienced collegiate officiating instructor; calm, precise, direct, and non-theatrical  
+
+**Learning objectives**
+
+- Explain using the njcaa handbook, sports procedures chart, and championship manuals in original RefZone University language and cite the controlling source.
+- Identify player, ball, control, location, timing, coverage, and visual evidence required before ruling.
+- Distinguish legal, illegal, borderline, and correct no-call or no-correction outcomes.
+- Apply the correct foul, violation, penalty, free throws, clock, shot clock, possession, replay, and resumption when applicable.
+- Use correct collegiate mechanics and communicate briefly, calmly, accurately, and neutrally.
+- Review the decision on film and record a measurable next-game application.
+
+**Production requirements**
+
+- Actors: Three basketball officials, Ten player performers as needed, Head coach, table crew, and game administrator as needed
+- Uniforms: Unbranded regulation-style officiating uniforms, Unbranded contrasting team uniforms
+- Court: Regulation NCAA men’s court or original accurate 3D simulation with four-foot restricted-area arc and shot clocks
+- Equipment: Game and shot clocks, Scorer’s table equipment, Whistles, Replay monitor for Rule 11 lessons, Basketballs
+- Graphics: Original RefZone title cards, Rule-reference cards, Primary and secondary coverage shading, Legal-status outlines, Player paths, Contact and violation markers, Clock and shot-clock overlays
+- Sound: Original narration, Natural court ambience, Whistle and horn cues, Accessible decision-pause cue
+
+### Scene 1 — 00:00-00:40
+
+**Learning purpose:** Frame the professional problem  
+**Location:** Unbranded junior-college arena before warmups  
+**Court configuration:** Regulation NCAA men’s court with four-foot restricted-area arc and visible shot clocks  
+**Players:** Teams enter during final shot  
+**Officials:** Three-person crew  
+**Official positions:** Crew enters together and separates for inspection  
+**Camera angle:** Wide baseline establishing shot  
+**Action:** The arena activates as the title Using the NJCAA Handbook, Sports Procedures Chart, and Championship Manuals appears on the RefZone iPad frame.
+
+**Narration:** College officiating requires more than remembering a rule. This lesson develops using the njcaa handbook, sports procedures chart, and championship manuals through source authority, legal status, primary coverage, complete administration, and professional communication.
+
+**On-screen text:** See the status. See the action. Administer the result.
+
+**Visual overlays:** RZU-NJCM-B 102; Using the NJCAA Handbook, Sports Procedures Chart, and Championship Manuals; NJCAA Men · Bachelor’s-Level
+
+### Scene 2 — 00:40-02:10
+
+**Learning purpose:** Establish source authority and lesson framework  
+**Location:** RefZone digital classroom  
+**Court configuration:** Interactive rules map and original court diagram  
+**Players:** None  
+**Officials:** Instructor avatar and diagrammed crew  
+**Official positions:** Lead, trail, and center coverage zones displayed when applicable  
+**Camera angle:** Straight-on iPad view with animated callouts  
+**Action:** The source ladder highlights 2026-27 NJCAA Handbook and applicable sport procedures; 2025-26 NCAA Men’s Basketball Casebook — related approved rulings. The instructor maps definitions, conditions, exceptions, penalties, and mechanics.
+
+**Narration:** The controlling references are 2026-27 NJCAA Handbook and applicable sport procedures; 2025-26 NCAA Men’s Basketball Casebook — related approved rulings. The publications are authority, not course copy. RefZone instruction restates the concept in original language and separates official requirements from instructional analysis.
+
+**On-screen text:** Authority first. Interpretation second. Application third.
+
+**Visual overlays:** Current effective source; Defined status; Conditions and exceptions; Penalty and resumption
+
+**Decision pause:** Which source controls this question? | What status must be established first?
+
+### Scene 3 — 02:10-05:10
+
+**Learning purpose:** Compare legal, illegal, borderline, and correct no-call outcomes  
+**Location:** Regulation practice court  
+**Court configuration:** Half-court live action with scoreboard and shot clock  
+**Players:** Two five-player teams in unbranded uniforms  
+**Officials:** Three-person crew  
+**Official positions:** Primary and secondary officials shown before action  
+**Camera angle:** Normal-speed broadcast angle followed by primary-official point of view  
+**Action:** During using the njcaa handbook, sports procedures chart, and championship manuals, the crew sees only the final result and has not established the controlling status or chronology.
+
+**Narration:** Reconstruct the complete sequence, apply the current NCAA men’s rule and verified NJCAA procedure, then administer the full result. The legal example preserves the player’s rights and game flow. The illegal example contains every required element. The borderline view is withheld when the evidence is incomplete, and the correct no-call is a positive decision.
+
+**On-screen text:** Legal · Illegal · Borderline · Correct no-call
+
+**Visual overlays:** Primary coverage shading; Player and defender paths; Legal-status freeze; Contact or violation marker
+
+**Decision pause:** What is the legal status? | Who owns the play? | What fact completes or defeats the ruling?
+
+### Scene 4 — 05:10-07:30
+
+**Learning purpose:** Apply the decision sequence from officiating angles  
+**Location:** Same court  
+**Court configuration:** Primary POV, secondary POV, overhead tactical view, and freeze frames  
+**Players:** Same participants  
+**Officials:** Same crew  
+**Official positions:** Open angle contrasted with straight-lined angle  
+**Camera angle:** Split-screen primary, secondary, and overhead views  
+**Action:** The play runs at normal speed, freezes at legal status, freezes at the decisive fact, then uses slow motion only to verify facts before returning to normal speed.
+
+**Narration:** Identify the matchup before action. Establish legal status. Observe the full sequence. Locate the decisive fact. Apply the classification, penalty, clock, shot clock, possession, and resumption. Do not decide from crowd reaction, a player falling, sound, reputation, score, or time remaining.
+
+**On-screen text:** Status → Action → Effect → Ruling → Administration
+
+**Visual overlays:** Legal position outline; Path arrows; Clock and shot clock; Rule reference; Open angle versus straight line
+
+**Decision pause:** What is the legal status? | Who initiated or controlled the action? | Which official owns the play? | What is the ruling, penalty, clock, shot clock, challenge, possession, and resumption?
+
+**Ruling reveal:** Reconstruct the complete sequence, apply the current NCAA men’s rule and verified NJCAA procedure, then administer the full result.
+
+### Scene 5 — 07:30-09:10
+
+**Learning purpose:** Demonstrate mechanics, reporting, and communication  
+**Location:** Court and scorer’s table  
+**Court configuration:** Dead-ball reporting and restart setup  
+**Players:** Players remain in correct resumption positions  
+**Officials:** Calling official, partners, referee/crew chief, and table crew  
+**Official positions:** Calling official reports; partners secure players, bench, table, and restart  
+**Camera angle:** Table-facing medium shot and coach-side angle  
+**Action:** The official stops the clock, uses the correct preliminary signal when required, reports, confirms administration, and communicates briefly.
+
+**Narration:** Mechanics complete the decision. Report with controlled movement, correct location, eye contact, accurate information, and no unnecessary theatrics. Communicate only what the moment requires.
+
+**Dialogue:** “We are confirming the player, ball, clock, shot-clock, and possession status before final administration.”
+
+**On-screen text:** Accurate. Brief. Calm. Neutral.
+
+**Visual overlays:** Stop clock; Player identification; Foul or violation signal; Free throws or direction; Resumption spot
+
+**Decision pause:** What must the table know? | What does the coach need to know? | Where and how does play resume?
+
+### Scene 6 — 09:10-10:30
+
+**Learning purpose:** Close with assessment and next-game application  
+**Location:** RefZone classroom and film room  
+**Court configuration:** Lesson summary, quiz, and film-review journal  
+**Players:** None  
+**Officials:** Learner reviewing the play  
+**Official positions:** Primary coverage diagram remains visible  
+**Camera angle:** iPad close-up with accessible controls  
+**Action:** The learner answers the embedded question, saves a note, and records a measurable next-game behavior.
+
+**Narration:** Review using the njcaa handbook, sports procedures chart, and championship manuals at normal speed. Explain the rule and administration aloud. Complete the case play, communication role-play, and film journal. The lesson is complete only when the learner can identify the status, make the decision, administer it, and defend the process.
+
+**Dialogue:** Learner: “My next-game cue is to identify legal status before the action reaches the decision point.”
+
+**On-screen text:** Study it. See it. Call it. Report it. Review it.
+
+**Visual overlays:** Knowledge check; Rule-number drill; Film journal; Next-game application
+
+**Decision pause:** Which evidence would change your ruling? | What will you do differently on the next assignment?
+
+**Ruling reveal:** Complete the assessment and assigned remediation before advancing.
+
+**Accessibility and delivery**
+
+- Captions: Create synchronized WebVTT captions from approved narration and dialogue.
+- Transcript: Create a searchable transcript with scene timestamps and source-reference labels.
+- Audio description: Describe court location, player and official movement, signals, diagrams, freeze frames, score, clock, shot clock, and visual overlays not conveyed in narration.
+- Thumbnail: RefZone University iPad frame showing an original unbranded NJCAA men’s scene for Using the NJCAA Handbook, Sports Procedures Chart, and Championship Manuals; high-contrast accessible title; no league, school, player, or broadcast marks.
+
+**Quality-control checklist**
+
+- Validate every rule, approved ruling, penalty, signal, clock, shot-clock, replay, and mechanics statement with qualified reviewers.
+- Use only original RefZone narration, scenarios, diagrams, assessments, and dialogue.
+- Maintain regulation court geometry, consistent uniforms, player numbers, direction, score, clock, shot clock, and possession.
+- Reject distorted anatomy, basketballs, court lines, signals, mechanics, or impossible movement.
+- Use no unlicensed game footage, logos, music, broadcasts, real-person likenesses, protected rulebook text, casebook language, or mechanics diagrams.
+- Provide captions, searchable transcript, audio description, keyboard controls, reduced-motion alternatives, and high-contrast graphics.
+
+---
+
+## Source Versioning, Checksums, Licensing, and Supersession
+
+**Estimated duration:** 10-12 minutes plus embedded pauses  
+**Rule references:** 2026-27 NJCAA Handbook and applicable sport procedures; 2025-26 NCAA Men’s Basketball Casebook — related approved rulings  
+**Audience:** NJCAA men’s basketball officials in the Bachelor’s-Level Professional Foundations pathway  
+**Prerequisites:** Successful completion of RZU-NJCM-B 101 and all applicable competency gates  
+**Visual style:** Cinematic, academic, original RefZone University presentation with regulation NCAA men’s geometry and no protected marks  
+**Narrator style:** Experienced collegiate officiating instructor; calm, precise, direct, and non-theatrical  
+
+**Learning objectives**
+
+- Explain source versioning, checksums, licensing, and supersession in original RefZone University language and cite the controlling source.
+- Identify player, ball, control, location, timing, coverage, and visual evidence required before ruling.
+- Distinguish legal, illegal, borderline, and correct no-call or no-correction outcomes.
+- Apply the correct foul, violation, penalty, free throws, clock, shot clock, possession, replay, and resumption when applicable.
+- Use correct collegiate mechanics and communicate briefly, calmly, accurately, and neutrally.
+- Review the decision on film and record a measurable next-game application.
+
+**Production requirements**
+
+- Actors: Three basketball officials, Ten player performers as needed, Head coach, table crew, and game administrator as needed
+- Uniforms: Unbranded regulation-style officiating uniforms, Unbranded contrasting team uniforms
+- Court: Regulation NCAA men’s court or original accurate 3D simulation with four-foot restricted-area arc and shot clocks
+- Equipment: Game and shot clocks, Scorer’s table equipment, Whistles, Replay monitor for Rule 11 lessons, Basketballs
+- Graphics: Original RefZone title cards, Rule-reference cards, Primary and secondary coverage shading, Legal-status outlines, Player paths, Contact and violation markers, Clock and shot-clock overlays
+- Sound: Original narration, Natural court ambience, Whistle and horn cues, Accessible decision-pause cue
+
+### Scene 1 — 00:00-00:40
+
+**Learning purpose:** Frame the professional problem  
+**Location:** Unbranded junior-college arena before warmups  
+**Court configuration:** Regulation NCAA men’s court with four-foot restricted-area arc and visible shot clocks  
+**Players:** Teams enter during final shot  
+**Officials:** Three-person crew  
+**Official positions:** Crew enters together and separates for inspection  
+**Camera angle:** Wide baseline establishing shot  
+**Action:** The arena activates as the title Source Versioning, Checksums, Licensing, and Supersession appears on the RefZone iPad frame.
+
+**Narration:** College officiating requires more than remembering a rule. This lesson develops source versioning, checksums, licensing, and supersession through source authority, legal status, primary coverage, complete administration, and professional communication.
+
+**On-screen text:** See the status. See the action. Administer the result.
+
+**Visual overlays:** RZU-NJCM-B 102; Source Versioning, Checksums, Licensing, and Supersession; NJCAA Men · Bachelor’s-Level
+
+### Scene 2 — 00:40-02:10
+
+**Learning purpose:** Establish source authority and lesson framework  
+**Location:** RefZone digital classroom  
+**Court configuration:** Interactive rules map and original court diagram  
+**Players:** None  
+**Officials:** Instructor avatar and diagrammed crew  
+**Official positions:** Lead, trail, and center coverage zones displayed when applicable  
+**Camera angle:** Straight-on iPad view with animated callouts  
+**Action:** The source ladder highlights 2026-27 NJCAA Handbook and applicable sport procedures; 2025-26 NCAA Men’s Basketball Casebook — related approved rulings. The instructor maps definitions, conditions, exceptions, penalties, and mechanics.
+
+**Narration:** The controlling references are 2026-27 NJCAA Handbook and applicable sport procedures; 2025-26 NCAA Men’s Basketball Casebook — related approved rulings. The publications are authority, not course copy. RefZone instruction restates the concept in original language and separates official requirements from instructional analysis.
+
+**On-screen text:** Authority first. Interpretation second. Application third.
+
+**Visual overlays:** Current effective source; Defined status; Conditions and exceptions; Penalty and resumption
+
+**Decision pause:** Which source controls this question? | What status must be established first?
+
+### Scene 3 — 02:10-05:10
+
+**Learning purpose:** Compare legal, illegal, borderline, and correct no-call outcomes  
+**Location:** Regulation practice court  
+**Court configuration:** Half-court live action with scoreboard and shot clock  
+**Players:** Two five-player teams in unbranded uniforms  
+**Officials:** Three-person crew  
+**Official positions:** Primary and secondary officials shown before action  
+**Camera angle:** Normal-speed broadcast angle followed by primary-official point of view  
+**Action:** During source versioning, checksums, licensing, and supersession, the crew sees only the final result and has not established the controlling status or chronology.
+
+**Narration:** Reconstruct the complete sequence, apply the current NCAA men’s rule and verified NJCAA procedure, then administer the full result. The legal example preserves the player’s rights and game flow. The illegal example contains every required element. The borderline view is withheld when the evidence is incomplete, and the correct no-call is a positive decision.
+
+**On-screen text:** Legal · Illegal · Borderline · Correct no-call
+
+**Visual overlays:** Primary coverage shading; Player and defender paths; Legal-status freeze; Contact or violation marker
+
+**Decision pause:** What is the legal status? | Who owns the play? | What fact completes or defeats the ruling?
+
+### Scene 4 — 05:10-07:30
+
+**Learning purpose:** Apply the decision sequence from officiating angles  
+**Location:** Same court  
+**Court configuration:** Primary POV, secondary POV, overhead tactical view, and freeze frames  
+**Players:** Same participants  
+**Officials:** Same crew  
+**Official positions:** Open angle contrasted with straight-lined angle  
+**Camera angle:** Split-screen primary, secondary, and overhead views  
+**Action:** The play runs at normal speed, freezes at legal status, freezes at the decisive fact, then uses slow motion only to verify facts before returning to normal speed.
+
+**Narration:** Identify the matchup before action. Establish legal status. Observe the full sequence. Locate the decisive fact. Apply the classification, penalty, clock, shot clock, possession, and resumption. Do not decide from crowd reaction, a player falling, sound, reputation, score, or time remaining.
+
+**On-screen text:** Status → Action → Effect → Ruling → Administration
+
+**Visual overlays:** Legal position outline; Path arrows; Clock and shot clock; Rule reference; Open angle versus straight line
+
+**Decision pause:** What is the legal status? | Who initiated or controlled the action? | Which official owns the play? | What is the ruling, penalty, clock, shot clock, challenge, possession, and resumption?
+
+**Ruling reveal:** Reconstruct the complete sequence, apply the current NCAA men’s rule and verified NJCAA procedure, then administer the full result.
+
+### Scene 5 — 07:30-09:10
+
+**Learning purpose:** Demonstrate mechanics, reporting, and communication  
+**Location:** Court and scorer’s table  
+**Court configuration:** Dead-ball reporting and restart setup  
+**Players:** Players remain in correct resumption positions  
+**Officials:** Calling official, partners, referee/crew chief, and table crew  
+**Official positions:** Calling official reports; partners secure players, bench, table, and restart  
+**Camera angle:** Table-facing medium shot and coach-side angle  
+**Action:** The official stops the clock, uses the correct preliminary signal when required, reports, confirms administration, and communicates briefly.
+
+**Narration:** Mechanics complete the decision. Report with controlled movement, correct location, eye contact, accurate information, and no unnecessary theatrics. Communicate only what the moment requires.
+
+**Dialogue:** “We are confirming the player, ball, clock, shot-clock, and possession status before final administration.”
+
+**On-screen text:** Accurate. Brief. Calm. Neutral.
+
+**Visual overlays:** Stop clock; Player identification; Foul or violation signal; Free throws or direction; Resumption spot
+
+**Decision pause:** What must the table know? | What does the coach need to know? | Where and how does play resume?
+
+### Scene 6 — 09:10-10:30
+
+**Learning purpose:** Close with assessment and next-game application  
+**Location:** RefZone classroom and film room  
+**Court configuration:** Lesson summary, quiz, and film-review journal  
+**Players:** None  
+**Officials:** Learner reviewing the play  
+**Official positions:** Primary coverage diagram remains visible  
+**Camera angle:** iPad close-up with accessible controls  
+**Action:** The learner answers the embedded question, saves a note, and records a measurable next-game behavior.
+
+**Narration:** Review source versioning, checksums, licensing, and supersession at normal speed. Explain the rule and administration aloud. Complete the case play, communication role-play, and film journal. The lesson is complete only when the learner can identify the status, make the decision, administer it, and defend the process.
+
+**Dialogue:** Learner: “My next-game cue is to identify legal status before the action reaches the decision point.”
+
+**On-screen text:** Study it. See it. Call it. Report it. Review it.
+
+**Visual overlays:** Knowledge check; Rule-number drill; Film journal; Next-game application
+
+**Decision pause:** Which evidence would change your ruling? | What will you do differently on the next assignment?
+
+**Ruling reveal:** Complete the assessment and assigned remediation before advancing.
+
+**Accessibility and delivery**
+
+- Captions: Create synchronized WebVTT captions from approved narration and dialogue.
+- Transcript: Create a searchable transcript with scene timestamps and source-reference labels.
+- Audio description: Describe court location, player and official movement, signals, diagrams, freeze frames, score, clock, shot clock, and visual overlays not conveyed in narration.
+- Thumbnail: RefZone University iPad frame showing an original unbranded NJCAA men’s scene for Source Versioning, Checksums, Licensing, and Supersession; high-contrast accessible title; no league, school, player, or broadcast marks.
+
+**Quality-control checklist**
+
+- Validate every rule, approved ruling, penalty, signal, clock, shot-clock, replay, and mechanics statement with qualified reviewers.
+- Use only original RefZone narration, scenarios, diagrams, assessments, and dialogue.
+- Maintain regulation court geometry, consistent uniforms, player numbers, direction, score, clock, shot clock, and possession.
+- Reject distorted anatomy, basketballs, court lines, signals, mechanics, or impossible movement.
+- Use no unlicensed game footage, logos, music, broadcasts, real-person likenesses, protected rulebook text, casebook language, or mechanics diagrams.
+- Provide captions, searchable transcript, audio description, keyboard controls, reduced-motion alternatives, and high-contrast graphics.
+
+---
+
+## Comprehensive Source Audit, Conflict Memorandum, and Citation Defense
+
+**Estimated duration:** 10-12 minutes plus embedded pauses  
+**Rule references:** 2026-27 NJCAA Handbook and applicable sport procedures; 2025-26 NCAA Men’s Basketball Casebook — related approved rulings  
+**Audience:** NJCAA men’s basketball officials in the Bachelor’s-Level Professional Foundations pathway  
+**Prerequisites:** Successful completion of RZU-NJCM-B 101 and all applicable competency gates  
+**Visual style:** Cinematic, academic, original RefZone University presentation with regulation NCAA men’s geometry and no protected marks  
+**Narrator style:** Experienced collegiate officiating instructor; calm, precise, direct, and non-theatrical  
+
+**Learning objectives**
+
+- Explain comprehensive source audit, conflict memorandum, and citation defense in original RefZone University language and cite the controlling source.
+- Identify player, ball, control, location, timing, coverage, and visual evidence required before ruling.
+- Distinguish legal, illegal, borderline, and correct no-call or no-correction outcomes.
+- Apply the correct foul, violation, penalty, free throws, clock, shot clock, possession, replay, and resumption when applicable.
+- Use correct collegiate mechanics and communicate briefly, calmly, accurately, and neutrally.
+- Review the decision on film and record a measurable next-game application.
+
+**Production requirements**
+
+- Actors: Three basketball officials, Ten player performers as needed, Head coach, table crew, and game administrator as needed
+- Uniforms: Unbranded regulation-style officiating uniforms, Unbranded contrasting team uniforms
+- Court: Regulation NCAA men’s court or original accurate 3D simulation with four-foot restricted-area arc and shot clocks
+- Equipment: Game and shot clocks, Scorer’s table equipment, Whistles, Replay monitor for Rule 11 lessons, Basketballs
+- Graphics: Original RefZone title cards, Rule-reference cards, Primary and secondary coverage shading, Legal-status outlines, Player paths, Contact and violation markers, Clock and shot-clock overlays
+- Sound: Original narration, Natural court ambience, Whistle and horn cues, Accessible decision-pause cue
+
+### Scene 1 — 00:00-00:40
+
+**Learning purpose:** Frame the professional problem  
+**Location:** Unbranded junior-college arena before warmups  
+**Court configuration:** Regulation NCAA men’s court with four-foot restricted-area arc and visible shot clocks  
+**Players:** Teams enter during final shot  
+**Officials:** Three-person crew  
+**Official positions:** Crew enters together and separates for inspection  
+**Camera angle:** Wide baseline establishing shot  
+**Action:** The arena activates as the title Comprehensive Source Audit, Conflict Memorandum, and Citation Defense appears on the RefZone iPad frame.
+
+**Narration:** College officiating requires more than remembering a rule. This lesson develops comprehensive source audit, conflict memorandum, and citation defense through source authority, legal status, primary coverage, complete administration, and professional communication.
+
+**On-screen text:** See the status. See the action. Administer the result.
+
+**Visual overlays:** RZU-NJCM-B 102; Comprehensive Source Audit, Conflict Memorandum, and Citation Defense; NJCAA Men · Bachelor’s-Level
+
+### Scene 2 — 00:40-02:10
+
+**Learning purpose:** Establish source authority and lesson framework  
+**Location:** RefZone digital classroom  
+**Court configuration:** Interactive rules map and original court diagram  
+**Players:** None  
+**Officials:** Instructor avatar and diagrammed crew  
+**Official positions:** Lead, trail, and center coverage zones displayed when applicable  
+**Camera angle:** Straight-on iPad view with animated callouts  
+**Action:** The source ladder highlights 2026-27 NJCAA Handbook and applicable sport procedures; 2025-26 NCAA Men’s Basketball Casebook — related approved rulings. The instructor maps definitions, conditions, exceptions, penalties, and mechanics.
+
+**Narration:** The controlling references are 2026-27 NJCAA Handbook and applicable sport procedures; 2025-26 NCAA Men’s Basketball Casebook — related approved rulings. The publications are authority, not course copy. RefZone instruction restates the concept in original language and separates official requirements from instructional analysis.
+
+**On-screen text:** Authority first. Interpretation second. Application third.
+
+**Visual overlays:** Current effective source; Defined status; Conditions and exceptions; Penalty and resumption
+
+**Decision pause:** Which source controls this question? | What status must be established first?
+
+### Scene 3 — 02:10-05:10
+
+**Learning purpose:** Compare legal, illegal, borderline, and correct no-call outcomes  
+**Location:** Regulation practice court  
+**Court configuration:** Half-court live action with scoreboard and shot clock  
+**Players:** Two five-player teams in unbranded uniforms  
+**Officials:** Three-person crew  
+**Official positions:** Primary and secondary officials shown before action  
+**Camera angle:** Normal-speed broadcast angle followed by primary-official point of view  
+**Action:** During comprehensive source audit, conflict memorandum, and citation defense, the crew sees only the final result and has not established the controlling status or chronology.
+
+**Narration:** Reconstruct the complete sequence, apply the current NCAA men’s rule and verified NJCAA procedure, then administer the full result. The legal example preserves the player’s rights and game flow. The illegal example contains every required element. The borderline view is withheld when the evidence is incomplete, and the correct no-call is a positive decision.
+
+**On-screen text:** Legal · Illegal · Borderline · Correct no-call
+
+**Visual overlays:** Primary coverage shading; Player and defender paths; Legal-status freeze; Contact or violation marker
+
+**Decision pause:** What is the legal status? | Who owns the play? | What fact completes or defeats the ruling?
+
+### Scene 4 — 05:10-07:30
+
+**Learning purpose:** Apply the decision sequence from officiating angles  
+**Location:** Same court  
+**Court configuration:** Primary POV, secondary POV, overhead tactical view, and freeze frames  
+**Players:** Same participants  
+**Officials:** Same crew  
+**Official positions:** Open angle contrasted with straight-lined angle  
+**Camera angle:** Split-screen primary, secondary, and overhead views  
+**Action:** The play runs at normal speed, freezes at legal status, freezes at the decisive fact, then uses slow motion only to verify facts before returning to normal speed.
+
+**Narration:** Identify the matchup before action. Establish legal status. Observe the full sequence. Locate the decisive fact. Apply the classification, penalty, clock, shot clock, possession, and resumption. Do not decide from crowd reaction, a player falling, sound, reputation, score, or time remaining.
+
+**On-screen text:** Status → Action → Effect → Ruling → Administration
+
+**Visual overlays:** Legal position outline; Path arrows; Clock and shot clock; Rule reference; Open angle versus straight line
+
+**Decision pause:** What is the legal status? | Who initiated or controlled the action? | Which official owns the play? | What is the ruling, penalty, clock, shot clock, challenge, possession, and resumption?
+
+**Ruling reveal:** Reconstruct the complete sequence, apply the current NCAA men’s rule and verified NJCAA procedure, then administer the full result.
+
+### Scene 5 — 07:30-09:10
+
+**Learning purpose:** Demonstrate mechanics, reporting, and communication  
+**Location:** Court and scorer’s table  
+**Court configuration:** Dead-ball reporting and restart setup  
+**Players:** Players remain in correct resumption positions  
+**Officials:** Calling official, partners, referee/crew chief, and table crew  
+**Official positions:** Calling official reports; partners secure players, bench, table, and restart  
+**Camera angle:** Table-facing medium shot and coach-side angle  
+**Action:** The official stops the clock, uses the correct preliminary signal when required, reports, confirms administration, and communicates briefly.
+
+**Narration:** Mechanics complete the decision. Report with controlled movement, correct location, eye contact, accurate information, and no unnecessary theatrics. Communicate only what the moment requires.
+
+**Dialogue:** “We are confirming the player, ball, clock, shot-clock, and possession status before final administration.”
+
+**On-screen text:** Accurate. Brief. Calm. Neutral.
+
+**Visual overlays:** Stop clock; Player identification; Foul or violation signal; Free throws or direction; Resumption spot
+
+**Decision pause:** What must the table know? | What does the coach need to know? | Where and how does play resume?
+
+### Scene 6 — 09:10-10:30
+
+**Learning purpose:** Close with assessment and next-game application  
+**Location:** RefZone classroom and film room  
+**Court configuration:** Lesson summary, quiz, and film-review journal  
+**Players:** None  
+**Officials:** Learner reviewing the play  
+**Official positions:** Primary coverage diagram remains visible  
+**Camera angle:** iPad close-up with accessible controls  
+**Action:** The learner answers the embedded question, saves a note, and records a measurable next-game behavior.
+
+**Narration:** Review comprehensive source audit, conflict memorandum, and citation defense at normal speed. Explain the rule and administration aloud. Complete the case play, communication role-play, and film journal. The lesson is complete only when the learner can identify the status, make the decision, administer it, and defend the process.
+
+**Dialogue:** Learner: “My next-game cue is to identify legal status before the action reaches the decision point.”
+
+**On-screen text:** Study it. See it. Call it. Report it. Review it.
+
+**Visual overlays:** Knowledge check; Rule-number drill; Film journal; Next-game application
+
+**Decision pause:** Which evidence would change your ruling? | What will you do differently on the next assignment?
+
+**Ruling reveal:** Complete the assessment and assigned remediation before advancing.
+
+**Accessibility and delivery**
+
+- Captions: Create synchronized WebVTT captions from approved narration and dialogue.
+- Transcript: Create a searchable transcript with scene timestamps and source-reference labels.
+- Audio description: Describe court location, player and official movement, signals, diagrams, freeze frames, score, clock, shot clock, and visual overlays not conveyed in narration.
+- Thumbnail: RefZone University iPad frame showing an original unbranded NJCAA men’s scene for Comprehensive Source Audit, Conflict Memorandum, and Citation Defense; high-contrast accessible title; no league, school, player, or broadcast marks.
+
+**Quality-control checklist**
+
+- Validate every rule, approved ruling, penalty, signal, clock, shot-clock, replay, and mechanics statement with qualified reviewers.
+- Use only original RefZone narration, scenarios, diagrams, assessments, and dialogue.
+- Maintain regulation court geometry, consistent uniforms, player numbers, direction, score, clock, shot clock, and possession.
+- Reject distorted anatomy, basketballs, court lines, signals, mechanics, or impossible movement.
+- Use no unlicensed game footage, logos, music, broadcasts, real-person likenesses, protected rulebook text, casebook language, or mechanics diagrams.
+- Provide captions, searchable transcript, audio description, keyboard controls, reduced-motion alternatives, and high-contrast graphics.
+
+---

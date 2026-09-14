@@ -1,0 +1,38 @@
+<!doctype html><html lang="en"><head>
+<script src="../assets/super-admin-access.js" data-super-admin-runtime></script><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="The Cutting Room film review platform."><title>Settings | The Cutting Room</title><link rel="stylesheet" href="assets/cutting-room.css"><script defer src="assets/db.js"></script><script type="module" src="assets/app.js"></script><link rel="stylesheet" href="../assets/super-admin-access.css" data-super-admin-access-style>
+</head><body data-page="settings"><header class="cr-header cr-rtbo-header" data-header>
+  <nav class="cr-rtbo-navbar" aria-label="The Cutting Room primary navigation">
+    <button class="cr-menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="crMobileNav" aria-label="Open navigation menu">
+      <span></span><span></span><span></span>
+    </button>
+
+    <div class="cr-rtbo-desktop-nav cr-rtbo-desktop-nav--left" aria-label="Primary navigation left">
+      <a class="cr-rtbo-nav-link" href="index.html">Home</a><a class="cr-rtbo-nav-link" href="dashboard.html">Dashboard</a><a class="cr-rtbo-nav-link" href="upload.html">Upload</a><a class="cr-rtbo-nav-link" href="library.html">Film Library</a>
+    </div>
+
+    <a class="cr-rtbo-brand" href="index.html" aria-label="The Cutting Room — return home">
+      <img src="assets/cutting-room-logo-transparent.png" alt="The Cutting Room Post Production logo">
+    </a>
+
+    <div class="cr-rtbo-desktop-nav cr-rtbo-desktop-nav--right" aria-label="Primary navigation right">
+      <a class="cr-rtbo-nav-link" href="review.html">Review Studio</a><a class="cr-rtbo-nav-link" href="evaluations.html">Evaluations</a><a class="cr-rtbo-nav-link" href="collaboration.html">Collaboration</a><a class="cr-rtbo-nav-link" href="downloads.html">Downloads</a>
+      <div class="cr-rtbo-utilities" aria-label="Platform utilities">
+        <button class="cr-rtbo-icon-btn" type="button" data-open-command title="Command palette" aria-label="Open command palette">⌘</button>
+        <a class="cr-rtbo-icon-btn" href="settings.html" title="Settings" aria-label="Settings">⚙</a>
+      </div>
+    </div>
+
+    <a class="cr-mobile-upload" href="upload.html">Upload</a>
+  </nav>
+
+  <nav class="cr-rtbo-mobile-menu" id="crMobileNav" aria-label="Mobile navigation">
+    <div class="cr-rtbo-mobile-menu__inner">
+      <a class="cr-rtbo-nav-link" href="index.html">Home</a><a class="cr-rtbo-nav-link" href="dashboard.html">Dashboard</a><a class="cr-rtbo-nav-link" href="upload.html">Upload</a><a class="cr-rtbo-nav-link" href="library.html">Film Library</a><a class="cr-rtbo-nav-link" href="review.html">Review Studio</a><a class="cr-rtbo-nav-link" href="evaluations.html">Evaluations</a><a class="cr-rtbo-nav-link" href="collaboration.html">Collaboration</a><a class="cr-rtbo-nav-link" href="downloads.html">Downloads</a>
+      <div class="cr-rtbo-mobile-actions">
+        <button class="cr-rtbo-mobile-command" type="button" data-open-command>Command Palette</button>
+        <a href="settings.html">Settings</a>
+      </div>
+    </div>
+  </nav>
+</header><main><section class="page-hero"><div class="cr-shell page-hero__row"><div><p class="eyebrow">PLATFORM CONTROLS</p><h1>Settings</h1><p>Manage browser storage and metadata backups for this local HTML/CSS/JS build.</p></div></div></section><section class="section"><div class="cr-shell grid cols-2"><div class="card card-pad"><p class="eyebrow">STORAGE</p><h2>Browser Storage</h2><div class="grid cols-2"><div><span class="muted">Estimated usage</span><strong style="display:block;font-size:28px" data-storage-used>0 B</strong></div><div><span class="muted">Estimated quota</span><strong style="display:block;font-size:28px" data-storage-quota>0 B</strong></div></div><div class="storage-meter" style="margin-top:15px"><span data-storage-meter></span></div><p class="muted">Quota is controlled by your browser and device.</p></div><div class="card card-pad"><p class="eyebrow">BACKUP & RESTORE</p><h2>Platform Metadata</h2><p class="muted">Export or restore film metadata, markers, clip ranges, evaluations, comments, and review packets. Video blobs are not embedded in metadata backups.</p><div class="page-actions"><button class="btn primary" id="backupBtn">Export Metadata Backup</button><label class="btn secondary">Restore Backup<input id="restoreInput" type="file" accept="application/json,.json" hidden></label></div></div><div class="card card-pad"><p class="eyebrow">RESET</p><h2>Clear Local Data</h2><p class="muted">Deletes all Cutting Room records and uploaded videos stored by this browser.</p><button class="btn danger" id="clearMetadata">Clear All Cutting Room Data</button></div><div class="card card-pad"><p class="eyebrow">PLATFORM MODE</p><h2>HTML / CSS / JavaScript</h2><p class="muted">No framework, no build step, and no login. The platform uses IndexedDB for local storage and browser APIs for file access and sharing.</p></div></div></section><section class="section"><div class="cr-shell"><div class="section-head"><div><h2>Activity Log</h2><p>Local operational history.</p></div></div><div class="card card-pad activity-list" data-activity-list></div></div></section></main><footer class="cr-footer"><div><strong>The Cutting Room</strong><span>Film review and development platform by Raising The Bar Officiating.</span></div><nav><a href="settings.html">Settings</a><a href="README.html">Platform Guide</a></nav></footer><dialog class="cr-dialog command-dialog" data-command-dialog><button class="dialog-x" data-close-dialog aria-label="Close">×</button><p class="eyebrow">QUICK COMMANDS</p><h2>Go Anywhere.</h2><div class="command-grid"><a href="upload.html">Upload Film</a><a href="library.html">Open Film Library</a><a href="review.html">Start Review</a><a href="evaluations.html">Create Evaluation</a><a href="collaboration.html">Review Packets</a><a href="downloads.html">Export Center</a></div></dialog><div class="toast" data-toast role="status" aria-live="polite"></div><script defer src="../cms/runtime.js" data-rtbo-cms-runtime data-cms-page="cutting-room/settings.html"></script>
+</body></html>

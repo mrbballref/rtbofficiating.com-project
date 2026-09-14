@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="Standalone Got U Nex Ref dashboard with user-entered data only." name="description"/>
+<title>Got U Nex Ref | Dashboard</title>
+<link href="assets/rtbo-favicon.webp" rel="icon" type="image/webp"/>
+<script>if(new URLSearchParams(location.search).get("embedded")==="1")document.documentElement.classList.add("is-admin-embedded");</script>
+<link href="dashboard.css" rel="stylesheet"/>
+<script defer="" src="module-bridge.js"></script>
+<script defer="" src="dashboard.js"></script>
+<link href="../../admin-global.css" rel="stylesheet"/></head>
+<body>
+<a class="skip-link" href="#dashboard-main">Skip to dashboard content</a>
+<svg aria-hidden="true" class="svg-sprite" focusable="false">
+<symbol id="i-home" viewbox="0 0 24 24"><path d="M3 11.5 12 4l9 7.5v8a1.5 1.5 0 0 1-1.5 1.5H15v-6H9v6H4.5A1.5 1.5 0 0 1 3 19.5z"></path><path d="M7.5 9.5V5.8h3"></path></symbol>
+<symbol id="i-calendar" viewbox="0 0 24 24"><rect height="16" rx="2" width="18" x="3" y="5"></rect><path d="M7 3v4M17 3v4M3 10h18M7 14h3M14 14h3M7 18h3"></path></symbol>
+<symbol id="i-school" viewbox="0 0 24 24"><path d="m3 10 9-5 9 5-9 5zM6 12.5V19h12v-6.5M9 19v-4h6v4M3 21h18"></path></symbol>
+<symbol id="i-lab" viewbox="0 0 24 24"><path d="M9 3h6M10 3v6l-5 9a2 2 0 0 0 1.8 3h10.4A2 2 0 0 0 19 18l-5-9V3M7.5 15h9"></path></symbol>
+<symbol id="i-card" viewbox="0 0 24 24"><rect height="14" rx="2" width="18" x="3" y="5"></rect><path d="M3 10h18M7 15h4"></path></symbol>
+<symbol id="i-tax" viewbox="0 0 24 24"><rect height="16" rx="2" width="18" x="3" y="5"></rect><path d="M8 3v4M16 3v4M7 11h10M7 15h4M15 15h2M7 18h2"></path></symbol>
+<symbol id="i-form" viewbox="0 0 24 24"><path d="M6 3h9l3 3v15H6z"></path><path d="M15 3v4h4M9 11h6M9 15h6M9 19h4"></path></symbol>
+<symbol id="i-book" viewbox="0 0 24 24"><path d="M4 5.5A3.5 3.5 0 0 1 7.5 2H11v18H7.5A3.5 3.5 0 0 0 4 23zM20 5.5A3.5 3.5 0 0 0 16.5 2H13v18h3.5A3.5 3.5 0 0 1 20 23z"></path></symbol>
+<symbol id="i-shop" viewbox="0 0 24 24"><path d="M5 8h14l1 13H4zM8 8a4 4 0 0 1 8 0"></path></symbol>
+<symbol id="i-mail" viewbox="0 0 24 24"><rect height="14" rx="2" width="18" x="3" y="5"></rect><path d="m4 7 8 6 8-6"></path></symbol>
+<symbol id="i-user" viewbox="0 0 24 24"><circle cx="12" cy="8" r="4"></circle><path d="M4 21a8 8 0 0 1 16 0"></path></symbol>
+<symbol id="i-file" viewbox="0 0 24 24"><path d="M6 3h9l3 3v15H6z"></path><path d="M15 3v4h4M9 12h6M9 16h6"></path></symbol>
+<symbol id="i-id" viewbox="0 0 24 24"><rect height="14" rx="2" width="18" x="3" y="5"></rect><circle cx="8" cy="11" r="2"></circle><path d="M5.5 16a3 3 0 0 1 5 0M13 10h5M13 14h5"></path></symbol>
+<symbol id="i-star" viewbox="0 0 24 24"><path d="m12 3 2.8 5.7 6.2.9-4.5 4.4 1.1 6.2-5.6-2.9-5.6 2.9 1.1-6.2L3 9.6l6.2-.9z"></path></symbol>
+<symbol id="i-help" viewbox="0 0 24 24"><circle cx="12" cy="12" r="9"></circle><path d="M9.8 9a2.5 2.5 0 1 1 3.8 2.1c-.9.6-1.6 1.1-1.6 2.4M12 17.5h.01"></path></symbol>
+<symbol id="i-settings" viewbox="0 0 24 24"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.7 1.7 0 0 0 .3 1.9l.1.1-2.8 2.8-.1-.1a1.7 1.7 0 0 0-1.9-.3 1.7 1.7 0 0 0-1 1.6V21h-4v-.1A1.7 1.7 0 0 0 9 19.4a1.7 1.7 0 0 0-1.9.3l-.1.1L4.2 17l.1-.1a1.7 1.7 0 0 0 .3-1.9A1.7 1.7 0 0 0 3 14H3v-4h.1A1.7 1.7 0 0 0 4.6 9a1.7 1.7 0 0 0-.3-1.9L4.2 7 7 4.2l.1.1A1.7 1.7 0 0 0 9 4.6 1.7 1.7 0 0 0 10 3h4a1.7 1.7 0 0 0 1 1.6 1.7 1.7 0 0 0 1.9-.3l.1-.1L19.8 7l-.1.1a1.7 1.7 0 0 0-.3 1.9A1.7 1.7 0 0 0 21 10h.1v4H21a1.7 1.7 0 0 0-1.6 1z"></path></symbol>
+<symbol id="i-bell" viewbox="0 0 24 24"><path d="M18 8a6 6 0 0 0-12 0c0 7-3 7-3 9h18c0-2-3-2-3-9M10 21h4"></path></symbol>
+<symbol id="i-chevron" viewbox="0 0 24 24"><path d="m9 6 6 6-6 6"></path></symbol>
+<symbol id="i-menu" viewbox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"></path></symbol>
+<symbol id="i-plus" viewbox="0 0 24 24"><path d="M12 5v14M5 12h14"></path></symbol>
+<symbol id="i-download" viewbox="0 0 24 24"><path d="M12 3v12M7 10l5 5 5-5M4 21h16"></path></symbol>
+<symbol id="i-trash" viewbox="0 0 24 24"><path d="M4 7h16M9 7V4h6v3M7 7l1 14h8l1-14M10 11v6M14 11v6"></path></symbol>
+<symbol id="i-edit" viewbox="0 0 24 24"><path d="m4 20 4.5-1 10-10-3.5-3.5-10 10zM13.5 6.5 17 10"></path></symbol>
+<symbol id="i-upload" viewbox="0 0 24 24"><path d="M12 21V9M7 14l5-5 5 5M4 3h16"></path></symbol>
+<symbol id="i-search" viewbox="0 0 24 24"><circle cx="11" cy="11" r="7"></circle><path d="m20 20-4-4"></path></symbol>
+<symbol id="i-sync" viewbox="0 0 24 24"><path d="M20 7h-6V1"></path><path d="M20 7a9 9 0 1 0 2 8"></path></symbol>
+<symbol id="i-clock" viewbox="0 0 24 24"><circle cx="12" cy="12" r="9"></circle><path d="M12 7v5l3 2"></path></symbol>
+<symbol id="i-pin" viewbox="0 0 24 24"><path d="M20 10c0 5-8 11-8 11S4 15 4 10a8 8 0 1 1 16 0z"></path><circle cx="12" cy="10" r="2.5"></circle></symbol>
+<symbol id="i-phone" viewbox="0 0 24 24"><path d="M6.6 3h3l1.5 4.4-2.2 1.7a15.5 15.5 0 0 0 6 6l1.7-2.2 4.4 1.5v3c0 2-1.6 3.6-3.6 3.6C9.5 21 3 14.5 3 6.6 3 4.6 4.6 3 6.6 3z"></path></symbol>
+<symbol id="i-dots" viewbox="0 0 24 24"><circle cx="12" cy="5" r="1.4"></circle><circle cx="12" cy="12" r="1.4"></circle><circle cx="12" cy="19" r="1.4"></circle></symbol>
+<symbol id="i-close" viewbox="0 0 24 24"><path d="m6 6 12 12M18 6 6 18"></path></symbol>
+<symbol id="i-copy" viewbox="0 0 24 24"><rect height="11" rx="2" width="11" x="8" y="8"></rect><path d="M16 8V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h3"></path></symbol>
+<symbol id="i-check" viewbox="0 0 24 24"><path d="m5 12 4 4L19 6"></path></symbol>
+<symbol id="i-filter" viewbox="0 0 24 24"><path d="M4 5h16l-6 7v6l-4 2v-8z"></path></symbol>
+<symbol id="i-eye" viewbox="0 0 24 24"><path d="M2 12s3.5-6 10-6 10 6 10 6-3.5 6-10 6S2 12 2 12z"></path><circle cx="12" cy="12" r="2.8"></circle></symbol>
+<symbol id="i-bolt" viewbox="0 0 24 24"><path d="M13 2 4 14h7l-1 8 10-13h-7z"></path></symbol>
+<symbol id="i-trophy" viewbox="0 0 24 24"><path d="M8 4h8v4a4 4 0 0 1-8 0zM8 6H4v1a4 4 0 0 0 4 4M16 6h4v1a4 4 0 0 1-4 4M12 12v5M8 21h8M9 17h6"></path></symbol>
+<symbol id="i-external" viewbox="0 0 24 24"><path d="M14 4h6v6M20 4l-9 9"></path><path d="M18 13v6a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h6"></path></symbol>
+<symbol id="i-info" viewbox="0 0 24 24"><circle cx="12" cy="12" r="9"></circle><path d="M12 10v7M12 7h.01"></path></symbol>
+<symbol id="i-shield" viewbox="0 0 24 24"><path d="M12 3 20 6v6c0 5-3.4 8-8 9-4.6-1-8-4-8-9V6z"></path><path d="m8.5 12 2.2 2.2 4.8-5"></path></symbol>
+<symbol id="i-chat" viewbox="0 0 24 24"><path d="M4 5h16v11H8l-4 4z"></path><path d="M8 9h8M8 12h5"></path></symbol>
+<symbol id="i-video" viewbox="0 0 24 24"><rect height="12" rx="2" width="13" x="3" y="6"></rect><path d="m16 10 5-3v10l-5-3z"></path></symbol>
+<symbol id="i-smile" viewbox="0 0 24 24"><circle cx="12" cy="12" r="9"></circle><path d="M8 14c1 2 2.3 3 4 3s3-1 4-3M9 9h.01M15 9h.01"></path></symbol>
+<symbol id="i-paperclip" viewbox="0 0 24 24"><path d="m9 12 5.5-5.5a3 3 0 0 1 4.2 4.2L11 18.4a5 5 0 0 1-7.1-7.1l8-8"></path></symbol>
+<symbol id="i-send" viewbox="0 0 24 24"><path d="m3 11 18-8-8 18-2-8z"></path><path d="m11 13 10-10"></path></symbol>
+<symbol id="i-folder" viewbox="0 0 24 24"><path d="M3 6h7l2 2h9v11H3z"></path><path d="M3 9h18"></path></symbol>
+<symbol id="i-play" viewbox="0 0 24 24"><path d="m8 5 11 7-11 7z"></path></symbol>
+<symbol id="i-pause" viewbox="0 0 24 24"><path d="M8 5v14M16 5v14"></path></symbol>
+<symbol id="i-volume" viewbox="0 0 24 24"><path d="M4 10h4l5-4v12l-5-4H4zM17 9a4 4 0 0 1 0 6M19 6a8 8 0 0 1 0 12"></path></symbol>
+<symbol id="i-fullscreen" viewbox="0 0 24 24"><path d="M4 9V4h5M15 4h5v5M20 15v5h-5M9 20H4v-5"></path></symbol>
+<symbol id="i-flag" viewbox="0 0 24 24"><path d="M5 21V4M5 5h11l-2 4 2 4H5"></path></symbol>
+</svg>
+<div class="app-shell" data-app-shell="">
+<aside aria-label="Dashboard navigation" class="sidebar" id="dashboard-sidebar">
+<div class="sidebar__brand">
+<a aria-label="Got U Nex Ref Home" class="brand-home-link" href="../../got-u-nex-ref-home/index.html"><img alt="Got U Nex Ref — Raising The Bar Officiating" src="assets/got-u-nex-ref-logo.png"/></a>
+</div>
+<nav aria-label="Platform modules" class="sidebar__nav">
+<a data-route="home" href="#home"><svg><use href="#i-home"></use></svg><span>Home</span></a>
+<a data-route="assignments" href="#assignments"><svg><use href="#i-calendar"></use></svg><span>Assignments</span></a>
+<a data-route="games" href="#games"><svg><use href="#i-trophy"></use></svg><span>Games</span></a>
+<a data-route="calendar" href="#calendar"><svg><use href="#i-calendar"></use></svg><span>Availability Calendar</span></a>
+<a data-route="schools" href="#schools"><svg><use href="#i-school"></use></svg><span>Schools</span></a>
+<a data-route="lab" href="#lab"><svg><use href="#i-lab"></use></svg><span>Lab</span></a>
+<a data-route="payments" href="#payments"><svg><use href="#i-card"></use></svg><span>Payments</span></a>
+<a data-route="tax-center" href="#tax-center"><svg><use href="#i-tax"></use></svg><span>Tax Center</span></a>
+<a data-route="forms" href="#forms"><svg><use href="#i-form"></use></svg><span>Forms</span></a>
+<a data-route="resources" href="#resources"><svg><use href="#i-book"></use></svg><span>Resources</span></a>
+<a data-route="shop" href="#shop"><svg><use href="#i-shop"></use></svg><span>Shop</span></a>
+<a data-route="messages" href="#messages"><svg><use href="#i-mail"></use></svg><span>Messages</span><b class="nav-badge" data-message-badge="" hidden=""></b></a>
+<a data-route="users" href="#users"><svg><use href="#i-user"></use></svg><span>Users</span></a>
+<a data-route="profile" href="#profile"><svg><use href="#i-user"></use></svg><span>My Profile</span></a>
+<a data-route="documents" href="#documents"><svg><use href="#i-file"></use></svg><span>Documents</span></a>
+<a data-route="id-card" href="#id-card"><svg><use href="#i-id"></use></svg><span>ID Card</span></a>
+<a data-route="reviews" href="#reviews"><svg><use href="#i-star"></use></svg><span>Reviews</span></a>
+<a data-route="support" href="#support"><svg><use href="#i-help"></use></svg><span>Support</span></a>
+<a data-route="settings" href="#settings"><svg><use href="#i-settings"></use></svg><span>Settings</span></a>
+</nav>
+<article class="locker-promo">
+<img alt="The Locker Room" src="assets/lab/locker-room-film.webp"/>
+<div class="locker-promo__shade"></div>
+<div class="locker-promo__content"><p>The</p><h2>Locker Room</h2><span>Gear. Community. Exclusives.</span><a data-route="lab" href="#lab">Enter The Locker Room <svg><use href="#i-chevron"></use></svg></a></div>
+</article>
+</aside>
+<div class="content-column">
+<header class="topbar">
+<button aria-controls="dashboard-sidebar" aria-expanded="false" class="mobile-menu" data-sidebar-toggle="" type="button"><svg><use href="#i-menu"></use></svg><span class="sr-only">Open navigation</span></button>
+<a aria-label="Got U Nex Ref Home" class="brand-home-link published-detail-brand" data-route="assignments" href="../../got-u-nex-ref-home/index.html"><img alt="Got U Nex Ref — Raising The Bar Officiating" src="assets/got-u-nex-ref-logo.png"/></a>
+<nav aria-label="Primary dashboard navigation" class="topbar__nav">
+<a data-route="home" href="#home">Home</a><a data-route="assignments" href="#assignments">Assignments</a><a data-route="games" href="#games">Games</a><a data-route="calendar" href="#calendar">Calendar</a><a data-route="schools" href="#schools">Schools</a><a data-route="lab" href="#lab">Lab</a><a data-route="payments" href="#payments">Payments</a><a data-route="tax-center" href="#tax-center">Tax Center</a><a data-route="forms" href="#forms">Forms</a><a data-route="resources" href="#resources">Resources</a><a data-route="shop" href="#shop">Shop</a>
+</nav>
+<div class="topbar__actions">
+<button aria-controls="notification-popover" aria-expanded="false" class="notification-button" data-notification-toggle="" type="button"><svg><use href="#i-bell"></use></svg><b data-notification-badge="" hidden=""></b><span class="sr-only">Open notifications</span></button>
+<div class="notification-popover" hidden="" id="notification-popover"><div><strong>Notifications</strong><button data-clear-notifications="" type="button">Mark all read</button></div><div data-notification-list=""></div></div>
+<button aria-controls="profile-menu" aria-expanded="false" class="profile-button" data-profile-toggle="" type="button"><span class="profile-button__avatar" data-profile-avatar="">GU</span><span class="profile-button__copy"><strong data-profile-name="">Set up profile</strong><small data-profile-role="">Account</small></span><svg><use href="#i-chevron"></use></svg></button>
+<div class="profile-menu" hidden="" id="profile-menu"><a data-route="profile" href="#profile">View Profile</a><a data-route="settings" href="#settings">Account Settings</a><button data-export-data="" type="button">Export Data</button></div>
+</div>
+</header>
+<main id="dashboard-main" tabindex="-1"><section aria-live="polite" class="module-view" id="module-view"></section></main>
+</div>
+</div>
+<div aria-atomic="true" aria-live="polite" class="dashboard-toast" data-toast="" hidden="" role="status"></div>
+</body>
+</html>

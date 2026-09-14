@@ -1,0 +1,4 @@
+(()=>{
+if(!window.FIBAWomenFoundationsCourse||!window.RefZoneCourseUICore)return;
+window.FIBAWomenCourseUI=window.RefZoneCourseUICore.create({trackId:'fiba-women',pathwayId:'foundations',course:window.FIBAWomenFoundationsCourse,icon:'assets/pathway-icons/refzone_university_fiba_women_course.png',courseLabel:'FIBA Women Bachelor’s-Level Professional Foundations',shortLabel:'FIBA WOMEN BACHELOR’S',routeBase:'#/course/fiba-women/foundations',programHref:'#/program/fiba-women/foundations',storePrefix:'fiba-women-bachelors',resourceFiles:[['courses/FIBA-Women-Bachelors-Degree-Handbook.md','Bachelor’s program handbook'],['courses/FIBA-Women-Bachelors-Coverage-Matrix.md','Coverage matrix'],['courses/FIBA-Women-Bachelors-Source-Report.md','Source report'],['courses/FIBA-Women-Bachelors-Review-Package.md','Review package']]});
+})();

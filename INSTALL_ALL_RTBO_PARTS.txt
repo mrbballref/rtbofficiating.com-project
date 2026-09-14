@@ -1,0 +1,15 @@
+RAISING THE BAR OFFICIATING — SEPARATE DOWNLOAD INSTALLATION
+
+These files are parts of one complete Raising The Bar Officiating platform.
+
+DOWNLOAD ALL PARTS 01–10.
+
+To reconstruct the complete website:
+1. Create one parent folder on your computer.
+2. Extract Parts 01 through 10 into that SAME parent folder.
+3. When prompted, MERGE folders with the same name.
+4. The resulting website folder will be:
+   Raising_The_Bar_Officiating_Complete_Platform
+5. Open Raising_The_Bar_Officiating_Complete_Platform/index.html
+
+Part 11 is the separate RefZone University course-transcript review/approval archive.

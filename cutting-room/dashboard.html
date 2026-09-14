@@ -1,0 +1,38 @@
+<!doctype html><html lang="en"><head>
+<script src="../assets/super-admin-access.js" data-super-admin-runtime></script><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="The Cutting Room film review platform."><title>Dashboard | The Cutting Room</title><link rel="stylesheet" href="assets/cutting-room.css"><script defer src="assets/db.js"></script><script type="module" src="assets/app.js"></script><link rel="stylesheet" href="../assets/super-admin-access.css" data-super-admin-access-style>
+</head><body data-page="dashboard"><header class="cr-header cr-rtbo-header" data-header>
+  <nav class="cr-rtbo-navbar" aria-label="The Cutting Room primary navigation">
+    <button class="cr-menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="crMobileNav" aria-label="Open navigation menu">
+      <span></span><span></span><span></span>
+    </button>
+
+    <div class="cr-rtbo-desktop-nav cr-rtbo-desktop-nav--left" aria-label="Primary navigation left">
+      <a class="cr-rtbo-nav-link" href="index.html">Home</a><a class="cr-rtbo-nav-link active" href="dashboard.html" aria-current="page">Dashboard</a><a class="cr-rtbo-nav-link" href="upload.html">Upload</a><a class="cr-rtbo-nav-link" href="library.html">Film Library</a>
+    </div>
+
+    <a class="cr-rtbo-brand" href="index.html" aria-label="The Cutting Room — return home">
+      <img src="assets/cutting-room-logo-transparent.png" alt="The Cutting Room Post Production logo">
+    </a>
+
+    <div class="cr-rtbo-desktop-nav cr-rtbo-desktop-nav--right" aria-label="Primary navigation right">
+      <a class="cr-rtbo-nav-link" href="review.html">Review Studio</a><a class="cr-rtbo-nav-link" href="evaluations.html">Evaluations</a><a class="cr-rtbo-nav-link" href="collaboration.html">Collaboration</a><a class="cr-rtbo-nav-link" href="downloads.html">Downloads</a>
+      <div class="cr-rtbo-utilities" aria-label="Platform utilities">
+        <button class="cr-rtbo-icon-btn" type="button" data-open-command title="Command palette" aria-label="Open command palette">⌘</button>
+        <a class="cr-rtbo-icon-btn" href="settings.html" title="Settings" aria-label="Settings">⚙</a>
+      </div>
+    </div>
+
+    <a class="cr-mobile-upload" href="upload.html">Upload</a>
+  </nav>
+
+  <nav class="cr-rtbo-mobile-menu" id="crMobileNav" aria-label="Mobile navigation">
+    <div class="cr-rtbo-mobile-menu__inner">
+      <a class="cr-rtbo-nav-link" href="index.html">Home</a><a class="cr-rtbo-nav-link active" href="dashboard.html" aria-current="page">Dashboard</a><a class="cr-rtbo-nav-link" href="upload.html">Upload</a><a class="cr-rtbo-nav-link" href="library.html">Film Library</a><a class="cr-rtbo-nav-link" href="review.html">Review Studio</a><a class="cr-rtbo-nav-link" href="evaluations.html">Evaluations</a><a class="cr-rtbo-nav-link" href="collaboration.html">Collaboration</a><a class="cr-rtbo-nav-link" href="downloads.html">Downloads</a>
+      <div class="cr-rtbo-mobile-actions">
+        <button class="cr-rtbo-mobile-command" type="button" data-open-command>Command Palette</button>
+        <a href="settings.html">Settings</a>
+      </div>
+    </div>
+  </nav>
+</header><main><section class="page-hero"><div class="cr-shell page-hero__row"><div><p class="eyebrow">OPERATIONS OVERVIEW</p><h1>Cutting Room Dashboard</h1><p>Live totals from film and review records stored in this browser. Nothing is preloaded.</p></div><div class="page-actions"><a class="btn primary" href="upload.html">Upload Film</a><a class="btn secondary" href="review.html">Review Studio</a></div></div></section><section class="section"><div class="cr-shell"><div class="grid cols-4"><div class="card metric"><span>Film Library</span><strong data-metric="filmCount">0</strong><small>uploaded video records</small></div><div class="card metric"><span>Full Games</span><strong data-metric="fullGameCount">0</strong><small>complete game files</small></div><div class="card metric"><span>Study Clips</span><strong data-metric="clipCount">0</strong><small>saved IN/OUT ranges</small></div><div class="card metric"><span>Review Markers</span><strong data-metric="markerCount">0</strong><small>tagged moments</small></div><div class="card metric"><span>Evaluations</span><strong data-metric="evaluationCount">0</strong><small>saved evaluations</small></div><div class="card metric"><span>Comments</span><strong data-metric="commentCount">0</strong><small>review thread entries</small></div><div class="card metric"><span>Video Storage</span><strong data-metric="storageUsed">0 B</strong><small>uploaded source files</small></div><div class="card metric"><span>Platform Mode</span><strong>LOCAL</strong><small>browser-based HTML/CSS/JS</small></div></div></div></section><section class="section"><div class="cr-shell"><div class="section-head"><div><h2>Recent Film</h2><p>Newest uploaded film records.</p></div><a class="btn secondary" href="library.html">View Library</a></div><div class="table-wrap"><table class="data-table"><thead><tr><th>Film</th><th>Type</th><th>Duration</th><th>Size</th><th>Status</th><th></th></tr></thead><tbody data-recent-films></tbody></table></div></div></section><section class="section"><div class="cr-shell"><div class="section-head"><div><h2>Recent Activity</h2><p>Actions performed in this browser.</p></div></div><div class="card card-pad activity-list" data-activity-list></div></div></section></main><footer class="cr-footer"><div><strong>The Cutting Room</strong><span>Film review and development platform by Raising The Bar Officiating.</span></div><nav><a href="settings.html">Settings</a><a href="README.html">Platform Guide</a></nav></footer><dialog class="cr-dialog command-dialog" data-command-dialog><button class="dialog-x" data-close-dialog aria-label="Close">×</button><p class="eyebrow">QUICK COMMANDS</p><h2>Go Anywhere.</h2><div class="command-grid"><a href="upload.html">Upload Film</a><a href="library.html">Open Film Library</a><a href="review.html">Start Review</a><a href="evaluations.html">Create Evaluation</a><a href="collaboration.html">Review Packets</a><a href="downloads.html">Export Center</a></div></dialog><div class="toast" data-toast role="status" aria-live="polite"></div><script defer src="../cms/runtime.js" data-rtbo-cms-runtime data-cms-page="cutting-room/dashboard.html"></script>
+</body></html>

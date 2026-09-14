@@ -1,0 +1,51 @@
+{
+  "program": "EuroLeague Women Basketball Officiating — Bachelor’s, Master’s, and PhD-Level Professional Pathways",
+  "generated": "2026-08-06T19:59:18.506110+00:00",
+  "counts": {
+    "courses": 56,
+    "lessons": 768,
+    "assessments": 768,
+    "videoScripts": 768,
+    "videoScenes": 4608,
+    "syllabi": 56,
+    "courseScriptPackages": 56
+  },
+  "effectiveDateControl": {
+    "currentBefore2026-10-01": "FIBA Official Basketball Rules 2024 and Interpretations 2024",
+    "effective2026-10-01": "FIBA Official Basketball Rules 2026 v1.1 and authorized supporting materials",
+    "competition": "Regulations Governing the EuroLeague Women 2026-2027 and Regulations for European Club Competitions 2026-2027"
+  },
+  "files": {
+    "courseData": [
+      "courses/euro-women-foundations.js",
+      "courses/euro-women-advancement.js",
+      "courses/euro-women-elite.js"
+    ],
+    "interfaces": [
+      "courses/euro-women-course-ui.js",
+      "courses/euro-women-advancement-course-ui.js",
+      "courses/euro-women-elite-course-ui.js"
+    ],
+    "handbooks": [
+      "courses/EuroLeague-Women-Bachelors-Degree-Handbook.md",
+      "courses/EuroLeague-Women-Masters-Degree-Handbook.md",
+      "courses/EuroLeague-Women-PhD-Degree-Handbook.md"
+    ],
+    "coverageMatrices": [
+      "courses/EuroLeague-Women-Bachelors-Coverage-Matrix.md",
+      "courses/EuroLeague-Women-Masters-Coverage-Matrix.md",
+      "courses/EuroLeague-Women-PhD-Coverage-Matrix.md"
+    ],
+    "sourceReports": [
+      "courses/EuroLeague-Women-Bachelors-Source-Report.md",
+      "courses/EuroLeague-Women-Masters-Source-Report.md",
+      "courses/EuroLeague-Women-PhD-Source-Report.md"
+    ],
+    "reviewPackages": [
+      "courses/EuroLeague-Women-Bachelors-Review-Package.md",
+      "courses/EuroLeague-Women-Masters-Review-Package.md",
+      "courses/EuroLeague-Women-PhD-Review-Package.md"
+    ],
+    "summary": "courses/EuroLeague-Women-All-Degrees-Program-Summary.md"
+  }
+}

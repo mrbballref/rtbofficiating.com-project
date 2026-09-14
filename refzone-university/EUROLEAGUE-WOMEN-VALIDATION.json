@@ -1,0 +1,28 @@
+{
+  "status": "passed",
+  "checks": [
+    {
+      "file": "euro-women-foundations.js",
+      "courses": 24,
+      "lessons": 288,
+      "assessments": 288,
+      "videoScenes": 1728
+    },
+    {
+      "file": "euro-women-advancement.js",
+      "courses": 12,
+      "lessons": 180,
+      "assessments": 180,
+      "videoScenes": 1080
+    },
+    {
+      "file": "euro-women-elite.js",
+      "courses": 20,
+      "lessons": 300,
+      "assessments": 300,
+      "videoScenes": 1800
+    }
+  ],
+  "syllabi": 56,
+  "courseScriptPackages": 56
+}

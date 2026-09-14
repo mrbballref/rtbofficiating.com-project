@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>My Profile — Got U Nex Ref</title>
+<link href="styles.css" rel="stylesheet"/>
+<link href="incident-center.css" rel="stylesheet"/><link href="document-center.css" rel="stylesheet"/><link href="payment-center.css" rel="stylesheet"/></head>
+<body>
+<svg aria-hidden="true" class="svg-sprite">
+<symbol id="i-grid" viewbox="0 0 24 24"><rect height="7" rx="1" width="7" x="3" y="3"></rect><rect height="7" rx="1" width="7" x="14" y="3"></rect><rect height="7" rx="1" width="7" x="3" y="14"></rect><rect height="7" rx="1" width="7" x="14" y="14"></rect></symbol>
+<symbol id="i-calendar" viewbox="0 0 24 24"><rect height="16" rx="2" width="18" x="3" y="5"></rect><path d="M16 3v4M8 3v4M3 10h18M8 14h.01M12 14h.01M16 14h.01M8 18h.01M12 18h.01"></path></symbol>
+<symbol id="i-back" viewbox="0 0 24 24"><circle cx="12" cy="12" r="9"></circle><path d="M13.5 8 9.5 12l4 4"></path></symbol>
+<symbol id="i-mail" viewbox="0 0 24 24"><rect height="14" rx="2" width="18" x="3" y="5"></rect><path d="m4 7 8 6 8-6"></path></symbol>
+<symbol id="i-bell" viewbox="0 0 24 24"><path d="M18 8a6 6 0 0 0-12 0c0 7-3 7-3 9h18c0-2-3-2-3-9"></path><path d="M10 21h4"></path></symbol>
+<symbol id="i-home" viewbox="0 0 24 24"><path d="m3 11 9-8 9 8"></path><path d="M5 10v10h14V10M9 20v-6h6v6"></path></symbol>
+<symbol id="i-user" viewbox="0 0 24 24"><circle cx="12" cy="7" r="4"></circle><path d="M4 21c0-4.2 3.6-7 8-7s8 2.8 8 7"></path></symbol>
+<symbol id="i-file" viewbox="0 0 24 24"><path d="M6 2h8l4 4v16H6z"></path><path d="M14 2v5h5M9 12h6M9 16h6"></path></symbol>
+<symbol id="i-card" viewbox="0 0 24 24"><rect height="14" rx="2" width="18" x="3" y="5"></rect><circle cx="9" cy="11" r="2"></circle><path d="M6.5 16c.7-1.7 1.8-2.5 3.5-2.5S12.8 14.3 13.5 16M15 9h3M15 12h3"></path></symbol>
+<symbol id="i-star" viewbox="0 0 24 24"><path d="m12 2 2.9 6 6.6.9-4.8 4.7 1.2 6.6-5.9-3.1-5.9 3.1 1.2-6.6L2.5 9l6.6-.9z"></path></symbol>
+<symbol id="i-board" viewbox="0 0 24 24"><rect height="14" rx="2" width="18" x="3" y="4"></rect><path d="M8 22h8M12 18v4M7 8h5M7 11h7M16 8h1"></path></symbol>
+<symbol id="i-lock" viewbox="0 0 24 24"><rect height="11" rx="2" width="16" x="4" y="10"></rect><path d="M8 10V7a4 4 0 0 1 8 0v3"></path></symbol>
+<symbol id="i-shield" viewbox="0 0 24 24"><path d="M12 2 20 5v6c0 5-3.2 8.6-8 11-4.8-2.4-8-6-8-11V5z"></path><path d="m9 12 2 2 4-5"></path></symbol>
+<symbol id="i-help" viewbox="0 0 24 24"><circle cx="12" cy="12" r="9"></circle><path d="M9.7 9a2.5 2.5 0 1 1 3.3 2.4c-.8.3-1 1-1 1.8M12 17h.01"></path></symbol>
+<symbol id="i-gear" viewbox="0 0 24 24"><circle cx="12" cy="12" r="3"></circle><path d="M19 13.5v-3l-2-.6a7.4 7.4 0 0 0-.7-1.7l1-1.8-2.1-2.1-1.8 1a7.4 7.4 0 0 0-1.7-.7L11 2.5H8l-.6 2.1a7.4 7.4 0 0 0-1.7.7l-1.8-1-2.1 2.1 1 1.8a7.4 7.4 0 0 0-.7 1.7L0 10.5v3l2.1.6c.2.6.4 1.2.7 1.7l-1 1.8 2.1 2.1 1.8-1c.5.3 1.1.5 1.7.7L8 21.5h3l.6-2.1c.6-.2 1.2-.4 1.7-.7l1.8 1 2.1-2.1-1-1.8c.3-.5.5-1.1.7-1.7z"></path></symbol>
+<symbol id="i-clock" viewbox="0 0 24 24"><circle cx="12" cy="12" r="9"></circle><path d="M12 7v5l3 2"></path></symbol>
+<symbol id="i-pin" viewbox="0 0 24 24"><path d="M12 22s7-6 7-12a7 7 0 1 0-14 0c0 6 7 12 7 12z"></path><circle cx="12" cy="10" r="2"></circle></symbol>
+<symbol id="i-phone" viewbox="0 0 24 24"><path d="M6.5 3 9 7.5 7.3 9c1.4 3.2 3.5 5.3 6.7 6.7L15.5 14 20 16.5l-1 4C11.5 22 2 12.5 3.5 5z"></path></symbol>
+<symbol id="i-edit" viewbox="0 0 24 24"><path d="M4 20h4l11-11-4-4L4 16zM13.5 6.5l4 4"></path></symbol>
+<symbol id="i-dots" viewbox="0 0 24 24"><circle cx="12" cy="5" r="1"></circle><circle cx="12" cy="12" r="1"></circle><circle cx="12" cy="19" r="1"></circle></symbol>
+<symbol id="i-download" viewbox="0 0 24 24"><path d="M12 3v12M8 11l4 4 4-4M4 20h16"></path></symbol>
+<symbol id="i-folder" viewbox="0 0 24 24"><path d="M3 6h7l2 2h9v11H3z"></path></symbol>
+<symbol id="i-people" viewbox="0 0 24 24"><circle cx="9" cy="8" r="3"></circle><path d="M3 20c0-3.4 2.6-6 6-6s6 2.6 6 6"></path><circle cx="17" cy="9" r="2"></circle><path d="M16 14c3 0 5 2 5 5"></path></symbol>
+<symbol id="i-bolt" viewbox="0 0 24 24"><path d="M13 2 5 13h6l-1 9 8-12h-6z"></path></symbol>
+<symbol id="i-upload" viewbox="0 0 24 24"><path d="M12 16V4M8 8l4-4 4 4M4 14v7h16v-7"></path></symbol>
+<symbol id="i-chat" viewbox="0 0 24 24"><path d="M4 4h16v12H9l-5 4z"></path><path d="M8 9h.01M12 9h.01M16 9h.01"></path></symbol>
+<symbol id="i-checkcal" viewbox="0 0 24 24"><rect height="16" rx="2" width="18" x="3" y="5"></rect><path d="M8 3v4M16 3v4M3 10h18m-11 6 2 2 4-5"></path></symbol>
+<symbol id="i-monitor" viewbox="0 0 24 24"><rect height="14" rx="2" width="18" x="3" y="4"></rect><path d="M8 22h8M12 18v4M7 9h3l2 2 5-4"></path></symbol>
+<symbol id="i-headset" viewbox="0 0 24 24"><path d="M4 14v-2a8 8 0 0 1 16 0v2M4 14h3v6H5a1 1 0 0 1-1-1zM20 14h-3v6h2a1 1 0 0 0 1-1z"></path></symbol>
+<symbol id="i-plus" viewbox="0 0 24 24"><path d="M12 5v14M5 12h14"></path></symbol>
+<symbol id="i-save" viewbox="0 0 24 24"><path d="M5 3h12l2 2v16H5zM8 3v6h8V3M8 21v-7h8v7"></path></symbol>
+<symbol id="i-eye" viewbox="0 0 24 24"><path d="M2 12s3.5-6 10-6 10 6 10 6-3.5 6-10 6S2 12 2 12z"></path><circle cx="12" cy="12" r="2.5"></circle></symbol>
+<symbol id="i-print" viewbox="0 0 24 24"><path d="M7 8V3h10v5M7 17H5a2 2 0 0 1-2-2v-5h18v5a2 2 0 0 1-2 2h-2M7 14h10v7H7z"></path></symbol>
+<symbol id="i-trash" viewbox="0 0 24 24"><path d="M4 7h16M9 7V4h6v3M7 7l1 14h8l1-14M10 11v6M14 11v6"></path></symbol>
+<symbol id="i-search" viewbox="0 0 24 24"><circle cx="11" cy="11" r="7"></circle><path d="m20 20-4-4"></path></symbol>
+<symbol id="i-chevron-down" viewbox="0 0 24 24"><path d="m7 9 5 5 5-5"></path></symbol>
+<symbol id="i-chevron-left" viewbox="0 0 24 24"><path d="m15 18-6-6 6-6"></path></symbol>
+<symbol id="i-chevron-right" viewbox="0 0 24 24"><path d="m9 18 6-6-6-6"></path></symbol>
+<symbol id="i-alert" viewbox="0 0 24 24"><path d="M12 3 2.8 20h18.4L12 3z"></path><path d="M12 9v5M12 17h.01"></path></symbol></svg>
+<div class="app-shell">
+<aside aria-label="Personal profile navigation" class="sidebar">
+<div class="brand-wrap">
+<a aria-label="Got U Nex Ref Home" class="brand-home-link" href="got-u-nex-ref-home/index.html"><img alt="Got U Nex Ref" class="brand-logo" src="assets/got-u-nex-ref-logo.png"/></a>
+</div>
+<nav class="side-nav">
+<a class="side-link" data-view="dashboard" href="#dashboard"><svg><use href="#i-grid"></use></svg><span>Dashboard</span></a>
+<a class="side-link" data-view="assignments" href="#assignments"><svg><use href="#i-calendar"></use></svg><span>My Assignments</span></a>
+<a class="side-link" data-view="calendar" href="#calendar"><svg><use href="#i-calendar"></use></svg><span>Calendar</span></a>
+<a class="side-link" data-view="availability" href="#availability"><svg><use href="#i-back"></use></svg><span>Availability</span></a>
+<a class="side-link" data-view="messages" href="#messages"><svg><use href="#i-mail"></use></svg><span>Messages</span><span class="nav-badge" hidden="" id="messageBadge">0</span></a>
+<a class="side-link" data-view="notifications" href="#notifications"><svg><use href="#i-bell"></use></svg><span>Notifications</span><span class="nav-badge" hidden="" id="notificationSidebarBadge">0</span></a>
+<a class="side-link active" data-view="profile" href="#profile"><svg><use href="#i-user"></use></svg><span>My Profile</span></a>
+<a class="side-link" data-view="documents" href="#documents"><svg><use href="#i-file"></use></svg><span>Documents</span></a>
+<a class="side-link" data-view="id-card" href="#id-card"><svg><use href="#i-card"></use></svg><span>ID Card</span></a><a class="side-link" data-view="payments" href="#payments"><svg><use href="#i-card"></use></svg><span>Payments</span></a>
+<a class="side-link" data-view="evaluations" href="#evaluations"><svg><use href="#i-star"></use></svg><span>Evaluations</span></a>
+<a class="side-link" data-view="incidents" href="#incidents"><svg><use href="#i-alert"></use></svg><span>Incident Center</span></a><a class="side-link" data-view="support" href="#support"><svg><use href="#i-help"></use></svg><span>Support</span></a>
+<a class="side-link" data-view="settings" href="#settings"><svg><use href="#i-gear"></use></svg><span>Settings</span></a>
+</nav>
+</aside>
+<main class="dashboard" data-default-view="profile" id="mainContent">
+<section class="app-view" data-view-panel="dashboard" hidden="">
+<header class="view-heading"><div><span class="view-eyebrow">PERSONAL PORTAL</span><h1>Dashboard</h1><p>Your assignments, compliance, documents, and availability in one place.</p></div><button class="primary-btn" data-route="profile">Back to My Profile</button></header>
+<div class="summary-grid" id="dashboardSummary"></div>
+<div class="content-grid two-col">
+<article class="panel content-panel"><header class="panel-header"><h2><svg><use href="#i-calendar"></use></svg>Assignment Status</h2><button class="text-action" data-route="assignments">View Assignments</button></header><div class="stack-list" id="dashboardAssignmentStatus"></div></article>
+<article class="panel content-panel"><header class="panel-header"><h2><svg><use href="#i-file"></use></svg>Required Actions</h2><button class="text-action" data-route="documents">Documents</button></header><div class="stack-list" id="dashboardRequiredActions"></div></article>
+</div>
+</section>
+<section class="app-view assignment-reference-view" data-view-panel="assignments" hidden="">
+<div class="assignment-workspace">
+<div class="assignment-utility-bar">
+<div class="assignment-utility-spacer"></div>
+<label aria-label="Search assignments" class="assignment-top-search">
+<svg><use href="#i-search"></use></svg>
+<input autocomplete="off" id="assignmentTopSearch" placeholder="Search..." type="search"/>
+</label>
+<button aria-label="Open notifications" class="assignment-utility-icon" data-route="notifications" type="button">
+<svg><use href="#i-bell"></use></svg>
+<span class="assignment-utility-badge" hidden="" id="assignmentNotificationBadge">0</span>
+</button>
+<button aria-label="Open messages" class="assignment-utility-icon" data-route="messages" type="button">
+<svg><use href="#i-chat"></use></svg>
+<span class="assignment-utility-badge" hidden="" id="assignmentMessageBadge">0</span>
+</button>
+<button aria-label="Back to My Profile" class="assignment-user-menu" data-route="profile" type="button">
+<span class="assignment-user-avatar"><img alt="" data-profile-photo="" src="assets/profile-placeholder.svg"/></span>
+<span class="assignment-user-copy">
+<strong data-profile-display="utilityName">Profile not completed</strong>
+<small data-profile-display="role">Role not provided</small>
+</span>
+<svg class="assignment-user-chevron"><use href="#i-chevron-down"></use></svg>
+</button>
+</div>
+<div class="assignment-heading-block">
+<div>
+<h1>Assignments</h1>
+<p>Create, manage, and track assignment submissions.</p>
+</div>
+<label class="assignment-date-control">
+<svg><use href="#i-calendar"></use></svg>
+<span id="assignmentDateRangeLabel">Current Month</span>
+<svg class="assignment-date-chevron"><use href="#i-chevron-down"></use></svg>
+<input aria-label="Filter assignments by month" id="assignmentMonthFilter" type="month"/>
+</label>
+</div>
+<div aria-label="Assignments views" class="assignment-primary-tabs" role="tablist">
+<button class="assignment-primary-tab active" data-assignment-view="all" type="button">All Assignments</button>
+<button class="assignment-primary-tab" data-assignment-view="mine" type="button">My Assignments</button>
+<button class="assignment-primary-tab" data-assignment-view="completed" type="button">Completed</button>
+</div>
+<div class="assignment-general-panel" id="assignmentGeneralPanel">
+<div class="assignment-filter-toolbar">
+<label class="assignment-table-search">
+<input autocomplete="off" id="assignmentTableSearch" placeholder="Search assignments..." type="search"/>
+<svg><use href="#i-search"></use></svg>
+</label>
+<label class="assignment-select-wrap">
+<select aria-label="Filter by status" id="assignmentStatusFilter">
+<option value="">All Statuses</option>
+</select>
+<svg><use href="#i-chevron-down"></use></svg>
+</label>
+<label class="assignment-select-wrap">
+<select aria-label="Filter by type" id="assignmentTypeFilter">
+<option value="">All Types</option>
+</select>
+<svg><use href="#i-chevron-down"></use></svg>
+</label>
+<label class="assignment-select-wrap assignment-team-filter">
+<select aria-label="Filter by class or team" id="assignmentTeamFilter">
+<option value="">All Classes/Teams</option>
+</select>
+<svg><use href="#i-chevron-down"></use></svg>
+</label>
+<button class="assignment-new-btn" data-action="new-assignment" data-requires-permission="assignments.create" hidden="" type="button">
+<svg><use href="#i-plus"></use></svg>
+<span>New Assignment</span>
+</button>
+</div>
+<section aria-label="Assignments table" class="assignment-table-card">
+<div class="assignment-table-scroll">
+<table class="assignment-reference-table">
+<thead>
+<tr>
+<th>Assignment</th>
+<th>Type</th>
+<th>Class/Team</th>
+<th>
+<button class="assignment-sort-btn" data-action="sort-assignments-date" type="button">
+                        Due Date
+                        <svg><use href="#i-chevron-down"></use></svg>
+</button>
+</th>
+<th>Submissions</th>
+<th>Status</th>
+<th class="assignment-actions-heading">Actions</th>
+</tr>
+</thead>
+<tbody id="assignmentsTableBody"></tbody>
+</table>
+<div class="assignment-table-empty" hidden="" id="assignmentsTableEmpty">
+<span class="assignment-empty-icon"><svg><use href="#i-calendar"></use></svg></span>
+<h3>No assignments found</h3>
+<p>Assignments published to this account will appear here. Search and filter controls remain available even when the list is empty.</p>
+</div>
+</div>
+<footer class="assignment-table-footer">
+<span id="assignmentShowingText">Showing 0 to 0 of 0 assignments</span>
+<div aria-label="Assignment pagination" class="assignment-pagination">
+<button aria-label="Previous page" id="assignmentPagePrev" type="button"><svg><use href="#i-chevron-left"></use></svg></button>
+<span id="assignmentPageNumbers"></span>
+<button aria-label="Next page" id="assignmentPageNext" type="button"><svg><use href="#i-chevron-right"></use></svg></button>
+</div>
+</footer>
+</section></div>
+<section aria-label="My game assignments" class="my-games-panel" hidden="" id="myGamesPanel">
+<header class="my-games-heading">
+<span class="my-games-heading-icon"><svg><use href="#i-calendar"></use></svg></span>
+<div>
+<h2>My Games</h2>
+<p>View and manage your game assignments.</p>
+</div>
+</header>
+<section aria-label="Game assignment summary" class="my-games-summary">
+<article class="my-games-stat">
+<span class="my-games-stat-icon"><svg><use href="#i-clipboard"></use></svg></span>
+<div><span>Total Assignments</span><strong id="myGamesTotal">0</strong><small>This Season</small></div>
+</article>
+<article class="my-games-stat">
+<span class="my-games-stat-icon round"><svg><use href="#i-check-circle"></use></svg></span>
+<div><span>Accepted</span><strong id="myGamesAccepted">0</strong><small id="myGamesAcceptedPct">0%</small></div>
+</article>
+<article class="my-games-stat">
+<span class="my-games-stat-icon round"><svg><use href="#i-clock"></use></svg></span>
+<div><span>Pending</span><strong id="myGamesPending">0</strong><small id="myGamesPendingPct">0%</small></div>
+</article>
+<article class="my-games-stat">
+<span class="my-games-stat-icon"><svg><use href="#i-route"></use></svg></span>
+<div><span>Travel Miles</span><strong id="myGamesMiles">0</strong><small>Season Total</small></div>
+</article>
+</section>
+<div class="my-games-toolbar">
+<div aria-label="Game status" class="my-games-tabs" role="tablist">
+<button class="my-games-tab active" data-game-filter="upcoming" type="button">Upcoming</button>
+<button class="my-games-tab" data-game-filter="accepted" type="button">Accepted</button>
+<button class="my-games-tab" data-game-filter="pending" type="button">Pending</button>
+<button class="my-games-tab" data-game-filter="declined" type="button">Declined</button>
+<button class="my-games-tab" data-game-filter="past" type="button">Past</button>
+</div>
+<div class="my-games-toolbar-actions">
+<button aria-expanded="false" class="my-games-filter-btn" data-action="toggle-game-filters" type="button">
+<svg><use href="#i-filter"></use></svg><span>Filters</span>
+</button>
+<label class="my-games-sort">
+<select aria-label="Sort game assignments" id="myGamesSort">
+<option value="soonest">Sort: Date (Soonest)</option>
+<option value="latest">Sort: Date (Latest)</option>
+</select>
+<svg><use href="#i-chevron-down"></use></svg>
+</label>
+</div>
+</div>
+<div class="my-games-filter-drawer" hidden="" id="myGamesFilterDrawer">
+<label>From<input id="myGamesFromDate" type="date"/></label>
+<label>To<input id="myGamesToDate" type="date"/></label>
+<label>Level
+                <select id="myGamesLevelFilter"><option value="">All Levels</option></select>
+</label>
+<label>Location<input id="myGamesLocationFilter" placeholder="City, venue, or address" type="search"/></label>
+<button class="outline-btn" data-action="clear-game-filters" type="button">Clear Filters</button>
+</div>
+<div class="my-games-list" id="myGamesList"></div>
+<div class="my-games-empty" hidden="" id="myGamesEmpty">
+<span><svg><use href="#i-calendar"></use></svg></span>
+<h3>No game assignments found</h3>
+<p>Game assignments published to this user by an authorized assignor or administrator will appear here.</p>
+</div>
+<footer class="my-games-footer">
+<p id="myGamesTimezone">Times display in the timezone supplied by your profile.</p>
+<div aria-label="My Games pagination" class="my-games-pagination">
+<button aria-label="Previous page" id="myGamesPrev" type="button"><svg><use href="#i-chevron-left"></use></svg></button>
+<span id="myGamesPageNumbers"></span>
+<button aria-label="Next page" id="myGamesNext" type="button"><svg><use href="#i-chevron-right"></use></svg></button>
+</div>
+</footer>
+</section>
+</div>
+</section>
+<section class="app-view" data-view-panel="calendar" hidden="">
+<header class="view-heading"><div><span class="view-eyebrow">SCHEDULE</span><h1>Calendar</h1><p>Your accepted game assignments and saved availability appear together here.</p></div><div class="heading-actions"><button class="outline-btn profile-return-btn" data-route="profile">← Back to My Profile</button><button class="outline-btn" data-action="calendar-today">Today</button></div></header>
+<article class="panel content-panel"><div class="calendar-toolbar"><button class="icon-text-btn" data-action="calendar-prev">← Previous</button><h2 id="calendarMonthLabel"></h2><button class="icon-text-btn" data-action="calendar-next">Next →</button></div><div class="month-grid" id="calendarGrid"></div></article>
+</section>
+<section class="app-view" data-view-panel="availability" hidden="">
+<header class="view-heading"><div><span class="view-eyebrow">SCHEDULING</span><h1>Availability</h1><p>Click each time block to cycle between Available, Limited, and Unavailable, then save your changes.</p></div><div class="heading-actions"><button class="outline-btn profile-return-btn" data-route="profile">← Back to My Profile</button><button class="primary-btn" data-action="save-availability"><svg><use href="#i-save"></use></svg>Save Availability</button></div></header>
+<article class="panel content-panel"><div class="availability-editor" id="availabilityEditor"></div><div class="availability-help"><span class="status-key unset-key">○ Not Set</span><span class="status-key available-key">✓ Available</span><span class="status-key limited-key">• Limited</span><span class="status-key unavailable-key">— Unavailable</span></div></article>
+</section>
+<section class="app-view" data-view-panel="messages" hidden="">
+<header class="view-heading"><div><span class="view-eyebrow">COMMUNICATIONS</span><h1>Messages</h1><p>Messages from other users, the super admin, assignors, and authorized administrators appear here.</p></div><div class="heading-actions"><button class="outline-btn profile-return-btn" data-route="profile">← Back to My Profile</button><button class="primary-btn" data-action="compose-message"><svg><use href="#i-plus"></use></svg>New Message</button></div></header>
+<div class="content-grid messages-layout"><article class="panel content-panel"><div class="section-title-row"><h2>Inbox</h2><button class="text-action" data-action="mark-all-read">Mark all read</button></div><div class="stack-list" id="messageList"></div></article><article class="panel content-panel"><div class="empty-state" id="messageReader">Select a message to read it.</div></article></div>
+</section>
+<section class="app-view" data-view-panel="notifications" hidden="">
+<div class="content-panel panel">
+<h1>Notifications</h1>
+<p>The Notifications Center opens as a dedicated page without the profile navigation or sidebar.</p>
+<a class="primary-btn" href="notifications.html">Open Notifications</a>
+</div>
+</section>
+<section class="app-view active" data-view-panel="profile">
+<section class="profile-hero panel">
+<div class="profile-avatar-col">
+<div class="avatar-ring"><div class="avatar-ring-inner"><img alt="Profile not completed" data-profile-photo="" src="assets/profile-placeholder.svg"/></div></div>
+<button class="outline-btn edit-profile" data-action="edit-profile"><svg><use href="#i-edit"></use></svg><span>Edit Profile</span></button>
+</div>
+<div class="identity-block">
+<h1 data-profile-display="fullName">Profile not completed</h1>
+<div class="official-id">Official ID: <span data-profile-display="officialId">Not issued</span></div>
+<div class="contact-list">
+<div><svg><use href="#i-mail"></use></svg><span data-profile-display="email">Not provided</span></div>
+<div><svg><use href="#i-phone"></use></svg><span data-profile-display="phone">Not provided</span></div>
+<div><svg><use href="#i-pin"></use></svg><span data-profile-display="streetAddress">Not provided</span></div>
+<div><svg><use href="#i-pin"></use></svg><span data-profile-display="cityLine">Not provided</span></div>
+<div><svg><use href="#i-clock"></use></svg><span data-profile-display="timezone">Not provided</span></div>
+</div>
+</div>
+<div class="profile-data data-column divider-left">
+<div class="data-row"><span>Primary Sport</span><strong data-profile-display="primarySport">Not provided</strong></div>
+<div class="data-row"><span>Years of Experience</span><strong data-profile-display="yearsExperience">Not provided</strong></div>
+<div class="data-row"><span>Preferred Level</span><strong data-profile-display="preferredLevel">Not provided</strong></div>
+<div class="data-row"><span>Uniform Size</span><strong data-profile-display="uniformSize">Not provided</strong></div>
+<div class="data-row"><span>NFHS Number</span><strong data-profile-display="nfhsNumber">Not provided</strong></div>
+</div>
+<div class="verification-block divider-left">
+<div class="verify-row"><span>Account Status</span><strong><i class="status-dot"></i><span data-profile-display="accountStatus">Not on file</span></strong></div>
+<div class="verify-row"><span>Background Check</span><strong><i class="status-dot"></i><span data-profile-display="backgroundStatus">Not on file</span><small data-profile-display="backgroundDate"></small></strong></div>
+<div class="verify-row"><span>SafeSport Status</span><strong><i class="status-dot"></i><span data-profile-display="safeSportStatus">Not on file</span><small data-profile-display="safeSportDate"></small></strong></div>
+<div class="verified-badge"><span class="seal">✓</span> VERIFIED <span data-profile-display="roleUpper">ROLE NOT PROVIDED</span></div>
+</div>
+<div aria-label="Profile communication controls" class="profile-utility-block">
+<button aria-label="Open notifications and message alerts" class="hero-alert-button" data-route="notifications" type="button">
+<svg><use href="#i-bell"></use></svg><span class="hero-alert-badge" hidden="" id="heroAlertBadge">0</span>
+</button>
+<button aria-label="Edit your profile" class="hero-user-button" data-action="edit-profile" type="button">
+<img alt="" data-profile-photo="" src="assets/profile-placeholder.svg"/>
+<span><strong data-profile-display="utilityName">Profile not completed</strong><small data-profile-display="role">Role not provided</small></span>
+</button>
+</div>
+</section>
+<section aria-label="Communication summaries" class="profile-communication-grid">
+<article class="panel communication-widget message-widget">
+<header class="panel-header"><h2><svg><use href="#i-mail"></use></svg>Messages <span class="summary-count" id="profileMessageCount">0</span></h2><div class="header-actions"><button class="text-action" data-route="messages">View All</button><button aria-label="New message" class="icon-btn" data-action="compose-message"><svg><use href="#i-plus"></use></svg></button></div></header>
+<div class="communication-summary-list" id="profileMessageSummary"></div>
+</article>
+<article class="panel communication-widget notification-widget">
+<header class="panel-header"><h2><svg><use href="#i-bell"></use></svg>Notifications <span class="summary-count" id="profileNotificationCount">0</span></h2><div class="header-actions"><button class="text-action" data-route="notifications">View All</button><button aria-label="Mark notifications read" class="icon-btn" data-action="mark-all-notifications-read"><svg><use href="#i-checkcal"></use></svg></button></div></header>
+<div class="communication-summary-list" id="profileNotificationSummary"></div>
+</article>
+</section>
+<section class="dashboard-grid top-grid">
+<article class="panel assignment-panel" id="upcoming">
+<header class="panel-header"><h2><svg><use href="#i-calendar"></use></svg>Upcoming Assignments</h2><div class="header-actions"><button class="text-action" data-route="assignments">View All</button><button aria-label="Assignment menu" class="icon-btn dots" data-menu="assignments"><svg><use href="#i-dots"></use></svg></button></div></header>
+<div class="assignment-list" id="profileAssignmentList"></div><div class="panel-footnote">All times shown in your selected time zone</div>
+</article>
+<article class="panel documents-panel" id="profile-documents">
+<header class="panel-header"><h2><svg><use href="#i-file"></use></svg>Recent Documents</h2><div class="header-actions"><button class="text-action" data-route="documents">View All</button><button aria-label="Documents menu" class="icon-btn dots" data-menu="documents"><svg><use href="#i-dots"></use></svg></button></div></header>
+<div class="document-list" id="profileDocumentList"></div><button class="outline-btn full-width" data-route="documents"><svg><use href="#i-folder"></use></svg>Go to Documents</button>
+</article>
+<article class="panel id-card-panel" id="profile-id-card">
+<header class="panel-header"><h2><svg><use href="#i-card"></use></svg>ID Card Summary</h2><button aria-label="ID card menu" class="icon-btn dots" data-menu="id-card"><svg><use href="#i-dots"></use></svg></button></header>
+<div class="id-card-stage" id="profileIdCardStage">
+<div class="id-mini-card front"><span class="card-label">FRONT</span><div class="front-top"><img alt="" class="card-shield" src="assets/rtbo-shield.png"/><img alt="Profile not completed" class="card-photo" data-profile-photo="" src="assets/profile-placeholder.svg"/></div><div class="card-person" data-profile-display="cardName">PROFILE<br/>NOT SET</div><div class="card-role" data-profile-display="roleUpper">ROLE NOT PROVIDED</div><div class="card-id">ID: <span data-profile-display="officialId">Not issued</span></div><div class="card-exp">EXPIRES: <span data-profile-display="idExpiry">Not issued</span></div></div>
+<div class="id-mini-card back"><span class="card-label">BACK</span><img alt="" class="back-shield" src="assets/rtbo-shield.png"/><div class="back-copy">AUTHORIZED <span data-profile-display="roleUpper">ROLE NOT PROVIDED</span><br/>GOT U NEX REF<br/>RAISING THE BAR OFFICIATING</div><div aria-label="Credential QR not issued" class="qr-placeholder">QR<br/><span>NOT ISSUED</span></div><div class="back-url">WWW.GOTUNEXREF.COM</div></div>
+</div><button class="outline-btn full-width" data-route="id-card"><svg><use href="#i-card"></use></svg>View / Manage ID Card</button>
+</article>
+</section>
+<section class="dashboard-grid bottom-grid">
+<article class="panel availability-panel" id="profile-availability"><header class="panel-header"><h2><svg><use href="#i-calendar"></use></svg>Availability This Week</h2><button aria-label="Availability menu" class="icon-btn dots" data-menu="availability"><svg><use href="#i-dots"></use></svg></button></header><div aria-label="Availability this week" class="availability-table" id="profileAvailabilityTable" role="table"></div><div class="availability-legend"><span class="legend unset-legend">○ Not Set</span><span class="legend available-legend">✓ Available</span><span class="legend unavailable-legend">— Unavailable</span><span class="legend limited-legend"><i></i> Limited</span></div></article>
+<article class="panel account-panel"><header class="panel-header"><h2><svg><use href="#i-people"></use></svg>Account Overview</h2></header><div class="account-list" id="profileAccountOverview"></div></article>
+<article class="panel quick-panel"><header class="panel-header"><h2><svg><use href="#i-bolt"></use></svg>Quick Actions</h2><button aria-label="Quick actions menu" class="icon-btn dots" data-menu="quick"><svg><use href="#i-dots"></use></svg></button></header><div class="quick-grid"><button class="quick-action" data-action="upload-document"><svg><use href="#i-upload"></use></svg><span><strong>Upload Document</strong><small>Add or update your documents</small></span></button><button class="quick-action" data-action="message-admin"><svg><use href="#i-chat"></use></svg><span><strong>New Message</strong><small>Message authorized users</small></span></button><button class="quick-action" data-route="availability"><svg><use href="#i-checkcal"></use></svg><span><strong>Submit Availability</strong><small>Update your weekly availability</small></span></button><button class="quick-action" data-route="evaluations"><svg><use href="#i-star"></use></svg><span><strong>View Evaluations</strong><small>Review completed evaluations</small></span></button><button class="quick-action" data-action="request-evaluation"><svg><use href="#i-star"></use></svg><span><strong>Request Evaluation</strong><small>Request a new evaluation</small></span></button><button class="quick-action" data-route="incidents"><svg><use href="#i-alert"></use></svg><span><strong>Incident Center</strong><small>File or review incident reports</small></span></button><button class="quick-action" data-route="support"><svg><use href="#i-headset"></use></svg><span><strong>Contact Support</strong><small>Get help and support</small></span></button></div></article>
+</section>
+</section>
+<section class="app-view documents-center-view" data-view-panel="documents" hidden="">
+<div aria-label="Document center account controls" class="document-topbar">
+<div class="document-topbar__spacer"></div>
+<button aria-label="Open notifications" class="document-top-icon" data-route="notifications" type="button">
+<svg><use href="#i-bell"></use></svg><span class="document-top-badge" hidden="" id="documentNotificationBadge">0</span>
+</button>
+<button aria-label="Open my profile" class="document-top-user" data-route="profile" type="button">
+<span class="document-top-avatar"><img alt="" data-profile-photo="" src="assets/profile-placeholder.svg"/></span>
+<span><strong data-profile-display="utilityName">Profile not completed</strong><small data-profile-display="role">Role not provided</small></span>
+<svg><use href="#i-chevron-down"></use></svg>
+</button>
+</div>
+<div class="document-center-shell">
+<div class="document-main-column">
+<header class="document-center-head">
+<div class="document-center-title">
+<svg><use href="#i-folder"></use></svg>
+<div><h1>My Documents</h1><p>Store, manage, and access completed game records, incident reports, evaluations, contracts, tax forms, and your other official documents.</p></div>
+</div>
+<div class="document-center-actions">
+<button class="document-upload-button" data-action="upload-document" type="button"><svg><use href="#i-upload"></use></svg>Upload Document</button>
+<button aria-expanded="false" aria-label="Document center options" class="document-more-button" id="documentFormsToggle" type="button"><svg><use href="#i-dots"></use></svg></button>
+</div>
+</header>
+<section class="document-forms-drawer" hidden="" id="documentFormsDrawer">
+<header><div><h2>Forms to Complete</h2><span>Existing required and available forms remain accessible here.</span></div><button aria-label="Close forms drawer" id="documentFormsClose" type="button">×</button></header>
+<div class="document-forms-list" id="documentFormsList"></div>
+</section>
+<section aria-label="Document filters" class="document-filter-bar">
+<label class="document-control"><svg><use href="#i-search"></use></svg><input autocomplete="off" id="documentSearchInput" placeholder="Search documents..." type="search"/></label>
+<label class="document-control is-select"><select aria-label="Document category" id="documentCategoryFilter"><option value="all">All Categories</option></select></label>
+<label class="document-control is-select"><select aria-label="Document file type" id="documentTypeFilter"><option value="all">All Types</option></select></label>
+<label class="document-control is-select"><select aria-label="Document date" id="documentDateFilter"><option value="all">All Dates</option><option value="30">Last 30 Days</option><option value="90">Last 90 Days</option><option value="365">Last 12 Months</option></select></label>
+<label class="document-control is-select sort-control"><select aria-label="Sort documents" id="documentSortSelect"><option value="newest">Sort: Newest</option><option value="oldest">Sort: Oldest</option><option value="name">Sort: Name</option><option value="category">Sort: Category</option></select></label>
+</section>
+<section aria-labelledby="documentCategoriesTitle" class="document-categories">
+<h2 id="documentCategoriesTitle">Document Categories</h2>
+<div class="document-category-track" id="documentCategoryTrack"></div>
+</section>
+<section aria-labelledby="documentListTitle" class="document-list-panel">
+<header class="document-list-header"><h2 id="documentListTitle">All Documents</h2><span id="documentListCount">0 documents</span></header>
+<div class="official-document-grid" id="documentsFullList"></div>
+<footer class="document-pagination"><span id="documentPageSummary">Showing 0 documents</span><div class="document-page-controls" id="documentPageControls"></div></footer>
+</section>
+<section aria-labelledby="documentActivityTitle" class="document-activity">
+<div class="document-activity-head"><h2 id="documentActivityTitle">Recent Activity</h2><button id="documentActivityToggle" type="button">View All Activity ›</button></div>
+<div class="document-activity-grid" id="documentRecentActivity"></div>
+</section>
+</div>
+<aside aria-label="Document preview" class="document-preview-column">
+<section class="document-preview-panel is-empty" id="documentPreviewPanel">
+<header class="document-preview-head"><h2>Document Preview</h2><button aria-label="Clear document preview" class="document-preview-close" id="documentPreviewClose" type="button">×</button></header>
+<div class="document-preview-stage" id="documentPreviewStage"><div class="document-preview-placeholder"><div><svg><use href="#i-file"></use></svg><strong>Select a document</strong><p>Choose a completed document to preview its saved record and details.</p></div></div></div>
+<div class="document-preview-zoom"><button aria-label="Zoom out" id="documentZoomOut" type="button">−</button><span id="documentZoomValue">100%</span><button aria-label="Zoom in" id="documentZoomIn" type="button">+</button></div>
+<div class="document-preview-details" id="documentPreviewDetails"></div>
+<div class="document-preview-actions"><button class="document-preview-download" id="documentPreviewDownload" type="button"><svg><use href="#i-download"></use></svg>Download</button><button class="document-preview-share" id="documentPreviewShare" type="button">Share</button><button aria-label="More document options" class="document-preview-more" id="documentPreviewMore" type="button"><svg><use href="#i-dots"></use></svg></button></div>
+</section>
+</aside>
+</div>
+</section>
+<section class="app-view" data-view-panel="id-card" hidden="">
+<header class="view-heading"><div><span class="view-eyebrow">OFFICIAL CREDENTIAL</span><h1>ID Card</h1><p>View your official credential, print a copy, or download a portable HTML copy for offline access.</p></div><div class="heading-actions"><button class="outline-btn profile-return-btn" data-route="profile">← Back to My Profile</button><button class="outline-btn" data-action="print-id"><svg><use href="#i-print"></use></svg>Print</button><button class="primary-btn" data-action="download-id"><svg><use href="#i-download"></use></svg>Download</button></div></header>
+<article class="panel content-panel id-card-full-wrap"><div class="id-card-stage full-id-stage" id="fullIdCardStage"></div></article>
+</section>
+<section class="app-view payment-center-view" data-view-panel="payments" hidden="">
+<div aria-label="Payments controls" class="payment-toolbar">
+<button aria-label="Notifications" class="payment-top-icon" data-route="notifications" id="paymentNotificationButton" type="button"><svg><use href="#i-bell"></use></svg><span class="payment-top-badge" hidden="" id="paymentNotificationBadge">0</span></button>
+<button aria-label="Official profile" class="payment-top-user" data-route="profile" type="button"><span class="payment-top-avatar"><img alt="" data-profile-photo="" src="assets/profile-placeholder.svg"/></span><span><strong data-profile-display="utilityName">Profile not completed</strong><small data-profile-display="role">Role not provided</small></span><svg><use href="#i-chevron-down"></use></svg></button>
+</div>
+<header class="payment-heading">
+<div><h1>Payments — Wallet Overview</h1><p>Review your completed-game earnings, payout history, reimbursements, receipts, and direct-deposit setup.</p></div>
+<button class="payment-action" id="updatePaymentMethodBtn" type="button"><svg><use href="#i-card"></use></svg>Update Payment Method</button>
+</header>
+<section class="direct-deposit-card">
+<div><h2>Direct Deposit &amp; Banking</h2><p id="paymentMethodSummary">No direct-deposit method has been submitted.</p></div>
+<div class="direct-deposit-state"><span id="paymentMethodStatus">Not Submitted</span><button class="payment-action" id="directDepositFormBtn" type="button">Direct Deposit Form</button></div>
+</section>
+<section aria-label="Payment summary" class="payment-metrics">
+<article class="payment-metric"><span class="payment-metric-icon"><svg><use href="#i-card"></use></svg></span><div><span>Wallet Balance</span><strong id="officialWalletBalance">$0.00</strong><small>Recorded paid earnings</small></div><button class="payment-metric-action" id="officialViewPaymentHistory" type="button">View Payment History</button></article>
+<article class="payment-metric"><span class="payment-metric-icon"><svg><use href="#i-calendar"></use></svg></span><div><span>Pending Payouts</span><strong id="officialPendingPayouts">$0.00</strong><small id="officialPendingPayoutCount">0 payouts scheduled</small></div><button class="payment-metric-action" id="officialViewPayoutSchedule" type="button">View Payout Schedule</button></article>
+<article class="payment-metric"><span class="payment-metric-icon"><svg><use href="#i-monitor"></use></svg></span><div><span>Total Earnings (YTD)</span><strong id="officialYtdEarnings">$0.00</strong><small id="officialYtdAssignmentCount">Across 0 assignments</small></div><button class="payment-metric-action" type="button" data-route="documents">View Payment Documents</button></article>
+<article class="payment-metric"><span class="payment-metric-icon"><svg><use href="#i-file"></use></svg></span><div><span>Reimbursements (YTD)</span><strong id="officialYtdReimbursements">$0.00</strong><small>Total reimbursements</small></div><button class="payment-metric-action" id="officialViewReimbursements" type="button">View Reimbursements</button></article>
+</section>
+<section class="payment-summary-grid">
+<article class="payment-panel"><header><h2>Recent Payments</h2><button id="officialPaymentsViewAll" type="button">View All</button></header><div class="payment-list" id="officialRecentPayments"></div><button class="payment-panel-action" id="officialPaymentsViewAllBottom" type="button">View All Payments <svg><use href="#i-chevron-right"></use></svg></button></article>
+<article class="payment-panel"><header><h2>Reimbursement Summary</h2><button id="officialReimbursementsViewAll" type="button">View All</button></header><div class="payment-list" id="officialReimbursementSummary"></div><button class="payment-panel-action" id="officialUploadReimbursementReceipt" type="button"><svg><use href="#i-upload"></use></svg>Upload Receipt</button></article>
+<article class="payment-panel"><header><h2>Downloadable Receipts</h2></header><div class="payment-list" id="officialPaymentReceipts"></div><button class="payment-panel-action" type="button" data-route="documents">View All Receipts</button></article>
+<article class="payment-panel payment-tax-panel"><div class="payment-tax-circle"><svg><use href="#i-file"></use></svg></div><h2>Tax Summary</h2><p>Payment receipts and tax-related documents are available from your document library.</p><button class="payment-action" data-route="documents" type="button">Go to Documents <svg><use href="#i-chevron-right"></use></svg></button></article>
+</section>
+<section class="payout-panel" id="officialPayoutHistoryPanel"><header><h2>Payout History</h2><button class="payment-action" id="officialExportPaymentsBtn" type="button"><svg><use href="#i-download"></use></svg>Export History</button></header><div class="payout-table-wrap"><table class="payout-table"><thead><tr><th>Payout Date</th><th>Game / Period</th><th>Payment Method</th><th>Status</th><th>Amount</th><th>Transaction ID</th><th>Organization</th><th>Receipt</th></tr></thead><tbody id="officialPayoutHistoryBody"></tbody></table><div class="payment-empty" hidden="" id="officialPayoutHistoryEmpty"><svg><use href="#i-card"></use></svg><h3>No payout history</h3><p>Payments submitted for your completed games will appear here.</p></div></div><footer class="payout-footer"><span id="officialPayoutHistorySummary">Showing 0 payouts</span></footer></section>
+</section><section class="app-view evaluation-review-view" data-view-panel="evaluations" hidden="">
+<div aria-label="Evaluation review controls" class="evaluation-review-toolbar">
+<div class="evaluation-review-toolbar__spacer"></div>
+<button aria-label="Open notifications" class="evaluation-top-icon" data-route="notifications" type="button">
+<svg><use href="#i-bell"></use></svg><span class="evaluation-top-badge" hidden="" id="evalNotificationBadge">0</span>
+</button>
+<button aria-label="Open my profile" class="evaluation-top-user" data-route="profile" type="button">
+<span class="evaluation-top-avatar"><img alt="" data-profile-photo="" src="assets/profile-placeholder.svg"/></span>
+<span><strong data-profile-display="utilityName">Profile not completed</strong><small data-profile-display="role">Role not provided</small></span>
+<svg class="evaluation-user-chevron"><use href="#i-chevron-down"></use></svg>
+</button>
+</div>
+<header class="evaluation-review-heading">
+<div>
+<h1><svg><use href="#i-star"></use></svg>Evaluations — My Reviews</h1>
+<p>Track your performance, review finalized evaluations, and read evaluator feedback from games you have officiated.</p>
+</div>
+<label class="evaluation-season-filter"><svg><use href="#i-calendar"></use></svg><select aria-label="Evaluation season" id="evaluationSeasonFilter"><option value="all">All Seasons</option></select><svg class="evaluation-filter-chevron"><use href="#i-chevron-down"></use></svg></label>
+</header>
+<section aria-label="Evaluation performance summary" class="evaluation-metric-strip">
+<article class="evaluation-metric is-primary"><span>Overall Average</span><strong id="evaluationOverallAverage">—</strong><div aria-label="Overall rating" class="evaluation-stars" id="evaluationOverallStars"></div><small id="evaluationOverallLabel">No finalized evaluations</small></article>
+<article class="evaluation-metric"><span>Total Evaluations</span><strong id="evaluationTotalCount">0</strong><small id="evaluationCountMeta">0 finalized</small></article>
+<article class="evaluation-metric"><span>Latest Evaluation</span><strong id="evaluationLatestScore">—</strong><small id="evaluationLatestMeta">No evaluation on file</small></article>
+<article class="evaluation-metric"><span>Season Rank</span><strong class="evaluation-rank-value" id="evaluationSeasonRank">—</strong><small id="evaluationRankMeta">Rank unavailable</small></article>
+<article class="evaluation-metric"><span>Improvement</span><strong class="evaluation-improvement-value" id="evaluationImprovement">—</strong><small id="evaluationImprovementMeta">Previous season unavailable</small></article>
+</section>
+<section class="evaluation-review-grid">
+<article class="evaluation-review-panel evaluation-category-panel">
+<header><h2>Performance by Category</h2><button class="evaluation-text-action" id="evaluationCategoryBreakdownBtn" type="button">View Category Breakdown</button></header>
+<div class="evaluation-category-layout">
+<div class="evaluation-radar-wrap"><svg aria-label="Performance category radar chart" class="evaluation-radar" id="evaluationRadar" role="img" viewbox="0 0 320 300"></svg></div>
+<div class="evaluation-category-list" id="evaluationCategoryList"></div>
+</div>
+</article>
+<article class="evaluation-review-panel evaluation-recent-panel">
+<header><h2>Recent Evaluations</h2><button class="evaluation-text-action" id="evaluationViewAllBtn" type="button">View All</button></header>
+<div class="evaluation-recent-list" id="evaluationsList"></div>
+</article>
+<article class="evaluation-review-panel evaluation-trend-panel">
+<header><h2>Performance Trend</h2><span class="evaluation-info" title="Overall finalized evaluation scores over time">i</span></header>
+<div class="evaluation-trend-chart" id="evaluationTrendChart"></div>
+<div class="evaluation-trend-legend"><span><i class="is-red"></i>Overall Average</span><span><i class="is-dashed"></i>Standard Benchmark (4.00)</span></div>
+</article>
+<article class="evaluation-review-panel evaluation-comments-panel">
+<header><h2>Evaluator Comments (Latest)</h2></header>
+<div class="evaluation-latest-comment" id="evaluationLatestComment"></div>
+</article>
+</section>
+</section>
+<section class="app-view incident-center-view" data-view-panel="incidents" hidden="">
+<div aria-label="Incident Center controls" class="incident-toolbar">
+<div class="incident-toolbar__spacer"></div>
+<button aria-label="Open notifications" class="incident-top-icon" data-route="notifications" type="button"><svg><use href="#i-bell"></use></svg><span class="incident-top-badge" hidden="" id="incidentNotificationBadge">0</span></button>
+<button aria-label="Open my profile" class="incident-top-user" data-route="profile" type="button"><span class="incident-top-avatar"><img alt="" data-profile-photo="" src="assets/profile-placeholder.svg"/></span><span><strong data-profile-display="utilityName">Profile not completed</strong><small data-profile-display="role">Role not provided</small></span><svg><use href="#i-chevron-down"></use></svg></button>
+</div>
+<header class="incident-heading">
+<div><h1><svg><use href="#i-alert"></use></svg>Incident Center — Reports</h1><p>File an incident after a completed game, track its review status, and retain your submitted record.</p></div>
+<button class="incident-primary-btn" id="newIncidentReportBtn" type="button"><svg><use href="#i-plus"></use></svg>File New Incident Report</button>
+</header>
+<section aria-label="Incident report summary" class="incident-metrics">
+<article class="incident-metric red"><span class="incident-metric-icon"><svg><use href="#i-file"></use></svg></span><div><span>Total Reports</span><strong id="incidentMetricTotal">0</strong><small>Submitted reports</small></div></article>
+<article class="incident-metric orange"><span class="incident-metric-icon"><svg><use href="#i-clock"></use></svg></span><div><span>Under Review</span><strong id="incidentMetricReview">0</strong><small>Reports</small></div></article>
+<article class="incident-metric green"><span class="incident-metric-icon"><svg><use href="#i-checkcal"></use></svg></span><div><span>Closed</span><strong id="incidentMetricClosed">0</strong><small>Reports</small></div></article>
+<article class="incident-metric gold"><span class="incident-metric-icon"><svg><use href="#i-clock"></use></svg></span><div><span>Avg. Resolution Time</span><strong id="incidentMetricResolution">—</strong><small>Days</small></div></article>
+</section>
+<section class="incident-layout">
+<article class="incident-list-panel">
+<div class="incident-filterbar">
+<div class="incident-tabs" id="incidentTabs">
+<button class="incident-tab active" data-incident-filter="all" type="button">All Reports</button>
+<button class="incident-tab" data-incident-filter="fight" type="button">Altercation / Fight</button>
+<button class="incident-tab" data-incident-filter="conduct" type="button">Player / Coach</button>
+<button class="incident-tab" data-incident-filter="spectator" type="button">Spectator</button>
+<button class="incident-tab" data-incident-filter="facility" type="button">Facility / Safety</button>
+</div>
+<select aria-label="Filter reports by status" class="incident-filter-select" id="incidentStatusFilter"><option value="">All Statuses</option><option value="under-review">Under Review</option><option value="needs-info">Needs Information</option><option value="closed">Closed</option><option value="draft">Draft</option></select>
+</div>
+<div class="incident-table-wrap"><table class="incident-table"><thead><tr><th>Report ID</th><th>Date / Time</th><th>Category</th><th>Event</th><th>Status</th><th>Actions</th></tr></thead><tbody id="incidentReportTableBody"></tbody></table><div class="incident-empty" hidden="" id="incidentReportEmpty"><svg><use href="#i-alert"></use></svg><h3>No incident reports</h3><p>Completed incident reports from your games will appear here.</p></div></div>
+<div class="incident-pagination"><span id="incidentShowingText">Showing 0 reports</span><div class="incident-page-buttons"><button id="incidentPrevPage" type="button">‹</button><button class="active" id="incidentPageIndicator" type="button">1</button><button id="incidentNextPage" type="button">›</button></div></div>
+</article>
+<aside class="incident-detail-panel" id="incidentDetailPanel"><div class="incident-detail-placeholder"><svg><use href="#i-alert"></use></svg><h3>Select an incident report</h3><p>Report details and review status will appear here.</p></div></aside>
+</section>
+</section><section class="app-view" data-view-panel="support" hidden="">
+<header class="view-heading"><div><span class="view-eyebrow">HELP CENTER</span><h1>Support</h1><p>Send a support request to the Got U Nex Ref administration team.</p></div><div class="heading-actions"><button class="outline-btn profile-return-btn" data-route="profile">← Back to My Profile</button></div></header>
+<article class="panel content-panel form-panel"><form class="portal-form" id="supportForm"><div class="form-grid"><label>Category<select name="category" required=""><option value="">Select a category</option><option>Assignments</option><option>Availability</option><option>Documents</option><option>Payments</option><option>Profile / ID Card</option><option>Technical Support</option></select></label><label>Priority<select name="priority" required=""><option>Normal</option><option>High</option><option>Urgent</option></select></label><label class="span-2">Subject<input name="subject" required=""/></label><label class="span-2">Message<textarea name="message" required="" rows="8"></textarea></label></div><div class="form-actions"><button class="outline-btn" type="reset">Clear</button><button class="primary-btn" type="submit">Submit Support Request</button></div></form></article>
+</section>
+<section class="app-view" data-view-panel="settings" hidden="">
+<header class="view-heading"><div><span class="view-eyebrow">ACCOUNT</span><h1>Settings</h1><p>Control portal notifications, assignment alerts, and privacy preferences.</p></div><div class="heading-actions"><button class="outline-btn profile-return-btn" data-route="profile">← Back to My Profile</button><button class="primary-btn" data-action="save-settings"><svg><use href="#i-save"></use></svg>Save Settings</button></div></header>
+<article class="panel content-panel"><form class="settings-list" id="settingsForm"><label><span><strong>Email assignment alerts</strong><small>Receive new assignment and status-change alerts by email.</small></span><input name="emailAssignmentAlerts" type="checkbox"/></label><label><span><strong>SMS assignment alerts</strong><small>Receive time-sensitive assignment alerts by text message.</small></span><input name="smsAssignmentAlerts" type="checkbox"/></label><label><span><strong>Document reminders</strong><small>Receive reminders when required forms are incomplete or expiring.</small></span><input name="documentReminders" type="checkbox"/></label><label><span><strong>Evaluation notifications</strong><small>Receive a notice when a new evaluation is posted.</small></span><input name="evaluationNotifications" type="checkbox"/></label><label><span><strong>Show phone to crew partners</strong><small>Allow accepted crew partners to see your contact number.</small></span><input name="crewPhoneVisibility" type="checkbox"/></label></form></article>
+</section>
+</main>
+</div>
+<div class="modal-backdrop" hidden="" id="modalBackdrop">
+<div aria-labelledby="modalTitle" aria-modal="true" class="modal modal-large" role="dialog">
+<button aria-label="Close" class="modal-close" data-action="close-modal">×</button>
+<div class="modal-heading"><span class="view-eyebrow" id="modalEyebrow">GOT U NEX REF</span><h2 id="modalTitle">Dialog</h2></div>
+<div id="modalBody"></div>
+</div>
+</div>
+<input hidden="" id="documentUploadInput" multiple="" type="file"/>
+<div aria-live="polite" class="toast" id="toast" role="status"></div>
+<script type="module" src="portal-data-sync.js?then=script.js"></script>
+</body>
+</html>

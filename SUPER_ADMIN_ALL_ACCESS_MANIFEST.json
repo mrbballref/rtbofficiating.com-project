@@ -1,0 +1,17 @@
+{
+  "change": "Persistent Super Admin All-Access Mode",
+  "scope": "complete RTBO project",
+  "generatedAt": "2026-08-12T19:30:53.994680",
+  "htmlPagesWithAccessRuntime": 283,
+  "accessCenter": "cms/access-center.html",
+  "refZonePathwayClassrooms": 60,
+  "refZoneMemberships": 5,
+  "accountCreationRequiredForSuperAdmin": false,
+  "repeatLoginRequiredForSuperAdmin": false,
+  "paymentRequiredForAdminReview": false,
+  "safeSubpagePresent": false,
+  "notes": [
+    "Access mode persists in localStorage for the same origin until manually disabled.",
+    "No fake user account or membership enrollment is created."
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "track": "FIBA Basketball Men",
+  "generated": "2026-08-06",
+  "routes": [
+    "#/program/fiba-men/foundations",
+    "#/program/fiba-men/advancement",
+    "#/program/fiba-men/elite",
+    "#/course/fiba-men/foundations",
+    "#/course/fiba-men/advancement",
+    "#/course/fiba-men/elite"
+  ],
+  "programs": {
+    "bachelors": {
+      "courses": 24,
+      "lessons": 288,
+      "scripts": 288,
+      "scenes": 1728,
+      "units": 120,
+      "hours": 1800
+    },
+    "masters": {
+      "courses": 12,
+      "lessons": 180,
+      "scripts": 180,
+      "scenes": 1080,
+      "units": 36,
+      "hours": 540
+    },
+    "phd": {
+      "courses": 20,
+      "lessons": 300,
+      "scripts": 300,
+      "scenes": 1800,
+      "units": 60,
+      "hours": 900
+    }
+  },
+  "total": {
+    "courses": 56,
+    "lessons": 768,
+    "scripts": 768,
+    "scenes": 4608,
+    "syllabi": 56,
+    "videoScriptPackages": 56
+  },
+  "sourceControl": "FIBA 2024 current-effective; FIBA 2026 future-effective October 1, 2026; event-specific regulations required",
+  "credentialStatus": "Professional degree-level pathways; not accredited degrees, FIBA licences, assignments, employment, or transferable credit"
+}

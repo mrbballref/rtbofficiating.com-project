@@ -1,0 +1,4 @@
+(()=>{
+if(!window.EuroLeagueMenFoundationsCourse||!window.RefZoneCourseUICore)return;
+window.EuroLeagueMenCourseUI=window.RefZoneCourseUICore.create({trackId:'euro-men',pathwayId:'foundations',course:window.EuroLeagueMenFoundationsCourse,icon:'assets/pathway-icons/refzone_university_euro_league_men_course.png',courseLabel:'EuroLeague Men Bachelor’s-Level Professional Foundations',shortLabel:'EUROLEAGUE MEN BACHELOR’S',routeBase:'#/course/euro-men/foundations',programHref:'#/program/euro-men/foundations',storePrefix:'euro-men-bachelors',resourceFiles:[['courses/EuroLeague-Men-Bachelors-Degree-Handbook.md','Professional program handbook'],['courses/EuroLeague-Men-Bachelors-Coverage-Matrix.md','Coverage matrix'],['courses/EuroLeague-Men-Bachelors-Source-Report.md','Source report'],['courses/EuroLeague-Men-Bachelors-Review-Package.md','Review package']]});
+})();

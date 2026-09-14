@@ -1,0 +1,4 @@
+(()=>{
+if(!window.NCAAD1MenFoundationsCourse||!window.RefZoneCourseUICore)return;
+window.NCAAD1MenCourseUI=window.RefZoneCourseUICore.create({trackId:'ncaa-d1-men',course:window.NCAAD1MenFoundationsCourse,icon:'assets/pathway-icons/rfzu_ncaadimbb.png',courseLabel:'NCAA Division I Men Bachelor’s-Level Professional Foundations',shortLabel:'NCAA DIVISION I MEN BACHELOR’S',routeBase:'#/course/ncaa-d1-men/foundations',programHref:'#/program/ncaa-d1-men/foundations',storePrefix:'ncaa-d1-men-bachelors',resourceFiles:[['courses/NCAA-DI-Men-Bachelors-Degree-Handbook.md','Bachelor’s program handbook'],['courses/NCAA-DI-Men-Bachelors-Coverage-Matrix.md','Bachelor’s coverage matrix'],['courses/NCAA-DI-Men-Bachelors-Source-Report.md','Bachelor’s source report'],['courses/NCAA-DI-Men-Bachelors-Review-Package.md','Bachelor’s review package']]});
+})();

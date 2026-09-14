@@ -1,0 +1,16 @@
+{
+  "program": "NCAA Division III Women’s Basketball Officiating Master’s-Level Advanced Officiating Program",
+  "season": "2026-27",
+  "courses": 12,
+  "lessons": 180,
+  "assessments": 180,
+  "videoScripts": 180,
+  "scriptedScenes": 1080,
+  "units": 36,
+  "engagementHours": 540,
+  "routes": {
+    "program": "platform.html#/program/ncaa-d3-women/advancement",
+    "classroom": "platform.html#/course/ncaa-d3-women/advancement"
+  },
+  "status": "Professional graduate degree-level instructional production draft; human review required before publication."
+}
