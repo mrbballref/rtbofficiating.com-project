@@ -5,13 +5,10 @@ import Stripe from "stripe";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 
-const required = (name) => {
-  const value = process.env[name];
-  if (!value) throw new Error(`Missing required environment variable: ${name}`);
-  return value;
-};
-
-const stripe = new Stripe(required("STRIPE_SECRET_KEY"));
+// Matches the other 3 platform servers: boot even when Stripe isn't
+// configured yet, and have each route report 503 instead of crashing the
+// whole process (Render would otherwise loop-restart on every deploy).
+const stripe = process.env.STRIPE_SECRET_KEY ? new Stripe(process.env.STRIPE_SECRET_KEY) : null;
 const app = express();
 const port = Number(process.env.PORT || 4242);
 const appUrl = process.env.APP_URL || `http://localhost:${port}`;
@@ -71,8 +68,8 @@ app.post("/api/payments/webhook", express.raw({type:"application/json"}), async 
   const signature = req.headers["stripe-signature"];
   const webhookSecret = process.env.STRIPE_WEBHOOK_SECRET;
 
-  if (!webhookSecret) {
-    return res.status(503).send("Webhook secret is not configured.");
+  if (!stripe || !webhookSecret) {
+    return res.status(503).send("Stripe webhook is not configured.");
   }
 
   let event;
@@ -142,6 +139,9 @@ app.use(express.json({limit:"100kb"}));
 
 app.post("/api/payments/create-checkout-session", async (req, res) => {
   try {
+    if (!stripe) {
+      return res.status(503).json({error:"Stripe Checkout is not configured on the server."});
+    }
     const {plan, cycle, email} = req.body || {};
     if (!["plus","premium","all_access"].includes(plan)) {
       return res.status(400).json({error:"Invalid membership plan."});
@@ -189,6 +189,9 @@ app.post("/api/payments/create-checkout-session", async (req, res) => {
 
 app.post("/api/payments/customer-portal", async (req, res) => {
   try {
+    if (!stripe) {
+      return res.status(503).json({error:"Stripe is not configured on the server."});
+    }
     const {customerId} = req.body || {};
     if (!customerId || typeof customerId !== "string") {
       return res.status(400).json({error:"A verified Stripe customer ID is required."});
