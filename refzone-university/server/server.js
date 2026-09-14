@@ -12,19 +12,19 @@ const apiLimiter=rateLimit({windowMs:15*60*1000,limit:120,standardHeaders:'draft
 app.use('/api',apiLimiter);
 
 // Stripe requires the exact raw request body for signature verification.
-app.post('/api/webhooks/stripe',express.raw({type:'application/json'}),(req,res)=>{
+app.post('/api/webhooks/stripe',express.raw({type:'application/json'}),async(req,res)=>{
   if(!stripe||!process.env.STRIPE_WEBHOOK_SECRET)return res.status(503).send('Webhook not configured');
   let event;try{event=stripe.webhooks.constructEvent(req.body,req.headers['stripe-signature'],process.env.STRIPE_WEBHOOK_SECRET)}catch(error){return res.status(400).send(`Webhook signature error: ${error.message}`)}
   try{
     const object=event.data.object;
     if(event.type==='checkout.session.completed'){
-      const id=object.metadata?.registrationId; if(id)registrations.update(id,{status:object.payment_status==='paid'?'active':'processing',stripeCustomerId:object.customer||null,stripeSubscriptionId:object.subscription||null,stripeSessionId:object.id,paymentStatus:object.payment_status});
+      const id=object.metadata?.registrationId; if(id)await registrations.update(id,{status:object.payment_status==='paid'?'active':'processing',stripeCustomerId:object.customer||null,stripeSubscriptionId:object.subscription||null,stripeSessionId:object.id,paymentStatus:object.payment_status});
     }
     if(event.type==='customer.subscription.updated'||event.type==='customer.subscription.deleted'){
-      const id=object.metadata?.registrationId;if(id)registrations.update(id,{status:object.status,stripeSubscriptionId:object.id});
+      const id=object.metadata?.registrationId;if(id)await registrations.update(id,{status:object.status,stripeSubscriptionId:object.id});
     }
     if(event.type==='invoice.payment_failed'){
-      const id=object.parent?.subscription_details?.metadata?.registrationId||object.subscription_details?.metadata?.registrationId;if(id)registrations.update(id,{status:'past_due',lastPaymentFailure:new Date().toISOString()});
+      const id=object.parent?.subscription_details?.metadata?.registrationId||object.subscription_details?.metadata?.registrationId;if(id)await registrations.update(id,{status:'past_due',lastPaymentFailure:new Date().toISOString()});
     }
     res.json({received:true});
   }catch(error){console.error(error);res.status(500).json({error:'Webhook processing failed'})}
@@ -43,14 +43,33 @@ async function recordRegistration(body,status='pending'){
 }
 app.get('/api/membership-config',(req,res)=>res.json({stripeConfigured,paymentsApproved:process.env.PAYMENTS_LIVE_APPROVED==='true',gatewayConfigured:stripeConfigured&&process.env.PAYMENTS_LIVE_APPROVED==='true',publishableKey:process.env.STRIPE_PUBLISHABLE_KEY||'',currency:'usd',memberships:Object.fromEntries(Object.entries(memberships).map(([id,plan])=>[id,{name:plan.name,monthly:plan.monthly/100,annual:plan.annual/100,pathways:plan.pathways}]))}));
 app.post('/api/register-preview',async(req,res)=>{try{validate(req.body,{paid:false});if(req.body.plan!=='preview')throw new Error('This endpoint only activates RefZone Preview.');const record=await recordRegistration(req.body,'active');res.status(201).json({registrationId:record.id,status:'active'})}catch(error){res.status(400).json({error:error.message})}});
+
+// Members register with a password (see recordRegistration above, bcrypt-hashed)
+// but until now there was no way to sign back in with it.
+function publicMember(record){return{registrationId:record.id,firstName:record.firstName,lastName:record.lastName,email:record.email,status:record.status,plan:record.plan,track:record.track,pathway:record.pathway}}
+app.post('/api/login',async(req,res)=>{try{
+  const email=clean(req.body?.email,180).toLowerCase(),password=String(req.body?.password||'');
+  if(!email||!password)throw new Error('Email and password are required.');
+  const record=await registrations.findByEmail(email);
+  if(!record||!await bcrypt.compare(password,record.passwordHash))throw new Error('Invalid email or password.');
+  const session=await registrations.createSession(record.id);
+  res.json({token:session.token,expiresAt:session.expiresAt,member:publicMember(record)});
+}catch(error){res.status(401).json({error:error.message})}});
+app.get('/api/me',async(req,res)=>{try{
+  const token=(req.headers.authorization||'').replace(/^Bearer\s+/i,'');
+  const record=await registrations.findSession(token);
+  if(!record)throw new Error('Not signed in.');
+  res.json({member:publicMember(record)});
+}catch(error){res.status(401).json({error:error.message})}});
+app.post('/api/logout',async(req,res)=>{const token=(req.headers.authorization||'').replace(/^Bearer\s+/i,'');await registrations.deleteSession(token);res.json({loggedOut:true})});
 app.post('/api/create-checkout-session',async(req,res)=>{try{
   if(!stripeConfigured)throw new Error('Stripe is not configured.');if(process.env.PAYMENTS_LIVE_APPROVED!=='true')throw new Error('Payment collection is blocked until the legal and administrative launch gate is approved.');validate(req.body,{paid:true});if(req.body.plan==='preview')throw new Error('Preview does not require payment.');
   const plan=memberships[req.body.plan],lookupKey=plan.lookupKeys[req.body.billing];const prices=await stripe.prices.list({lookup_keys:[lookupKey],active:true,limit:1});if(!prices.data[0])throw new Error(`Stripe price not found for lookup key ${lookupKey}. Run npm run stripe:catalog.`);
   const record=await recordRegistration(req.body,'pending_payment');
   const session=await stripe.checkout.sessions.create({ui_mode:'embedded',mode:'subscription',customer_email:record.email,line_items:[{price:prices.data[0].id,quantity:1}],return_url:`${appUrl}/membership-return.html?session_id={CHECKOUT_SESSION_ID}`,allow_promotion_codes:true,billing_address_collection:'auto',automatic_tax:{enabled:process.env.STRIPE_AUTOMATIC_TAX==='true'},metadata:{registrationId:record.id,plan:record.plan,billing:record.billing,track:record.track,pathway:record.pathway},subscription_data:{metadata:{registrationId:record.id,plan:record.plan,track:record.track,pathway:record.pathway}},custom_text:{submit:{message:'Membership access is separate from academic admission, certification, assignments, employment, and advancement.'}}},{idempotencyKey:`membership-${record.id}`});
-  registrations.update(record.id,{stripeSessionId:session.id});res.json({clientSecret:session.client_secret});
+  await registrations.update(record.id,{stripeSessionId:session.id});res.json({clientSecret:session.client_secret});
  }catch(error){console.error(error);res.status(400).json({error:error.message})}});
-app.get('/api/session-status',async(req,res)=>{try{if(!stripe)throw new Error('Stripe is not configured.');const id=clean(req.query.session_id,255);if(!id.startsWith('cs_'))throw new Error('Invalid Checkout Session ID.');const session=await stripe.checkout.sessions.retrieve(id);const registrationId=session.metadata?.registrationId;const record=registrationId?registrations.find(registrationId):null;res.json({status:session.status,paymentStatus:session.payment_status,email:session.customer_details?.email||record?.email||'',plan:session.metadata?.plan||record?.plan,planName:memberships[session.metadata?.plan||record?.plan]?.name||'RefZone Membership',track:session.metadata?.track||record?.track,trackName:trackNames[session.metadata?.track||record?.track]||'Selected track',pathway:session.metadata?.pathway||record?.pathway,pathwayName:pathwayNames[session.metadata?.pathway||record?.pathway]||'Selected pathway',registrationId,customerId:session.customer||null,subscriptionId:session.subscription||null})}catch(error){res.status(400).json({error:error.message})}});
+app.get('/api/session-status',async(req,res)=>{try{if(!stripe)throw new Error('Stripe is not configured.');const id=clean(req.query.session_id,255);if(!id.startsWith('cs_'))throw new Error('Invalid Checkout Session ID.');const session=await stripe.checkout.sessions.retrieve(id);const registrationId=session.metadata?.registrationId;const record=registrationId?await registrations.find(registrationId):null;res.json({status:session.status,paymentStatus:session.payment_status,email:session.customer_details?.email||record?.email||'',plan:session.metadata?.plan||record?.plan,planName:memberships[session.metadata?.plan||record?.plan]?.name||'RefZone Membership',track:session.metadata?.track||record?.track,trackName:trackNames[session.metadata?.track||record?.track]||'Selected track',pathway:session.metadata?.pathway||record?.pathway,pathwayName:pathwayNames[session.metadata?.pathway||record?.pathway]||'Selected pathway',registrationId,customerId:session.customer||null,subscriptionId:session.subscription||null})}catch(error){res.status(400).json({error:error.message})}});
 app.use(express.static(root,{extensions:['html'],maxAge:process.env.NODE_ENV==='production'?'1h':0}));
 app.use((req,res)=>res.sendFile(path.join(root,'platform.html')));
 app.listen(port,()=>console.log(`RefZone University running at ${appUrl}`));

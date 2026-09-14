@@ -70,6 +70,18 @@ function normalizeCart(body) {
   return normalized;
 }
 function totalFor(items){return items.reduce((sum,item)=>sum+item.unitAmount*item.quantity,0);}
+
+async function supabaseRequest(table, method, body, query='') {
+  const url=process.env.SUPABASE_URL, key=process.env.SUPABASE_SERVICE_ROLE_KEY;
+  if(!configured(url)||!configured(key)){console.warn(`Supabase not configured — skipping ${method} ${table}`);return null;}
+  const response=await fetch(`${url.replace(/\/$/,'')}/rest/v1/${table}${query}`,{method,headers:{apikey:key,Authorization:`Bearer ${key}`,'Content-Type':'application/json',Prefer:'return=representation,resolution=merge-duplicates'},body:body===undefined?undefined:JSON.stringify(body)});
+  const text=await response.text();
+  if(!response.ok){console.error(`Supabase error (${response.status}) on ${table}:`,text);return null;}
+  return text?JSON.parse(text):[];
+}
+async function recordOrder(data){return supabaseRequest('refshop_orders','POST',data,'?on_conflict=checkout_id');}
+async function updateOrderByCheckoutId(checkoutId,patch){if(!checkoutId)return null;return supabaseRequest('refshop_orders','PATCH',{...patch,updated_at:new Date().toISOString()},`?checkout_id=eq.${encodeURIComponent(checkoutId)}`);}
+async function updateOrderBySessionId(sessionId,patch){if(!sessionId)return null;return supabaseRequest('refshop_orders','PATCH',{...patch,updated_at:new Date().toISOString()},`?gateway_session_id=eq.${encodeURIComponent(sessionId)}`);}
 function paymentConfig(){return {environment,stripe:{configured:configured(process.env.STRIPE_SECRET_KEY)},paypal:{configured:configured(process.env.PAYPAL_CLIENT_ID)&&configured(process.env.PAYPAL_CLIENT_SECRET),clientId:String(process.env.PAYPAL_CLIENT_ID||'')},offline:{bankTransfer:true,purchaseOrder:true,storeValue:true}};}
 
 async function stripeRequest(pathname, options={}) {
@@ -135,6 +147,7 @@ async function handleApi(req,res,url){
     const params=new URLSearchParams();params.append('mode','payment');params.append('success_url',`${baseUrl}/?payment_gateway=stripe&session_id={CHECKOUT_SESSION_ID}#/payment-success`);params.append('cancel_url',`${baseUrl}/#/checkout`);if(customer.email)params.append('customer_email',String(customer.email));params.append('client_reference_id',checkoutId||`refshop-${Date.now()}`);params.append('metadata[refshop_checkout_id]',checkoutId||'');if(body.requestedMethod==='ach')params.append('payment_method_types[]','us_bank_account');
     items.forEach((item,index)=>{params.append(`line_items[${index}][quantity]`,String(item.quantity));params.append(`line_items[${index}][price_data][currency]`,currency);params.append(`line_items[${index}][price_data][unit_amount]`,String(Math.round(item.unitAmount*100)));params.append(`line_items[${index}][price_data][product_data][name]`,item.name);if(item.sku)params.append(`line_items[${index}][price_data][product_data][metadata][sku]`,item.sku);});
     const session=await stripeRequest('/v1/checkout/sessions',{method:'POST',headers:{'Content-Type':'application/x-www-form-urlencoded'},body:params.toString()});
+    await recordOrder({checkout_id:checkoutId||session.id,gateway:'stripe',gateway_session_id:session.id,customer_email:customer.email||'',items,currency:currency.toUpperCase(),amount:totalFor(items),status:'pending'});
     return json(res,200,{id:session.id,url:session.url,environment});
   }
 
@@ -147,13 +160,16 @@ async function handleApi(req,res,url){
   if(req.method==='POST'&&url.pathname==='/api/payments/paypal/order'){
     const body=JSON.parse((await readBody(req)).toString('utf8')||'{}');const items=normalizeCart(body),currency=currencyCode(body.currency),checkoutId=String(body.checkoutId||`refshop-${Date.now()}`).slice(0,120),total=totalFor(items).toFixed(2);
     const order=await paypalRequest('/v2/checkout/orders',{method:'POST',requestId:checkoutId,body:JSON.stringify({intent:'CAPTURE',purchase_units:[{reference_id:checkoutId,amount:{currency_code:currency,value:total,breakdown:{item_total:{currency_code:currency,value:total}}},items:items.map(item=>({name:item.name,sku:item.sku||undefined,quantity:String(item.quantity),unit_amount:{currency_code:currency,value:item.unitAmount.toFixed(2)}}))}],application_context:{brand_name:'The RefShop',user_action:'PAY_NOW'}})});
+    await recordOrder({checkout_id:checkoutId,gateway:'paypal',gateway_session_id:order.id,customer_email:body.customer?.email||'',items,currency,amount:Number(total),status:'pending'});
     return json(res,200,{id:order.id,status:order.status,environment});
   }
 
   const paypalCapture=url.pathname.match(/^\/api\/payments\/paypal\/order\/([^/]+)\/capture$/);
   if(req.method==='POST'&&paypalCapture){
     const capture=await paypalRequest(`/v2/checkout/orders/${encodeURIComponent(paypalCapture[1])}/capture`,{method:'POST',requestId:`capture-${paypalCapture[1]}`,body:'{}'});const unit=capture.purchase_units?.[0],cap=unit?.payments?.captures?.[0];
-    return json(res,200,{gatewayId:capture.id,status:capture.status==='COMPLETED'?'paid':String(capture.status||'').toLowerCase(),amount:Number(cap?.amount?.value||unit?.amount?.value||0),currency:String(cap?.amount?.currency_code||unit?.amount?.currency_code||'USD'),environment});
+    const captureStatus=capture.status==='COMPLETED'?'paid':String(capture.status||'').toLowerCase();
+    await updateOrderBySessionId(capture.id,{status:captureStatus,amount:Number(cap?.amount?.value||unit?.amount?.value||0)});
+    return json(res,200,{gatewayId:capture.id,status:captureStatus,amount:Number(cap?.amount?.value||unit?.amount?.value||0),currency:String(cap?.amount?.currency_code||unit?.amount?.currency_code||'USD'),environment});
   }
 
   if(req.method==='POST'&&url.pathname==='/api/payments/webhooks/stripe'){
@@ -161,13 +177,35 @@ async function handleApi(req,res,url){
     if(!configured(secret))return json(res,503,{error:'STRIPE_WEBHOOK_SECRET is not configured.'});
     if(!verifyStripeSignature(raw,req.headers['stripe-signature'],secret))return json(res,400,{error:'Invalid Stripe webhook signature.'});
     let event;try{event=JSON.parse(raw.toString('utf8'));}catch{return json(res,400,{error:'Invalid Stripe webhook JSON.'});}
-    console.log('[RefShop Stripe webhook]',event.type,event.id);return json(res,200,{received:true,id:event.id,type:event.type});
+    console.log('[RefShop Stripe webhook]',event.type,event.id);
+    if(event.type==='checkout.session.completed'){
+      const obj=event.data.object;
+      await updateOrderBySessionId(obj.id,{status:'paid',amount:Number(obj.amount_total||0)/100});
+    } else if(event.type==='checkout.session.expired'){
+      await updateOrderBySessionId(event.data.object.id,{status:'canceled'});
+    }
+    // Refund events (charge.refunded) reference a PaymentIntent, not the
+    // Checkout Session ID this table keys on — reconciling those requires an
+    // extra Stripe lookup and isn't wired yet.
+    return json(res,200,{received:true,id:event.id,type:event.type});
   }
 
   if(req.method==='POST'&&url.pathname==='/api/payments/webhooks/paypal'){
     const body=JSON.parse((await readBody(req)).toString('utf8')||'{}'),webhookId=process.env.PAYPAL_WEBHOOK_ID;
     if(!configured(webhookId))return json(res,503,{error:'PAYPAL_WEBHOOK_ID is not configured.'});
-    const token=await paypalToken();const response=await fetch(`${paypalBase()}/v1/notifications/verify-webhook-signature`,{method:'POST',headers:{Authorization:`Bearer ${token}`,'Content-Type':'application/json'},body:JSON.stringify({auth_algo:req.headers['paypal-auth-algo'],cert_url:req.headers['paypal-cert-url'],transmission_id:req.headers['paypal-transmission-id'],transmission_sig:req.headers['paypal-transmission-sig'],transmission_time:req.headers['paypal-transmission-time'],webhook_id:webhookId,webhook_event:body})});const verify=await response.json();if(!response.ok||verify.verification_status!=='SUCCESS')return json(res,400,{error:'Invalid PayPal webhook signature.'});console.log('[RefShop PayPal webhook]',body.event_type,body.id);return json(res,200,{received:true,id:body.id,type:body.event_type});
+    const token=await paypalToken();const response=await fetch(`${paypalBase()}/v1/notifications/verify-webhook-signature`,{method:'POST',headers:{Authorization:`Bearer ${token}`,'Content-Type':'application/json'},body:JSON.stringify({auth_algo:req.headers['paypal-auth-algo'],cert_url:req.headers['paypal-cert-url'],transmission_id:req.headers['paypal-transmission-id'],transmission_sig:req.headers['paypal-transmission-sig'],transmission_time:req.headers['paypal-transmission-time'],webhook_id:webhookId,webhook_event:body})});const verify=await response.json();if(!response.ok||verify.verification_status!=='SUCCESS')return json(res,400,{error:'Invalid PayPal webhook signature.'});
+    console.log('[RefShop PayPal webhook]',body.event_type,body.id);
+    const resource=body.resource||{};
+    if(body.event_type==='CHECKOUT.ORDER.APPROVED'){
+      await updateOrderBySessionId(resource.id,{status:'pending'});
+    } else if(body.event_type==='PAYMENT.CAPTURE.COMPLETED'){
+      const orderId=resource.supplementary_data?.related_ids?.order_id;
+      if(orderId)await updateOrderBySessionId(orderId,{status:'paid',amount:Number(resource.amount?.value||0)});
+    } else if(body.event_type==='PAYMENT.CAPTURE.REFUNDED'){
+      const orderId=resource.supplementary_data?.related_ids?.order_id;
+      if(orderId)await updateOrderBySessionId(orderId,{status:'refunded'});
+    }
+    return json(res,200,{received:true,id:body.id,type:body.event_type});
   }
 
   return json(res,404,{error:'Payment API route not found.'});

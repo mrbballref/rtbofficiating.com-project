@@ -15,6 +15,31 @@ const app = express();
 const port = Number(process.env.PORT || 4242);
 const appUrl = process.env.APP_URL || `http://localhost:${port}`;
 
+// Membership persistence. If Supabase isn't configured, webhook handling
+// still succeeds (so Stripe doesn't retry forever) but only logs — matching
+// the previous stubbed-out behavior until SUPABASE_* env vars are set.
+async function supabaseRequest(table, method, body, query = "") {
+  const url = process.env.SUPABASE_URL;
+  const key = process.env.SUPABASE_SERVICE_ROLE_KEY;
+  if (!url || !key) {
+    console.warn(`Supabase not configured — skipping ${method} ${table}`);
+    return null;
+  }
+  const response = await fetch(`${url.replace(/\/$/, "")}/rest/v1/${table}${query}`, {
+    method,
+    headers: {
+      apikey: key,
+      Authorization: `Bearer ${key}`,
+      "Content-Type": "application/json",
+      Prefer: "return=representation,resolution=merge-duplicates",
+    },
+    body: body === undefined ? undefined : JSON.stringify(body),
+  });
+  const text = await response.text();
+  if (!response.ok) throw new Error(`Supabase error (${response.status}): ${text}`);
+  return text ? JSON.parse(text) : [];
+}
+
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 const webRoot = path.resolve(__dirname, "..");
@@ -36,7 +61,7 @@ const PRICE_MAP = Object.freeze({
 });
 
 // Webhook must use raw body before JSON middleware.
-app.post("/api/payments/webhook", express.raw({type:"application/json"}), (req, res) => {
+app.post("/api/payments/webhook", express.raw({type:"application/json"}), async (req, res) => {
   const signature = req.headers["stripe-signature"];
   const webhookSecret = process.env.STRIPE_WEBHOOK_SECRET;
 
@@ -51,24 +76,57 @@ app.post("/api/payments/webhook", express.raw({type:"application/json"}), (req, 
     return res.status(400).send(`Webhook Error: ${error.message}`);
   }
 
-  switch (event.type) {
-    case "checkout.session.completed":
-      // Production step: store the Stripe customer/subscription IDs and grant the
-      // matching membership entitlement in the RTBO database only after verification.
-      console.log("checkout.session.completed", event.data.object.id);
-      break;
-    case "invoice.paid":
-      console.log("invoice.paid", event.data.object.id);
-      break;
-    case "invoice.payment_failed":
-      console.log("invoice.payment_failed", event.data.object.id);
-      break;
-    case "customer.subscription.updated":
-    case "customer.subscription.deleted":
-      console.log(event.type, event.data.object.id);
-      break;
-    default:
-      break;
+  try {
+    switch (event.type) {
+      case "checkout.session.completed": {
+        const session = event.data.object;
+        const meta = session.metadata || {};
+        if (session.subscription) {
+          const subscription = await stripe.subscriptions.retrieve(session.subscription);
+          await supabaseRequest(
+            "live_stream_memberships",
+            "POST",
+            {
+              email: (session.customer_details?.email || session.customer_email || "").toLowerCase(),
+              plan_code: meta.membership_plan || "plus",
+              billing_cycle: meta.billing_cycle || "monthly",
+              stripe_customer_id: String(session.customer || ""),
+              stripe_subscription_id: String(session.subscription),
+              status: subscription.status,
+              current_period_end: new Date(subscription.current_period_end * 1000).toISOString(),
+              updated_at: new Date().toISOString(),
+            },
+            "?on_conflict=stripe_subscription_id"
+          );
+        }
+        break;
+      }
+      case "customer.subscription.updated":
+      case "customer.subscription.deleted": {
+        const sub = event.data.object;
+        await supabaseRequest(
+          "live_stream_memberships",
+          "PATCH",
+          {
+            status: sub.status,
+            current_period_end: sub.current_period_end ? new Date(sub.current_period_end * 1000).toISOString() : null,
+            updated_at: new Date().toISOString(),
+          },
+          `?stripe_subscription_id=eq.${encodeURIComponent(sub.id)}`
+        );
+        break;
+      }
+      case "invoice.paid":
+      case "invoice.payment_failed":
+        console.log(event.type, event.data.object.id);
+        break;
+      default:
+        break;
+    }
+  } catch (error) {
+    console.error("Webhook persistence failed:", error);
+    // Still acknowledge receipt — Stripe retries on non-2xx, and a DB hiccup
+    // shouldn't cause duplicate/looping webhook delivery.
   }
 
   res.json({received:true});
