@@ -1,5 +1,6 @@
 import "dotenv/config";
 import express from "express";
+import cors from "cors";
 import Stripe from "stripe";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
@@ -59,6 +60,11 @@ const PRICE_MAP = Object.freeze({
     annual: process.env.STRIPE_PRICE_ALL_ACCESS_ANNUAL
   })
 });
+
+// The main RTBO site (rtbo-site) serves a copy of these pages from its own
+// origin so nav/auth stay unified; this API is only reachable cross-origin.
+const ALLOWED_ORIGINS = [process.env.MAIN_SITE_URL || "https://rtbo-site.onrender.com", "http://localhost:8080", "http://127.0.0.1:8080"];
+app.use("/api", cors({ origin: ALLOWED_ORIGINS }));
 
 // Webhook must use raw body before JSON middleware.
 app.post("/api/payments/webhook", express.raw({type:"application/json"}), async (req, res) => {

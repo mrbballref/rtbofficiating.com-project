@@ -1,4 +1,7 @@
 (() => {
+  // The main RTBO site serves this page from its own origin so nav/auth stay
+  // unified; the subscription API lives on this platform's own backend.
+  const API_BASE = 'https://jammed-up-bar-service.onrender.com';
   const form = document.querySelector('[data-subscription-form]');
   if (!form) return;
   const cards = [...document.querySelectorAll('[data-plan]')];
@@ -73,7 +76,7 @@
     status.textContent = isFree ? 'Creating your free network subscription…' : 'Opening secure Stripe Checkout…';
     try{
       const endpoint = isFree ? '/api/subscriptions/free' : '/api/checkout/session';
-      const response = await fetch(endpoint,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(payload)});
+      const response = await fetch(`${API_BASE}${endpoint}`,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(payload)});
       const data = await response.json().catch(()=>({}));
       if(!response.ok) throw new Error(data.error || 'The subscription service could not complete this request.');
       if(data.url){ window.location.assign(data.url); return; }

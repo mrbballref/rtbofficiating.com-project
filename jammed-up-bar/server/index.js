@@ -1,6 +1,7 @@
 require('dotenv').config();
 const path = require('path');
 const express = require('express');
+const cors = require('cors');
 const Stripe = require('stripe');
 
 const app = express();
@@ -8,6 +9,11 @@ const PORT = Number(process.env.PORT || 3000);
 const siteRoot = path.resolve(__dirname, '..');
 const baseUrl = process.env.PUBLIC_BASE_URL || `http://localhost:${PORT}`;
 const stripe = process.env.STRIPE_SECRET_KEY ? new Stripe(process.env.STRIPE_SECRET_KEY) : null;
+
+// The main RTBO site (rtbo-site) serves a copy of these pages from its own
+// origin so nav/auth stay unified; this API is only reachable cross-origin.
+const ALLOWED_ORIGINS = [process.env.MAIN_SITE_URL || 'https://rtbo-site.onrender.com', 'http://localhost:8080', 'http://127.0.0.1:8080'];
+app.use('/api', cors({ origin: ALLOWED_ORIGINS }));
 
 const PLAN_CONFIG = Object.freeze({
   'bar-member': { name:'Bar Member', monthly:process.env.STRIPE_PRICE_BAR_MEMBER_MONTHLY, annual:process.env.STRIPE_PRICE_BAR_MEMBER_ANNUAL },

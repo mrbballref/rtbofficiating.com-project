@@ -182,8 +182,11 @@
     };
   }
 
+  // The main RTBO site serves this page from its own origin so nav/auth stay
+  // unified; the registration/checkout API lives on this platform's own backend.
+  const API_BASE='https://refzone-university-service.onrender.com';
   async function api(path,options={}){
-    const response=await fetch(path,{headers:{'Content-Type':'application/json',...(options.headers||{})},...options});
+    const response=await fetch(`${API_BASE}${path}`,{headers:{'Content-Type':'application/json',...(options.headers||{})},...options});
     const body=await response.json().catch(()=>({}));
     if(!response.ok)throw new Error(body.error||'The server returned an unexpected response.');
     return body;

@@ -1,7 +1,9 @@
 (() => {
   'use strict';
 
-  const API_BASE = '/api/payments';
+  // The main RTBO site serves this page from its own origin so nav/auth stay
+  // unified; the payment API lives on RefShop's own dedicated backend.
+  const API_BASE = 'https://refshop-service.onrender.com/api/payments';
   let config = {
     loaded: false,
     reachable: false,

@@ -28,6 +28,19 @@ const port = Number(process.env.PORT || 4173);
 const environment = process.env.PAYMENTS_ENVIRONMENT === 'production' ? 'production' : 'sandbox';
 const baseUrl = String(process.env.PUBLIC_BASE_URL || `http://localhost:${port}`).replace(/\/$/, '');
 
+// The main RTBO site (rtbo-site) serves a copy of these pages from its own
+// origin so nav/auth stay unified; this API is only reachable cross-origin.
+const ALLOWED_ORIGINS = new Set([process.env.MAIN_SITE_URL || 'https://rtbo-site.onrender.com', 'http://localhost:8080', 'http://127.0.0.1:8080']);
+function applyCors(req, res) {
+  const origin = req.headers.origin;
+  if (origin && ALLOWED_ORIGINS.has(origin)) {
+    res.setHeader('Access-Control-Allow-Origin', origin);
+    res.setHeader('Vary', 'Origin');
+    res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS');
+    res.setHeader('Access-Control-Allow-Headers', 'Content-Type, Stripe-Signature, PayPal-Auth-Algo, PayPal-Cert-Url, PayPal-Transmission-Id, PayPal-Transmission-Sig, PayPal-Transmission-Time');
+  }
+}
+
 function configured(value) { return Boolean(String(value || '').trim()); }
 function boolEnv(name, fallback = false) {
   const raw = process.env[name];
@@ -214,7 +227,11 @@ async function handleApi(req,res,url){
 const server=http.createServer(async(req,res)=>{
   const url=new URL(req.url,baseUrl);
   try{
-    if(url.pathname.startsWith('/api/payments/'))return await handleApi(req,res,url);
+    if(url.pathname.startsWith('/api/payments/')){
+      applyCors(req,res);
+      if(req.method==='OPTIONS'){res.writeHead(204);res.end();return;}
+      return await handleApi(req,res,url);
+    }
     if(serveStatic(url.pathname,res))return;
     if(req.method==='GET')return serveStatic('/index.html',res);
     return json(res,404,{error:'Not found.'});

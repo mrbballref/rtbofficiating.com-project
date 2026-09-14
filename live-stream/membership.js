@@ -1,4 +1,7 @@
 (() => {
+  // The main RTBO site serves this page from its own origin so nav/auth stay
+  // unified; the checkout API lives on this platform's own backend.
+  const API_BASE = "https://live-stream-service-uhmz.onrender.com";
   const PLANS = {
     free: {
       name: "Live Stream Free",
@@ -132,7 +135,7 @@
     status.textContent = "";
 
     try {
-      const response = await fetch("/api/payments/create-checkout-session", {
+      const response = await fetch(`${API_BASE}/api/payments/create-checkout-session`, {
         method: "POST",
         headers: {"Content-Type":"application/json"},
         body: JSON.stringify({

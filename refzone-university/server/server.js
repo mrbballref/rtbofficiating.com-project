@@ -1,6 +1,10 @@
 require('dotenv').config({path:require('node:path').join(__dirname,'.env')});
-const path=require('node:path');const express=require('express');const helmet=require('helmet');const rateLimit=require('express-rate-limit');const bcrypt=require('bcryptjs');const Stripe=require('stripe');const memberships=require('./memberships');const registrations=require('./lib/registrations');
+const path=require('node:path');const express=require('express');const cors=require('cors');const helmet=require('helmet');const rateLimit=require('express-rate-limit');const bcrypt=require('bcryptjs');const Stripe=require('stripe');const memberships=require('./memberships');const registrations=require('./lib/registrations');
 const app=express();const root=path.join(__dirname,'..');const port=Number(process.env.PORT||4242);const appUrl=(process.env.APP_URL||`http://localhost:${port}`).replace(/\/$/,'');
+// The main RTBO site (rtbo-site) serves a copy of these pages from its own
+// origin so nav/auth stay unified; this API is only reachable cross-origin.
+const ALLOWED_ORIGINS=[process.env.MAIN_SITE_URL||'https://rtbo-site.onrender.com','http://localhost:8080','http://127.0.0.1:8080'];
+app.use('/api',cors({origin:ALLOWED_ORIGINS}));
 const stripeConfigured=Boolean(process.env.STRIPE_SECRET_KEY&&process.env.STRIPE_PUBLISHABLE_KEY&&!process.env.STRIPE_SECRET_KEY.includes('replace_me'));
 const stripe=stripeConfigured?new Stripe(process.env.STRIPE_SECRET_KEY):null;
 const trackIds=new Set(['nfhs','njcaa-men','njcaa-women','naia-men','naia-women','ncaa-d3-men','ncaa-d3-women','ncaa-d2-men','ncaa-d2-women','ncaa-d1-men','ncaa-d1-women','usa-men','usa-women','euro-men','euro-women','fiba-men','fiba-women','g-league','wnba','nba']);
