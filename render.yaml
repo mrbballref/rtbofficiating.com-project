@@ -1,0 +1,147 @@
+services:
+  # Main RTBO site: root pages + Got U Nex Ref, Vault, Cutting Room, RefZone
+  # University's static pages, Schools/Events/etc. Everything that talks to
+  # Supabase directly from the browser — no Node server needed for these.
+  - type: web
+    name: rtbo-site
+    runtime: static
+    buildCommand: "true"
+    staticPublishPath: .
+    pullRequestPreviewsEnabled: false
+    headers:
+      - path: /assets/*
+        name: Cache-Control
+        value: public, max-age=3600
+
+  # The Jammed Up Bar! — serves jammed-up-bar/ plus its Stripe checkout API.
+  - type: web
+    name: jammed-up-bar-service
+    runtime: node
+    rootDir: jammed-up-bar/server
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: SUPABASE_URL
+        value: https://xnwcgbnasvhkuiejtxer.supabase.co
+      - key: SUPABASE_SERVICE_ROLE_KEY
+        sync: false
+      - key: STRIPE_SECRET_KEY
+        sync: false
+      - key: STRIPE_WEBHOOK_SECRET
+        sync: false
+      - key: STRIPE_PRICE_BAR_MEMBER_MONTHLY
+        sync: false
+      - key: STRIPE_PRICE_BAR_MEMBER_ANNUAL
+        sync: false
+      - key: STRIPE_PRICE_CREW_MEMBER_MONTHLY
+        sync: false
+      - key: STRIPE_PRICE_CREW_MEMBER_ANNUAL
+        sync: false
+      - key: STRIPE_PRICE_ALL_ACCESS_MONTHLY
+        sync: false
+      - key: STRIPE_PRICE_ALL_ACCESS_ANNUAL
+        sync: false
+      - key: PUBLIC_BASE_URL
+        fromService:
+          type: web
+          name: jammed-up-bar-service
+          property: hostport
+
+  # The Live Stream — serves live-stream/ plus its Stripe checkout API.
+  - type: web
+    name: live-stream-service
+    runtime: node
+    rootDir: live-stream/server
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: SUPABASE_URL
+        value: https://xnwcgbnasvhkuiejtxer.supabase.co
+      - key: SUPABASE_SERVICE_ROLE_KEY
+        sync: false
+      - key: STRIPE_SECRET_KEY
+        sync: false
+      - key: STRIPE_WEBHOOK_SECRET
+        sync: false
+      - key: STRIPE_PRICE_PLUS_MONTHLY
+        sync: false
+      - key: STRIPE_PRICE_PLUS_ANNUAL
+        sync: false
+      - key: STRIPE_PRICE_PREMIUM_MONTHLY
+        sync: false
+      - key: STRIPE_PRICE_PREMIUM_ANNUAL
+        sync: false
+      - key: STRIPE_PRICE_ALL_ACCESS_MONTHLY
+        sync: false
+      - key: STRIPE_PRICE_ALL_ACCESS_ANNUAL
+        sync: false
+      - key: APP_URL
+        fromService:
+          type: web
+          name: live-stream-service
+          property: hostport
+
+  # The RefShop — serves refshop/ plus its Stripe + PayPal checkout API.
+  - type: web
+    name: refshop-service
+    runtime: node
+    rootDir: refshop/server
+    buildCommand: "true"
+    startCommand: npm start
+    envVars:
+      - key: SUPABASE_URL
+        value: https://xnwcgbnasvhkuiejtxer.supabase.co
+      - key: SUPABASE_SERVICE_ROLE_KEY
+        sync: false
+      - key: STRIPE_SECRET_KEY
+        sync: false
+      - key: STRIPE_WEBHOOK_SECRET
+        sync: false
+      - key: PAYPAL_CLIENT_ID
+        sync: false
+      - key: PAYPAL_CLIENT_SECRET
+        sync: false
+      - key: PAYPAL_WEBHOOK_ID
+        sync: false
+      - key: PAYPAL_ENVIRONMENT
+        value: sandbox
+      - key: PAYMENTS_ENVIRONMENT
+        value: sandbox
+      - key: ALLOW_CLIENT_PRICING_IN_SANDBOX
+        value: "true"
+      - key: ALLOW_CLIENT_PRICING_IN_PRODUCTION
+        value: "false"
+      - key: PUBLIC_BASE_URL
+        fromService:
+          type: web
+          name: refshop-service
+          property: hostport
+
+  # RefZone University — serves refzone-university/ plus registration,
+  # login, and Stripe membership checkout API.
+  - type: web
+    name: refzone-university-service
+    runtime: node
+    rootDir: refzone-university
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: SUPABASE_URL
+        value: https://xnwcgbnasvhkuiejtxer.supabase.co
+      - key: SUPABASE_SERVICE_ROLE_KEY
+        sync: false
+      - key: STRIPE_PUBLISHABLE_KEY
+        sync: false
+      - key: STRIPE_SECRET_KEY
+        sync: false
+      - key: STRIPE_WEBHOOK_SECRET
+        sync: false
+      - key: STRIPE_AUTOMATIC_TAX
+        value: "false"
+      - key: PAYMENTS_LIVE_APPROVED
+        value: "false"
+      - key: APP_URL
+        fromService:
+          type: web
+          name: refzone-university-service
+          property: hostport
