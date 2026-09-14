@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,600;1,700;1,800&family=Inter:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,600&display=swap');
+:root{--font-heading:'Barlow Condensed',Impact,Haettenschweiler,"Arial Narrow Bold",sans-serif;--font-body:'Inter',Arial,Helvetica,sans-serif;--font-display:var(--font-heading);}
 :root{
   --red:#d70f1f;
   --red-soft:rgba(215,15,31,.78);
@@ -12,7 +14,7 @@
 }
 *{box-sizing:border-box}
 html,body{min-height:100%;margin:0}
-body{font-family:Inter,Arial,Helvetica,sans-serif;background:#000;color:var(--white)}
+body{font-family:var(--font-body);background:#000;color:var(--white)}
 button,input{font:inherit}
 a{color:inherit}
 .stage{min-height:100vh;display:grid;place-items:center;padding:28px;background:#000;overflow:auto}

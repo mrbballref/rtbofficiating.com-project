@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,600;1,700;1,800&family=Inter:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,600&display=swap');
+:root{--font-heading:'Barlow Condensed',Impact,Haettenschweiler,"Arial Narrow Bold",sans-serif;--font-body:'Inter',Arial,Helvetica,sans-serif;--font-display:var(--font-heading);}
 
 *{box-sizing:border-box}
 :root{--bg:#050607;--panel:#101416;--panel2:#0b0e10;--line:#343a3d;--line2:#252a2d;--text:#f4f5f4;--muted:#b8bcba;--red:#e20d0d;--red2:#8d0505;--green:#60d86a;--blue:#32a8ff;--gold:#e4aa50}
-html,body{margin:0;min-height:100%;background:#050607;color:var(--text);font-family:"Segoe UI",Arial,sans-serif;font-size:16px}
+html,body{margin:0;min-height:100%;background:#050607;color:var(--text);font-family:var(--font-body);font-size:16px}
 body{background:radial-gradient(circle at 45% 0,rgba(60,70,76,.12),transparent 36%),#050607}
 button,input,select,textarea{font:inherit}.sprite{position:absolute;width:0;height:0;overflow:hidden}
 .admin-shell{min-height:100vh;display:grid;grid-template-columns:250px minmax(0,1fr)}

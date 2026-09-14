@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,600;1,700;1,800&family=Inter:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,600&display=swap');
+:root{--font-heading:'Barlow Condensed',Impact,Haettenschweiler,"Arial Narrow Bold",sans-serif;--font-body:'Inter',Arial,Helvetica,sans-serif;--font-display:var(--font-heading);}
 
-:root{--bg:#020405;--panel:#071015;--panel2:#0b171d;--text:#f6f8f7;--muted:#91a0a6;--line:rgba(255,255,255,.11);--orange:#f06416;--orange2:#ff8534;--burnt-orange:#cc5500;--crimson:#cf1f18;--white:#fff;--chrome:linear-gradient(135deg,#1d1d1d 0%,#a9a9a9 15%,#f6f6f6 27%,#5e5e5e 42%,#d96916 54%,#ff8b2e 62%,#7c2f09 71%,#d7d7d7 84%,#383838 100%);--cyan:#00c7ff;--danger:#ff4e46;--ok:#56d881;--radius:16px;--shadow:0 30px 80px rgba(0,0,0,.45);--max:1600px;font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color-scheme:dark}
+:root{--bg:#020405;--panel:#071015;--panel2:#0b171d;--text:#f6f8f7;--muted:#91a0a6;--line:rgba(255,255,255,.11);--orange:#f06416;--orange2:#ff8534;--burnt-orange:#cc5500;--crimson:#cf1f18;--white:#fff;--chrome:linear-gradient(135deg,#1d1d1d 0%,#a9a9a9 15%,#f6f6f6 27%,#5e5e5e 42%,#d96916 54%,#ff8b2e 62%,#7c2f09 71%,#d7d7d7 84%,#383838 100%);--cyan:#00c7ff;--danger:#ff4e46;--ok:#56d881;--radius:16px;--shadow:0 30px 80px rgba(0,0,0,.45);--max:1600px;font-family:var(--font-body);color-scheme:dark}
 *{box-sizing:border-box}html{scroll-behavior:smooth;background:#020405}body{margin:0;background:radial-gradient(circle at 82% -10%,rgba(0,199,255,.12),transparent 28%),linear-gradient(#030607,#020405);color:var(--text);min-height:100vh;font-size:16px}a{color:inherit}button,input,select,textarea{font:inherit}.hidden{display:none!important}.muted{color:var(--muted)}.orange{color:var(--orange)}.cyan{color:var(--cyan)}
 
 .cr-header{
@@ -56,7 +58,7 @@
 .cr-mobile-upload,
 .cr-rtbo-mobile-menu a,
 .cr-rtbo-mobile-command{
-  font-family:"Arial Narrow",Arial,sans-serif;
+  font-family:var(--font-heading);
   font-weight:800;
   letter-spacing:.015em;
   text-transform:uppercase;
@@ -481,7 +483,7 @@ body[data-page="home"] main{padding-top:0}
 .cine-copy--reference h1{
   margin:0;
   max-width:650px;
-  font-family:Impact,Haettenschweiler,"Arial Narrow Bold","Arial Black",sans-serif;
+  font-family:var(--font-heading);
   font-size:clamp(64px,4.05vw,72px);
   font-style:italic;
   font-weight:900;
@@ -810,7 +812,7 @@ body[data-page="home"] main{padding-top:0}
 .story-experience__copy h2{
   margin:0;
   max-width:390px;
-  font-family:Impact,Haettenschweiler,"Arial Narrow Bold","Arial Black",sans-serif;
+  font-family:var(--font-heading);
   font-size:clamp(60px,4.4vw,74px);
   font-style:italic;
   font-weight:900;
@@ -1194,7 +1196,7 @@ body[data-page="home"] main{padding-top:0}
 }
 .angle-gallery__title-wrap h2{
   margin:0;
-  font-family:Impact,Haettenschweiler,"Arial Narrow Bold","Arial Black",sans-serif;
+  font-family:var(--font-heading);
   font-size:clamp(64px,4.55vw,76px);
   font-style:italic;
   font-weight:900;
@@ -1338,7 +1340,7 @@ body[data-page="home"] main{padding-top:0}
   color:#ff6500;
   background:rgba(3,7,8,.96);
   font-size:43px;
-  font-family:Arial,sans-serif;
+  font-family:var(--font-body);
   line-height:1;
   cursor:pointer;
   transform:translateY(-15%);
@@ -1632,7 +1634,7 @@ body[data-page="home"] main{padding-top:0}
   justify-content:space-between;
   gap:20px;
   color:rgba(255,255,255,.035);
-  font-family:Impact,Haettenschweiler,"Arial Narrow Bold",sans-serif;
+  font-family:var(--font-heading);
   font-size:28px;
   font-style:italic;
   text-transform:uppercase;
@@ -1666,7 +1668,7 @@ body[data-page="home"] main{padding-top:0}
 .future-ecosystem__copy h2{
   margin:0;
   max-width:570px;
-  font-family:Impact,Haettenschweiler,"Arial Narrow Bold","Arial Black",sans-serif;
+  font-family:var(--font-heading);
   font-size:clamp(57px,4.15vw,73px);
   font-style:italic;
   font-weight:900;
@@ -1978,7 +1980,7 @@ body[data-page="home"] main{padding-top:0}
 }
 .next-moment__copy h2{
   margin:0;
-  font-family:Impact,Haettenschweiler,"Arial Narrow Bold","Arial Black",sans-serif;
+  font-family:var(--font-heading);
   font-size:clamp(58px,4.55vw,76px);
   font-style:italic;
   font-weight:900;
