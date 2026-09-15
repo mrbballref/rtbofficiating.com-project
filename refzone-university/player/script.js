@@ -281,3 +281,30 @@ document.addEventListener('keydown', e => {
 });
 
 buildMoreControls(); updateDeviceMode(); renderPlaylist(); updateStatus(false);
+
+// Mock AirPlay device picker — see the panel's own copy ("start a mock
+// AirPlay stream"). Neither the device buttons nor disconnect button had
+// a click handler, so picking a device did nothing.
+const airplayCurrent = document.getElementById('airplayCurrent');
+const airplayDisconnectBtn = document.getElementById('airplayDisconnectBtn');
+document.querySelectorAll('.airplay-device').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const name = btn.dataset.airplayDevice || 'device';
+    if (airplayCurrent) airplayCurrent.innerHTML = `<span class="airplay-glyph">▵</span><div><strong>Casting to ${name}</strong><p>Mock AirPlay stream connected.</p></div>`;
+    if (airplayDisconnectBtn) airplayDisconnectBtn.disabled = false;
+    airplayPanel?.classList.add('hidden');
+    document.querySelector('[data-control="airplay"]')?.classList.remove('active-cc');
+  });
+});
+airplayDisconnectBtn?.addEventListener('click', () => {
+  if (airplayCurrent) airplayCurrent.innerHTML = `<span class="airplay-glyph">▵</span><div><strong>Not Casting</strong><p>Select an external device to start a mock AirPlay stream.</p></div>`;
+  airplayDisconnectBtn.disabled = true;
+});
+
+// Side panel tabs (Video Library / Info / Actions) only toggled their own
+// active state visually — clicking Info or Actions did nothing at all.
+document.querySelectorAll('.side-tab').forEach(tab => {
+  tab.addEventListener('click', () => {
+    document.querySelectorAll('.side-tab').forEach(t => t.classList.toggle('active', t === tab));
+  });
+});

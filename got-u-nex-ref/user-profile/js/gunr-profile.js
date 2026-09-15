@@ -96,3 +96,27 @@ if (markReadBtn) {
 
 
 if (!document.querySelector('#notificationsList .item')) { const b=document.getElementById('markRead'); if(b){ b.disabled=true; b.textContent='No unread notifications'; } }
+
+const orgSwitcherBtn = document.getElementById('orgSwitcherBtn');
+if (orgSwitcherBtn) {
+  const original = orgSwitcherBtn.textContent;
+  orgSwitcherBtn.addEventListener('click', () => {
+    if (orgSwitcherBtn.dataset.pending) return;
+    orgSwitcherBtn.dataset.pending = '1';
+    orgSwitcherBtn.textContent = 'Org switching — later phase';
+    setTimeout(() => { orgSwitcherBtn.textContent = original; delete orgSwitcherBtn.dataset.pending; }, 2200);
+  });
+}
+
+const signOutBtn = document.getElementById('signOutBtn');
+if (signOutBtn) {
+  signOutBtn.addEventListener('click', async () => {
+    signOutBtn.disabled = true;
+    try {
+      const { signOut } = await import('../../assets/auth.js');
+      await signOut();
+    } finally {
+      window.location.href = '../../index.html';
+    }
+  });
+}

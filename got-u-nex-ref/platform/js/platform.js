@@ -77,6 +77,30 @@ function applyReviewRole(r){
  updateRoleAssignmentAccess();
 }
 document.getElementById('roleSelect').addEventListener('change',e=>applyReviewRole(e.target.value));
+
+// This dashboard is a role-preview frontend shell — every module's action
+// button (Create Assignment, Add Game, Create Invoice, etc.) has no real
+// backend workflow behind it yet. Rather than a silent no-op click, say so.
+document.querySelectorAll('.empty .btn[type="button"]').forEach(btn=>{
+ const original=btn.textContent;
+ btn.addEventListener('click',()=>{
+  if(btn.dataset.pending)return;
+  btn.dataset.pending='1';
+  btn.textContent='Scheduled for a later phase';
+  setTimeout(()=>{btn.textContent=original;delete btn.dataset.pending;},2200);
+ });
+});
+const orgSwitcherBtn=document.getElementById('orgSwitcherBtn');
+if(orgSwitcherBtn){
+ const orgLabel=orgSwitcherBtn.querySelector('strong');
+ const original=orgLabel.textContent;
+ orgSwitcherBtn.addEventListener('click',()=>{
+  if(orgSwitcherBtn.dataset.pending)return;
+  orgSwitcherBtn.dataset.pending='1';
+  orgLabel.textContent='Org switching — later phase';
+  setTimeout(()=>{orgLabel.textContent=original;delete orgSwitcherBtn.dataset.pending;},2200);
+ });
+}
 const requestedRole=new URLSearchParams(location.search).get('role');
 if(requestedRole==='super-admin'||requestedRole==='Super Administrator')applyReviewRole('Super Administrator'); else applyReviewRole('Official');
 const initial=location.hash.slice(1);if(initial&&(initial==='dashboard'||modules[initial]))showView(initial);

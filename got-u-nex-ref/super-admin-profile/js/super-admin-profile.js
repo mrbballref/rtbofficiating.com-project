@@ -52,9 +52,12 @@
 
 
 
-  document.querySelectorAll('[data-sign-out]').forEach(link => link.addEventListener('click', () => {
-    localStorage.removeItem('gunr-authenticated-role');
-    localStorage.removeItem('gunr-authenticated-user');
+  document.querySelectorAll('[data-sign-out]').forEach(link => link.addEventListener('click', (event) => {
+    event.preventDefault();
+    const destination = link.href;
+    import('../../assets/auth.js')
+      .then(({ signOut }) => signOut())
+      .finally(() => { window.location.href = destination; });
   }));
 
   const form = document.getElementById('profileForm');
